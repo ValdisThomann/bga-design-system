@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+
+<body class="au-grid guide_content_page">
+
+    <!-- HEADER -->
+    <div class="header-wrapper">
+        <div class="header">
+            {% include header.html %}
+        </div>
+    </div>
+    
+    
+
+
+    
+    <!-- PAGE HEADER -->
+    <div id="react_0HLQ1CPERFVVH">
+        <div style="background-color:" class="c-wrapper c-wrapper-bg-transparent  page-header-theme-blue container-fluid" data-reactroot="">
+            <div class="row">
+                <div class="page-header" id="page-header">
+                    
+                    <div class="col-12 col-sm-12 col-md-8">
+        
+                        <h1 class="page-header-title">
+                            {{ page.title }}
+                        </h1>
+                        
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8">
+                        <div class="page-header-intro">
+                            <p>
+                                {{ page.longdesc }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    <!-- CONTENT -->
+    
+    {{ content }}
+    
+    
+
+    <!-- FOOTER -->
+    <div class="footer-wrapper">
+        <div class="footer">
+            {% include footer.html %}
+        </div>
+    </div>
+    
+    
+    <!-- GUIDE NAV PANEL -->
+    {% include guide_nav_1.html %}
+
+</body>
+
+</html>
