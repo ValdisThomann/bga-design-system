@@ -23,22 +23,24 @@ $(document).ready(function () {
     
     
     // Header navigation links
-    // Finding full path so links work on files viewed locally through the file tree as well as when hosted through a local server.
-        full_path = window.location.pathname;
-        subpath_location = full_path.lastIndexOf('/');
-        initial_path = full_path.slice(0, subpath_location);
-    
     $('#foundations-link').on('click',function(){
-        window.location.pathname = initial_path + "/topic-foundations.html";
+        window.location.pathname = "/topic-foundations.html";
     });
     $('#components-link').on('click',function(){
-        window.location.pathname = initial_path + "/topic-components.html";
+        window.location.pathname = "/topic-components.html";
     });
     $('#page-patterns-link').on('click',function(){
-        window.location.pathname = initial_path + "/topic-page-patterns.html";
+        window.location.pathname =  "/topic-page-patterns.html";
     });
        
-
+    
+    
+    /*----------- Design system cards ----------- */
+    $('.element-design').on('click', function(){
+        $(this).toggleClass('closed');
+        $(this).next('.element-code').toggleClass('open');
+    });
+    
     
     
     /*----------- Add side-menu (sticky_list) functionality ----------- */

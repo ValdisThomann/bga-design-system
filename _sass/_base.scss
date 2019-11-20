@@ -14,24 +14,10 @@ hr {
 p {
     font-size: 1rem;
     margin-bottom: 32px;
+    max-width: 750px;
 }
 .body-copy .body-copy-content p.small {
     font-size: .8rem;
-}
-
-.anchor-menu {
-    .sticky-container {
-    a {
-        text-decoration: none;
-    
-        &.active-sticky {
-            font-weight: 700;
-            border-left: 4px solid $blue-light;
-            padding-left: 16px;
-        }
-    }
-
-}
 }
 
 .c-padding-bottom {
@@ -229,6 +215,20 @@ a.breadcrumb-link
 
 
 // Side navigation - Sticky menu
+.anchor-menu {
+    .sticky-container {
+    a {
+        text-decoration: none;
+    
+        &.active-sticky {
+            font-weight: 700;
+            border-left: 4px solid $blue-light;
+            padding-left: 16px;
+        }
+    }
+
+}}
+
 .side_nav {
     display: none;
     z-index: 1000;

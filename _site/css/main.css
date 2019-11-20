@@ -4870,13 +4870,9 @@ h1, h2 { font-weight: 600; }
 
 hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0 0 1.5rem; text-align: left; width: 3.25rem; }
 
-p { font-size: 1rem; margin-bottom: 32px; }
+p { font-size: 1rem; margin-bottom: 32px; max-width: 750px; }
 
 .body-copy .body-copy-content p.small { font-size: .8rem; }
-
-.anchor-menu .sticky-container a { text-decoration: none; }
-
-.anchor-menu .sticky-container a.active-sticky { font-weight: 700; border-left: 4px solid #96B7DF; padding-left: 16px; }
 
 .c-padding-bottom p:last-child, .c-padding-bottom ol:last-child, .c-padding-bottom ul:last-child { padding-bottom: 0; }
 
@@ -4933,6 +4929,10 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 @media only screen and (max-width: 618px) { .hero-pathway-list-illustration-bg, .hero-pathway-list-illustration-image { display: none !important; }
   .hero-pathway-list-content-left { flex: initial !important; } }
 
+.anchor-menu .sticky-container a { text-decoration: none; }
+
+.anchor-menu .sticky-container a.active-sticky { font-weight: 700; border-left: 4px solid #96B7DF; padding-left: 16px; }
+
 .side_nav { display: none; z-index: 1000; position: absolute; top: 0; right: 0; background: #EFF4FB; height: 100%; -webkit-box-shadow: -4px 0px 6px -5px rgba(0, 0, 0, 0.61); -moz-box-shadow: -4px 0px 6px -5px rgba(0, 0, 0, 0.61); box-shadow: -4px 0px 6px -5px rgba(0, 0, 0, 0.61); width: 40%; }
 
 .side_nav.side_nav_open { display: block; }
@@ -4987,27 +4987,55 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 /* Design system styles */
 .design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); }
 
-.design-system-card .design-system-card-header { background: #254F90; padding: 24px; }
+.design-system-card .design-system-card-header { background: #254F90; padding: 24px; border: solid 1px #254F90; }
 
-.design-system-card .design-system-card-header h1, .design-system-card .design-system-card-header h2, .design-system-card .design-system-card-header h3, .design-system-card .design-system-card-header h4, .design-system-card .design-system-card-header h5, .design-system-card .design-system-card-header h6 { padding: 0; margin: 0; color: #ffffff; }
+.design-system-card .design-system-card-header h1, .design-system-card .design-system-card-header h2, .design-system-card .design-system-card-header h3, .design-system-card .design-system-card-header h4, .design-system-card .design-system-card-header h5, .design-system-card .design-system-card-header h6 { padding: 0; margin: 0; color: #ffffff; font-family: OpenSans-Semibold; }
 
-.design-system-card .design-system-card-content { padding: 24px; background: #EBEBEB; }
+.design-system-card .design-system-card-content { padding: 24px; background: #F5F5F5; border: solid 1px #D8D8D8; }
 
-.design-system-card .design-system-card-content .design-element { padding: 24px; border: solid 1px #D8D8D8; background: #ffffff; margin-bottom: 16px; }
+.design-system-card .design-system-card-content .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #ffffff url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-weight: 600; padding-left: 16px; padding-right: 50px; display: block; }
 
-.design-system-card .design-system-card-content .desktop h1 { font-family: OpenSans-Semibold; font-size: 44px; color: #333333; line-height: 56px; }
+.design-system-card .design-system-card-content .element-design.closed { background: #ffffff url(../assets/Icon-chevron-down-blue.svg) no-repeat; background-position: right 24px center; }
 
-.design-system-card .design-system-card-content .desktop p.header-intro { font-family: OpenSans; font-size: 18px; color: #333333; letter-spacing: 0.2px; line-height: 32px; }
+.design-system-card .design-system-card-content .element-design::before { content: ""; }
 
-.design-system-card .design-system-card-content .mobile { padding-top: 24px; }
+.design-system-card .design-system-card-content .element-code { padding: 24px; border: solid 1px #D8D8D8; border-top: none; background: #ffffff; display: none; }
 
-.design-system-card .design-system-card-content .mobile h1 { font-family: OpenSans-Semibold; font-size: 32px; color: #333333; letter-spacing: 0; line-height: 36px; }
+.design-system-card .design-system-card-content .element-code.open { display: block; }
 
-.design-system-card .design-system-card-content .mobile h2 { font-family: OpenSans-Semibold; font-size: 24px; color: #333333; letter-spacing: 0; line-height: 32px; }
+.design-system-card .design-system-card-content .element-code code { color: #254F90; }
 
-.design-system-card .design-system-card-content .mobile p.header-intro { font-family: OpenSans; font-size: 16px; color: #333333; letter-spacing: 0.2px; line-height: 28px; }
+.design-system-card .design-system-card-content .desktop-sample h1, .design-system-card .design-system-card-content .desktop-sample h2, .design-system-card .design-system-card-content .desktop-sample h3, .design-system-card .design-system-card-content .desktop-sample h4, .design-system-card .design-system-card-content .desktop-sample h5, .design-system-card .design-system-card-content .desktop-sample p { margin: 0; padding: 0; color: #333333; }
 
-.design-system-card .design-system-card-links { background: #ffffff; border-top: solid 1px #EBEBEB; padding: 24px; }
+.design-system-card .design-system-card-content .desktop-sample h1 { font-family: OpenSans-Semibold; font-size: 44px; line-height: 56px; }
+
+.design-system-card .design-system-card-content .desktop-sample h2 { font-family: OpenSans-Semibold; font-size: 32px; line-height: 40px; }
+
+.design-system-card .design-system-card-content .desktop-sample h3 { font-family: OpenSans-Semibold; font-size: 21px; letter-spacing: 0; line-height: 28px; }
+
+.design-system-card .design-system-card-content .desktop-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
+
+.design-system-card .design-system-card-content .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
+
+.design-system-card .design-system-card-content .mobile-sample { padding-top: 32px; }
+
+.design-system-card .design-system-card-content .mobile-sample h1, .design-system-card .design-system-card-content .mobile-sample h2, .design-system-card .design-system-card-content .mobile-sample h3, .design-system-card .design-system-card-content .mobile-sample h4, .design-system-card .design-system-card-content .mobile-sample h5, .design-system-card .design-system-card-content .mobile-sample p { margin: 0; padding: 0; color: #333333; }
+
+.design-system-card .design-system-card-content .mobile-sample h1 { font-family: OpenSans-Semibold; font-size: 32px; letter-spacing: 0; line-height: 36px; }
+
+.design-system-card .design-system-card-content .mobile-sample h2 { font-family: OpenSans-Semibold; font-size: 24px; line-height: 32px; }
+
+.design-system-card .design-system-card-content .mobile-sample h3 { font-size: 21px; letter-spacing: 0; line-height: 30px; }
+
+.design-system-card .design-system-card-content .mobile-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
+
+.design-system-card .design-system-card-content .mobile-sample p.header-intro { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
+
+.design-system-card .design-system-card-links { background: #F5F5F5; border: solid 1px #EBEBEB; border-top: none; padding: 24px; }
+
+.design-system-card .design-system-card-links a { color: #254F90; text-decoration: none; border: none; font-family: OpenSans-Semibold; font-weight: normal; box-shadow: none; padding-left: 32px; background: url(../assets/Icon-arrow-right-blue.svg) no-repeat; background-position: left center; }
+
+.design-system-card .design-system-card-links a:hover { box-shadow: none; }
 
 .responsive-img { max-width: 100%; width: 100%; margin-bottom: 24px; border: solid 1px #D8D8D8; }
 
