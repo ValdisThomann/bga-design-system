@@ -4890,21 +4890,11 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .col-lg-4 .hero-pathway-list-content-left, .col-sm-6 .hero-pathway-list-content-left { flex: initial !important; }
 
+#navigation-bar .navigation-main-menu a { color: #ffffff; text-decoration: none; padding-top: 18px; padding-bottom: 18px; font-family: OpenSans-Semibold; }
+
+#navigation-bar .navigation-main-menu a:hover { text-decoration: underline; }
+
 #navigation-bar .navigation-main-menu:hover { background: #18335C; }
-
-#navigation-bar .dropdown-toggle { color: #ffffff; opacity: 1.0; text-align: left; cursor: default; }
-
-#navigation-bar .dropdown-toggle:after { display: none; }
-
-#navigation-bar .dropdown-menu { background: #18335C; padding: 0; border: none !important; border-radius: 0px !important; cursor: pointer !important; margin-top: 0px; width: 300px; }
-
-#navigation-bar .dropdown-menu a { text-decoration: none; padding: 0 30px 0 5px; color: #ffffff; }
-
-#navigation-bar .dropdown-menu a.dropdown-item:focus, #navigation-bar .dropdown-menu a.dropdown-item:hover { background: none; text-decoration: underline !important; }
-
-#navigation-bar .dropdown-menu li { font-weight: 400; list-style-type: none; border-bottom: 1px solid #4569A0; font-size: 0.9em; padding: 10px; position: relative; }
-
-#navigation-bar .dropdown-menu li:hover { background: #0D1F3F; }
 
 .footer .footer-top-links-top { padding: 2rem 16px; }
 
@@ -4917,6 +4907,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 @media (min-width: 901px) and (max-width: 1200px) { .hero-pathway-list-illustration-bg, .hero-pathway-list-illustration-image { display: none !important; }
   .hero-pathway-list-content-left { flex: initial !important; } }
+
+@media (max-width: 1205px) { .navigation-bar .navigation-main-menu a { font-size: 18px; } }
 
 @media only screen and (max-width: 900px) { .navigation-bar-wrapper { display: none; }
   .search-bar-wrapper { background: #254F90 url("../assets/Icon-menu.svg") no-repeat; background-size: 20px 16px; background-position: center right 15px; }
@@ -4987,13 +4979,15 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 /* Design system styles */
 .design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); }
 
+.design-system-card code { color: #254F90; font-size: 0.85rem; line-height: 16px; }
+
 .design-system-card .design-system-card-header { background: #254F90; padding: 24px; border: solid 1px #254F90; }
 
 .design-system-card .design-system-card-header h1, .design-system-card .design-system-card-header h2, .design-system-card .design-system-card-header h3, .design-system-card .design-system-card-header h4, .design-system-card .design-system-card-header h5, .design-system-card .design-system-card-header h6 { padding: 0; margin: 0; color: #ffffff; font-family: OpenSans-Semibold; }
 
 .design-system-card .design-system-card-content { padding: 24px; background: #F5F5F5; border: solid 1px #D8D8D8; }
 
-.design-system-card .design-system-card-content .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #ffffff url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-weight: 600; padding-left: 16px; padding-right: 50px; display: block; }
+.design-system-card .design-system-card-content .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #ffffff url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-weight: 600; padding-left: 16px; padding-right: 60px; display: block; }
 
 .design-system-card .design-system-card-content .element-design.closed { background: #ffffff url(../assets/Icon-chevron-down-blue.svg) no-repeat; background-position: right 24px center; }
 
@@ -5003,7 +4997,11 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-content .element-code.open { display: block; }
 
-.design-system-card .design-system-card-content .element-code code { color: #254F90; }
+.design-system-card .design-system-card-content .element-code h5 { margin-top: 16px !important; }
+
+.design-system-card .design-system-card-content .element-code h5:first-of-type { margin-top: 0 !important; }
+
+.design-system-card .design-system-card-content .desktop-sample { padding-bottom: 32px; }
 
 .design-system-card .design-system-card-content .desktop-sample h1, .design-system-card .design-system-card-content .desktop-sample h2, .design-system-card .design-system-card-content .desktop-sample h3, .design-system-card .design-system-card-content .desktop-sample h4, .design-system-card .design-system-card-content .desktop-sample h5, .design-system-card .design-system-card-content .desktop-sample p { margin: 0; padding: 0; color: #333333; }
 
@@ -5017,7 +5015,29 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-content .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
 
-.design-system-card .design-system-card-content .mobile-sample { padding-top: 32px; }
+.design-system-card .design-system-card-content .desktop-sample p { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 32px; font-weight: 400; }
+
+.design-system-card .design-system-card-content .desktop-sample p.body-mini { font-family: OpenSans; font-size: 14px; letter-spacing: 0; line-height: 24px; }
+
+.design-system-card .design-system-card-content .desktop-sample li { font-family: OpenSans; font-size: 16px; letter-spacing: 0; line-height: 32px; font-weight: 400; }
+
+.design-system-card .design-system-card-content .desktop-sample p.blockquote { font-family: OpenSans; font-size: 21px; color: #333333; letter-spacing: 0.2px; text-align: center; line-height: 40px; font-weight: 400; }
+
+.design-system-card .design-system-card-content .desktop-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
+
+.design-system-card .design-system-card-content .desktop-sample .source { font-weight: 400; color: #666666; padding-top: 8px; font-size: 16px; }
+
+.design-system-card .design-system-card-content .desktop-sample .source hr { border-color: #666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+
+.design-system-card .design-system-card-content .desktop-sample .hr-bottom { background-color: #edca72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
+
+.design-system-card .design-system-card-content .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
+
+.design-system-card .design-system-card-content .desktop-sample p.header-update { font-family: OpenSans; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 24px; font-style: italic; }
+
+.design-system-card .design-system-card-content .desktop-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 16px; text-transform: uppercase; font-weight: 400; }
+
+.design-system-card .design-system-card-content .mobile-sample { padding-bottom: 32px; }
 
 .design-system-card .design-system-card-content .mobile-sample h1, .design-system-card .design-system-card-content .mobile-sample h2, .design-system-card .design-system-card-content .mobile-sample h3, .design-system-card .design-system-card-content .mobile-sample h4, .design-system-card .design-system-card-content .mobile-sample h5, .design-system-card .design-system-card-content .mobile-sample p { margin: 0; padding: 0; color: #333333; }
 
@@ -5029,7 +5049,27 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-content .mobile-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
 
+.design-system-card .design-system-card-content .mobile-sample p { font-family: OpenSans; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; font-weight: 400; }
+
+.design-system-card .design-system-card-content .mobile-sample p.body-mini { font-family: OpenSans; font-size: 12px; letter-spacing: 0; line-height: 24px; }
+
+.design-system-card .design-system-card-content .mobile-sample li { font-family: OpenSans; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; font-weight: 400; }
+
+.design-system-card .design-system-card-content .mobile-sample p.blockquote { font-family: OpenSans; font-size: 18px; color: #333333; letter-spacing: 0.2px; text-align: center; line-height: 24px; font-weight: 400; }
+
+.design-system-card .design-system-card-content .mobile-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
+
+.design-system-card .design-system-card-content .mobile-sample .source { font-weight: 400; color: #666666; padding-top: 8px; font-size: 14px; }
+
+.design-system-card .design-system-card-content .mobile-sample .source hr { border-color: #666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+
+.design-system-card .design-system-card-content .mobile-sample .hr-bottom { background-color: #edca72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
+
 .design-system-card .design-system-card-content .mobile-sample p.header-intro { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
+
+.design-system-card .design-system-card-content .mobile-sample p.header-update { font-family: OpenSans; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 16px; font-style: italic; }
+
+.design-system-card .design-system-card-content .mobile-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; font-weight: 400; }
 
 .design-system-card .design-system-card-links { background: #F5F5F5; border: solid 1px #EBEBEB; border-top: none; padding: 24px; }
 
