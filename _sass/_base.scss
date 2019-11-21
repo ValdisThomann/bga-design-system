@@ -21,6 +21,8 @@ p {
 }
 
 .c-padding-bottom {
+    padding-bottom: 0 !important;
+    
     p:last-child, 
     ol:last-child,
     ul:last-child {
