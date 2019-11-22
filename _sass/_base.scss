@@ -1,7 +1,14 @@
 /* GLOBAL */
 
+.page-header {
+    padding: 48px 0;
+}
 h1, h2 {
     font-weight: 600;
+}
+h3 {
+    padding: 16px 0;
+    margin-bottom: 0px !important;
 }
 
 hr {
@@ -86,6 +93,9 @@ a.breadcrumb-link
     }
 }
 
+.footer-wrapper {
+    margin-top: 48px;
+}
 .footer {
     .footer-top-links-top {
         padding: 2rem 16px;

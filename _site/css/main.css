@@ -4866,7 +4866,11 @@ div.chat-later a { color: #fff; text-decoration: none; }
   .main-section .twoCol39-right .anchor-section-full-width { padding-left: 0; } }
 
 /* GLOBAL */
+.page-header { padding: 48px 0; }
+
 h1, h2 { font-weight: 600; }
+
+h3 { padding: 16px 0; margin-bottom: 0px !important; }
 
 hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0 0 1.5rem; text-align: left; width: 3.25rem; }
 
@@ -4897,6 +4901,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 #navigation-bar .navigation-main-menu a:hover { text-decoration: underline; }
 
 #navigation-bar .navigation-main-menu:hover { background: #18335C; }
+
+.footer-wrapper { margin-top: 48px; }
 
 .footer .footer-top-links-top { padding: 2rem 16px; }
 
@@ -4983,19 +4989,19 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card code { color: #254F90; font-size: 0.85rem; line-height: 16px; }
 
-.design-system-card .design-system-card-header { background: #254F90; padding: 24px; border: solid 1px #254F90; }
+.design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; border-top: solid 4px #254F90; border-left: solid 1px #D8D8D8; border-right: solid 1px #D8D8D8; }
 
-.design-system-card .design-system-card-header h1, .design-system-card .design-system-card-header h2, .design-system-card .design-system-card-header h3, .design-system-card .design-system-card-header h4, .design-system-card .design-system-card-header h5, .design-system-card .design-system-card-header h6 { padding: 0; margin: 0; color: #ffffff; font-family: OpenSans-Semibold; }
+.design-system-card .design-system-card-header h1, .design-system-card .design-system-card-header h2, .design-system-card .design-system-card-header h3, .design-system-card .design-system-card-header h4, .design-system-card .design-system-card-header h5, .design-system-card .design-system-card-header h6 { padding: 0; margin: 0; font-family: OpenSans-Semibold; }
 
-.design-system-card .design-system-card-content { padding: 24px; background: #F5F5F5; border: solid 1px #D8D8D8; }
+.design-system-card .design-system-card-content { padding: 24px; background: #ffffff; border: solid 1px #D8D8D8; border-top: none; }
 
-.design-system-card .design-system-card-content .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #ffffff url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-weight: 600; padding-left: 16px; padding-right: 60px; display: block; }
+.design-system-card .design-system-card-content .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #F5F5F5 url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-weight: 600; padding-left: 16px; padding-right: 60px; display: block; }
 
-.design-system-card .design-system-card-content .element-design.closed { background: #ffffff url(../assets/Icon-chevron-down-blue.svg) no-repeat; background-position: right 24px center; }
+.design-system-card .design-system-card-content .element-design.closed { background: #F5F5F5 url(../assets/Icon-chevron-down-blue.svg) no-repeat; background-position: right 24px center; }
 
 .design-system-card .design-system-card-content .element-design::before { content: ""; }
 
-.design-system-card .design-system-card-content .element-code { padding: 24px; border: solid 1px #D8D8D8; border-top: none; background: #ffffff; display: none; }
+.design-system-card .design-system-card-content .element-code { padding: 24px; border: solid 1px #D8D8D8; border-top: none; background: #F5F5F5; display: none; }
 
 .design-system-card .design-system-card-content .element-code.open { display: block; }
 
@@ -5039,6 +5045,10 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-content .desktop-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 16px; text-transform: uppercase; font-weight: 400; }
 
+.design-system-card .design-system-card-content .desktop-sample p.icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center; height: 16px; }
+
+.design-system-card .design-system-card-content .desktop-sample p.standard-container { background: #ffffff; padding: 32px 16px; border: none; border-top: 4px solid #254F90; height: 80px; }
+
 .design-system-card .design-system-card-content .mobile-sample { padding-bottom: 32px; }
 
 .design-system-card .design-system-card-content .mobile-sample h1, .design-system-card .design-system-card-content .mobile-sample h2, .design-system-card .design-system-card-content .mobile-sample h3, .design-system-card .design-system-card-content .mobile-sample h4, .design-system-card .design-system-card-content .mobile-sample h5, .design-system-card .design-system-card-content .mobile-sample p { margin: 0; padding: 0; color: #333333; }
@@ -5073,7 +5083,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-content .mobile-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; font-weight: 400; }
 
-.design-system-card .design-system-card-links { background: #F5F5F5; border: solid 1px #EBEBEB; border-top: none; padding: 24px; }
+.design-system-card .design-system-card-links { background: #ffffff; border: solid 1px #EBEBEB; border-top: none; padding: 24px; }
 
 .design-system-card .design-system-card-links a { color: #254F90; text-decoration: none; border: none; font-family: OpenSans-Semibold; font-weight: normal; box-shadow: none; padding-left: 32px; background: url(../assets/Icon-arrow-right-blue.svg) no-repeat; background-position: left center; }
 
@@ -5174,6 +5184,10 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card.no-header .design-system-card-links { background: #ffffff; }
 
 .responsive-img { max-width: 100%; width: 100%; margin-bottom: 24px; border: solid 1px #D8D8D8; }
+
+.responsive-img.tablet { max-width: 500px; }
+
+.responsive-img.mobile { max-width: 250px; }
 
 .grey-background { background: #EBEBEB; }
 

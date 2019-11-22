@@ -45,9 +45,10 @@ $(document).ready(function () {
     
     /*----------- Add side-menu (sticky_list) functionality ----------- */
     
-    // Function to change active side menu state on scroll (called within the if .anchor-menu .sticky-container  exisits block)
+    // Function to change active side menu state on scroll (called within the if .anchor-menu .sticky-container exists block)
     function add_position(positions) {
-            for ( var i = 0; i < positions.length; i++) {
+        console.log(positions);    
+        for ( var i = 0; i < positions.length; i++) {
                 var top_position = positions[i] - 40;
                 if ( $(window).scrollTop() >= top_position) {
                     $('.anchor-menu a').removeClass('active-sticky');
@@ -106,7 +107,7 @@ $(document).ready(function () {
             var a_text = $(this).text(),
                 element_id = '#' + sticky_list_2[a_text],
                 element_position = $(element_id).offset();
-            $(this).attr('data-value', element_position.top);
+            $(this).attr('data-value', Math.round(element_position.top));
         
             $(this).on('click', function(){
                 $([document.documentElement, document.body]).animate(
@@ -121,7 +122,7 @@ $(document).ready(function () {
         var positions = [];
         $('.anchor-menu a').each(function(){
             var element_position = $(this).attr('data-value');
-            positions.push(element_position);
+            positions.push(Math.round(element_position));
         }); 
     
         $(window).scroll(function(){
