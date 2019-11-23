@@ -7,12 +7,20 @@
     margin-bottom: 32px;
     box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, .1);
     
-    code {
+    &.example-wrapper {
+        background: $grey-lighter;
+        box-shadow: none;
+        padding: 32px;
+        display: inline-block;
+    }
+    
+    code pre {
         color: $blue-primary;
         font-size: 0.85rem;
-        line-height: 16px;
+        line-height: 20px;
+        margin: 0;
     }
-
+  
     .design-system-card-header {
         background: $white;
         padding: 32px 24px 16px;
@@ -37,15 +45,39 @@
         background: $white;
         border: solid 1px $grey-light;
         border-top: none;
-
-        .element-design {
+    }
+           
+    .design-system-card-links {
+        background: $white;
+        border: solid 1px $grey-lighter;
+        border-top: none;
+        padding: 24px;
+        
+        a {
+            color: $blue-primary;
+            text-decoration: none;
+            border: none;
+            font-family: OpenSans-Semibold;
+            font-weight: normal;
+            box-shadow: none;
+            padding-left: 32px;
+            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat;
+            background-position: left center;
+            
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+    
+    .element-design {
             padding: 24px;
             border: solid 1px $grey-light;
-            background: $grey-lightest url(../assets/Icon-chevron-up-blue.svg) no-repeat;
+            background: $white url(../assets/Icon-chevron-up-blue.svg) no-repeat;
             background-position: right 24px center;
             
             &.closed {
-                background: $grey-lightest url(../assets/Icon-chevron-down-blue.svg) no-repeat;
+                background: $white url(../assets/Icon-chevron-down-blue.svg) no-repeat;
                 background-position: right 24px center;
             }
             font-weight: 600;
@@ -58,7 +90,7 @@
                 }
         }
         
-        .element-code {
+    .element-code {
             padding: 24px;
             border: solid 1px $grey-light;
             border-top: none;
@@ -75,9 +107,12 @@
                     margin-top: 0 !important    ;
                 }
             }
-        }
-
-        .desktop-sample {
+            a {
+                color: $blue-primary;
+            }
+        } 
+        
+    .desktop-sample {
 
             h1, h2, h3, h4, h5, p {
                 margin: 0;
@@ -196,21 +231,10 @@
                 text-transform: uppercase;
                 font-weight: 400;
             }
-            p.icon-link {
-                background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center;
-                height: 16px;
-            }
-            p.standard-container {
-                background: $white;
-                padding: 32px 16px;
-                border: none;
-                border-top: 4px solid $blue-primary;
-                height: 80px;
-            }
-        }
+            
+}
 
-
-        .mobile-sample {
+    .mobile-sample {
             h1, h2, h3, h4, h5, p {
                 margin: 0;
                 padding: 0;
@@ -324,32 +348,105 @@
             
         }
         
-        
-    }
-
-    .design-system-card-links {
-        background: $white;
-        border: solid 1px $grey-lighter;
-        border-top: none;
-        padding: 24px;
-        
-        a {
-            color: $blue-primary;
-            text-decoration: none;
-            border: none;
-            font-family: OpenSans-Semibold;
-            font-weight: normal;
-            box-shadow: none;
-            padding-left: 32px;
-            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat;
-            background-position: left center;
-            
+    .standard-pathway {
+            h3 {
+                &:hover {
+                    color: $blue-primary;
+                    text-decoration: underline;
+                }
+            }
+            .icon-link {
+                background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
+                height: 32px; 
+                
+                &:hover {
+                    background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
+                    height: 32px; 
+                    
+                }
+            }
+            .standard-container {
+                background: $white;
+                padding: 24px;
+                border: none;
+                border-top: 4px solid $blue-primary;
+                height: 80px;
+                box-shadow: 0 0.125rem 0.75rem 0 rgba(0,0,0,.2);
+                transition-property: transform, -webkit-transform;
+                transition-duration: 0.4s, 0.4s;
+                transition-timing-function: ease, ease;
+                transition-delay: 0s, 0s;
+                
+                &:hover {
+                    transform: translateY(-.1875rem);
+                }
+            }
+        &.example {
+            .description {
+                padding-bottom: 48px;
+            }
+            .standard-container {
+                height: auto;
+                max-width: 340px;
+                
+            } 
             &:hover {
-                box-shadow: none;
+                h3 {
+                    color: $blue-primary;
+                    text-decoration: underline;
+                }
+                .icon-link {
+                    background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
+                    height: 32px; 
+                }
             }
         }
     }
-    
+     
+    .light-pathway {
+        h3 {
+            &:hover {
+                color: $blue-primary;
+                text-decoration: underline;
+            }
+        }
+        .icon-link {
+            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
+            height: 32px; 
+        }
+        .standard-container {
+            background: $white;
+            padding: 24px;
+            border: none;
+            border-top: 4px solid $blue-primary-light;
+            height: 80px;
+            transition-property: transform, -webkit-transform;
+            transition-duration: 0.4s, 0.4s;
+            transition-timing-function: ease, ease;
+            transition-delay: 0s, 0s;
+
+            &:hover {
+                transform: translateY(-.1875rem);
+                background: $blue-primary-lightest;
+            }
+        }
+    &.example {
+        .description {
+            padding-bottom: 48px;
+        }
+        .standard-container {
+            height: auto;
+            max-width: 340px;
+        } 
+        &:hover {
+            h3 {
+                color: $blue-primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
     &.no-header {
         border-top: 4px solid $blue-primary;
         background: $white;
@@ -501,9 +598,6 @@
     }
 }
 
-.layouts {
-    
-}
 
 .responsive-img {
     max-width:100%;

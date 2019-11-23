@@ -4987,7 +4987,9 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 /* Design system styles */
 .design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); }
 
-.design-system-card code { color: #254F90; font-size: 0.85rem; line-height: 16px; }
+.design-system-card.example-wrapper { background: #EBEBEB; box-shadow: none; padding: 32px; display: inline-block; }
+
+.design-system-card code pre { color: #254F90; font-size: 0.85rem; line-height: 20px; margin: 0; }
 
 .design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; border-top: solid 4px #254F90; border-left: solid 1px #D8D8D8; border-right: solid 1px #D8D8D8; }
 
@@ -4995,99 +4997,129 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-content { padding: 24px; background: #ffffff; border: solid 1px #D8D8D8; border-top: none; }
 
-.design-system-card .design-system-card-content .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #F5F5F5 url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-weight: 600; padding-left: 16px; padding-right: 60px; display: block; }
-
-.design-system-card .design-system-card-content .element-design.closed { background: #F5F5F5 url(../assets/Icon-chevron-down-blue.svg) no-repeat; background-position: right 24px center; }
-
-.design-system-card .design-system-card-content .element-design::before { content: ""; }
-
-.design-system-card .design-system-card-content .element-code { padding: 24px; border: solid 1px #D8D8D8; border-top: none; background: #F5F5F5; display: none; }
-
-.design-system-card .design-system-card-content .element-code.open { display: block; }
-
-.design-system-card .design-system-card-content .element-code h5 { margin-top: 16px !important; }
-
-.design-system-card .design-system-card-content .element-code h5:first-of-type { margin-top: 0 !important; }
-
-.design-system-card .design-system-card-content .desktop-sample { padding-bottom: 32px; }
-
-.design-system-card .design-system-card-content .desktop-sample h1, .design-system-card .design-system-card-content .desktop-sample h2, .design-system-card .design-system-card-content .desktop-sample h3, .design-system-card .design-system-card-content .desktop-sample h4, .design-system-card .design-system-card-content .desktop-sample h5, .design-system-card .design-system-card-content .desktop-sample p { margin: 0; padding: 0; color: #333333; }
-
-.design-system-card .design-system-card-content .desktop-sample h1 { font-family: OpenSans-Semibold; font-size: 44px; line-height: 56px; }
-
-.design-system-card .design-system-card-content .desktop-sample h2 { font-family: OpenSans-Semibold; font-size: 32px; line-height: 40px; }
-
-.design-system-card .design-system-card-content .desktop-sample h3 { font-family: OpenSans-Semibold; font-size: 21px; letter-spacing: 0; line-height: 28px; }
-
-.design-system-card .design-system-card-content .desktop-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
-
-.design-system-card .design-system-card-content .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
-
-.design-system-card .design-system-card-content .desktop-sample p { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 32px; font-weight: 400; }
-
-.design-system-card .design-system-card-content .desktop-sample p.body-mini { font-family: OpenSans; font-size: 14px; letter-spacing: 0; line-height: 24px; }
-
-.design-system-card .design-system-card-content .desktop-sample li { font-family: OpenSans; font-size: 16px; letter-spacing: 0; line-height: 32px; font-weight: 400; }
-
-.design-system-card .design-system-card-content .desktop-sample p.blockquote { font-family: OpenSans; font-size: 21px; color: #333333; letter-spacing: 0.2px; text-align: center; line-height: 40px; font-weight: 400; }
-
-.design-system-card .design-system-card-content .desktop-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
-
-.design-system-card .design-system-card-content .desktop-sample .source { font-weight: 400; color: #666666; padding-top: 8px; font-size: 16px; }
-
-.design-system-card .design-system-card-content .desktop-sample .source hr { border-color: #666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
-
-.design-system-card .design-system-card-content .desktop-sample .hr-bottom { background-color: #edca72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
-
-.design-system-card .design-system-card-content .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
-
-.design-system-card .design-system-card-content .desktop-sample p.header-update { font-family: OpenSans; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 24px; font-style: italic; }
-
-.design-system-card .design-system-card-content .desktop-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 16px; text-transform: uppercase; font-weight: 400; }
-
-.design-system-card .design-system-card-content .desktop-sample p.icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center; height: 16px; }
-
-.design-system-card .design-system-card-content .desktop-sample p.standard-container { background: #ffffff; padding: 32px 16px; border: none; border-top: 4px solid #254F90; height: 80px; }
-
-.design-system-card .design-system-card-content .mobile-sample { padding-bottom: 32px; }
-
-.design-system-card .design-system-card-content .mobile-sample h1, .design-system-card .design-system-card-content .mobile-sample h2, .design-system-card .design-system-card-content .mobile-sample h3, .design-system-card .design-system-card-content .mobile-sample h4, .design-system-card .design-system-card-content .mobile-sample h5, .design-system-card .design-system-card-content .mobile-sample p { margin: 0; padding: 0; color: #333333; }
-
-.design-system-card .design-system-card-content .mobile-sample h1 { font-family: OpenSans-Semibold; font-size: 32px; letter-spacing: 0; line-height: 36px; }
-
-.design-system-card .design-system-card-content .mobile-sample h2 { font-family: OpenSans-Semibold; font-size: 24px; line-height: 32px; }
-
-.design-system-card .design-system-card-content .mobile-sample h3 { font-size: 21px; letter-spacing: 0; line-height: 30px; }
-
-.design-system-card .design-system-card-content .mobile-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
-
-.design-system-card .design-system-card-content .mobile-sample p { font-family: OpenSans; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; font-weight: 400; }
-
-.design-system-card .design-system-card-content .mobile-sample p.body-mini { font-family: OpenSans; font-size: 12px; letter-spacing: 0; line-height: 24px; }
-
-.design-system-card .design-system-card-content .mobile-sample li { font-family: OpenSans; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; font-weight: 400; }
-
-.design-system-card .design-system-card-content .mobile-sample p.blockquote { font-family: OpenSans; font-size: 18px; color: #333333; letter-spacing: 0.2px; text-align: center; line-height: 24px; font-weight: 400; }
-
-.design-system-card .design-system-card-content .mobile-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
-
-.design-system-card .design-system-card-content .mobile-sample .source { font-weight: 400; color: #666666; padding-top: 8px; font-size: 14px; }
-
-.design-system-card .design-system-card-content .mobile-sample .source hr { border-color: #666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
-
-.design-system-card .design-system-card-content .mobile-sample .hr-bottom { background-color: #edca72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
-
-.design-system-card .design-system-card-content .mobile-sample p.header-intro { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
-
-.design-system-card .design-system-card-content .mobile-sample p.header-update { font-family: OpenSans; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 16px; font-style: italic; }
-
-.design-system-card .design-system-card-content .mobile-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; font-weight: 400; }
-
 .design-system-card .design-system-card-links { background: #ffffff; border: solid 1px #EBEBEB; border-top: none; padding: 24px; }
 
 .design-system-card .design-system-card-links a { color: #254F90; text-decoration: none; border: none; font-family: OpenSans-Semibold; font-weight: normal; box-shadow: none; padding-left: 32px; background: url(../assets/Icon-arrow-right-blue.svg) no-repeat; background-position: left center; }
 
 .design-system-card .design-system-card-links a:hover { box-shadow: none; }
+
+.design-system-card .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #ffffff url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-weight: 600; padding-left: 16px; padding-right: 60px; display: block; }
+
+.design-system-card .element-design.closed { background: #ffffff url(../assets/Icon-chevron-down-blue.svg) no-repeat; background-position: right 24px center; }
+
+.design-system-card .element-design::before { content: ""; }
+
+.design-system-card .element-code { padding: 24px; border: solid 1px #D8D8D8; border-top: none; background: #F5F5F5; display: none; }
+
+.design-system-card .element-code.open { display: block; }
+
+.design-system-card .element-code h5 { margin-top: 16px !important; }
+
+.design-system-card .element-code h5:first-of-type { margin-top: 0 !important; }
+
+.design-system-card .element-code a { color: #254F90; }
+
+.design-system-card .desktop-sample { padding-bottom: 32px; }
+
+.design-system-card .desktop-sample h1, .design-system-card .desktop-sample h2, .design-system-card .desktop-sample h3, .design-system-card .desktop-sample h4, .design-system-card .desktop-sample h5, .design-system-card .desktop-sample p { margin: 0; padding: 0; color: #333333; }
+
+.design-system-card .desktop-sample h1 { font-family: OpenSans-Semibold; font-size: 44px; line-height: 56px; }
+
+.design-system-card .desktop-sample h2 { font-family: OpenSans-Semibold; font-size: 32px; line-height: 40px; }
+
+.design-system-card .desktop-sample h3 { font-family: OpenSans-Semibold; font-size: 21px; letter-spacing: 0; line-height: 28px; }
+
+.design-system-card .desktop-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
+
+.design-system-card .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
+
+.design-system-card .desktop-sample p { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 32px; font-weight: 400; }
+
+.design-system-card .desktop-sample p.body-mini { font-family: OpenSans; font-size: 14px; letter-spacing: 0; line-height: 24px; }
+
+.design-system-card .desktop-sample li { font-family: OpenSans; font-size: 16px; letter-spacing: 0; line-height: 32px; font-weight: 400; }
+
+.design-system-card .desktop-sample p.blockquote { font-family: OpenSans; font-size: 21px; color: #333333; letter-spacing: 0.2px; text-align: center; line-height: 40px; font-weight: 400; }
+
+.design-system-card .desktop-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
+
+.design-system-card .desktop-sample .source { font-weight: 400; color: #666666; padding-top: 8px; font-size: 16px; }
+
+.design-system-card .desktop-sample .source hr { border-color: #666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+
+.design-system-card .desktop-sample .hr-bottom { background-color: #edca72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
+
+.design-system-card .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
+
+.design-system-card .desktop-sample p.header-update { font-family: OpenSans; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 24px; font-style: italic; }
+
+.design-system-card .desktop-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 16px; text-transform: uppercase; font-weight: 400; }
+
+.design-system-card .mobile-sample { padding-bottom: 32px; }
+
+.design-system-card .mobile-sample h1, .design-system-card .mobile-sample h2, .design-system-card .mobile-sample h3, .design-system-card .mobile-sample h4, .design-system-card .mobile-sample h5, .design-system-card .mobile-sample p { margin: 0; padding: 0; color: #333333; }
+
+.design-system-card .mobile-sample h1 { font-family: OpenSans-Semibold; font-size: 32px; letter-spacing: 0; line-height: 36px; }
+
+.design-system-card .mobile-sample h2 { font-family: OpenSans-Semibold; font-size: 24px; line-height: 32px; }
+
+.design-system-card .mobile-sample h3 { font-size: 21px; letter-spacing: 0; line-height: 30px; }
+
+.design-system-card .mobile-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
+
+.design-system-card .mobile-sample p { font-family: OpenSans; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; font-weight: 400; }
+
+.design-system-card .mobile-sample p.body-mini { font-family: OpenSans; font-size: 12px; letter-spacing: 0; line-height: 24px; }
+
+.design-system-card .mobile-sample li { font-family: OpenSans; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; font-weight: 400; }
+
+.design-system-card .mobile-sample p.blockquote { font-family: OpenSans; font-size: 18px; color: #333333; letter-spacing: 0.2px; text-align: center; line-height: 24px; font-weight: 400; }
+
+.design-system-card .mobile-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
+
+.design-system-card .mobile-sample .source { font-weight: 400; color: #666666; padding-top: 8px; font-size: 14px; }
+
+.design-system-card .mobile-sample .source hr { border-color: #666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+
+.design-system-card .mobile-sample .hr-bottom { background-color: #edca72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
+
+.design-system-card .mobile-sample p.header-intro { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
+
+.design-system-card .mobile-sample p.header-update { font-family: OpenSans; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 16px; font-style: italic; }
+
+.design-system-card .mobile-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; font-weight: 400; }
+
+.design-system-card .standard-pathway h3:hover { color: #254F90; text-decoration: underline; }
+
+.design-system-card .standard-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; height: 32px; }
+
+.design-system-card .standard-pathway .icon-link:hover { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; }
+
+.design-system-card .standard-pathway .standard-container { background: #ffffff; padding: 24px; border: none; border-top: 4px solid #254F90; height: 80px; box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.2); transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+
+.design-system-card .standard-pathway .standard-container:hover { transform: translateY(-0.1875rem); }
+
+.design-system-card .standard-pathway.example .description { padding-bottom: 48px; }
+
+.design-system-card .standard-pathway.example .standard-container { height: auto; max-width: 340px; }
+
+.design-system-card .standard-pathway.example:hover h3 { color: #254F90; text-decoration: underline; }
+
+.design-system-card .standard-pathway.example:hover .icon-link { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; }
+
+.design-system-card .light-pathway h3:hover { color: #254F90; text-decoration: underline; }
+
+.design-system-card .light-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; height: 32px; }
+
+.design-system-card .light-pathway .standard-container { background: #ffffff; padding: 24px; border: none; border-top: 4px solid #B3C2D8; height: 80px; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+
+.design-system-card .light-pathway .standard-container:hover { transform: translateY(-0.1875rem); background: #EFF4FB; }
+
+.design-system-card .light-pathway.example .description { padding-bottom: 48px; }
+
+.design-system-card .light-pathway.example .standard-container { height: auto; max-width: 340px; }
+
+.design-system-card .light-pathway.example:hover h3 { color: #254F90; text-decoration: underline; }
 
 .design-system-card.no-header { border-top: 4px solid #254F90; background: #ffffff; }
 
