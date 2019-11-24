@@ -37,8 +37,12 @@ $(document).ready(function () {
     
     /*----------- Design system cards ----------- */
     $('.element-design').on('click', function(){
-        $(this).toggleClass('closed');
-        $(this).next('.element-code').toggleClass('open');
+        if($(this).hasClass('unavailable')) {
+            return;
+        } else {
+            $(this).toggleClass('closed');
+            $(this).next('.element-code').toggleClass('open');
+        }
     });
     
     
