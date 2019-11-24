@@ -77,3 +77,15 @@ $green-positive-dark: #297E28;
 $green-positive-mid: #219520;
 $green-positive-light: #A6D5A6;
 $green-positive-lightest: #E8F4E8;
+
+
+// FONTS
+$font-family: 'Open Sans', sans-serif;
+$font-regular: 400;
+$font-semibold: 600;
+
+@mixin font-format($font, $font-weight, $font-style) {
+    font-family: $font;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}

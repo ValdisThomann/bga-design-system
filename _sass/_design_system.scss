@@ -40,7 +40,7 @@
         h6 {
             padding: 0;
             margin: 0;
-            font-family: OpenSans-Semibold;
+            @include font-format($font-family, $font-semibold, normal);
         }
     }
 
@@ -58,11 +58,10 @@
         padding: 24px;
         
         a {
+            @include font-format($font-family, $font-semibold, normal);
             color: $blue-primary;
             text-decoration: none;
             border: none;
-            font-family: OpenSans-Semibold;
-            font-weight: normal;
             box-shadow: none;
             padding-left: 32px;
             background: url(../assets/Icon-arrow-right-blue.svg) no-repeat;
