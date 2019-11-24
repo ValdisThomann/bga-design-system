@@ -12,6 +12,10 @@
         box-shadow: none;
         padding: 32px;
         display: inline-block;
+        
+        &.white-back {
+            background: $white;
+        }
     }
     
     code pre {
@@ -387,7 +391,7 @@
             }
             .standard-container {
                 height: auto;
-                max-width: 340px;
+                max-width: 374px;
                 
             } 
             &:hover {
@@ -404,20 +408,35 @@
     }
      
     .light-pathway {
+        transition-property: transform, -webkit-transform;
+        transition-duration: 0.4s, 0.4s;
+        transition-timing-function: ease, ease;
+        transition-delay: 0s, 0s;
+        
         h3 {
+            padding: 0 0 16px 0;
             &:hover {
                 color: $blue-primary;
                 text-decoration: underline;
+                transform: translate(1rem);
+            }
+        }
+        .description {
+            &:hover {
+                transform: translate(1rem);
             }
         }
         .icon-link {
-            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
-            height: 32px; 
+            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center;
+            height: 16px; 
+            padding: 0;
+            
+            &:hover {
+                transform: translate(1rem);
+            }
         }
-        .standard-container {
-            background: $white;
-            padding: 24px;
-            border: none;
+        .light-container {
+            padding: 16px 24px 24px 0;
             border-top: 4px solid $blue-primary-light;
             height: 80px;
             transition-property: transform, -webkit-transform;
@@ -426,22 +445,40 @@
             transition-delay: 0s, 0s;
 
             &:hover {
-                transform: translateY(-.1875rem);
                 background: $blue-primary-lightest;
             }
         }
     &.example {
+        border-top: 4px solid $blue-primary-light;
+        background: $white;
+        
         .description {
-            padding-bottom: 48px;
-        }
-        .standard-container {
+            padding-bottom: 16px;
+        }   
+        .light-container {
             height: auto;
-            max-width: 340px;
+            max-width: 374px;
+            padding: 16px 24px 24px 0;
+            border-top: none;
+            background: none;
         } 
         &:hover {
+            background: $blue-primary-lightest;
+            transition-property: transform, -webkit-transform;
+            transition-duration: 0.4s, 0.4s;
+            transition-timing-function: ease, ease;
+            transition-delay: 0s, 0s;
+            
             h3 {
                 color: $blue-primary;
                 text-decoration: underline;
+                transform: none;
+            }
+            .icon-link, .description {
+                transform: none;    
+            }
+            .light-container {
+                transform: translateX(1rem);
             }
         }
     }

@@ -4989,6 +4989,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.example-wrapper { background: #EBEBEB; box-shadow: none; padding: 32px; display: inline-block; }
 
+.design-system-card.example-wrapper.white-back { background: #ffffff; }
+
 .design-system-card code pre { color: #254F90; font-size: 0.85rem; line-height: 20px; margin: 0; }
 
 .design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; border-top: solid 4px #254F90; border-left: solid 1px #D8D8D8; border-right: solid 1px #D8D8D8; }
@@ -5101,25 +5103,41 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .standard-pathway.example .description { padding-bottom: 48px; }
 
-.design-system-card .standard-pathway.example .standard-container { height: auto; max-width: 340px; }
+.design-system-card .standard-pathway.example .standard-container { height: auto; max-width: 374px; }
 
 .design-system-card .standard-pathway.example:hover h3 { color: #254F90; text-decoration: underline; }
 
 .design-system-card .standard-pathway.example:hover .icon-link { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; }
 
-.design-system-card .light-pathway h3:hover { color: #254F90; text-decoration: underline; }
+.design-system-card .light-pathway { transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
 
-.design-system-card .light-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; height: 32px; }
+.design-system-card .light-pathway h3 { padding: 0 0 16px 0; }
 
-.design-system-card .light-pathway .standard-container { background: #ffffff; padding: 24px; border: none; border-top: 4px solid #B3C2D8; height: 80px; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+.design-system-card .light-pathway h3:hover { color: #254F90; text-decoration: underline; transform: translate(1rem); }
 
-.design-system-card .light-pathway .standard-container:hover { transform: translateY(-0.1875rem); background: #EFF4FB; }
+.design-system-card .light-pathway .description:hover { transform: translate(1rem); }
 
-.design-system-card .light-pathway.example .description { padding-bottom: 48px; }
+.design-system-card .light-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center; height: 16px; padding: 0; }
 
-.design-system-card .light-pathway.example .standard-container { height: auto; max-width: 340px; }
+.design-system-card .light-pathway .icon-link:hover { transform: translate(1rem); }
 
-.design-system-card .light-pathway.example:hover h3 { color: #254F90; text-decoration: underline; }
+.design-system-card .light-pathway .light-container { padding: 16px 24px 24px 0; border-top: 4px solid #B3C2D8; height: 80px; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+
+.design-system-card .light-pathway .light-container:hover { background: #EFF4FB; }
+
+.design-system-card .light-pathway.example { border-top: 4px solid #B3C2D8; background: #ffffff; }
+
+.design-system-card .light-pathway.example .description { padding-bottom: 16px; }
+
+.design-system-card .light-pathway.example .light-container { height: auto; max-width: 374px; padding: 16px 24px 24px 0; border-top: none; background: none; }
+
+.design-system-card .light-pathway.example:hover { background: #EFF4FB; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+
+.design-system-card .light-pathway.example:hover h3 { color: #254F90; text-decoration: underline; transform: none; }
+
+.design-system-card .light-pathway.example:hover .icon-link, .design-system-card .light-pathway.example:hover .description { transform: none; }
+
+.design-system-card .light-pathway.example:hover .light-container { transform: translateX(1rem); }
 
 .design-system-card.no-header { border-top: 4px solid #254F90; background: #ffffff; }
 
