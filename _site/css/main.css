@@ -4986,7 +4986,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .desktop-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
 
-.design-system-card .desktop-sample p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 32px; }
+.design-system-card .desktop-sample p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
 
 .design-system-card .desktop-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0; line-height: 24px; }
 
@@ -5014,13 +5014,15 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .mobile-sample h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 32px; letter-spacing: 0; line-height: 36px; }
 
-.design-system-card .mobile-sample h2 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 24px; line-height: 32px; }
+.design-system-card .mobile-sample h2 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 24px; line-height: 30px; }
 
-.design-system-card .mobile-sample h3 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 21px; letter-spacing: 0; line-height: 30px; }
+.design-system-card .mobile-sample h3 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 21px; letter-spacing: 0; line-height: 32px; }
 
 .design-system-card .mobile-sample h4 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 18px; letter-spacing: 0; line-height: 28px; }
 
-.design-system-card .mobile-sample p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; }
+.design-system-card .mobile-sample h5 { line-height: 24px; }
+
+.design-system-card .mobile-sample p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
 
 .design-system-card .mobile-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: 0; line-height: 24px; }
 
@@ -5120,7 +5122,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.no-header .design-system-card-content .colours p { font-size: .8rem; line-height: 1.2rem; margin: 8px 0 24px; }
 
-.design-system-card.no-header .design-system-card-content .colours span { font-family: OpenSans-Semibold; }
+.design-system-card.no-header .design-system-card-content .colours span { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
 .design-system-card.no-header .design-system-card-content .colours.empty { border-top: 60px solid #ffffff; }
 

@@ -163,7 +163,7 @@
                 @include font-format($font-family, $font-regular, normal);
                 font-size: 16px;
                 letter-spacing: 0.2px;
-                line-height: 32px;
+                line-height: 28px;
             }
             p.body-mini {
                 @include font-format($font-family, $font-regular, normal);
@@ -254,13 +254,13 @@
             h2 {
                 @include font-format($font-family, $font-semibold, normal);
                 font-size: 24px;
-                line-height: 32px;
+                line-height: 30px;
             }
             h3 {
                 @include font-format($font-family, $font-semibold, normal);
                 font-size: 21px;
                 letter-spacing: 0;
-                line-height: 30px;
+                line-height: 32px;
             }
             h4 {
                 @include font-format($font-family, $font-semibold, normal);
@@ -268,11 +268,15 @@
                 letter-spacing: 0;
                 line-height: 28px;
             }
+
+            h5 {
+                line-height: 24px;
+            }
             p {
                 @include font-format($font-family, $font-regular, normal);
-                font-size: 14px;
+                font-size: 16px;
                 letter-spacing: 0.2px;
-                line-height: 24px;
+                line-height: 28px;
             }
             p.body-mini {
                 @include font-format($font-family, $font-regular, normal);
@@ -552,7 +556,7 @@
                     margin: 8px 0 24px;
                 }
                 span {
-                    font-family: OpenSans-Semibold;
+                    @include font-format($font-family, $font-semibold, normal);
                 }
                 
                 &.empty {
@@ -732,8 +736,6 @@
                 &.negative-tint2 {
                     border-top: 60px solid $red-negative-lightest;
                 }
-                
-                
             }
         }
         .design-system-card-links {
