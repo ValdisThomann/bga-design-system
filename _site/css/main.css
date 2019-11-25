@@ -4954,7 +4954,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-links a:hover { box-shadow: none; }
 
-.design-system-card .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #ffffff url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-weight: 600; padding-left: 16px; padding-right: 60px; display: block; }
+.design-system-card .element-design { padding: 24px; border: solid 1px #D8D8D8; background: #ffffff url(../assets/Icon-chevron-up-blue.svg) no-repeat; background-position: right 24px center; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding-left: 16px; padding-right: 60px; display: block; }
 
 .design-system-card .element-design.closed { background: #ffffff url(../assets/Icon-chevron-down-blue.svg) no-repeat; background-position: right 24px center; }
 
@@ -4976,71 +4976,71 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .desktop-sample h1, .design-system-card .desktop-sample h2, .design-system-card .desktop-sample h3, .design-system-card .desktop-sample h4, .design-system-card .desktop-sample h5, .design-system-card .desktop-sample p { margin: 0; padding: 0; color: #333333; }
 
-.design-system-card .desktop-sample h1 { font-family: OpenSans-Semibold; font-size: 44px; line-height: 56px; }
+.design-system-card .desktop-sample h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 44px; line-height: 56px; }
 
-.design-system-card .desktop-sample h2 { font-family: OpenSans-Semibold; font-size: 32px; line-height: 40px; }
+.design-system-card .desktop-sample h2 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 32px; line-height: 40px; }
 
-.design-system-card .desktop-sample h3 { font-family: OpenSans-Semibold; font-size: 21px; letter-spacing: 0; line-height: 28px; }
+.design-system-card .desktop-sample h3 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 21px; letter-spacing: 0; line-height: 28px; }
 
-.design-system-card .desktop-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
+.design-system-card .desktop-sample h4 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 18px; letter-spacing: 0; line-height: 28px; }
 
-.design-system-card .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
+.design-system-card .desktop-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
 
-.design-system-card .desktop-sample p { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 32px; font-weight: 400; }
+.design-system-card .desktop-sample p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 32px; }
 
-.design-system-card .desktop-sample p.body-mini { font-family: OpenSans; font-size: 14px; letter-spacing: 0; line-height: 24px; }
+.design-system-card .desktop-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0; line-height: 24px; }
 
-.design-system-card .desktop-sample li { font-family: OpenSans; font-size: 16px; letter-spacing: 0; line-height: 32px; font-weight: 400; }
+.design-system-card .desktop-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; line-height: 32px; }
 
-.design-system-card .desktop-sample p.blockquote { font-family: OpenSans; font-size: 21px; color: #333333; letter-spacing: 0.2px; text-align: center; line-height: 40px; font-weight: 400; }
+.design-system-card .desktop-sample p.blockquote { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 21px; letter-spacing: 0.2px; text-align: center; line-height: 40px; }
 
 .design-system-card .desktop-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
 
-.design-system-card .desktop-sample .source { font-weight: 400; color: #666666; padding-top: 8px; font-size: 16px; }
+.design-system-card .desktop-sample .source { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; color: #666666; padding-top: 8px; font-size: 16px; }
 
-.design-system-card .desktop-sample .source hr { border-color: #666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+.design-system-card .desktop-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
 
-.design-system-card .desktop-sample .hr-bottom { background-color: #edca72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
+.design-system-card .desktop-sample .hr-bottom { background-color: #EDCA72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
 
-.design-system-card .desktop-sample p.header-intro { font-family: OpenSans; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
+.design-system-card .desktop-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
 
-.design-system-card .desktop-sample p.header-update { font-family: OpenSans; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 24px; font-style: italic; }
+.design-system-card .desktop-sample p.header-update { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 24px; }
 
-.design-system-card .desktop-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 16px; text-transform: uppercase; font-weight: 400; }
+.design-system-card .desktop-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 16px; text-transform: uppercase; }
 
 .design-system-card .mobile-sample { padding-bottom: 32px; }
 
 .design-system-card .mobile-sample h1, .design-system-card .mobile-sample h2, .design-system-card .mobile-sample h3, .design-system-card .mobile-sample h4, .design-system-card .mobile-sample h5, .design-system-card .mobile-sample p { margin: 0; padding: 0; color: #333333; }
 
-.design-system-card .mobile-sample h1 { font-family: OpenSans-Semibold; font-size: 32px; letter-spacing: 0; line-height: 36px; }
+.design-system-card .mobile-sample h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 32px; letter-spacing: 0; line-height: 36px; }
 
-.design-system-card .mobile-sample h2 { font-family: OpenSans-Semibold; font-size: 24px; line-height: 32px; }
+.design-system-card .mobile-sample h2 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 24px; line-height: 32px; }
 
-.design-system-card .mobile-sample h3 { font-size: 21px; letter-spacing: 0; line-height: 30px; }
+.design-system-card .mobile-sample h3 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 21px; letter-spacing: 0; line-height: 30px; }
 
-.design-system-card .mobile-sample h4 { font-family: OpenSans-Semibold; font-size: 18px; letter-spacing: 0; line-height: 28px; }
+.design-system-card .mobile-sample h4 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 18px; letter-spacing: 0; line-height: 28px; }
 
-.design-system-card .mobile-sample p { font-family: OpenSans; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; font-weight: 400; }
+.design-system-card .mobile-sample p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; }
 
-.design-system-card .mobile-sample p.body-mini { font-family: OpenSans; font-size: 12px; letter-spacing: 0; line-height: 24px; }
+.design-system-card .mobile-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: 0; line-height: 24px; }
 
-.design-system-card .mobile-sample li { font-family: OpenSans; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; font-weight: 400; }
+.design-system-card .mobile-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; }
 
-.design-system-card .mobile-sample p.blockquote { font-family: OpenSans; font-size: 18px; color: #333333; letter-spacing: 0.2px; text-align: center; line-height: 24px; font-weight: 400; }
+.design-system-card .mobile-sample p.blockquote { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; text-align: center; line-height: 24px; }
 
 .design-system-card .mobile-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
 
-.design-system-card .mobile-sample .source { font-weight: 400; color: #666666; padding-top: 8px; font-size: 14px; }
+.design-system-card .mobile-sample .source { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; color: #666666; padding-top: 8px; font-size: 14px; }
 
-.design-system-card .mobile-sample .source hr { border-color: #666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+.design-system-card .mobile-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
 
-.design-system-card .mobile-sample .hr-bottom { background-color: #edca72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
+.design-system-card .mobile-sample .hr-bottom { background-color: #EDCA72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
 
-.design-system-card .mobile-sample p.header-intro { font-family: OpenSans; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
+.design-system-card .mobile-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
 
-.design-system-card .mobile-sample p.header-update { font-family: OpenSans; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 16px; font-style: italic; }
+.design-system-card .mobile-sample p.header-update { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 16px; }
 
-.design-system-card .mobile-sample p.header-label { font-family: OpenSans; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; font-weight: 400; }
+.design-system-card .mobile-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; }
 
 .design-system-card .hero-pathway h3:hover { color: #254F90; text-decoration: underline; }
 

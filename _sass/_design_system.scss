@@ -88,7 +88,7 @@
                     background: $white;
                 }
             }
-            font-weight: 600;
+            @include font-format($font-family, $font-semibold, normal);
             padding-left: 16px;
             padding-right: 60px;
             display: block;
@@ -130,76 +130,72 @@
             padding-bottom: 32px;
             
             h1 {
-                font-family: OpenSans-Semibold;
+                @include font-format($font-family, $font-semibold, normal);
                 font-size: 44px;
                 line-height: 56px;
             }
             h2 {
-                font-family: OpenSans-Semibold;
+                @include font-format($font-family, $font-semibold, normal);
                 font-size: 32px;
                 line-height: 40px;
             }
             h3 {
-                font-family: OpenSans-Semibold;
+                @include font-format($font-family, $font-semibold, normal);
                 font-size: 21px;
                 letter-spacing: 0;
                 line-height: 28px;
             }
             h4 {
-                font-family: OpenSans-Semibold;
+                @include font-format($font-family, $font-semibold, normal);
                 font-size: 18px;
                 letter-spacing: 0;
                 line-height: 28px;
             }
 
             p.header-intro {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 18px;
                 letter-spacing: 0.2px;
                 line-height: 32px;
                 }
 
             p {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 16px;
                 letter-spacing: 0.2px;
                 line-height: 32px;
-                font-weight: 400;
             }
             p.body-mini {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 14px;
                 letter-spacing: 0;
                 line-height: 24px;
             }
             li {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 16px;
                 letter-spacing: 0;
                 line-height: 32px;
-                font-weight: 400;
             }
             p.blockquote {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 21px;
-                color: #333333;
                 letter-spacing: 0.2px;
                 text-align: center;
                 line-height: 40px;
-                font-weight: 400;
             }
             .pull-quote-direct svg {
                 display: block;
                 margin: 0 auto 24px;
             }
             .source {
-                font-weight: 400;
+                @include font-format($font-family, $font-regular, italic);
                 color: $grey-darker;
                 padding-top: 8px;
                 font-size: 16px;
                 
                 hr {
-                    border-color: #666;
+                    border-color: $grey-darker;
                     border-top-width: .125rem;
                     display: inline-block;
                     height: .125rem;
@@ -210,7 +206,7 @@
                 }
             }
             .hr-bottom {
-                background-color: #edca72;
+                background-color: $yellow-primary-mid;
                 border-top: 0;
                 height: .125rem;
                 margin: 0 auto;
@@ -218,26 +214,24 @@
                 margin-top: 24px;
             }
             p.header-intro {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 18px;
                 letter-spacing: 0.2px;
                 line-height: 32px;
             }
             p.header-update {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, italic);
                 font-size: 12px;
-                color: #666666;
+                color: $grey-darker;
                 letter-spacing: 0.2px;
                 line-height: 24px;
-                font-style: italic;
             }
             p.header-label {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 12px;
                 letter-spacing: .2px;
                 line-height: 16px;
                 text-transform: uppercase;
-                font-weight: 400;
             }
             
 }
@@ -246,74 +240,71 @@
             h1, h2, h3, h4, h5, p {
                 margin: 0;
                 padding: 0;
-                color: #333333;
+                color: $black-light;
             }
             padding-bottom: 32px;
 
             h1 {
-                font-family: OpenSans-Semibold;
+                @include font-format($font-family, $font-semibold, normal);
                 font-size: 32px;
                 letter-spacing: 0;
                 line-height: 36px;
             }
 
             h2 {
-                font-family: OpenSans-Semibold;
+                @include font-format($font-family, $font-semibold, normal);
                 font-size: 24px;
                 line-height: 32px;
             }
             h3 {
+                @include font-format($font-family, $font-semibold, normal);
                 font-size: 21px;
                 letter-spacing: 0;
                 line-height: 30px;
             }
             h4 {
-                font-family: OpenSans-Semibold;
+                @include font-format($font-family, $font-semibold, normal);
                 font-size: 18px;
                 letter-spacing: 0;
                 line-height: 28px;
             }
             p {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 14px;
                 letter-spacing: 0.2px;
                 line-height: 24px;
-                font-weight: 400;
             }
             p.body-mini {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 12px;
                 letter-spacing: 0;
                 line-height: 24px;
             }
             li {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 14px;
                 letter-spacing: 0.2px;
                 line-height: 24px;
-                font-weight: 400;
             }
             p.blockquote {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 18px;
-                color: #333333;
                 letter-spacing: 0.2px;
                 text-align: center;
                 line-height: 24px;
-                font-weight: 400;
             }
             .pull-quote-direct svg {
                 display: block;
                 margin: 0 auto 24px;
             }
             .source {
-                font-weight: 400;
+                @include font-format($font-family, $font-regular, italic);
                 color: $grey-darker;
                 padding-top: 8px;
                 font-size: 14px;
                 
                 hr {
-                    border-color: #666;
+                    border-color: $grey-darker;
                     border-top-width: .125rem;
                     display: inline-block;
                     height: .125rem;
@@ -324,7 +315,7 @@
                 }
             }
             .hr-bottom {
-                background-color: #edca72;
+                background-color: $yellow-primary-mid;
                 border-top: 0;
                 height: .125rem;
                 margin: 0 auto;
@@ -332,26 +323,24 @@
                 margin-top: 24px;
             }
             p.header-intro {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 16px;
                 letter-spacing: 0.2px;
                 line-height: 28px;
             }
             p.header-update {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, italic);
                 font-size: 12px;
                 color: #666666;
                 letter-spacing: 0.2px;
                 line-height: 16px;
-                font-style: italic;
             }
             p.header-label {
-                font-family: OpenSans;
+                @include font-format($font-family, $font-regular, normal);
                 font-size: 12px;
                 letter-spacing: .2px;
                 line-height: 20px;
                 text-transform: uppercase;
-                font-weight: 400;
             }
             
         }
