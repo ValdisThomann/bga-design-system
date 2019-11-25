@@ -4874,7 +4874,7 @@ h3 { padding: 16px 0; margin-bottom: 0px !important; }
 
 hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0 0 1.5rem; text-align: left; width: 3.25rem; }
 
-p { font-size: 1rem; margin-bottom: 32px; max-width: 750px; }
+.body-copy p { font-size: 1rem; padding-bottom: 16px; max-width: 750px; }
 
 .body-copy .body-copy-content p.small { font-size: .8rem; }
 
@@ -4934,11 +4934,17 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .anchor-menu .sticky-container a.active-sticky { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; border-left: 4px solid #96B7DF; padding-left: 16px; }
 
 /* Design system styles */
-.design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); max-width: 750px; }
+.design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); width: 100%; }
 
-.design-system-card.example-wrapper { background: #EBEBEB; box-shadow: none; padding: 32px; display: inline-block; }
+.design-system-card.example-wrapper { background: #EBEBEB; box-shadow: none; padding: 32px; display: inline-block; position: relative; }
 
 .design-system-card.example-wrapper.white-back { background: #ffffff; }
+
+.design-system-card.example-wrapper.expandable { margin-bottom: 80px; }
+
+.design-system-card.example-wrapper .expand-example { margin-bottom: 32px; margin-top: -48px; z-index: 1000; position: absolute; bottom: -96px; right: 0px; }
+
+.design-system-card.example-wrapper .expand-example img, .design-system-card.example-wrapper .expand-example p { margin: 0 auto; display: block; }
 
 .design-system-card code pre { color: #254F90; font-size: 0.85rem; line-height: 26px; margin: 0; }
 
@@ -4961,6 +4967,10 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card .element-design.closed.unavailable { background: #ffffff; }
 
 .design-system-card .element-design::before { content: ""; }
+
+.design-system-card .element-design.dark-back { background: #4569A0 url(../assets/Icon-chevron-up-white.svg) no-repeat; background-position: right 24px center; }
+
+.design-system-card .element-design.dark-back.closed { background: #4569A0 url(../assets/Icon-chevron-down-white.svg) no-repeat; background-position: right 24px center; }
 
 .design-system-card .element-code { padding: 24px; border: solid 1px #D8D8D8; border-top: none; background: #F5F5F5; display: none; }
 
@@ -4990,23 +5000,23 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .desktop-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0; line-height: 24px; }
 
-.design-system-card .desktop-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; line-height: 32px; }
+.design-system-card .desktop-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; line-height: 28px; }
 
 .design-system-card .desktop-sample p.blockquote { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 21px; letter-spacing: 0.2px; text-align: center; line-height: 40px; }
 
 .design-system-card .desktop-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
 
-.design-system-card .desktop-sample .source { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; color: #666666; padding-top: 8px; font-size: 16px; }
+.design-system-card .desktop-sample .source { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; color: #666666; padding-top: 8px; font-size: 16px; line-height: 24px; }
 
-.design-system-card .desktop-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+.design-system-card .desktop-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; line-height: 24px; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
 
 .design-system-card .desktop-sample .hr-bottom { background-color: #EDCA72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
 
-.design-system-card .desktop-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; line-height: 32px; }
+.design-system-card .desktop-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; line-height: 30px; }
 
-.design-system-card .desktop-sample p.header-update { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 24px; }
+.design-system-card .desktop-sample p.header-update { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; letter-spacing: 0.2px; line-height: 18px; }
 
-.design-system-card .desktop-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 16px; text-transform: uppercase; }
+.design-system-card .desktop-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; }
 
 .design-system-card .mobile-sample { padding-bottom: 32px; }
 
@@ -5024,15 +5034,15 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .mobile-sample p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
 
-.design-system-card .mobile-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: 0; line-height: 24px; }
+.design-system-card .mobile-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0; line-height: 24px; }
 
-.design-system-card .mobile-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0.2px; line-height: 24px; }
+.design-system-card .mobile-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 24px; }
 
 .design-system-card .mobile-sample p.blockquote { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; text-align: center; line-height: 24px; }
 
 .design-system-card .mobile-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
 
-.design-system-card .mobile-sample .source { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; color: #666666; padding-top: 8px; font-size: 14px; }
+.design-system-card .mobile-sample .source { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; color: #666666; padding-top: 8px; font-size: 16px; line-height: 24px; }
 
 .design-system-card .mobile-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
 
@@ -5040,7 +5050,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .mobile-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
 
-.design-system-card .mobile-sample p.header-update { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; color: #666666; letter-spacing: 0.2px; line-height: 16px; }
+.design-system-card .mobile-sample p.header-update { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; letter-spacing: 0.2px; line-height: 16px; }
 
 .design-system-card .mobile-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; }
 
@@ -5111,6 +5121,62 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card .light-pathway.example:hover .icon-link, .design-system-card .light-pathway.example:hover .description { transform: none; }
 
 .design-system-card .light-pathway.example:hover .light-container { transform: translateX(1rem); }
+
+.design-system-card .inline-pathway { transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+
+.design-system-card .inline-pathway .description { letter-spacing: normal; }
+
+.design-system-card .inline-pathway .description:hover { transform: translate(1rem); text-decoration: underline; }
+
+.design-system-card .inline-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center; height: auto; padding: 0 0 0 24px; }
+
+.design-system-card .inline-pathway .icon-link.external { background: url(../assets/Icon-external-link-blue.svg) no-repeat left center; }
+
+.design-system-card .inline-pathway .icon-link a { text-transform: uppercase; text-decoration: none; box-shadow: none; color: #333333; font-size: 14px; line-height: 24px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
+
+.design-system-card .inline-pathway .icon-link:hover { transform: translate(1rem); }
+
+.design-system-card .inline-pathway .inline-container { padding: 24px; border-top: 4px solid #B3C2D8; height: 80px; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; background: #EFF4FB; }
+
+.design-system-card .inline-pathway.example { border-top: 4px solid #B3C2D8; background: #EFF4FB; }
+
+.design-system-card .inline-pathway.example .description { padding-bottom: 16px; }
+
+.design-system-card .inline-pathway.example .inline-container { height: auto; max-width: 620px; border-top: none; background: none; }
+
+.design-system-card .inline-pathway.example:hover { transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+
+.design-system-card .inline-pathway.example:hover .description { text-decoration: underline; }
+
+.design-system-card .inline-pathway.example:hover .icon-link, .design-system-card .inline-pathway.example:hover .description { transform: none; }
+
+.design-system-card .inline-pathway.example:hover .inline-container { transform: translateX(1rem); }
+
+.design-system-card .feature-image-pathway .label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; color: #ffffff; }
+
+.design-system-card .feature-image-pathway h3 { color: #ffffff; }
+
+.design-system-card .feature-image-pathway h3:hover { color: #ffffff; text-decoration: underline; }
+
+.design-system-card .feature-image-pathway .description { color: #ffffff; }
+
+.design-system-card .feature-image-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; height: 32px; }
+
+.design-system-card .feature-image-pathway .icon-link:hover { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; }
+
+.design-system-card .feature-image-pathway .feature-image-container { background: #4569A0; padding: 24px; border: none; height: 80px; box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.2); transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+
+.design-system-card .feature-image-pathway .feature-image-container:hover { transform: translateY(-0.1875rem); background: #254F90; }
+
+.design-system-card .feature-image-pathway.example .description { padding-bottom: 48px; }
+
+.design-system-card .feature-image-pathway.example .feature-image-container { height: auto; max-width: 920px; background: #4569A0; }
+
+.design-system-card .feature-image-pathway.example:hover h3 { color: #ffffff; text-decoration: underline; }
+
+.design-system-card .feature-image-pathway.example:hover .icon-link { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; }
+
+.design-system-card .feature-image-pathway.example:hover .feature-image-container { background: #254F90; }
 
 .design-system-card.no-header { border-top: 4px solid #254F90; background: #ffffff; }
 

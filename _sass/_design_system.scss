@@ -6,18 +6,41 @@
     padding: 0;
     margin-bottom: 32px;
     box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, .1);
-    max-width:750px;
+    width: 100%;
     
     &.example-wrapper {
         background: $grey-lighter;
         box-shadow: none;
         padding: 32px;
         display: inline-block;
+        position: relative;
         
         &.white-back {
             background: $white;
         }
+        
+        &.expandable {
+            margin-bottom: 80px;
+        }
+    .expand-example {
+        margin-bottom: 32px;
+        margin-top: -48px;
+        z-index: 1000;
+        position: absolute;
+        bottom: -96px;
+        right: 0px;
+        
+        img, p {
+            margin: 0 auto;
+            display: block;
+        }
+        p {
+            
+        }
     }
+    }
+       
+    
     
     code pre {
         color: $blue-primary;
@@ -96,7 +119,16 @@
                 &::before {
                     content: "";
                 }
+            &.dark-back {
+                background: $blue-primary-mid url(../assets/Icon-chevron-up-white.svg) no-repeat;
+                background-position: right 24px center;
+                
+                &.closed {
+                    background: $blue-primary-mid url(../assets/Icon-chevron-down-white.svg) no-repeat;
+                    background-position: right 24px center;
+            }
         }
+    }
         
     .element-code {
             padding: 24px;
@@ -175,7 +207,7 @@
                 @include font-format($font-family, $font-regular, normal);
                 font-size: 16px;
                 letter-spacing: 0;
-                line-height: 32px;
+                line-height: 28px;
             }
             p.blockquote {
                 @include font-format($font-family, $font-regular, normal);
@@ -193,12 +225,14 @@
                 color: $grey-darker;
                 padding-top: 8px;
                 font-size: 16px;
+                line-height: 24px;
                 
                 hr {
                     border-color: $grey-darker;
                     border-top-width: .125rem;
                     display: inline-block;
                     height: .125rem;
+                    line-height: 24px;
                     margin: 0 .125rem 0 0;
                     opacity: .6;
                     vertical-align: middle;
@@ -217,20 +251,19 @@
                 @include font-format($font-family, $font-regular, normal);
                 font-size: 18px;
                 letter-spacing: 0.2px;
-                line-height: 32px;
+                line-height: 30px;
             }
             p.header-update {
                 @include font-format($font-family, $font-regular, italic);
                 font-size: 12px;
-                color: $grey-darker;
                 letter-spacing: 0.2px;
-                line-height: 24px;
+                line-height: 18px;
             }
             p.header-label {
                 @include font-format($font-family, $font-regular, normal);
                 font-size: 12px;
                 letter-spacing: .2px;
-                line-height: 16px;
+                line-height: 20px;
                 text-transform: uppercase;
             }
             
@@ -280,13 +313,13 @@
             }
             p.body-mini {
                 @include font-format($font-family, $font-regular, normal);
-                font-size: 12px;
+                font-size: 14px;
                 letter-spacing: 0;
                 line-height: 24px;
             }
             li {
                 @include font-format($font-family, $font-regular, normal);
-                font-size: 14px;
+                font-size: 16px;
                 letter-spacing: 0.2px;
                 line-height: 24px;
             }
@@ -305,7 +338,8 @@
                 @include font-format($font-family, $font-regular, italic);
                 color: $grey-darker;
                 padding-top: 8px;
-                font-size: 14px;
+                font-size: 16px;
+                line-height: 24px;
                 
                 hr {
                     border-color: $grey-darker;
@@ -335,7 +369,6 @@
             p.header-update {
                 @include font-format($font-family, $font-regular, italic);
                 font-size: 12px;
-                color: #666666;
                 letter-spacing: 0.2px;
                 line-height: 16px;
             }
@@ -537,6 +570,156 @@
     }
 }
 
+    .inline-pathway {
+        transition-property: transform, -webkit-transform;
+        transition-duration: 0.4s, 0.4s;
+        transition-timing-function: ease, ease;
+        transition-delay: 0s, 0s;
+        
+        .description {
+            letter-spacing: normal;
+            &:hover {
+                transform: translate(1rem);
+                text-decoration: underline;
+            }
+        }
+        .icon-link {
+            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center;
+            height: auto; 
+            padding: 0 0 0 24px;
+            
+            &.external {
+                background: url(../assets/Icon-external-link-blue.svg) no-repeat left center;
+            }
+            
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                box-shadow: none;
+                color: $black-light;
+                font-size: 14px;
+                line-height: 24px;
+                @include font-format($font-family, $font-regular, normal);
+            }
+            &:hover {
+                transform: translate(1rem);
+            }
+        }
+        .inline-container {
+            padding: 24px;
+            border-top: 4px solid $blue-primary-light;
+            height: 80px;
+            transition-property: transform, -webkit-transform;
+            transition-duration: 0.4s, 0.4s;
+            transition-timing-function: ease, ease;
+            transition-delay: 0s, 0s;
+            background: $blue-primary-lightest;
+        }
+    &.example {
+        border-top: 4px solid $blue-primary-light;
+        background: $blue-primary-lightest;
+        
+        .description {
+            padding-bottom: 16px;
+        }   
+        .inline-container {
+            height: auto;
+            max-width: 620px;
+            border-top: none;
+            background: none;
+        } 
+        &:hover {
+            transition-property: transform, -webkit-transform;
+            transition-duration: 0.4s, 0.4s;
+            transition-timing-function: ease, ease;
+            transition-delay: 0s, 0s;
+            
+            .description {
+                text-decoration: underline;    
+            }
+            .icon-link, .description {
+                transform: none;    
+            }
+            .inline-container {
+                transform: translateX(1rem);
+            }
+        }
+    }
+}
+
+    .feature-image-pathway {
+        .label {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 12px;
+            letter-spacing: .2px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $white;
+        }
+        h3 {
+            color: $white;
+            
+            &:hover {
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+        .description {
+            color: $white;
+        }
+        .icon-link {
+            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
+            height: 32px; 
+
+            &:hover {
+                background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
+                height: 32px; 
+
+            }
+        }
+        .feature-image-container {
+            background: $blue-primary-mid;
+            padding: 24px;
+            border: none;
+            height: 80px;
+            box-shadow: 0 0.125rem 0.75rem 0 rgba(0,0,0,.2);
+            transition-property: transform, -webkit-transform;
+            transition-duration: 0.4s, 0.4s;
+            transition-timing-function: ease, ease;
+            transition-delay: 0s, 0s;
+
+            &:hover {
+                transform: translateY(-.1875rem);
+                background: $blue-primary;
+            }
+        }
+    &.example {
+        .description {
+            padding-bottom: 48px;
+        }
+        .feature-image-container {
+            height: auto;
+            max-width: 920px;
+            background: $blue-primary-mid;
+
+        } 
+        &:hover {
+            h3 {
+                color: $white;
+                text-decoration: underline;
+            }
+            .icon-link {
+                background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
+                height: 32px; 
+            }
+            .feature-image-container {
+                background: $blue-primary;
+            }
+        }
+    }
+}
+
+    
     &.no-header {
         border-top: 4px solid $blue-primary;
         background: $white;
@@ -744,7 +927,6 @@
     }
     
 }
-
 
 .responsive-img {
     max-width:100%;

@@ -18,9 +18,10 @@ hr {
     text-align: left;
     width: 3.25rem;
 }
-p {
+.body-copy p {
     font-size: 1rem;
-    margin-bottom: 32px;
+    //margin-bottom: 32px;
+    padding-bottom: 16px;
     max-width: 750px;
 }
 .body-copy .body-copy-content p.small {
