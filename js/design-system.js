@@ -13,6 +13,13 @@ $(document).ready(function () {
         }
     });
     
+    /*----------- Coming soon ----------- */
+    $('.coming-soon').append("<div class='coming-soon-label'><p>Coming soon</p></div>");
+    $('.coming-soon a').on('click', function(e){
+            e.preventDefault();
+    });
+    
+    
     // Hide empty breadcrumb links and arrows
     $('a.breadcrumb-link').each(function(){
         if( $(this).is(':empty') ) {
@@ -44,7 +51,6 @@ $(document).ready(function () {
             $(this).next('.element-code').toggleClass('open');
         }
     });
-    
     
     
     /*----------- Add side-menu (sticky_list) functionality ----------- */

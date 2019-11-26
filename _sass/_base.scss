@@ -2,6 +2,11 @@
 
 .page-header {
     padding: 48px 0;
+    
+}
+.page-header-intro p {
+    @include font-format($font-family, $font-regular, normal);
+    font-size: 16px;
 }
 h1, h2 {
     @include font-format($font-family, $font-semibold, normal);
@@ -18,7 +23,7 @@ hr {
     text-align: left;
     width: 3.25rem;
 }
-.body-copy p {
+.body-copy p, .main-section p {
     font-size: 1rem;
     //margin-bottom: 32px;
     padding-bottom: 16px;
@@ -31,7 +36,7 @@ hr {
 .c-padding-bottom {
     padding-bottom: 0 !important;
     
-    p:last-child, 
+    
     ol:last-child,
     ul:last-child {
         padding-bottom: 0;
