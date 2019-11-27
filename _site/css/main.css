@@ -5187,23 +5187,33 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .image-pathway:hover .image-list-container { transform: translateY(-0.1875rem); }
 
-.design-system-card .standard-cta { transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; border-top: 4px solid #D8D8D8; background: #EBEBEB; }
+.design-system-card .standard-cta { border-top: 4px solid #D8D8D8; background: #EBEBEB; }
 
 .design-system-card .standard-cta .description { padding-bottom: 16px; }
 
-.design-system-card .standard-cta .standard-cta-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 24px; margin: 0; }
+.design-system-card .standard-cta .standard-cta-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 32px 32px 48px 32px; margin: 0; }
 
-.design-system-card .standard-cta .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center; height: auto; padding: 0 0 0 24px; }
+.design-system-card .standard-cta .cta-content-inner { margin-bottom: 32px; }
 
-.design-system-card .standard-cta .icon-link.external { background: url(../assets/Icon-external-link-blue.svg) no-repeat left center; }
+.design-system-card .standard-cta .cta-button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
 
-.design-system-card .standard-cta .icon-link a { text-transform: uppercase; text-decoration: none; box-shadow: none; color: #333333; font-size: 12px; line-height: 24px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
+.design-system-card .standard-cta .cta-button-wrapper:hover { transform: translateY(-0.1875rem); }
 
-.design-system-card .standard-cta:hover .description { text-decoration: underline; }
+.design-system-card .standard-cta .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: 0px 2px 4px #0000001A; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; color: #ffffff; }
 
-.design-system-card .standard-cta:hover .icon-link, .design-system-card .standard-cta:hover .description { transform: none; }
+.design-system-card .standard-cta .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: 0px 4px 8px #0000004D; border: 2px solid #18335C; border-radius: 6px; opacity: 1; }
 
-.design-system-card .standard-cta:hover .inline-container { transform: translateX(1rem); }
+.design-system-card .standard-cta .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004D; border-radius: 6px; opacity: 1; }
+
+.design-system-card .download-cta { border-top: 4px solid #D8D8D8; background: #EBEBEB; }
+
+.design-system-card .download-cta .description { padding-bottom: 16px; }
+
+.design-system-card .download-cta .download-cta-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 32px 32px 48px 32px; margin: 0; }
+
+.design-system-card .download-cta .cta-content-inner { margin-bottom: 32px; }
+
+.design-system-card .download-cta .action-card-button { background: #ffffff; }
 
 .design-system-card.no-header { border-top: 4px solid #254F90; background: #ffffff; }
 

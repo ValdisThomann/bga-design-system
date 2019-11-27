@@ -786,13 +786,8 @@
             }
         }
         }
-   
     
     .standard-cta {
-        transition-property: transform, -webkit-transform;
-        transition-duration: 0.4s, 0.4s;
-        transition-timing-function: ease, ease;
-        transition-delay: 0s, 0s;
         border-top: 4px solid $grey-light;
         background: $grey-lighter;
 
@@ -805,44 +800,76 @@
             max-width: 620px;
             border-top: none;
             background: none;
-            padding: 24px;
+            padding: 32px 32px 48px 32px;
             margin: 0;
         }
+        .cta-content-inner {
+            margin-bottom: 32px;
+        }
 
-        .icon-link {
-            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center;
+        .cta-button-wrapper {
+            width: auto;
+            display: inline-block;
+            transition-property: transform, -webkit-transform;
+            transition-duration: 0.4s, 0.4s;
+            transition-timing-function: ease, ease;
+            transition-delay: 0s, 0s;
+            
+            &:hover {
+                transform: translateY(-.1875rem);
+            }
+        }
+        .cta-button {
+            background: $blue-primary-mid 0% 0% no-repeat padding-box;
+            box-shadow: 0px 2px 4px #0000001A;
+            border: 2px solid $blue-primary;
+            border-radius: 6px;
+            opacity: 1;
+            padding: 8px 32px;
+            text-align: center;
+            letter-spacing: 0;
+            color: $white;
+        
+            &:hover {
+                background: $blue-primary 0% 0% no-repeat padding-box;
+                box-shadow: 0px 4px 8px #0000004D;
+                border: 2px solid $blue-active;
+                border-radius: 6px;
+                opacity: 1;
+                
+            }
+            &:active {
+                background: $blue-active 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #0000004D;
+                border-radius: 6px;
+                opacity: 1;
+            }
+        }
+    }
+    
+    .download-cta {
+        border-top: 4px solid $grey-light;
+        background: $grey-lighter;
+
+        .description {
+            padding-bottom: 16px;
+        }
+
+        .download-cta-container {
             height: auto;
-            padding: 0 0 0 24px;
-
-            &.external {
-                background: url(../assets/Icon-external-link-blue.svg) no-repeat left center;
-            }
-
-            a {
-                text-transform: uppercase;
-                text-decoration: none;
-                box-shadow: none;
-                color: $black-light;
-                font-size: 12px;
-                line-height: 24px;
-                @include font-format($font-family, $font-regular, normal);
-            }
+            max-width: 620px;
+            border-top: none;
+            background: none;
+            padding: 32px 32px 48px 32px;
+            margin: 0;
         }
-
-        &:hover {
-            .description {
-                text-decoration: underline;
-            }
-
-            .icon-link,
-            .description {
-                transform: none;
-            }
-
-            .inline-container {
-                transform: translateX(1rem);
-            }
+        .cta-content-inner {
+            margin-bottom: 32px;
         }
+        .action-card-button {
+            background: $white;
+        }
+       
     }
 
     
