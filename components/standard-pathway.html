@@ -1,15 +1,15 @@
 ---
 layout: content
-title: Feature image pathway
+title: Standard pathway list
 breadcrumb1: Components
 url1: topic-components.html
 breadcrumb2:
 url2:
-longdesc: Promote links to high-value content with a feature image.
+longdesc: Promote links to standard content within the context of a page.
 
 ---
 <div class="main-section" style="background-color:;padding-bottom:">
-    <div id="">
+    <div id="react_0HLQJFNDKRBFD">
         <div class="c-wrapper c-wrapper-bg-transparent padding-none container-fluid" data-reactroot="" style="background-color:">
             <div class="row">
                 <div class="twoCol39-left col-12 col-sm-2">
@@ -21,8 +21,8 @@ longdesc: Promote links to high-value content with a feature image.
                                         
                                         <ul>
                                             <h5 class="sticky-list-head">On this page</h5>
-                                            <li><a href="">Overview</a></li>
-                                            <li><a href="">Usage rules</a></li>
+                                            <li><a href="">Visual design</a></li>
+                                            <li><a href="">Guidelines for use</a></li>
                                             <li><a href="">Layouts</a></li>
 
                                         </ul>
@@ -34,46 +34,34 @@ longdesc: Promote links to high-value content with a feature image.
                 </div>
                 <div class="twoCol39-right col-sm-10">
                     <div style="background-color:;padding-bottom:">
-                        <div id="">
+                        <div id="react_0HLQJFNDKRBEP">
 
 <!-- OVERVIEW -->
-<div class="anchor-section" data-reactroot="" name="oveview"><a hr ef="" id="overview"></a>
+<div class="anchor-section" data-reactroot="" name="visual-design"><a hr ef="" id="visual-design"></a>
 <div>
 <div style="background-color:;padding-bottom:">
 <div id="">
 <div class="c-wrapper c-wrapper-bg-transparent container-fluid" data-reactroot="" style="background-color:">
 <div class="row">
-    <div class="c-padding-top anchor-section-full-width c-padding-bottom col-sm-10 offset-sm-2 col-md-10 offset-md-2">
+    <div class="c-padding-top c-padding-bottom col-sm-10 col-md-10">
         <div class="body-copy">
             <div>
                 <div class="body-copy-headline col-12">
-                    <h2>Overview</h2>
+                    <h2>Visual design</h2>
                 </div>
                 <hr />
             </div>
             <div class="body-copy-content">
 
-                <h3>Purpose</h3>
-                <p>Used singularly on a page to feature relevant content (such as news stories) which will change over time.</p>
-
-                <h3>Appearance</h3>
-
-
-                <div class="design-system-card component extra-wide">
+                <div class="design-system-card component">
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper">
-                            <div class="feature-image-pathway">
-                                <div class="example feature-image-container">
-
-                                    <div class="feature-text">
-                                        <p class="label">Label</p>
-                                        <h3>Feature image pathway</h3>
-                                        <p class="description">The feature image pathway highlights a link to important content with an image.</p>
-                                        <p class="icon-link"></p>
-                                    </div>
-                                    <div class="feature-image"><img class="responsive-img" src="assets/feature-image.jpg" alt="" title=""></div>
-
+                            <div class="standard-pathway">
+                                <div class="example standard-container">
+                                    <h3>Standard pathway</h3>
+                                    <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                                    <p class="icon-link"></p>
                                 </div>
                             </div>
 
@@ -91,10 +79,87 @@ longdesc: Promote links to high-value content with a feature image.
 
 <code>
 <pre>
+h3 {
+    font-family: OpenSans-Semibold;
+    font-size: 21px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+h3:hover {
+    color: #254F90;
+    text-decoration: underline;
+}
+</pre>
+</code>
+
+<h5>Description</h5>
+
+<code>
+<pre>
+p.description {
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+
+</pre>
+</code>
+                                
+<h5>Icon link</h5>
+
+<code>
+<pre>
+.icon {    
+    color: #254F90;
+    height: 16px;
+    width: 16px;
+}
+.icon:hover {
+    color: #254F90;
+    height: 32px;
+    width: 32px;
+}
+
+</pre>
+</code>
+   
+<h5>Container</h5>
+                                
+<code>
+<pre>
+.container {
+    background: #ffffff;
+    padding: 24px;
+    border: none;
+    border-top: 4px solid #254F90;
+    box-shadow: 0 0.125rem 0.75rem 0
+    rgba(0,0,0,.2);
+}
 
 </pre>
 </code>
 
+<h4>Mobile</h4>                    
+<h5>Heading</h5>
+<code>
+<pre>
+h3 {    
+    font-family: OpenSans-Semibold;
+    font-size: 21px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+</pre>
+</code>
+
+
+<h4>Other options</h4>
+<a href="foundations-typography.html">The heading can also be a H4 - See typography guidelines</a>
 </div>
 
                     </div>
@@ -106,7 +171,7 @@ longdesc: Promote links to high-value content with a feature image.
             <div class="adobe-link vertical-list c-padding-top c-padding-bottom col-sm-10 col-md-10">
 
                 <div>
-                    <a class="action-card-anchor" target="blank" href="">
+                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/8f9ada53-b5f1-4327-a2cb-1c50231251ca/Component-Standard-pathway-list">
                             <div class="action-card-button">
                                 <div class="action-card-content">
                                     <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
@@ -140,7 +205,7 @@ longdesc: Promote links to high-value content with a feature image.
                         
                         
 <!-- USAGE -->                      
-<div class="anchor-section" data-reactroot="" name="usage-rules"><a href="" id="usage-rules"></a>
+<div class="anchor-section" data-reactroot="" name="guidelines-for-use"><a href="" id="guidelines-for-use"></a>
 <div >
 <div style="background-color:;padding-bottom:">
 <div id="">
@@ -150,14 +215,15 @@ longdesc: Promote links to high-value content with a feature image.
                 <div class="body-copy">
                     <div>
                         <div class="body-copy-headline col-12">
-                            <h2>Usage rules</h2>
+                            <h2>Guidelines for use</h2>
                         </div>
                         <hr />
                     </div>
                     <div class="body-copy-content">
+                        <h3>Purpose</h3>
+                        <p>Generally used as a default option within index pages or to build page hierarchy as a secondary weight against hero and light pathways.</p>
 
-
-
+                        <h3>When to use this component</h3>
                         <p>Coming soon.</p>
 
 
@@ -191,21 +257,29 @@ longdesc: Promote links to high-value content with a feature image.
                         </div>
                         <hr />
                     </div>
-                    
                     <div class="body-copy-content">
-                        
+
+
                       <h3>Page width</h3>
-                        <p>Feature image pathways can be used in full width pages.</p> 
+                        <p>Standard pathway components should only be used in full width pages.</p> 
 
-                        <h3>Full width layout</h3>
-                       <div class="layouts">
+                        <h3>Equal width layout</h3>
+                        <div class="layouts">
+                            <p><strong>Desktop:</strong> Three equal width components in a row.</p>
 
-                            <p><strong>Desktop, Tablet &amp; Mobile:</strong> One component on a page that stretches the full width of the page.</p>
+                            <img class="responsive-img grey-border" src={{"assets/layouts_equal_three.png" | relative_url}} alt="">
 
-                            <img class="responsive-img grey-border" src="assets/layouts_full_width.png" alt="">
+                            <p><strong>Tablet:</strong> Two equal width components in a row.</p>
 
-                            
+                            <img class="responsive-img tablet grey-border" src={{"assets/layouts_equal_two.png"  | relative_url}} alt="">
+
+                            <p><strong>Mobile:</strong> One equal component in a row.</p>
+
+                            <img class="responsive-img mobile grey-border" src={{"assets/layouts_equal_one.png" | relative_url}} alt="">
                         </div>
+
+
+
 
                     </div>
 
@@ -229,4 +303,4 @@ longdesc: Promote links to high-value content with a feature image.
                 </div>
             </div>
         </div>
-</div>
+    </div>
