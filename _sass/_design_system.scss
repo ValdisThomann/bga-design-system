@@ -55,6 +55,10 @@
                 background: $white;
                 border-bottom: 1px solid $grey-light;
             }
+            
+            h3 {
+                padding-top: 0;
+            }
 
             /*
             &.expandable {
@@ -786,6 +790,55 @@
             }
         }
         }
+    
+    .page-headers {
+        .label {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 12px;
+            letter-spacing: .2px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $white;
+        }
+        h1 {
+            @include font-format($font-family, $font-semibold, normal);
+            margin-bottom: 16px;
+            color: $white;
+        }
+        .updated {
+            @include font-format($font-family, $font-regular, italic);
+            font-size: 12px;
+            letter-spacing: 0.2px;
+            line-height: 18px;
+        }
+        .description {
+            color: $white;
+        }
+        .page-headers-container {
+            background: $blue-primary-mid;
+            padding: 64px 16px;
+        }
+        &.business-info,
+        &.grants {
+            .label, h1, .description {
+                color: $black-light;
+            }
+            .page-headers-container {
+                background: $grey-headers;
+            }
+        }
+        @media (min-width: 1600px) {
+            &.topic {
+                .header-content {
+                    width: 70%;
+                }
+                .page-headers-container {
+                    background: $blue-primary-mid url(../assets/illustration-reading-man.svg) no-repeat right 32px center;
+                    background-size: 200px;
+                }
+            }
+        }
+    }
     
     .standard-cta {
         border-top: 4px solid $grey-light;

@@ -4958,6 +4958,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.component .example-wrapper.white-back { background: #ffffff; border-bottom: 1px solid #D8D8D8; }
 
+.design-system-card.component .example-wrapper h3 { padding-top: 0; }
+
 .design-system-card.component .example { margin: 0 auto; }
 
 .design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; border-top: solid 4px #254F90; }
@@ -5186,6 +5188,23 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card .image-pathway:hover .icon-link { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; }
 
 .design-system-card .image-pathway:hover .image-list-container { transform: translateY(-0.1875rem); }
+
+.design-system-card .page-headers .label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; color: #ffffff; }
+
+.design-system-card .page-headers h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; margin-bottom: 16px; color: #ffffff; }
+
+.design-system-card .page-headers .updated { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; letter-spacing: 0.2px; line-height: 18px; }
+
+.design-system-card .page-headers .description { color: #ffffff; }
+
+.design-system-card .page-headers .page-headers-container { background: #4569A0; padding: 64px 16px; }
+
+.design-system-card .page-headers.business-info .label, .design-system-card .page-headers.business-info h1, .design-system-card .page-headers.business-info .description, .design-system-card .page-headers.grants .label, .design-system-card .page-headers.grants h1, .design-system-card .page-headers.grants .description { color: #333333; }
+
+.design-system-card .page-headers.business-info .page-headers-container, .design-system-card .page-headers.grants .page-headers-container { background: #E2E2E2; }
+
+@media (min-width: 1600px) { .design-system-card .page-headers.topic .header-content { width: 70%; }
+  .design-system-card .page-headers.topic .page-headers-container { background: #4569A0 url(../assets/illustration-reading-man.svg) no-repeat right 32px center; background-size: 200px; } }
 
 .design-system-card .standard-cta { border-top: 4px solid #D8D8D8; background: #EBEBEB; }
 
