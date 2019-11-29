@@ -26,7 +26,11 @@
         .design-system-card-content {
             padding: 0;
         }
-
+        .notes {
+            border: none;
+            border-bottom: 1px solid $grey-light;
+            padding: 24px 32px; 
+        }
         .element-design {
             border: none;
             padding: 24px 24px 24px 32px;
@@ -840,7 +844,9 @@
         }
     }
     
-    .standard-cta {
+    .call-to-action,
+    .callout,
+    .advisor-profile {
         border-top: 4px solid $grey-light;
         background: $grey-lighter;
 
@@ -848,9 +854,8 @@
             padding-bottom: 16px;
         }
 
-        .standard-cta-container {
+        .cta-container {
             height: auto;
-            max-width: 620px;
             border-top: none;
             background: none;
             padding: 32px 32px 48px 32px;
@@ -898,33 +903,150 @@
                 opacity: 1;
             }
         }
+        &.download {
+            .action-card-button {
+                background: $white;
+            }
+        }
+        &.advisor-profile {
+            .advisor-card-title-centered {
+                margin-bottom: 32px;
+            }
+            .advisor-card-image-centered img {
+                margin: 0 auto;
+                display: block;
+            }
+            .advisor-card-content-detail {
+                margin-top: 32px;
+            }
+        }
     }
     
-    .download-cta {
-        border-top: 4px solid $grey-light;
-        background: $grey-lighter;
-
-        .description {
-            padding-bottom: 16px;
+    .table {
+        .table-responsive {
+            overflow-y: hidden;
         }
 
-        .download-cta-container {
-            height: auto;
-            max-width: 620px;
-            border-top: none;
-            background: none;
-            padding: 32px 32px 48px 32px;
-            margin: 0;
+        @media (max-width: 1600px) {
+
+            .generic-table {
+
+                table,
+                thead,
+                tbody,
+                th,
+                td,
+                tr {
+                    display: block;
+                }
+
+                /* Hide table headers (but not display: none;, for accessibility) */
+                thead tr {
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+
+                td {
+                    display: none;
+                    position: relative;
+                    padding-left: 30%;
+                    white-space: normal;
+                    text-align: left;
+                    border-top: 0px;
+
+                    &::before {
+                        position: absolute;
+                        top: 16px;
+                        left: 16px;
+                        width: 25%;
+                        text-align: left;
+                        content: attr(data-title);
+                        display: block;
+                    }
+                }
+
+                tr {
+                    display: table;
+                    width: 100%;
+                    border-bottom: solid 1px $grey-light;
+
+                    td {
+                        background: $grey-lighter;
+
+                        &:first-of-type {
+                            background: $white url(../assets/Icon-chevron-down-333333.svg) no-repeat;
+                            background-position: right 16px center;
+                            background-size: 16px 10px;
+                            font-weight: 600;
+                            padding-left: 16px;
+                            padding-right: 50px;
+                            display: block;
+
+                            &::before {
+                                content: "";
+                            }
+                        }
+                    }
+                }
+
+                .showGroup {
+                    display: block;
+                    transition: all .2s;
+                }
+
+                .groupParent td {
+                    &:first-of-type {
+                        background: $grey-lighter url(../assets/Icon-chevron-up-333333.svg) no-repeat;
+                        background-position: right 16px center;
+                        background-size: 16px 10px;
+                    }
+                }
+
+
+            }
+
+
+
+
         }
-        .cta-content-inner {
-            margin-bottom: 32px;
-        }
-        .action-card-button {
-            background: $white;
-        }
-       
+
+        @media (max-width: 800px) {
+
+            .generic-table {
+                td {
+                    padding-left: 45%;
+                    font-size: 14px;
+                    line-height: 1.4rem;
+
+                    &::before {
+                        width: 30%;
+                    }
+
+                    &:last-of-type {
+                        padding-bottom: 10px;
+                    }
+                }
+
+            }
+
+} 
+
+        //end @media 1200 px
+
     }
-
+    .image, 
+    media-player {
+        .caption-wrapper {
+            background: $grey-lighter;
+            padding: 16px;
+        }
+        .caption {
+            font-size: 14px;
+            line-height:24px;
+            padding: 0;
+        }
+    }
     
     &.no-header {
         border-top: 4px solid $blue-primary;
@@ -1138,6 +1260,10 @@
     max-width:100%;
     width:100%;
     margin-bottom: 24px;   
+}
+.responsive-img-no-margin {
+    max-width:100%;
+    width:100%; 
 }
 
 .layouts {

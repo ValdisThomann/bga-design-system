@@ -57,7 +57,7 @@ $(document).ready(function () {
     
     // Function to change active side menu state on scroll (called within the if .anchor-menu .sticky-container exists block)
     function add_position(positions) {
-        console.log(positions);    
+        
         for ( var i = 0; i < positions.length; i++) {
                 var top_position = positions[i] - 40;
                 if ( $(window).scrollTop() >= top_position) {
@@ -143,7 +143,17 @@ $(document).ready(function () {
     
     
     
-   
+    /*----------- Tables ----------- */
+    $('tr td:first-of-type').on('click', function(){
+        
+        //toggle class to show / hide child <td>
+        var parent = $( this ).parent().get( 0 );
+        $(parent).children('td').toggleClass('showGroup');
+        
+        //toggle class on parent
+        $(parent).toggleClass('groupParent');
+        
+    });
     
 
     

@@ -4946,6 +4946,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.component .design-system-card-content { padding: 0; }
 
+.design-system-card.component .notes { border: none; border-bottom: 1px solid #D8D8D8; padding: 24px 32px; }
+
 .design-system-card.component .element-design { border: none; padding: 24px 24px 24px 32px; }
 
 .design-system-card.component .element-design.closed { border-bottom: none; }
@@ -5206,33 +5208,53 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 @media (min-width: 1600px) { .design-system-card .page-headers.topic .header-content { width: 70%; }
   .design-system-card .page-headers.topic .page-headers-container { background: #4569A0 url(../assets/illustration-reading-man.svg) no-repeat right 32px center; background-size: 200px; } }
 
-.design-system-card .standard-cta { border-top: 4px solid #D8D8D8; background: #EBEBEB; }
+.design-system-card .call-to-action, .design-system-card .callout, .design-system-card .advisor-profile { border-top: 4px solid #D8D8D8; background: #EBEBEB; }
 
-.design-system-card .standard-cta .description { padding-bottom: 16px; }
+.design-system-card .call-to-action .description, .design-system-card .callout .description, .design-system-card .advisor-profile .description { padding-bottom: 16px; }
 
-.design-system-card .standard-cta .standard-cta-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 32px 32px 48px 32px; margin: 0; }
+.design-system-card .call-to-action .cta-container, .design-system-card .callout .cta-container, .design-system-card .advisor-profile .cta-container { height: auto; border-top: none; background: none; padding: 32px 32px 48px 32px; margin: 0; }
 
-.design-system-card .standard-cta .cta-content-inner { margin-bottom: 32px; }
+.design-system-card .call-to-action .cta-content-inner, .design-system-card .callout .cta-content-inner, .design-system-card .advisor-profile .cta-content-inner { margin-bottom: 32px; }
 
-.design-system-card .standard-cta .cta-button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+.design-system-card .call-to-action .cta-button-wrapper, .design-system-card .callout .cta-button-wrapper, .design-system-card .advisor-profile .cta-button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
 
-.design-system-card .standard-cta .cta-button-wrapper:hover { transform: translateY(-0.1875rem); }
+.design-system-card .call-to-action .cta-button-wrapper:hover, .design-system-card .callout .cta-button-wrapper:hover, .design-system-card .advisor-profile .cta-button-wrapper:hover { transform: translateY(-0.1875rem); }
 
-.design-system-card .standard-cta .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: 0px 2px 4px #0000001A; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; color: #ffffff; }
+.design-system-card .call-to-action .cta-button, .design-system-card .callout .cta-button, .design-system-card .advisor-profile .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: 0px 2px 4px #0000001A; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; color: #ffffff; }
 
-.design-system-card .standard-cta .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: 0px 4px 8px #0000004D; border: 2px solid #18335C; border-radius: 6px; opacity: 1; }
+.design-system-card .call-to-action .cta-button:hover, .design-system-card .callout .cta-button:hover, .design-system-card .advisor-profile .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: 0px 4px 8px #0000004D; border: 2px solid #18335C; border-radius: 6px; opacity: 1; }
 
-.design-system-card .standard-cta .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004D; border-radius: 6px; opacity: 1; }
+.design-system-card .call-to-action .cta-button:active, .design-system-card .callout .cta-button:active, .design-system-card .advisor-profile .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004D; border-radius: 6px; opacity: 1; }
 
-.design-system-card .download-cta { border-top: 4px solid #D8D8D8; background: #EBEBEB; }
+.design-system-card .call-to-action.download .action-card-button, .design-system-card .callout.download .action-card-button, .design-system-card .advisor-profile.download .action-card-button { background: #ffffff; }
 
-.design-system-card .download-cta .description { padding-bottom: 16px; }
+.design-system-card .call-to-action.advisor-profile .advisor-card-title-centered, .design-system-card .callout.advisor-profile .advisor-card-title-centered, .design-system-card .advisor-profile.advisor-profile .advisor-card-title-centered { margin-bottom: 32px; }
 
-.design-system-card .download-cta .download-cta-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 32px 32px 48px 32px; margin: 0; }
+.design-system-card .call-to-action.advisor-profile .advisor-card-image-centered img, .design-system-card .callout.advisor-profile .advisor-card-image-centered img, .design-system-card .advisor-profile.advisor-profile .advisor-card-image-centered img { margin: 0 auto; display: block; }
 
-.design-system-card .download-cta .cta-content-inner { margin-bottom: 32px; }
+.design-system-card .call-to-action.advisor-profile .advisor-card-content-detail, .design-system-card .callout.advisor-profile .advisor-card-content-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-content-detail { margin-top: 32px; }
 
-.design-system-card .download-cta .action-card-button { background: #ffffff; }
+.design-system-card .table .table-responsive { overflow-y: hidden; }
+
+@media (max-width: 1600px) { .design-system-card .table .generic-table { /* Hide table headers (but not display: none;, for accessibility) */ }
+  .design-system-card .table .generic-table table, .design-system-card .table .generic-table thead, .design-system-card .table .generic-table tbody, .design-system-card .table .generic-table th, .design-system-card .table .generic-table td, .design-system-card .table .generic-table tr { display: block; }
+  .design-system-card .table .generic-table thead tr { position: absolute; top: -9999px; left: -9999px; }
+  .design-system-card .table .generic-table td { display: none; position: relative; padding-left: 30%; white-space: normal; text-align: left; border-top: 0px; }
+  .design-system-card .table .generic-table td::before { position: absolute; top: 16px; left: 16px; width: 25%; text-align: left; content: attr(data-title); display: block; }
+  .design-system-card .table .generic-table tr { display: table; width: 100%; border-bottom: solid 1px #D8D8D8; }
+  .design-system-card .table .generic-table tr td { background: #EBEBEB; }
+  .design-system-card .table .generic-table tr td:first-of-type { background: #ffffff url(../assets/Icon-chevron-down-333333.svg) no-repeat; background-position: right 16px center; background-size: 16px 10px; font-weight: 600; padding-left: 16px; padding-right: 50px; display: block; }
+  .design-system-card .table .generic-table tr td:first-of-type::before { content: ""; }
+  .design-system-card .table .generic-table .showGroup { display: block; transition: all .2s; }
+  .design-system-card .table .generic-table .groupParent td:first-of-type { background: #EBEBEB url(../assets/Icon-chevron-up-333333.svg) no-repeat; background-position: right 16px center; background-size: 16px 10px; } }
+
+@media (max-width: 800px) { .design-system-card .table .generic-table td { padding-left: 45%; font-size: 14px; line-height: 1.4rem; }
+  .design-system-card .table .generic-table td::before { width: 30%; }
+  .design-system-card .table .generic-table td:last-of-type { padding-bottom: 10px; } }
+
+.design-system-card .image .caption-wrapper, .design-system-card media-player .caption-wrapper { background: #EBEBEB; padding: 16px; }
+
+.design-system-card .image .caption, .design-system-card media-player .caption { font-size: 14px; line-height: 24px; padding: 0; }
 
 .design-system-card.no-header { border-top: 4px solid #254F90; background: #ffffff; }
 
@@ -5367,6 +5389,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card.no-header .design-system-card-links { background: #ffffff; }
 
 .responsive-img { max-width: 100%; width: 100%; margin-bottom: 24px; }
+
+.responsive-img-no-margin { max-width: 100%; width: 100%; }
 
 .layouts img.tablet { max-width: 500px; }
 
