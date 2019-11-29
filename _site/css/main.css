@@ -5252,6 +5252,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
   .design-system-card .table .generic-table td::before { width: 30%; }
   .design-system-card .table .generic-table td:last-of-type { padding-bottom: 10px; } }
 
+.design-system-card .accordion .c-padding-top { padding: 0 !important; }
+
 .design-system-card .image .caption-wrapper, .design-system-card media-player .caption-wrapper { background: #EBEBEB; padding: 16px; }
 
 .design-system-card .image .caption, .design-system-card media-player .caption { font-size: 14px; line-height: 24px; padding: 0; }

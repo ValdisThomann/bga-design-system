@@ -1035,6 +1035,13 @@
         //end @media 1200 px
 
     }
+    
+    .accordion {
+        .c-padding-top {
+            padding: 0 !important;
+        }   
+    }
+    
     .image, 
     media-player {
         .caption-wrapper {
