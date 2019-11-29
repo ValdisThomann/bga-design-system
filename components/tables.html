@@ -1,11 +1,11 @@
 ---
 layout: content
-title: TEMPLATE
+title: Tables
 breadcrumb1: Components
 url1: topic-components.html
 breadcrumb2:
 url2:
-longdesc: 
+longdesc: Display information in an easy to scan grid of rows and columns.
 
 ---
 <div class="main-section" style="background-color:;padding-bottom:">
@@ -53,20 +53,66 @@ longdesc:
             </div>
             <div class="body-copy-content">
 
+                
                 <div class="design-system-card component extra-wide">
                     <div class="design-system-card-content">
 
-                        <div class="example-wrapper">
-                            <div class="COMPONENT NAME">
-                                <div class="example COMPONENTNAME-container">
+                        <div class="example-wrapper white-back">
+                            <div class="table">
+                                <div class="example table-container">
+                                    <div class="generic-table">
+                                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="col-15-pc">Applicant Organisation</th>
+                                    <th class="col-20-pc">Project Name</th>
+                                    <th class="col-30-pc">Project Description</th>
+                                    <th class="col-10-pc">Project Location</th>
+                                    <th class="col-10-pc">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-title="Applicant Organisation">District Council Of Endor</td>
+                                    <td data-title="Project Name">Endor Tourism Strategy</td>
+                                    <td data-title="Project Description">The project will deliver a strategy for tourism in Endor, benefiting all the Ewoks.</td>
+                                    <td data-title="Project Location">Endor moon</td>
+                                    <td data-title="Amount">$20,000</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="Applicant Organisation">Great Southern Land Centre</td>
+                                    <td data-title="Project Name">Great Southern Land Master Plan</td>
+                                    <td data-title="Project Description">The project will deliver a Master Plan for the Great Southern Land over a ten year period.</td>
+                                    <td data-title="Project Location">Albany</td>
+                                    <td data-title="Amount">$125,000</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="Applicant Organisation">Mephis City Council</td>
+                                    <td data-title="Project Name">Memphic City Economic Development Strategy</td>
+                                    <td data-title="Project Description">The project will develop a suite planning documents towards economic growth of Memphis. </td>
+                                    <td data-title="Project Location">Gracelands</td>
+                                    <td data-title="Amount">$50,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                                    </div>
+                    
                                     
-                                    <!-- Component content -->
                                 </div>
                             </div>
+                            
 
                         </div>
 
                         <div>
+                            
+                            <div class="notes">
+                                <h4>Notes</h4>
+                                <p><strong>Tables are responsive</strong> and are displayed differently on desktop versus tablet and mobile.</p>
+                                <p>At desktop size they are displayed in full. At tablet and mobile size the header row is converted to a column and the rows are collapsed. Collapsed rows can be opened by the user in a manner similar to accordions.</p>
+                            </div>
 
                             <div class="element-design component closed">
                                 <p>View CSS styles</p>
@@ -186,13 +232,18 @@ longdesc:
                     </div>
                     <div class="body-copy-content">
 
+                        <h3>Purpose</h3>
 
-                    <p>Coming soon.</p>
+                        <p>Tables have two intended uses on business.gov.au.</p>
+                        <ul>
+                            <li>To allow users to look for patterns and insights between comparable content.</li>
+                            <li>To format lists of multiple instances of content with the same headings.</li>
 
+                        </ul>
 
+                        <p>Coming soon.</p>
 
                     </div>
-
 
                 </div>
             </div>
