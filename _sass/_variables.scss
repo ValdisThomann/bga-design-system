@@ -84,7 +84,6 @@ $green-positive-lightest: #E8F4E8;
 $font-family: 'Open Sans', sans-serif;
 $font-regular: 400;
 $font-semibold: 600;
-//$font-bold: 700;
 
 @mixin font-format($font, $font-weight, $font-style) {
     font-family: $font;

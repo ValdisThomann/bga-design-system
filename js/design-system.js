@@ -155,6 +155,51 @@ $(document).ready(function () {
         
     });
     
+    
+    /*----------- Accordions ----------- */
+    
+    $('.accordion-group-toggle-content').on('click', function(){
+        // Open all / close all button functionality.
+        if ($(this).hasClass('all-open')) {
+            $(this).removeClass('all-open');
+            $(this).children('h5').text('Open all');
+            $('.accordion-item-tile').removeClass('open');
+            $('.accordion-item-content').removeClass('visible');
+        } else {
+            $(this).addClass('all-open');
+            $(this).children('h5').text('Close all');
+            $('.accordion-item-tile').addClass('open');
+            $('.accordion-item-content').addClass('visible');
+        }
+    });
+    
+    $('.accordion-item-tile').on('click', function(){
+        // Toggle classes to show / hide accordion content
+        $(this).toggleClass('open');
+        $(this).next('.accordion-item-content').toggleClass('visible');
+        
+        // Check if all items are OPEN OR CLOSED and change the text and arrow of the accordion button accordingly.
+        var open_items = [],
+            closed_items = [];
+        $('.accordion-item-content').each(function(i){  
+            if ($(this).hasClass('visible')){
+                open_items.push(i); 
+            } else {
+                closed_items.push(i);
+            }
+        });   
+        if ($('.accordion-item-content').length == open_items.length) {
+            $('.accordion-group-toggle-content').addClass('all-open'); 
+            $('.accordion-group-toggle-content h5').text('Close all');  
+        } else if ($('.accordion-item-content').length == closed_items.length) {
+            $('.accordion-group-toggle-content').removeClass('all-open'); 
+            $('.accordion-group-toggle-content h5').text('Open all');
+        }
+        
+    });
+    
+    
+    
 
     
 }); // END doc ready

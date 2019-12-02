@@ -116,6 +116,7 @@
         background: $white;
         border-top: solid 1px $grey-light;
         padding: 24px;
+        clear: both;
         
         a {
             @include font-format($font-family, $font-semibold, normal);
@@ -138,12 +139,32 @@
         border: solid 1px $grey-light;
         border-bottom: none;
         background: $white url(../assets/Icon-accordion-arrow-up-default.svg) no-repeat;
-        background-position: right 24px center;
+        background-position: right 24px top 44%;
+        transition: all .3s ease 0s;
+        
+        &:hover {
+            background: $white url(../assets/Icon-accordion-arrow-up-hover.svg) no-repeat;
+            background-position: right 24px top 40%;
+        }
+        &:active {
+            background: $white url(../assets/Icon-accordion-arrow-up-active.svg) no-repeat;
+            background-position: right 24px top 40%;
+        }
+        
 
         &.closed {
             border-bottom: solid 1px $grey-light;
             background: $white url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat;
-            background-position: right 24px center;
+            background-position: right 24px top 44%;
+            
+            &:hover {
+                background: $white url(../assets/Icon-accordion-arrow-down-hover.svg) no-repeat;
+                background-position: right 24px top 40%; 
+            }
+            &:active {
+                background: $white url(../assets/Icon-accordion-arrow-down-active.svg) no-repeat;
+                background-position: right 24px top 40%;
+            }
 
             &.unavailable {
                 background: $white;
@@ -174,7 +195,7 @@
             padding: 24px;
             border: solid 1px $grey-light;
             border-top: none;
-            background: $grey-lightest;
+            background: $grey-lighter;
             display: none;
             
             &.open {
@@ -1039,7 +1060,52 @@
     .accordion {
         .c-padding-top {
             padding: 0 !important;
-        }   
+        }
+
+        .accordion-group-toggle-content {
+            &.all-open .iconAnimateWrapper {
+                transform: scaleY(-1);
+            }
+        }
+        
+        .accordion-item {
+            .accordion-item-tile {
+                &:hover {
+                    border-bottom: solid 4px $yellow-secondary-lightest !important;
+                }
+
+                &.open {
+                    background-color: $grey-lighter !important;
+
+                    .iconAnimateWrapper {
+                        transform: scaleY(-1);
+                    }
+                    
+                    &:hover {
+                        border-bottom: none !important;
+                    }
+                }
+            }
+        }
+        .accordion-item-content {
+            display: none;
+            transition-property: transform, -webkit-transform;
+            transition-duration: 0.4s, 0.4s;
+            transition-timing-function: ease, ease;
+            transition-delay: 0s, 0s;
+            max-height: 0;
+            
+	        
+            &.visible {
+                display: block;
+                background-color: $grey-lighter !important;
+                padding: 0 112px 64px 32px;
+                border-bottom: solid 4px $yellow-secondary-lightest;
+                max-height: none;
+            }
+
+        }
+
     }
     
     .image, 
@@ -1055,6 +1121,47 @@
         }
     }
     
+    .download-list {
+        a {
+            border: none;
+            box-shadow: none;
+
+            &.pdf:hover {
+                text-decoration: underline;
+                color: $red-dark;
+            }
+
+            &.docx:hover {
+                text-decoration: underline;
+                color: $blue-dark;
+            }
+
+            &.xls:hover {
+                text-decoration: underline;
+                color: $teal-dark;
+            }
+
+            &.ppt:hover {
+                text-decoration: underline;
+                color: $purple-dark;
+            }
+
+            &.jpeg:hover {
+                text-decoration: underline;
+                color: $blue-primary-mid;
+            }
+
+            &.eps:hover {
+                text-decoration: underline;
+                color: $darkpurple-dark;
+            }
+        }
+    }
+    
+    .grant-status-indicator {
+        
+    }
+    
     &.no-header {
         border-top: 4px solid $blue-primary;
         background: $white;
@@ -1062,6 +1169,12 @@
         .boxes-wrapper {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+        .icon-wrapper {
+            padding-top: 20px;
+            display:block;
         }
         .design-system-card-content {
             background: $white;
@@ -1255,6 +1368,53 @@
                     border-top: 60px solid $red-negative-lightest;
                 }
             }
+            
+            .icons {
+                width: 20%;
+                padding-left: 4%;
+                float: left;
+                
+                @media (max-width: 1200px) {
+                    width: 25%;
+                }
+                @media (max-width: 700px) {
+                    width: 33%;
+                }
+                @media (max-width: 500px) {
+                    width: 50%;
+                }
+                
+                .example {
+                    border: 1px solid $grey;
+                    height: 60px;
+                    line-height: 56px;
+                    text-align: center;
+                    
+                    img {
+                        display: inline-block;
+                    }
+                }
+
+                .empty {
+                    border: none;
+                    
+                    @media (max-width: 900px) {
+                        display: none;
+                    }
+                }
+
+                p {
+                    font-size: .8rem;
+                    line-height: 1.2rem;
+                    margin: 8px 0 24px;
+                }
+
+                span {
+                    @include font-format($font-family, $font-regular, normal);
+                }
+            }
+            
+            
         }
         .design-system-card-links {
             background: $white;
@@ -1281,6 +1441,8 @@
         max-width: 250px;
     }
 }
+
+
 
 
 .grey-background {
@@ -1329,3 +1491,5 @@
         }
     }
 }
+
+
