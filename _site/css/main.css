@@ -4954,6 +4954,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.component .element-design p { font-size: 1.2rem; padding: 0; }
 
+.design-system-card.component .element-design.blue-back { background: #254F90; }
+
 .design-system-card.component .element-code { border: none; }
 
 .design-system-card.component .example-wrapper { background: #F5F5F5; box-shadow: none; padding: 40px; display: block; position: relative; max-width: 1000px; /* &.expandable { margin-bottom: 80px; } .expand-example { margin-bottom: 16px; margin-top: -32px; z-index: 1000; position: absolute; bottom: -96px; right: 0px; img, p { margin: 0 auto; display: block; } } */ }
@@ -4963,6 +4965,14 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card.component .example-wrapper h3 { padding-top: 0; }
 
 .design-system-card.component .example { margin: 0 auto; }
+
+.design-system-card.foundation { box-shadow: none; }
+
+.design-system-card.foundation .element-design { border: none; border: 1px solid #D8D8D8; padding: 32px 24px 32px 32px; }
+
+.design-system-card.foundation .element-design.blue-back { background-color: #254F90; }
+
+.design-system-card.foundation .element-design.blue-back:hover { background-color: #254F90; }
 
 .design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; border-top: solid 4px #254F90; }
 
@@ -5293,6 +5303,70 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card .download-list a.jpeg:hover { text-decoration: underline; color: #4569A0; }
 
 .design-system-card .download-list a.eps:hover { text-decoration: underline; color: #5B43D0; }
+
+.design-system-card .buttons-links .button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; padding-right: 64px; }
+
+.design-system-card .buttons-links .button-wrapper:hover { transform: translateY(-0.1875rem); }
+
+.design-system-card .buttons-links .button-container { height: auto; border-top: none; background: none; margin: 0; }
+
+.design-system-card .buttons-links .cta-button { box-shadow: 0px 2px 4px #0000001A; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; }
+
+.design-system-card .buttons-links .cta-button:hover, .design-system-card .buttons-links .cta-button:active { box-shadow: 0px 4px 8px #0000004D; border-radius: 6px; opacity: 1; }
+
+.design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; }
+
+.design-system-card .buttons-links .primary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: 0px 4px 8px #0000004D; }
+
+.design-system-card .buttons-links .primary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004D; }
+
+.design-system-card .buttons-links .primary-dark-button .cta-button { background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #254F90; }
+
+.design-system-card .buttons-links .primary-dark-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
+
+.design-system-card .buttons-links .primary-dark-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; border-color: #18335C; }
+
+.design-system-card .buttons-links .secondary-button .cta-button { background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; }
+
+.design-system-card .buttons-links .secondary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #18335C; color: #ffffff; }
+
+.design-system-card .buttons-links .secondary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; color: #ffffff; }
+
+.design-system-card .buttons-links .secondary-dark-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
+
+.design-system-card .buttons-links .secondary-dark-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
+
+.design-system-card .buttons-links .secondary-dark-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; border-color: #18335C; }
+
+.design-system-card .buttons-links .tertiary-button .cta-button { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; height: 32px; border: none; box-shadow: none; color: #4569A0; text-align: left; }
+
+.design-system-card .buttons-links .tertiary-button .cta-button:hover { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .tertiary-dark-button .cta-button { background: url(../assets/Icon-arrow-right-white.svg) no-repeat left 8px center; height: 32px; border: none; box-shadow: none; color: #ffffff; text-align: left; }
+
+.design-system-card .buttons-links .tertiary-dark-button .cta-button:hover { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .link-dark .link-text { color: #ffffff; box-shadow: inset 0 -2.8px 0 #ffffff; }
+
+.design-system-card .buttons-links .link-dark .link-text:hover { box-shadow: inset 0 -20px 0 #96B7DF; color: #254F90; }
+
+.design-system-card .buttons-links .link-dark .link-text:active { box-shadow: inset 0 -20px 0 #96B7DF; color: #212A4C; }
+
+.design-system-card .buttons-links .pagination .pagination-container { padding-right: 64px; }
+
+.design-system-card .buttons-links .pagination a { color: #254F90; box-shadow: none; padding: 0 6px; margin: 0 10px; }
+
+.design-system-card .buttons-links .pagination a:hover { background: #E0EAF6; border-radius: 2px; }
+
+.design-system-card .buttons-links .pagination a:active { background: #B3C2D8; border-radius: 2px; }
+
+.design-system-card .buttons-links .pagination a.first { background-image: url(../assets/BGAIcon-chevrondouble-left.svg); background-repeat: no-repeat; background-size: 12px 12px; background-position: left 6px center; padding: 0 6px 0 24px; }
+
+.design-system-card .buttons-links .pagination a.previous { background-image: url(../assets/BGAIcon-chevron-left.svg); background-repeat: no-repeat; background-size: 8px 12px; background-position: left 6px center; padding: 0 6px 0 20px; }
+
+.design-system-card .buttons-links .pagination a.next { background-image: url(../assets/BGAIcon-chevron-right.svg); background-repeat: no-repeat; background-size: 8px 12px; background-position: right 6px center; padding: 0 20px 0 6px; }
+
+.design-system-card .buttons-links .pagination a.last { background-image: url(../assets/BGAIcon-chevrondouble-right.svg); background-repeat: no-repeat; background-size: 12px 12px; background-position: right 6px center; padding: 0 24px 0 6px; }
 
 .design-system-card.no-header { border-top: 4px solid #254F90; background: #ffffff; }
 
