@@ -4970,6 +4970,14 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.foundation .element-design { border: none; border: 1px solid #D8D8D8; padding: 32px 24px 32px 32px; }
 
+.design-system-card.foundation .element-design .example { width: 80%; float: left; min-height: 48px; }
+
+.design-system-card.foundation .element-design .float-button { width: 20%; }
+
+.design-system-card.foundation .element-design .float-button .float-button-content { width: 48px; height: 48px; float: right; }
+
+.design-system-card.foundation .element-design .float-button .BgaIcon.open { transform: scaleY(-1); }
+
 .design-system-card.foundation .element-design.blue-back { background-color: #254F90; }
 
 .design-system-card.foundation .element-design.blue-back:hover { background-color: #254F90; }
@@ -4986,25 +4994,9 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-links a:hover { box-shadow: none; }
 
-.design-system-card .element-design { padding: 24px; border: solid 1px #D8D8D8; border-bottom: none; background: #ffffff url(../assets/Icon-accordion-arrow-up-default.svg) no-repeat; background-position: right 24px top 44%; transition: all .3s ease 0s; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding-left: 16px; padding-right: 80px; display: block; }
-
-.design-system-card .element-design:hover { background: #ffffff url(../assets/Icon-accordion-arrow-up-hover.svg) no-repeat; background-position: right 24px top 40%; }
-
-.design-system-card .element-design:active { background: #ffffff url(../assets/Icon-accordion-arrow-up-active.svg) no-repeat; background-position: right 24px top 40%; }
-
-.design-system-card .element-design.closed { border-bottom: solid 1px #D8D8D8; background: #ffffff url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat; background-position: right 24px top 44%; }
-
-.design-system-card .element-design.closed:hover { background: #ffffff url(../assets/Icon-accordion-arrow-down-hover.svg) no-repeat; background-position: right 24px top 40%; }
-
-.design-system-card .element-design.closed:active { background: #ffffff url(../assets/Icon-accordion-arrow-down-active.svg) no-repeat; background-position: right 24px top 40%; }
-
-.design-system-card .element-design.closed.unavailable { background: #ffffff; }
+.design-system-card .element-design { padding: 24px; border: solid 1px #D8D8D8; border-bottom: none; background: #ffffff; background-position: right 24px top 44%; transition: all .3s ease 0s; /*&:hover { //background: $white url(../assets/Icon-accordion-arrow-up-hover.svg) no-repeat; background-position: right 24px top 40%; } &:active { //background: $white url(../assets/Icon-accordion-arrow-up-active.svg) no-repeat; background-position: right 24px top 40%; }*/ /*&.closed { border-bottom: solid 1px $grey-light; //background: $white url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat; background-position: right 24px top 44%; &:hover { //background: $white url(../assets/Icon-accordion-arrow-down-hover.svg) no-repeat; background-position: right 24px top 40%;  } &:active { //background: $white url(../assets/Icon-accordion-arrow-down-active.svg) no-repeat; background-position: right 24px top 40%; } &.unavailable { background: $white; } }*/ font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding-left: 16px; padding-right: 80px; display: block; }
 
 .design-system-card .element-design::before { content: ""; }
-
-.design-system-card .element-design.dark-back { background: #4569A0 url(../assets/Icon-accordion-arrow-up-default.svg) no-repeat; background-position: right 24px center; }
-
-.design-system-card .element-design.dark-back.closed { background: #4569A0 url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat; background-position: right 24px center; }
 
 .design-system-card .element-code { padding: 24px; border: solid 1px #D8D8D8; border-top: none; background: #EBEBEB; display: none; }
 
@@ -5304,7 +5296,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .download-list a.eps:hover { text-decoration: underline; color: #5B43D0; }
 
-.design-system-card .buttons-links .button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; padding-right: 64px; }
+.design-system-card .buttons-links .button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; padding-right: 64px; margin-top: 8px; }
 
 .design-system-card .buttons-links .button-wrapper:hover { transform: translateY(-0.1875rem); }
 
@@ -5346,6 +5338,10 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .buttons-links .tertiary-dark-button .cta-button:hover { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
 
+.design-system-card .buttons-links .link .link-text { color: #254F90; }
+
+.design-system-card .buttons-links .link .link-text:active { color: #000000; }
+
 .design-system-card .buttons-links .link-dark .link-text { color: #ffffff; box-shadow: inset 0 -2.8px 0 #ffffff; }
 
 .design-system-card .buttons-links .link-dark .link-text:hover { box-shadow: inset 0 -20px 0 #96B7DF; color: #254F90; }
@@ -5356,17 +5352,27 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .buttons-links .pagination a { color: #254F90; box-shadow: none; padding: 0 6px; margin: 0 10px; }
 
+.design-system-card .buttons-links .pagination a.current { color: #000000; background: #E0EAF6; border-radius: 2px; }
+
 .design-system-card .buttons-links .pagination a:hover { background: #E0EAF6; border-radius: 2px; }
 
-.design-system-card .buttons-links .pagination a:active { background: #B3C2D8; border-radius: 2px; }
+.design-system-card .buttons-links .pagination a:active { color: #000000; background: #B3C2D8; border-radius: 2px; }
 
 .design-system-card .buttons-links .pagination a.first { background-image: url(../assets/BGAIcon-chevrondouble-left.svg); background-repeat: no-repeat; background-size: 12px 12px; background-position: left 6px center; padding: 0 6px 0 24px; }
 
+.design-system-card .buttons-links .pagination a.first:active { background-image: url(../assets/BGAIcon-chevrondouble-left-black.svg); }
+
 .design-system-card .buttons-links .pagination a.previous { background-image: url(../assets/BGAIcon-chevron-left.svg); background-repeat: no-repeat; background-size: 8px 12px; background-position: left 6px center; padding: 0 6px 0 20px; }
+
+.design-system-card .buttons-links .pagination a.previous:active { background-image: url(../assets/BGAIcon-chevron-left-black.svg); }
 
 .design-system-card .buttons-links .pagination a.next { background-image: url(../assets/BGAIcon-chevron-right.svg); background-repeat: no-repeat; background-size: 8px 12px; background-position: right 6px center; padding: 0 20px 0 6px; }
 
+.design-system-card .buttons-links .pagination a.next:active { background-image: url(../assets/BGAIcon-chevron-right-black.svg); }
+
 .design-system-card .buttons-links .pagination a.last { background-image: url(../assets/BGAIcon-chevrondouble-right.svg); background-repeat: no-repeat; background-size: 12px 12px; background-position: right 6px center; padding: 0 24px 0 6px; }
+
+.design-system-card .buttons-links .pagination a.last:active { background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg); }
 
 .design-system-card.no-header { border-top: 4px solid #254F90; background: #ffffff; }
 

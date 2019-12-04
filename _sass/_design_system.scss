@@ -99,6 +99,26 @@
             border: none;
             border: 1px solid $grey-light;
             padding: 32px 24px 32px 32px;
+           
+            .example {
+                width: 80%;
+                float: left;
+                min-height: 48px;
+            }
+            .float-button {
+                width: 20%;
+                
+                
+                .float-button-content {
+                    width: 48px;
+                    height: 48px;
+                    float: right;
+                }
+                .BgaIcon.open {
+                    transform: scaleY(-1);
+                }
+                
+            }
             
             &.blue-back {
                 background-color: $blue-primary;
@@ -161,38 +181,38 @@
         padding: 24px;
         border: solid 1px $grey-light;
         border-bottom: none;
-        background: $white url(../assets/Icon-accordion-arrow-up-default.svg) no-repeat;
+        background: $white; //url(../assets/Icon-accordion-arrow-up-default.svg) no-repeat;
         background-position: right 24px top 44%;
         transition: all .3s ease 0s;
         
-        &:hover {
-            background: $white url(../assets/Icon-accordion-arrow-up-hover.svg) no-repeat;
+        /*&:hover {
+            //background: $white url(../assets/Icon-accordion-arrow-up-hover.svg) no-repeat;
             background-position: right 24px top 40%;
         }
         &:active {
-            background: $white url(../assets/Icon-accordion-arrow-up-active.svg) no-repeat;
+            //background: $white url(../assets/Icon-accordion-arrow-up-active.svg) no-repeat;
             background-position: right 24px top 40%;
-        }
+        }*/
         
 
-        &.closed {
+        /*&.closed {
             border-bottom: solid 1px $grey-light;
-            background: $white url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat;
+            //background: $white url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat;
             background-position: right 24px top 44%;
             
             &:hover {
-                background: $white url(../assets/Icon-accordion-arrow-down-hover.svg) no-repeat;
+                //background: $white url(../assets/Icon-accordion-arrow-down-hover.svg) no-repeat;
                 background-position: right 24px top 40%; 
             }
             &:active {
-                background: $white url(../assets/Icon-accordion-arrow-down-active.svg) no-repeat;
+                //background: $white url(../assets/Icon-accordion-arrow-down-active.svg) no-repeat;
                 background-position: right 24px top 40%;
             }
 
             &.unavailable {
                 background: $white;
             }
-        }
+        }*/
 
         @include font-format($font-family, $font-semibold, normal);
         padding-left: 16px;
@@ -204,12 +224,12 @@
         }
 
         &.dark-back {
-            background: $blue-primary-mid url(../assets/Icon-accordion-arrow-up-default.svg) no-repeat;
-            background-position: right 24px center;
+            //background: $blue-primary-mid url(../assets/Icon-accordion-arrow-up-default.svg) no-repeat;
+            //background-position: right 24px center;
 
             &.closed {
-                background: $blue-primary-mid url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat;
-                background-position: right 24px center;
+                //background: $blue-primary-mid url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat;
+                //background-position: right 24px center;
             }
         }
     }
@@ -1194,6 +1214,7 @@
             transition-timing-function: ease, ease;
             transition-delay: 0s, 0s;
             padding-right: 64px;
+            margin-top: 8px;
 
             &:hover {
                 transform: translateY(-.1875rem);
@@ -1334,7 +1355,15 @@
             }
         }
         
-        .link {}
+        .link {
+            .link-text{
+                color: $blue-primary;
+                
+                &:active {
+                    color: $black;
+                }
+            }
+        }
         
         .link-dark {
             .link-text{
@@ -1362,11 +1391,17 @@
                 padding: 0 6px;
                 margin: 0 10px;                
                 
+                &.current {
+                    color: $black;
+                    background: $blue-lightest;
+                    border-radius: 2px;
+                }
                 &:hover {
                     background: $blue-lightest;
                     border-radius: 2px;
                 }
                 &:active {
+                    color: $black;
                     background: $blue-primary-light;
                     border-radius: 2px;
                 }
@@ -1377,6 +1412,10 @@
                     background-size: 12px 12px;
                     background-position: left 6px center;
                     padding: 0 6px 0 24px;
+                    
+                    &:active {
+                        background-image: url(../assets/BGAIcon-chevrondouble-left-black.svg);
+                    }
                 }
                  &.previous {
                     background-image: url(../assets/BGAIcon-chevron-left.svg);
@@ -1384,6 +1423,10 @@
                     background-size: 8px 12px;
                     background-position: left 6px center;
                     padding: 0 6px 0 20px;
+                     
+                    &:active {
+                        background-image: url(../assets/BGAIcon-chevron-left-black.svg); 
+                    }
                 }
                 &.next {
                     background-image: url(../assets/BGAIcon-chevron-right.svg);
@@ -1391,6 +1434,10 @@
                     background-size: 8px 12px;
                     background-position: right 6px center;
                     padding: 0 20px 0 6px;
+                    
+                    &:active {
+                        background-image: url(../assets/BGAIcon-chevron-right-black.svg); 
+                    }
                 }
                  &.last {
                     background-image: url(../assets/BGAIcon-chevrondouble-right.svg);
@@ -1398,6 +1445,10 @@
                     background-size: 12px 12px;
                     background-position: right 6px center;
                     padding: 0 24px 0 6px;
+                    
+                    &:active {
+                         background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg);
+                    }
                 }
             }
         }

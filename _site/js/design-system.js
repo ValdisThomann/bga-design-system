@@ -43,12 +43,14 @@ $(document).ready(function () {
     
     
     /*----------- Design system cards ----------- */
-    $('.element-design').on('click', function(){
-        if($(this).hasClass('unavailable')) {
+    $('.float-button').on('click', function(){
+        if($(this).parents('element-design').hasClass('unavailable')) {
             return;
         } else {
-            $(this).toggleClass('closed');
-            $(this).next('.element-code').toggleClass('open');
+            $(this).parent().toggleClass('closed');
+            $(this).parent().next('.element-code').toggleClass('open');
+            var icon = $(this).find('.BgaIcon');
+            $(icon).toggleClass('open');
         }
     });
     
@@ -156,7 +158,7 @@ $(document).ready(function () {
     });
     
     
-    /*----------- Accordions ----------- */
+    /*----------- Accordion example ----------- */
     
     $('.accordion-group-toggle-content').on('click', function(){
         // Open all / close all button functionality.
@@ -199,6 +201,62 @@ $(document).ready(function () {
     });
     
     
+    /*----------- Pagination ----------- */
+    // Change current state on when click on page number
+    $('.pagination-container a.page').on('click', function(){
+        $('.pagination-container a').each(function(){
+            $(this).removeClass('current');
+        });  
+        $(this).addClass('current');
+    });
+    // Change current state to first page number on 'First' link click
+    $('.pagination-container a.first').on('click', function(){
+        $('.pagination-container a').each(function(){
+            $(this).removeClass('current');
+            $('.pagination-container a.page').first().addClass('current');
+        });  
+    });
+    // Change current state to last page number on 'Last' link click
+    $('.pagination-container a.last').on('click', function(){
+        $('.pagination-container a').each(function(){
+            $(this).removeClass('current');
+            $('.pagination-container a.page').last().addClass('current');
+        });  
+    });
+    // Change current state to previous page number on 'Previous' link click
+    $('.pagination-container a.previous').on('click', function(){
+        var current_pos;
+        $('.pagination-container a.page').each(function(i){
+            if($(this).hasClass('current')) {
+                current_pos = i;
+                $(this).removeClass('current');
+                console.log(current_pos);
+            }
+        }); 
+        var new_pos = $('.pagination-container a.page').get(current_pos - 1);
+        if (current_pos > 0){
+            $(new_pos).addClass('current');
+        } else {
+            $('.pagination-container a.page').first().addClass('current');
+        }
+    });
+    // Change current state to next page number on 'Next' link click
+    $('.pagination-container a.next').on('click', function(){
+        var current_pos;
+        $('.pagination-container a.page').each(function(i){
+            if($(this).hasClass('current')) {
+                current_pos = i;
+                $(this).removeClass('current');
+                console.log(current_pos);
+            }
+        }); 
+        var new_pos = $('.pagination-container a.page').get(current_pos + 1);
+        if (current_pos <= $('.pagination-container a.page').get.length){
+            $(new_pos).addClass('current');
+        } else {
+            $('.pagination-container a.page').last().addClass('current');
+        }
+    });
     
 
     
