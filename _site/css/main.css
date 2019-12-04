@@ -4966,11 +4966,19 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.component .example { margin: 0 auto; }
 
+.design-system-card.component .content-wrapper { width: 80%; float: left; }
+
+.design-system-card.component .float-button { width: 20%; }
+
+.design-system-card.component .float-button .float-button-content { width: 48px; height: 48px; float: right; }
+
+.design-system-card.component .float-button .BgaIcon.open { transform: scaleY(-1); }
+
 .design-system-card.foundation { box-shadow: none; }
 
-.design-system-card.foundation .element-design { border: none; border: 1px solid #D8D8D8; padding: 32px 24px 32px 32px; }
+.design-system-card.foundation .element-design { border: 1px solid #D8D8D8; padding: 32px 24px 32px 32px; overflow: auto; }
 
-.design-system-card.foundation .element-design .example { width: 80%; float: left; min-height: 48px; }
+.design-system-card.foundation .element-design .example { width: 80%; float: left; }
 
 .design-system-card.foundation .element-design .float-button { width: 20%; }
 
@@ -4994,7 +5002,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-links a:hover { box-shadow: none; }
 
-.design-system-card .element-design { padding: 24px; border: solid 1px #D8D8D8; border-bottom: none; background: #ffffff; background-position: right 24px top 44%; transition: all .3s ease 0s; /*&:hover { //background: $white url(../assets/Icon-accordion-arrow-up-hover.svg) no-repeat; background-position: right 24px top 40%; } &:active { //background: $white url(../assets/Icon-accordion-arrow-up-active.svg) no-repeat; background-position: right 24px top 40%; }*/ /*&.closed { border-bottom: solid 1px $grey-light; //background: $white url(../assets/Icon-accordion-arrow-down-default.svg) no-repeat; background-position: right 24px top 44%; &:hover { //background: $white url(../assets/Icon-accordion-arrow-down-hover.svg) no-repeat; background-position: right 24px top 40%;  } &:active { //background: $white url(../assets/Icon-accordion-arrow-down-active.svg) no-repeat; background-position: right 24px top 40%; } &.unavailable { background: $white; } }*/ font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding-left: 16px; padding-right: 80px; display: block; }
+.design-system-card .element-design { padding: 24px; border: solid 1px #D8D8D8; border-bottom: none; background: #ffffff; background-position: right 24px top 44%; transition: all .3s ease 0s; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding-left: 16px; padding-right: 80px; display: block; }
 
 .design-system-card .element-design::before { content: ""; }
 
