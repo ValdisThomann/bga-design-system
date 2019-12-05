@@ -5544,6 +5544,18 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .layouts img.mobile { max-width: 250px; }
 
+.grid-example { border-bottom: 1px solid #C7C7C7; }
+
+.grid-example .responsive-img.desktop-hd { max-width: 910px; }
+
+.grid-example .responsive-img.desktop { max-width: 730px; }
+
+.grid-example .responsive-img.laptop { max-width: 550px; }
+
+.grid-example .responsive-img.tablet { max-width: 280px; }
+
+.grid-example .responsive-img.mobile { max-width: 180px; }
+
 .grey-background { background: #EBEBEB; }
 
 .grey-border { border: 1px solid #D8D8D8; }

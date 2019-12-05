@@ -1684,13 +1684,33 @@
 }
 
 .layouts {
-     img.tablet {
+    img.tablet {
         max-width: 500px;
     }
     img.mobile {
         max-width: 250px;
     }
 }
+.grid-example {
+    border-bottom: 1px solid $grey;
+    
+    .responsive-img.desktop-hd {
+        max-width: 910px
+    }
+    .responsive-img.desktop {
+        max-width: 730px
+    }
+    .responsive-img.laptop {
+        max-width: 550px;
+    }
+    .responsive-img.tablet {
+        max-width: 280px
+    }
+    .responsive-img.mobile {
+        max-width: 180px
+    }
+}
+
 
 
 
