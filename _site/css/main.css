@@ -5556,6 +5556,20 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .grid-example .responsive-img.mobile { max-width: 180px; }
 
+.horizontal-spacing span { margin-top: -20px; width: 200px; background: #D0D9E7; display: inline-block; margin: 16px 0 0 32px; }
+
+.horizontal-spacing .height-24 span { height: 24px; }
+
+.horizontal-spacing .height-32 span { height: 32px; }
+
+.horizontal-spacing .height-48 span { height: 48px; }
+
+.horizontal-spacing .height-64 span { height: 64px; }
+
+.horizontal-spacing .height-80 span { height: 80px; }
+
+.horizontal-spacing .height-96 span { height: 96px; }
+
 .grey-background { background: #EBEBEB; }
 
 .grey-border { border: 1px solid #D8D8D8; }

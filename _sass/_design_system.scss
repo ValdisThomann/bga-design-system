@@ -1710,6 +1710,45 @@
         max-width: 180px
     }
 }
+.horizontal-spacing {
+    span {
+        margin-top: -20px;
+         width: 200px;
+            background: #D0D9E7;
+            display: inline-block;
+            margin: 16px 0 0 32px;
+    }
+    .height-24 {
+        span {
+            height: 24px;  
+        }
+    }
+    .height-32 {
+        span {
+            height: 32px;
+        }
+    }
+    .height-48 {
+        span {
+            height: 48px;
+        }
+    }
+    .height-64 {
+        span {
+            height: 64px;
+        }
+    }
+    .height-80 {
+        span {
+            height: 80px;
+        }
+    }
+    .height-96 {
+        span {
+            height: 96px;
+        }
+    }
+}
 
 
 
