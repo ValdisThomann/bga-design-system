@@ -5570,6 +5570,44 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .horizontal-spacing .height-96 span { height: 96px; }
 
+#horizontal-example { padding: 32px 16px; }
+
+#horizontal-example h1.heading-example { padding: 0 0 32px 0; margin: 0; }
+
+#horizontal-example h2.heading-example { padding: 24px 0 32px 0; margin: 0; }
+
+#horizontal-example h3.heading-example { padding: 16px 0 32px 0; margin: 0; }
+
+#horizontal-example h4.heading-example { padding: 16px 0 16px 0; margin: 0; }
+
+#horizontal-example h5.heading-example { padding: 0 0 16px 0; margin: 0; }
+
+#horizontal-example p { padding: 0 0 32px 0; margin: 0; }
+
+#horizontal-example hr { padding: 0 0 32px 0; margin: 0; }
+
+#horizontal-example #hero-pathway { padding: 0 0 32px 0; margin: 0; }
+
+#horizontal-example #hero-pathway .c-wrapper, #horizontal-example #hero-pathway .hero-pathway-list-card, #horizontal-example #hero-pathway .hero-pathway-list-content-wrapper { padding: 0; margin: 0; }
+
+#horizontal-example #callout { padding: 0 0 32px 0; margin: 0; }
+
+#horizontal-example #inline-pathway { padding: 0 0 32px 0; margin: 0; }
+
+#horizontal-example #inline-pathway .vertical-list, #horizontal-example #inline-pathway .c-wrapper { padding: 0; }
+
+#horizontal-example #inline-pathway:last-of-type { padding: 0 0 32px 0; }
+
+#horizontal-example #inline-pathway p, #horizontal-example #inline-pathway a { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; box-shadow: none; }
+
+#horizontal-example #inline-pathway p { padding-bottom: 16px; }
+
+#horizontal-example #accordion { padding: 0 0 32px 0; margin: 0; }
+
+#horizontal-example #accordion .tablist { padding: 0; }
+
+#horizontal-example #image { padding: 0 0 32px 0; margin: 0; }
+
 .grey-background { background: #EBEBEB; }
 
 .grey-border { border: 1px solid #D8D8D8; }

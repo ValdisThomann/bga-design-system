@@ -1750,6 +1750,84 @@
     }
 }
 
+#horizontal-example {
+    padding: 32px 16px;
+    
+    h1.heading-example {
+        padding: 0 0 32px 0;
+        margin: 0;
+    }
+    h2.heading-example {
+        padding: 24px 0 32px 0;
+        margin: 0;
+    }
+    h3.heading-example {
+        padding: 16px 0 32px 0;
+        margin: 0;
+    }
+    h4.heading-example {
+        padding: 16px 0 16px 0;
+        margin: 0;
+    }
+    h5.heading-example {
+        padding: 0 0 16px 0;
+        margin: 0;
+    }
+    p {
+        padding: 0 0 32px 0;
+        margin: 0;
+    }
+    hr {
+        padding: 0 0 32px 0;
+        margin: 0;
+    }
+    #hero-pathway {
+        padding: 0 0 32px 0;
+        margin: 0;
+        .c-wrapper, 
+        .hero-pathway-list-card,
+        .hero-pathway-list-content-wrapper {
+            padding: 0;
+            margin: 0;
+        }
+        
+    }
+    #callout {
+        padding: 0 0 32px 0;
+        margin: 0;
+    }
+    #inline-pathway {
+        padding: 0 0 32px 0;
+        margin: 0;
+        .vertical-list,
+        .c-wrapper {
+            padding: 0;
+        }
+        &:last-of-type {
+            padding: 0 0 32px 0;
+        }
+        p, a {
+            @include font-format($font-family, $font-regular, normal);
+            box-shadow: none;
+        } 
+        p {
+            padding-bottom: 16px;
+        }
+    }
+    #accordion {
+        padding: 0 0 32px 0;
+        margin: 0;
+        
+        .tablist {
+            padding: 0;
+        }
+    }
+    #image {
+        padding: 0 0 32px 0;
+        margin: 0;
+    }
+    
+}
 
 
 
