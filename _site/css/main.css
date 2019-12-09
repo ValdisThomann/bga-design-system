@@ -4876,7 +4876,7 @@ h3 { padding: 16px 0; margin-bottom: 0px !important; }
 
 hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0 0 1.5rem; text-align: left; width: 3.25rem; }
 
-.body-copy p, .main-section p { font-size: 1rem; padding-bottom: 16px; max-width: 750px; }
+.body-copy p, .main-section p { font-size: 1rem; max-width: 750px; }
 
 .body-copy .body-copy-content p.small { font-size: .8rem; }
 
@@ -5556,6 +5556,12 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .grid-example .responsive-img.mobile { max-width: 180px; }
 
+.horizontal-examples-intro { border-bottom: 1px solid #C7C7C7; margin-bottom: 16px; }
+
+.horizontal-spacing .horizontal-example { border-bottom: 1px solid #C7C7C7; padding-bottom: 48px; margin-bottom: 16px; }
+
+.horizontal-spacing .horizontal-example img { max-width: 619px; width: 100%; }
+
 .horizontal-spacing span { margin-top: -20px; width: 200px; background: #D0D9E7; display: inline-block; margin: 16px 0 0 32px; }
 
 .horizontal-spacing .height-24 span { height: 24px; }
@@ -5570,7 +5576,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .horizontal-spacing .height-96 span { height: 96px; }
 
-#horizontal-example { padding: 32px 16px; }
+#horizontal-example { padding: 32px 0; }
 
 #horizontal-example h1.heading-example { padding: 0 0 32px 0; margin: 0; }
 
@@ -5585,6 +5591,12 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 #horizontal-example p { padding: 0 0 32px 0; margin: 0; }
 
 #horizontal-example hr { padding: 0 0 32px 0; margin: 0; }
+
+#horizontal-example ul { padding: 0 0 0 32px; }
+
+#horizontal-example li { margin: 0; padding: 0 0 16px 16px; }
+
+#horizontal-example li:last-of-type { padding: 0 0 32px 16px; }
 
 #horizontal-example #hero-pathway { padding: 0 0 32px 0; margin: 0; }
 
@@ -5607,6 +5619,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 #horizontal-example #accordion .tablist { padding: 0; }
 
 #horizontal-example #image { padding: 0 0 32px 0; margin: 0; }
+
+@media (max-width: 900px) { #horizontal-example { padding: 32px 16px; } }
 
 .grey-background { background: #EBEBEB; }
 
