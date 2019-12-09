@@ -5088,19 +5088,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .mobile-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; }
 
-.design-system-card .hero-pathway .label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; }
-
-.design-system-card .hero-pathway .description { padding-bottom: 48px; }
-
-.design-system-card .hero-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; height: 32px; }
-
-.design-system-card .hero-pathway .hero-container { height: auto; background: #ffffff; padding: 24px; border: none; border-top: 4px solid #254F90; box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.2); transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
-
-.design-system-card .hero-pathway:hover h3 { color: #254F90; text-decoration: underline; }
-
-.design-system-card .hero-pathway:hover .icon-link { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; }
-
-.design-system-card .hero-pathway:hover .hero-container { transform: translateY(-0.1875rem); }
+.design-system-card .hero-pathway .hero-pathway-list-secondary-description { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
 
 .design-system-card .standard-pathway .description { padding-bottom: 48px; }
 
