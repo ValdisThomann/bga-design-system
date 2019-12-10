@@ -445,9 +445,24 @@
 
     .hero-pathway {
         
+        .hero-pathway-anchor:hover {
+            box-shadow: none;
+        }
         .hero-pathway-list-secondary-description {
             @include font-format($font-family, $font-regular, normal);
         }
+        @media (max-width: 1100px) {
+            .hero-pathway-list-illustration-bg {
+                display: none !important;
+            }
+        }
+        
+        @media (max-width: 800px) {
+            .hero-pathway-list-content-right {
+                display: none !important;
+            }
+        }
+        
         
     }
 
@@ -605,35 +620,6 @@
     }
 
     .feature-image-pathway {
-        .label {
-            @include font-format($font-family, $font-regular, normal);
-            font-size: 12px;
-            letter-spacing: .2px;
-            line-height: 20px;
-            text-transform: uppercase;
-            color: $white;
-        }
-        h3 {
-            color: $white;
-            
-            &:hover {
-                color: $white;
-                text-decoration: underline;
-            }
-        }
-        .description {
-            color: $white;
-        }
-        .icon-link {
-            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
-            height: 32px; 
-
-            &:hover {
-                background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
-                height: 32px; 
-
-            }
-        }
         .feature-image-container {
             background: $blue-primary-mid;
             padding: 24px;
@@ -648,26 +634,50 @@
             &:hover {
                 transform: translateY(-.1875rem);
                 background: $blue-primary;
+
+                .icon-link {
+                    background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center;
+                    height: 32px;
+                }
             }
         }
-        .description {
-            padding-bottom: 48px;
-        }
+        
         .feature-image-container {
             height: auto;
-            max-width: 920px;
             background: $blue-primary-mid;
             display: -webkit-flex; /* Safari 6.1+ */
             display: flex;
             }
         .feature-text {
-            -webkit-box-flex: 1;
-            flex: 1 100%;
+            width: 33%;
             padding: 0 32px 0 0;
+            position: relative;
+        }
+        .label {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 12px;
+            letter-spacing: .2px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $white;
+        }
+        h3 {
+            color: $white;
+        }
+        .description {
+            color: $white;
+            padding-bottom: 48px;
+        }
+        .icon-link {
+            background: url(../assets/Icon-arrow-right-white.svg) no-repeat left 8px center;
+            height: 32px; 
+            position: absolute;
+            height: 32px;
+            width: 32px;
+            bottom: 0;
         }
         .feature-image {
-            -webkit-box-flex: 1;
-            flex: 1 100%;
+            width: 66%;
             padding: 0;
         }
         &:hover {
@@ -687,33 +697,34 @@
             margin-bottom: 0;
         }
         
-    @media (max-width: 1200px) {
+    
+    @media (max-width: 1100px) {
         .feature-image-container {
             display: -webkit-flex; /* Safari 6.1+ */
             display: flex;
             flex-direction: column-reverse;
+            padding: 0;
         }
         
         .feature-text {
             -webkit-box-flex: 1;
             flex: 1 100%;
-            padding: 0 32px 0 0;
+            padding: 24px;
+            width: 100%;
         }
         .feature-image {
             -webkit-box-flex: 1;
             flex: 1 100%;
-            padding: 0;
+            padding: 24px 24px 0 24px;
+            width: 100%;
+        }
+        .icon-link {
+            position: relative;
         }
     }
-    @media (max-width: 600px) {
-        .feature-image-container {
-            padding: 0;
-        } 
-        .feature-text {
-            padding: 24px;
-        }
+    @media (max-width: 900px) {
         .feature-image {
-            
+            padding: 0;
         }
     }
 }

@@ -2,15 +2,19 @@
 
 .page-header {
     padding: 48px 0;
-    
+
 }
+
 .page-header-intro p {
     @include font-format($font-family, $font-regular, normal);
     font-size: 16px;
 }
-h1, h2 {
+
+h1,
+h2 {
     @include font-format($font-family, $font-semibold, normal);
 }
+
 h3 {
     padding: 16px 0;
     margin-bottom: 0px !important;
@@ -23,54 +27,66 @@ hr {
     text-align: left;
     width: 3.25rem;
 }
-.body-copy p, .main-section p {
+
+.body-copy p,
+.main-section p {
     font-size: 1rem;
-    //padding-bottom: 16px;
     max-width: 750px;
 }
+
 .body-copy .body-copy-content p.small {
     font-size: .8rem;
 }
 
 .c-padding-bottom {
     padding-bottom: 0 !important;
+
     ol:last-child,
     ul:last-child {
         padding-bottom: 0;
     }
 }
 
-.search-bar-wrapper 
-.search-bar-inner-wrapper 
-.search-bar-search
-.input-group-container {
+.c-wrapper .row {
+    max-width: 1200px;
+
+    @media (max-width: 1200px) {
+        max-width: 1150px;
+    }
+}
+
+.search-bar-wrapper .search-bar-inner-wrapper .search-bar-search .input-group-container {
     input {
         display: inline-block;
         position: absolute;
         right: 50px;
     }
+
     span {
         display: inline-block;
         position: absolute;
         right: 0;
-        
+
         button {
             width: 50px;
         }
     }
 }
-a.breadcrumb-link
-.hero-pathway-list-illustration-bg {
+
+a.breadcrumb-link .hero-pathway-list-illustration-bg {
     display: none !important;
 }
-.col-lg-4, 
+
+.col-lg-4,
 .col-sm-6 {
     .hero-pathway-list-illustration-image {
         display: none !important;
     }
+
     .hero-pathway-list-illustration-bg {
         display: none !important;
     }
+
     .hero-pathway-list-content-left {
         flex: initial !important;
     }
@@ -78,20 +94,21 @@ a.breadcrumb-link
 
 #navigation-bar {
     .navigation-main-menu {
-    
-    a {
-        color: $white;
-        text-decoration: none;
-        padding-top: 18px;
-        padding-bottom: 18px;
-        @include font-format($font-family, $font-semibold, normal);
-        
-        &:hover {
-            text-decoration: underline;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            @include font-format($font-family, $font-semibold, normal);
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
-    }
-    &:hover {
-        background: $blue-active;
+
+        &:hover {
+            background: $blue-active;
         }
     }
 }
@@ -99,52 +116,30 @@ a.breadcrumb-link
 .footer-wrapper {
     margin-top: 48px;
 }
+
 .footer {
     .footer-top-links-top {
         padding: 2rem 16px;
-        
+
         p {
             margin-bottom: 0;
             color: $white;
             font-size: 1.3rem;
         }
     }
-    .footer-top  {
+
+    .footer-top {
         padding: 0;
-        
-    }
-    
-    
-}
 
-
-@media (min-width: 1600px) {
-
-    .col-sm-6 {
-        .hero-pathway-list-illustration-image {
-            display: flex !important;
-        }
-        .hero-pathway-list-content-left {
-            flex: 1 !important;
-        }
     }
 
 
 }
 
-@media (min-width: 901px) and (max-width: 1200px) {
-    .hero-pathway-list-illustration-bg,
-    .hero-pathway-list-illustration-image {
-        display: none !important;
-    }
-    .hero-pathway-list-content-left {
-        flex: initial !important;
-    }
-    
-}
+
 @media (max-width: 1205px) {
     .navigation-bar .navigation-main-menu a {
-        font-size: 18px;    
+        font-size: 18px;
     }
 }
 
@@ -152,52 +147,26 @@ a.breadcrumb-link
     .navigation-bar-wrapper {
         display: none;
     }
-    
+
     .search-bar-wrapper {
         background: $blue-primary url("../assets/Icon-menu.svg") no-repeat;
         background-size: 20px 16px;
         background-position: center right 15px;
-        
+
     }
-    
+
     .search-bar-wrapper .search-bar-inner-wrapper .search-bar-search .input-group-container {
         input {
             display: none;
         }
+
         button {
             position: absolute;
             right: 0px;
             top: 10px;
         }
     }
-    
-    .hero-pathway-list-illustration-bg {
-        display: none !important;
-    }
-    
-    .col-sm-6 {
-        .hero-pathway-list-illustration-image {
-            display: none !important;
-        }
-        .hero-pathway-list-content-left {
-            flex: initial !important;
-        }
-
-    }
-    
 }
-
-@media only screen and (max-width: 618px) {
-    .hero-pathway-list-illustration-bg,
-    .hero-pathway-list-illustration-image {
-        display: none !important;
-    }
-    .hero-pathway-list-content-left {
-        flex: initial !important;
-    }
-
-}
-
 
 
 
@@ -216,6 +185,3 @@ a.breadcrumb-link
 
     }
 }
-
-//
-
