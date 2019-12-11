@@ -999,6 +999,18 @@
                 }
 
             }
+            
+            @media (max-width: 900px) {
+                .advisor-intro {
+                    padding-bottom: 12px;
+                }
+                .advisor-card-intro-title,
+                .advisor-card-intro-detail {
+                    padding: 0;
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
         }
     }
     

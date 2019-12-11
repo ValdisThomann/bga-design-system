@@ -5261,6 +5261,9 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
   .design-system-card .call-to-action.advisor-profile .advisor-card-content p, .design-system-card .callout.advisor-profile .advisor-card-content p, .design-system-card .advisor-profile.advisor-profile .advisor-card-content p { font-size: 16px; line-height: 32px; padding-bottom: 16px; }
   .design-system-card .call-to-action.advisor-profile .advisor-card-content p:last-of-type, .design-system-card .callout.advisor-profile .advisor-card-content p:last-of-type, .design-system-card .advisor-profile.advisor-profile .advisor-card-content p:last-of-type { padding-bottom: 0; } }
 
+@media (max-width: 900px) { .design-system-card .call-to-action.advisor-profile .advisor-intro, .design-system-card .callout.advisor-profile .advisor-intro, .design-system-card .advisor-profile.advisor-profile .advisor-intro { padding-bottom: 12px; }
+  .design-system-card .call-to-action.advisor-profile .advisor-card-intro-title, .design-system-card .call-to-action.advisor-profile .advisor-card-intro-detail, .design-system-card .callout.advisor-profile .advisor-card-intro-title, .design-system-card .callout.advisor-profile .advisor-card-intro-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-title, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-detail { padding: 0; font-size: 16px; line-height: 32px; } }
+
 .design-system-card .table .table-responsive { overflow-y: hidden; }
 
 @media (max-width: 1600px) { .design-system-card .table .generic-table { /* Hide table headers (but not display: none;, for accessibility) */ }
