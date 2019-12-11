@@ -95,7 +95,7 @@ $(document).ready(function () {
                     stickyHeight = $('.sticky-container ul').height(),
                     footerHeight = $('.footer-wrapper').height(),
                     pageHeight = $(document).height(),
-                    unstickyPosition = pageHeight - footerHeight - stickyHeight - 60;
+                    unstickyPosition = pageHeight - footerHeight - stickyHeight - 100;
         
             $('.anchor-menu').css('width',stickyWidth);
     
