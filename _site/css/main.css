@@ -3839,15 +3839,13 @@ div.chat-later a { color: #fff; text-decoration: none; }
   .body-mini-wrapper { -ms-flex-direction: column; -webkit-box-direction: normal; -webkit-box-orient: vertical; display: -webkit-box; display: -ms-flexbox; display: flex; flex-direction: column; }
   .body-mini-wrapper .body-mini-link { margin-left: 0; } }
 
-.anchor-menu { height: 100%; width: 100%; }
+.anchor-menu { width: 100%; }
 
-.anchor-menu .sticky-container, .anchor-menu div { height: 100%; }
-
-.anchor-menu .sticky-container div { height: 100%; position: relative; }
+.anchor-menu .sticky-container div { position: relative; }
 
 .anchor-menu .sticky-container .sticky-list-head { color: #333; font-size: 18px; font-weight: 700; line-height: 1.33; margin-top: 0; padding-bottom: 20px; }
 
-.anchor-menu .sticky-container ul { margin-top: 2.25rem; padding: 0; position: absolute; top: 0; z-index: 1; }
+.anchor-menu .sticky-container div { margin-top: 2.25rem; padding: 0; position: absolute; top: 0; z-index: 1; }
 
 .anchor-menu .sticky-container ul li { color: #4569a0; font-size: 14px; letter-spacing: .2px; line-height: 20px; list-style-type: none; padding: 0 0 20px; }
 
@@ -4904,9 +4902,9 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 #navigation-bar .navigation-main-menu a { color: #ffffff; text-decoration: none; padding-top: 18px; padding-bottom: 18px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-#navigation-bar .navigation-main-menu a:hover { text-decoration: underline; }
+#navigation-bar .navigation-main-menu a:hover, #navigation-bar .navigation-main-menu a:focus { text-decoration: underline; background: #18335C; }
 
-#navigation-bar .navigation-main-menu:hover { background: #18335C; }
+#navigation-bar .navigation-main-menu:hover, #navigation-bar .navigation-main-menu:focus { background: #18335C; }
 
 .footer-wrapper { margin-top: 48px; }
 
