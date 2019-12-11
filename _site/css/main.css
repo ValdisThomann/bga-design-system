@@ -5080,6 +5080,16 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .mobile-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; }
 
+.design-system-card .hero-pathway .hero-pathway-list { padding-bottom: 32px; }
+
+.design-system-card .hero-pathway .hero-pathway-list:last-of-type { padding-bottom: 0; }
+
+.design-system-card .hero-pathway .half-width { display: flex; flex-wrap: wrap; }
+
+.design-system-card .hero-pathway .half-width .hero-pathway-list-card { flex: 0 50%; }
+
+@media (max-width: 850px) { .design-system-card .hero-pathway .half-width .hero-pathway-list-card { flex: 1; flex-basis: 100%; } }
+
 .design-system-card .hero-pathway .hero-pathway-anchor:hover { box-shadow: none; }
 
 .design-system-card .hero-pathway .hero-pathway-list-secondary-description { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
@@ -5522,9 +5532,11 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .responsive-img-no-margin { max-width: 100%; width: 100%; }
 
-.layouts img.tablet { max-width: 500px; }
+.layouts img.desktop { max-width: 100%; }
 
-.layouts img.mobile { max-width: 250px; }
+.layouts img.tablet { max-width: 68%; }
+
+.layouts img.mobile { max-width: 33%; }
 
 .grid-example { border-bottom: 1px solid #C7C7C7; }
 

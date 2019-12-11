@@ -445,6 +445,28 @@
 
     .hero-pathway {
         
+        .hero-pathway-list{
+            padding-bottom: 32px;
+            
+            &:last-of-type {
+                padding-bottom: 0;
+            }    
+        }
+        .half-width {
+            display: flex;
+            flex-wrap: wrap;
+
+            .hero-pathway-list-card {
+                flex: 0 50%;
+            }
+            
+            @media (max-width: 850px) {
+                .hero-pathway-list-card {
+                    flex: 1;
+                    flex-basis: 100%;
+                }
+            }
+        }
         .hero-pathway-anchor:hover {
             box-shadow: none;
         }
@@ -1656,11 +1678,14 @@
 }
 
 .layouts {
+    img.desktop {
+       max-width: 100%; 
+    }
     img.tablet {
-        max-width: 500px;
+        max-width: 68%;
     }
     img.mobile {
-        max-width: 250px;
+        max-width: 33%;
     }
 }
 .grid-example {
