@@ -94,21 +94,21 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
 
 #navigation-bar {
     .navigation-main-menu {
-
-        a {
-            color: $white;
-            text-decoration: none;
-            padding-top: 18px;
-            padding-bottom: 18px;
-            @include font-format($font-family, $font-semibold, normal);
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        &:hover {
+    
+    a {
+        color: $white;
+        text-decoration: none;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        @include font-format($font-family, $font-semibold, normal);
+        
+        &:hover, &:focus {
+            text-decoration: underline;
             background: $blue-active;
+        }
+    }
+    &:hover, &:focus {
+        background: $blue-active;
         }
     }
 }
