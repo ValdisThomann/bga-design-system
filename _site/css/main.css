@@ -4940,6 +4940,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.component .notes { border: none; border-bottom: 1px solid #D8D8D8; padding: 24px 32px; }
 
+.design-system-card.component .notes p:last-of-type { padding-bottom: 0; }
+
 .design-system-card.component .element-design { border: none; padding: 24px 24px 24px 32px; }
 
 .design-system-card.component .element-design.closed { border-bottom: none; }
@@ -5243,6 +5245,21 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card .call-to-action.advisor-profile .advisor-card-image-centered img, .design-system-card .callout.advisor-profile .advisor-card-image-centered img, .design-system-card .advisor-profile.advisor-profile .advisor-card-image-centered img { margin: 0 auto; display: block; }
 
 .design-system-card .call-to-action.advisor-profile .advisor-card-content-detail, .design-system-card .callout.advisor-profile .advisor-card-content-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-content-detail { margin-top: 32px; }
+
+.design-system-card .call-to-action.advisor-profile .advisor-card-intro-title, .design-system-card .callout.advisor-profile .advisor-card-intro-title, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-title { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding: 0 16px 0 0; font-size: 18px; }
+
+.design-system-card .call-to-action.advisor-profile .advisor-card-intro-detail, .design-system-card .callout.advisor-profile .advisor-card-intro-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-detail { padding: 0 16px 0 16px; font-size: 18px; }
+
+@media (min-width: 1000px) { .design-system-card .call-to-action.advisor-profile .advisor-card-text, .design-system-card .callout.advisor-profile .advisor-card-text, .design-system-card .advisor-profile.advisor-profile .advisor-card-text { -webkit-box-flex: 0; flex: 0 0 66.66667%; max-width: 66.66667%; }
+  .design-system-card .call-to-action.advisor-profile .advisor-card-image, .design-system-card .callout.advisor-profile .advisor-card-image, .design-system-card .advisor-profile.advisor-profile .advisor-card-image { -webkit-box-flex: 0; flex: 0 0 33.33333%; max-width: 33.33333%; } }
+
+@media (max-width: 999px) { .design-system-card .call-to-action.advisor-profile .advisor-container, .design-system-card .callout.advisor-profile .advisor-container, .design-system-card .advisor-profile.advisor-profile .advisor-container { padding: 24px 16px; }
+  .design-system-card .call-to-action.advisor-profile .advisor-profile-container, .design-system-card .callout.advisor-profile .advisor-profile-container, .design-system-card .advisor-profile.advisor-profile .advisor-profile-container { flex-direction: column-reverse; }
+  .design-system-card .call-to-action.advisor-profile .advisor-profile-container .responsive-img-no-margin, .design-system-card .callout.advisor-profile .advisor-profile-container .responsive-img-no-margin, .design-system-card .advisor-profile.advisor-profile .advisor-profile-container .responsive-img-no-margin { width: auto; max-width: 100%; display: block; margin: 0 auto; }
+  .design-system-card .call-to-action.advisor-profile .advisor-profile-container h4, .design-system-card .callout.advisor-profile .advisor-profile-container h4, .design-system-card .advisor-profile.advisor-profile .advisor-profile-container h4 { margin-top: 16px; margin-bottom: 16px; text-align: center; }
+  .design-system-card .call-to-action.advisor-profile .advisor-card-text, .design-system-card .call-to-action.advisor-profile .advisor-card-image, .design-system-card .call-to-action.advisor-profile .advisor-card-content-detail, .design-system-card .callout.advisor-profile .advisor-card-text, .design-system-card .callout.advisor-profile .advisor-card-image, .design-system-card .callout.advisor-profile .advisor-card-content-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-text, .design-system-card .advisor-profile.advisor-profile .advisor-card-image, .design-system-card .advisor-profile.advisor-profile .advisor-card-content-detail { padding: 0; }
+  .design-system-card .call-to-action.advisor-profile .advisor-card-content p, .design-system-card .callout.advisor-profile .advisor-card-content p, .design-system-card .advisor-profile.advisor-profile .advisor-card-content p { font-size: 16px; line-height: 32px; padding-bottom: 16px; }
+  .design-system-card .call-to-action.advisor-profile .advisor-card-content p:last-of-type, .design-system-card .callout.advisor-profile .advisor-card-content p:last-of-type, .design-system-card .advisor-profile.advisor-profile .advisor-card-content p:last-of-type { padding-bottom: 0; } }
 
 .design-system-card .table .table-responsive { overflow-y: hidden; }
 

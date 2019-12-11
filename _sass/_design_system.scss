@@ -29,7 +29,11 @@
         .notes {
             border: none;
             border-bottom: 1px solid $grey-light;
-            padding: 24px 32px; 
+            padding: 24px 32px;
+            
+            p:last-of-type {
+                padding-bottom: 0;
+            }
         }
         .element-design {
             border: none;
@@ -934,6 +938,66 @@
             }
             .advisor-card-content-detail {
                 margin-top: 32px;
+            }
+            .advisor-card-intro-title {
+                @include font-format($font-family, $font-semibold, normal);
+                padding: 0 16px 0 0;
+                font-size: 18px;
+            }
+            .advisor-card-intro-detail {
+                padding: 0 16px 0 16px;
+                font-size: 18px;
+            }
+            
+            @media (min-width: 1000px) {
+                .advisor-card-text {
+                    -webkit-box-flex: 0;
+                    flex: 0 0 66.66667%;
+                    max-width: 66.66667%;
+                }
+
+                .advisor-card-image {
+                    -webkit-box-flex: 0;
+                    flex: 0 0 33.33333%;
+                    max-width: 33.33333%;
+                }
+            }
+            @media (max-width: 999px) {
+                .advisor-container {
+                    padding: 24px 16px;
+                }
+                .advisor-profile-container {
+                    flex-direction: column-reverse;
+
+                    .responsive-img-no-margin {
+                        width: auto;
+                        max-width: 100%;
+                        display: block;
+                        margin: 0 auto ;
+                    }
+
+                    h4 {
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                        text-align: center;
+                    }
+                }
+                .advisor-card-text, .advisor-card-image, .advisor-card-content-detail {
+                    padding: 0;
+                }
+                .advisor-card-content {
+                    
+                    p {
+                        font-size: 16px;
+                        line-height: 32px;
+                        padding-bottom: 16px;
+                        
+                        &:last-of-type {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+
             }
         }
     }

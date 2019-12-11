@@ -61,13 +61,33 @@ longdesc: Display an individual's profile on the page.
                         <div class="example-wrapper white-back">
                             <h3>Advisor profile</h3>
                             <div class="advisor-profile contact">
-                                <div class="example cta-container">
+                                <div class="example cta-container advisor-container">
 
-                                    <div class="advisor-card-content">
-                                        <div style="text-align:center" class="advisor-card-title-centered col-lg-12">
+                                    <div class="advisor-profile-container row">
+                                        <div class="advisor-card-text col-md-12 col-lg-8">
                                             <h4 class="advisor-card-title">Karen Green</h4>
+                                            <div class="advisor-intro row">
+                                                <div class="advisor-card-intro-title col-sm-3">Partner:</div>
+                                                <div class="advisor-card-intro-detail col-sm-9">XYZ Private</div>
+                                            </div>
+                                            <div class="advisor-intro row">
+                                                <div class="advisor-card-intro-title col-sm-3">Location:</div>
+                                                <div class="advisor-card-intro-detail col-sm-9">Hobart</div>
+                                            </div>
+                                            <div class="advisor-intro row">
+                                                <div class="advisor-card-intro-title col-sm-3">Email:</div>
+                                                <div class="advisor-card-email col-sm-9"><a href="mailto:grbell@deloitte.com.au">karen@xyz.com.au</a></div>
+                                            </div>
+                                            <div class="advisor-intro row">
+                                                <div class="advisor-card-intro-title col-sm-3">Phone:</div>
+                                                <div class="advisor-card-intro-phone col-sm-9"><a href="tel:0418 832 220">0400 000 000</a></div>
+                                            </div>
                                         </div>
-                                        <div class="advisor-card-image-centered col-lg-12"><img src={{ "assets/image-advisor.jpg" | relative_url }} alt=""></div>
+                                        <div class="advisor-card-image col-md-12 col-lg-4"><img src={{ "assets/image-advisor.jpg" | relative_url }} alt="" class="advisor-image responsive-img-no-margin"></div>
+                                    </div>
+                                    
+                                    <div class="advisor-card-content">
+                                       
                                         <div class="advisor-card-content-detail col-lg-12">
                                             <div>
                                                 <p>A few short paragraphs outlining the background of the advisor.</p>
@@ -204,12 +224,21 @@ longdesc: Display an individual's profile on the page.
                         </div>
                         <hr />
                     </div>
+                    
                     <div class="body-copy-content">
 
 
-                    <p>Coming soon.</p>
+                      <h3>Page width</h3>
+                        <p>Advisor profiles are used in two-third width pages.</p> 
 
+                        <h3>Full width layout</h3>
+                        <div class="layouts">
 
+                            <p><strong>Desktop, Tablet &amp; Mobile:</strong> One component in a row.</p>
+
+                            <img class="responsive-img desktop" src={{"assets/layout-desktop-full-width.svg" | relative_url}} alt="">
+
+                        </div>
 
                     </div>
 
