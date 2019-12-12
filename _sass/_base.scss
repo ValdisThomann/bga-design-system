@@ -173,6 +173,9 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
 // Side navigation - Sticky menu
 .anchor-menu {
     .sticky-container {
+        ul {
+            padding:0;
+        }
         a {
             text-decoration: none;
 

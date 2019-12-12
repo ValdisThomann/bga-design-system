@@ -50,6 +50,9 @@
             &.blue-back {
                 background: $blue-primary;
             }
+            .BgaIcon {
+                fill: $black-light;
+            }
         }
         .element-code {
             border: none;
@@ -70,6 +73,9 @@
             h3 {
                 padding-top: 0;
             }
+            //&.no-side-padding {
+            //    padding: 40px 0;
+            //}
         }
         .example {
             margin: 0 auto;
@@ -840,7 +846,8 @@
         }
         .page-headers-container {
             background: $blue-primary-mid;
-            padding: 64px 16px;
+            padding: 64px 46px;
+            margin: 0 -40px;
         }
         &.business-info,
         &.grants {

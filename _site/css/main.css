@@ -4921,6 +4921,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
   .search-bar-wrapper .search-bar-inner-wrapper .search-bar-search .input-group-container input { display: none; }
   .search-bar-wrapper .search-bar-inner-wrapper .search-bar-search .input-group-container button { position: absolute; right: 0px; top: 10px; } }
 
+.anchor-menu .sticky-container ul { padding: 0; }
+
 .anchor-menu .sticky-container a { text-decoration: none; }
 
 .anchor-menu .sticky-container a.active-sticky { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; border-left: 4px solid #96B7DF; padding-left: 16px; }
@@ -4947,6 +4949,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card.component .element-design p { font-size: 1.2rem; padding: 0; }
 
 .design-system-card.component .element-design.blue-back { background: #254F90; }
+
+.design-system-card.component .element-design .BgaIcon { fill: #333333; }
 
 .design-system-card.component .element-code { border: none; }
 
@@ -5209,7 +5213,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .page-headers .description { color: #ffffff; }
 
-.design-system-card .page-headers .page-headers-container { background: #4569A0; padding: 64px 16px; }
+.design-system-card .page-headers .page-headers-container { background: #4569A0; padding: 64px 46px; margin: 0 -40px; }
 
 .design-system-card .page-headers.business-info .label, .design-system-card .page-headers.business-info h1, .design-system-card .page-headers.business-info .description, .design-system-card .page-headers.grants .label, .design-system-card .page-headers.grants h1, .design-system-card .page-headers.grants .description { color: #333333; }
 
