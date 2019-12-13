@@ -38,20 +38,34 @@ hr {
     font-size: .8rem;
 }
 
-.c-padding-bottom {
+
+/*.c-padding-bottom {
     padding-bottom: 0 !important;
 
     ol:last-child,
     ul:last-child {
         padding-bottom: 0;
     }
-}
+}*/
 
 .c-wrapper .row {
     max-width: 1200px;
 
     @media (max-width: 1200px) {
         max-width: 1150px;
+    }
+}
+.c-wrapper .body-copy ul {
+    padding: 0 0 0 32px;
+    margin: 0;
+    
+    li {
+        padding: 0 0 16px 16px;
+        margin: 0;
+        
+        &:last-of-type {
+            padding: 0 0 32px 16px;
+        }
     }
 }
 

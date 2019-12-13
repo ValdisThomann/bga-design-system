@@ -94,18 +94,77 @@ longdesc: Highlight areas of text within the context of a page.
                             </button>
 
                         </div>
+
+                    
                             
 <div class="element-code">
 
-
+<h5>Heading</h5>
 <code>
 <pre>
-
+h2 {
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+h3 {
+    font-family: OpenSans-Semibold;
+    font-size: 21px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+</pre>
+</code>
+    
+<h5>Paragraph</h5>
+<code>
+<pre>
+p {
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+</pre>
+</code>
+    
+<h5>List</h5>
+<code>
+<pre>
+li  {
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+bullet {
+    color: #c18100;
+    height: 8px;
+    width: 8px;
+}
+</pre>
+</code>        
+    
+<h5>Container</h5>
+<code>
+<pre>
+.container {
+    background-color: #EBEBEB;
+    border-top: 4px solid #D8D8D8;
+    padding: 32px 32px 48px 32px;
+}
 </pre>
 </code>
 
 </div>
 
+                    
+                    
                     </div>
 
                 </div>
@@ -124,45 +183,44 @@ longdesc: Highlight areas of text within the context of a page.
                             <div class="callout contact">
                                 <div class="example cta-container">
 
-                                    
-                                        <div class="contact-card-content">
-                                            <div class="contact-line contact-line-margin">
-                                                <div class="contact-line-content contact-line-content-description">
-                                                    <h3>Need help?</h3>
+                                    <div class="contact-card-content">
+                                            
+                                            <div class="contact-line-content">
+                                                <h3>Need help?</h3>
+                                                <p class="contact-line-content-description">Contact us for help with your application or to find out more.</p>
+
+                                                <div class="contact-line contact-line-margin">
+                                                    <div class="BgaIcon  contact-line-icon"> <svg viewBox="0 0 16 16">
+                                                            <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                                        </svg> </div>
+
+
+                                                    <div class="contact-line-content"><a href="/Contact-Us">Contact Us</a></div>
                                                 </div>
-                                            </div>
-                                            <div class="contact-line contact-line-margin">
-                                                <div class="contact-line-content contact-line-content-description">
-                                                    <div class="contact-line-description">
-                                                        <p>Contact us for help with your application or to find out more.</p>
+
+                                                <div class="contact-line contact-line-margin">
+                                                    <div class="BgaIcon  contact-line-icon"> <svg viewBox="0 0 16 16">
+                                                            <path fill="#254F90" fill-rule="evenodd" d="M6.22 2.805L3.811.397C3.33-.084 2.504-.153 2.092.33L.647 1.773c-1.858 1.858.55 6.192 3.853 9.563 3.44 3.44 7.842 5.917 9.769 3.99l1.376-1.376c.481-.481.412-1.307-.07-1.788l-2.338-2.34c-.55-.55-1.307-.55-1.789-.137l-1.445 1.445c-2.545-1.24-4.196-3.027-5.16-5.16l1.445-1.445c.482-.413.413-1.238-.069-1.72z"></path>
+                                                        </svg> </div>
+                                                    <div class="contact-line-content"><a href="tel:13 28 46">13 28 46</a></div>
+                                                </div>
+
+                                                <div class="contact-line contact-line-margin">
+                                                    <div class="BgaIcon  contact-line-icon"> <svg viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <defs>
+                                                                <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zm0-2A6 6 0 1 0 8 2a6 6 0 0 0 0 12zM7 5h2v3h3v2H7V5z" id="a"></path>
+                                                            </defs>
+                                                            <use fill="#4569A0" fill-rule="nonzero" xlink:href="#a"></use>
+                                                        </svg> </div>
+                                                    <div class="contact-line-content">
+                                                        <div class="body-copy">Monday – Friday, 8am – 8pm across Australia</div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="contact-line contact-line-margin">
-                                                <div class="BgaIcon  contact-line-icon"> <svg viewBox="0 0 16 16">
-                                                        <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
-                                                    </svg> </div>
-                                                <div class="contact-line-content"><a href="/Contact-Us">Contact Us</a></div>
-                                            </div>
-                                            <div class="contact-line contact-line-margin">
-                                                <div class="BgaIcon  contact-line-icon"> <svg viewBox="0 0 16 16">
-                                                        <path fill="#254F90" fill-rule="evenodd" d="M6.22 2.805L3.811.397C3.33-.084 2.504-.153 2.092.33L.647 1.773c-1.858 1.858.55 6.192 3.853 9.563 3.44 3.44 7.842 5.917 9.769 3.99l1.376-1.376c.481-.481.412-1.307-.07-1.788l-2.338-2.34c-.55-.55-1.307-.55-1.789-.137l-1.445 1.445c-2.545-1.24-4.196-3.027-5.16-5.16l1.445-1.445c.482-.413.413-1.238-.069-1.72z"></path>
-                                                    </svg> </div>
-                                                <div class="contact-line-content"><a href="tel:13 28 46">13 28 46</a></div>
-                                            </div>
-                                            <div class="contact-line contact-line-margin">
-                                                <div class="BgaIcon  contact-line-icon"> <svg viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                        <defs>
-                                                            <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zm0-2A6 6 0 1 0 8 2a6 6 0 0 0 0 12zM7 5h2v3h3v2H7V5z" id="a"></path>
-                                                        </defs>
-                                                        <use fill="#4569A0" fill-rule="nonzero" xlink:href="#a"></use>
-                                                    </svg> </div>
-                                                <div class="contact-line-content">
-                                                    <div class="body-copy">Monday – Friday, 8am – 8pm across Australia</div>
-                                                </div>
-                                            </div>
-                                        </div>
 
+                                            </div>
+                                       
+
+                                    </div>
                                    
                                 </div>
                             </div>
@@ -182,18 +240,83 @@ longdesc: Highlight areas of text within the context of a page.
                             </button>
 
                         </div>
+
                             
 <div class="element-code">
 
-
+<h5>Heading</h5>
 <code>
 <pre>
+h2 {
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+h3 {
+    font-family: OpenSans-Semibold;
+    font-size: 21px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+</pre>
+</code>
+    
+<h5>Paragraph</h5>
+<code>
+<pre>
+p {
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+</pre>
+</code>
 
+<h5>Link text</h5>
+<code>
+<pre>
+a {
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    color: #254F90;
+    letter-spacing: 0;
+    line-height: 32px;
+    text-decoration: underline;
+} 
+</pre>
+</code>
+
+<h5>Link icon</h5>
+<code>
+<pre>
+.icon {    
+    color: #254F90;
+    height: 16px;
+    width: 16px;
+}
+</pre>
+</code>
+    
+<h5>Container</h5>
+<code>
+<pre>
+.container {
+    background-color: #EBEBEB;
+    border-top: 4px solid #D8D8D8;
+    padding: 32px 32px 48px 32px;
+}
 </pre>
 </code>
 
 </div>
 
+                           
+                        
                     </div>
 
                 </div>

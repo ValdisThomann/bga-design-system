@@ -4878,13 +4878,16 @@ hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0 0 1.5rem; text-ali
 
 .body-copy .body-copy-content p.small { font-size: .8rem; }
 
-.c-padding-bottom { padding-bottom: 0 !important; }
-
-.c-padding-bottom ol:last-child, .c-padding-bottom ul:last-child { padding-bottom: 0; }
-
+/*.c-padding-bottom { padding-bottom: 0 !important; ol:last-child, ul:last-child { padding-bottom: 0; } }*/
 .c-wrapper .row { max-width: 1200px; }
 
 @media (max-width: 1200px) { .c-wrapper .row { max-width: 1150px; } }
+
+.c-wrapper .body-copy ul { padding: 0 0 0 32px; margin: 0; }
+
+.c-wrapper .body-copy ul li { padding: 0 0 16px 16px; margin: 0; }
+
+.c-wrapper .body-copy ul li:last-of-type { padding: 0 0 32px 16px; }
 
 .search-bar-wrapper .search-bar-inner-wrapper .search-bar-search .input-group-container input { display: inline-block; position: absolute; right: 50px; }
 
@@ -4942,9 +4945,9 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.component .notes p:last-of-type { padding-bottom: 0; }
 
-.design-system-card.component .element-design { border: none; padding: 24px 24px 24px 32px; }
+.design-system-card.component .element-design { border: none; padding: 24px 24px 24px 32px; background: #EBEBEB; transition: background-color 0.2s ease; }
 
-.design-system-card.component .element-design.closed { border-bottom: none; }
+.design-system-card.component .element-design.closed { border-bottom: none; background: #ffffff; }
 
 .design-system-card.component .element-design p { font-size: 1.2rem; padding: 0; }
 
@@ -4952,7 +4955,9 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.component .element-design .BgaIcon { fill: #333333; }
 
-.design-system-card.component .element-code { border: none; }
+.design-system-card.component .element-code { border: none; background: #ffffff; transition: background-color 0.6s ease; padding-top: 0; }
+
+.design-system-card.component .element-code.open { background: #EBEBEB; }
 
 .design-system-card.component .example-wrapper { background: #F5F5F5; box-shadow: none; padding: 40px; display: block; position: relative; max-width: 1000px; }
 
@@ -4981,6 +4986,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card.foundation .element-design .float-button .float-button-content { width: 48px; height: 48px; float: right; }
 
 .design-system-card.foundation .element-design .float-button .BgaIcon.open { transform: scaleY(-1); }
+
+.design-system-card.foundation .element-design .float-button .BgaIcon { fill: #333333; }
 
 .design-system-card.foundation .element-design.blue-back { background-color: #254F90; }
 
@@ -5228,9 +5235,9 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .call-to-action .cta-container, .design-system-card .callout .cta-container, .design-system-card .advisor-profile .cta-container { height: auto; border-top: none; background: none; padding: 32px 32px 48px 32px; margin: 0; }
 
-.design-system-card .call-to-action .cta-content-inner, .design-system-card .callout .cta-content-inner, .design-system-card .advisor-profile .cta-content-inner { margin-bottom: 32px; }
+.design-system-card .call-to-action .cta-container .call-out-content-detail ul:last-child li:last-of-type, .design-system-card .callout .cta-container .call-out-content-detail ul:last-child li:last-of-type, .design-system-card .advisor-profile .cta-container .call-out-content-detail ul:last-child li:last-of-type { padding-bottom: 0; }
 
-.design-system-card .call-to-action .cta-button-wrapper, .design-system-card .callout .cta-button-wrapper, .design-system-card .advisor-profile .cta-button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; }
+.design-system-card .call-to-action .cta-button-wrapper, .design-system-card .callout .cta-button-wrapper, .design-system-card .advisor-profile .cta-button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; margin-top: 4px; }
 
 .design-system-card .call-to-action .cta-button-wrapper:hover, .design-system-card .callout .cta-button-wrapper:hover, .design-system-card .advisor-profile .cta-button-wrapper:hover { transform: translateY(-0.1875rem); }
 
@@ -5239,6 +5246,12 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card .call-to-action .cta-button:hover, .design-system-card .callout .cta-button:hover, .design-system-card .advisor-profile .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: 0px 4px 8px #0000004D; border: 2px solid #18335C; border-radius: 6px; opacity: 1; }
 
 .design-system-card .call-to-action .cta-button:active, .design-system-card .callout .cta-button:active, .design-system-card .advisor-profile .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004D; border-radius: 6px; opacity: 1; }
+
+.design-system-card .call-to-action .contact-card-content .contact-line-content-description, .design-system-card .callout .contact-card-content .contact-line-content-description, .design-system-card .advisor-profile .contact-card-content .contact-line-content-description { padding-bottom: 16px; }
+
+.design-system-card .call-to-action .contact-card-content a, .design-system-card .callout .contact-card-content a, .design-system-card .advisor-profile .contact-card-content a { box-shadow: none; }
+
+.design-system-card .call-to-action .contact-card-content .contact-line-margin:last-of-type, .design-system-card .callout .contact-card-content .contact-line-margin:last-of-type, .design-system-card .advisor-profile .contact-card-content .contact-line-margin:last-of-type { margin-bottom: 0; }
 
 .design-system-card .call-to-action.download .action-card-button, .design-system-card .callout.download .action-card-button, .design-system-card .advisor-profile.download .action-card-button { background: #ffffff; }
 
@@ -5288,9 +5301,15 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .accordion .accordion-group-toggle-content.all-open .iconAnimateWrapper { transform: scaleY(-1); }
 
+.design-system-card .accordion .accordion-item .accordion-item-tile h5 { box-shadow: none; }
+
 .design-system-card .accordion .accordion-item .accordion-item-tile:hover { border-bottom: solid 4px #FFD964 !important; }
 
+.design-system-card .accordion .accordion-item .accordion-item-tile:hover h5 { color: #000000; -webkit-box-shadow: inset 0 -2.08px 0 #666666; box-shadow: inset 0 -2.08px 0 #666666; }
+
 .design-system-card .accordion .accordion-item .accordion-item-tile.open { background-color: #EBEBEB !important; }
+
+.design-system-card .accordion .accordion-item .accordion-item-tile.open h5 { color: #000000; -webkit-box-shadow: inset 0 -2.08px 0 #666666; box-shadow: inset 0 -2.08px 0 #666666; }
 
 .design-system-card .accordion .accordion-item .accordion-item-tile.open .iconAnimateWrapper { transform: scaleY(-1); }
 

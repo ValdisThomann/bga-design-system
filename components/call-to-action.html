@@ -64,10 +64,9 @@ longdesc: Promote a high-value call to action in an information page.
                                     <div class="cta-content-inner">
                                         <h2>Standard call to action</h2>
                                         <p>Promote high-value actions in an information page.</p>
-                                        <ul>
+                                        <ul class="body-copy-list-tick">
                                             <li>This component can include bullet points</li>
-                                            <li>which can be very handy.</li>
-                                            
+                                            <li>which can be very handy.</li>   
                                         </ul>
                                     </div>
                                     <div class="cta-button-wrapper cta-inline-button-wrapper">
@@ -96,10 +95,91 @@ longdesc: Promote a high-value call to action in an information page.
                             
 <div class="element-code">
 
-
+<h5>Heading</h5>
 <code>
 <pre>
-
+h2 {
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+</pre>
+</code>
+    
+<h5>Paragraph</h5>
+<code>
+<pre>
+p {
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+</pre>
+</code>
+    
+<h5>List</h5>
+<code>
+<pre>
+li  {
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+bullet {
+    color: #c18100;
+    height: 8px;
+    width: 8px;
+}
+</pre>
+</code>
+    
+<h5>Call to action button</h5>
+<code>
+<pre>
+.primary-button {
+    background: #254F90;
+    color: #FFFFFF;
+    background: #4569A0 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 4px #0000001A;
+    border: 2px solid #254F90;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 8px 32px;
+    text-align: center;
+    letter-spacing: 0;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s; 
+}
+.primary-button:hover {
+    transform: translateY(-.1875rem);
+    box-shadow: 0px 4px 8px #0000004D;
+    background: #254F90 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #0000004D;
+}
+.primary-button:active {
+    transform: translateY(-.1875rem);
+    box-shadow: 0px 4px 8px #0000004D;
+    background: #18335C 0% 0% no-repeat padding-box;
+}
+</pre>
+</code>         
+    
+<h5>Container</h5>
+<code>
+<pre>
+.container {
+    background-color: #EBEBEB;
+    border-top: 4px solid #D8D8D8;
+    padding: 32px 32px 48px 32px;
+}
 </pre>
 </code>
 
@@ -168,16 +248,104 @@ longdesc: Promote a high-value call to action in an information page.
 
                         </div>
                             
+                            
 <div class="element-code">
 
-
+<h5>Heading</h5>
 <code>
 <pre>
-
+h2 {
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+</pre>
+</code>
+    
+<h5>Paragraph</h5>
+<code>
+<pre>
+p {
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+</pre>
+</code>
+    
+<h5>Download link container</h5>                             
+<code>
+<pre>
+.link-container {
+    background: #ffffff;
+    padding: 24px;
+    border-top: 4px solid #B3C2D8;
+}
+</pre>
+</code>
+    
+<h5>Download description</h5>
+<code>
+<pre>
+p.description {
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+}
+p.description:hover {
+    color: #254F90;
+}
+</pre>
+</code>
+    
+<h5>File type text</h5>
+<code>
+<pre>
+p.file-type {
+    font-family: OpenSans;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+</pre>
+</code>
+<h5>File type icon</h5>
+<code>
+<pre>
+.icon {    
+    color: #254F90;
+    height: 16px;
+    width: 16px;
+}
+.icon:hover {
+    color: #254F90;
+    height: 32px;
+    width: 32px;
+}
+</pre>
+</code>
+    
+<h5>Call to action container</h5>
+<code>
+<pre>
+.cta-container {
+    background-color: #EBEBEB;
+    border-top: 4px solid #D8D8D8;
+    padding: 32px 32px 48px 32px;
+}
 </pre>
 </code>
 
 </div>
+
+ 
 
                     </div>
 
