@@ -4878,7 +4878,6 @@ hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0 0 1.5rem; text-ali
 
 .body-copy .body-copy-content p.small { font-size: .8rem; }
 
-/*.c-padding-bottom { padding-bottom: 0 !important; ol:last-child, ul:last-child { padding-bottom: 0; } }*/
 .c-wrapper .row { max-width: 1200px; }
 
 @media (max-width: 1200px) { .c-wrapper .row { max-width: 1150px; } }
@@ -5257,13 +5256,21 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .call-to-action.advisor-profile .advisor-card-title-centered, .design-system-card .callout.advisor-profile .advisor-card-title-centered, .design-system-card .advisor-profile.advisor-profile .advisor-card-title-centered { margin-bottom: 32px; }
 
+.design-system-card .call-to-action.advisor-profile .advisor-container, .design-system-card .callout.advisor-profile .advisor-container, .design-system-card .advisor-profile.advisor-profile .advisor-container { padding: 32px; }
+
+.design-system-card .call-to-action.advisor-profile h4, .design-system-card .callout.advisor-profile h4, .design-system-card .advisor-profile.advisor-profile h4 { font-size: 24px; }
+
 .design-system-card .call-to-action.advisor-profile .advisor-card-image-centered img, .design-system-card .callout.advisor-profile .advisor-card-image-centered img, .design-system-card .advisor-profile.advisor-profile .advisor-card-image-centered img { margin: 0 auto; display: block; }
 
-.design-system-card .call-to-action.advisor-profile .advisor-card-content-detail, .design-system-card .callout.advisor-profile .advisor-card-content-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-content-detail { margin-top: 32px; }
+.design-system-card .call-to-action.advisor-profile .advisor-card-content-detail, .design-system-card .callout.advisor-profile .advisor-card-content-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-content-detail { margin-top: 32px; padding: 0; }
 
-.design-system-card .call-to-action.advisor-profile .advisor-card-intro-title, .design-system-card .callout.advisor-profile .advisor-card-intro-title, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-title { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding: 0 16px 0 0; font-size: 18px; }
+.design-system-card .call-to-action.advisor-profile .advisor-card-content-detail p:last-of-type, .design-system-card .callout.advisor-profile .advisor-card-content-detail p:last-of-type, .design-system-card .advisor-profile.advisor-profile .advisor-card-content-detail p:last-of-type { margin-bottom: 16px; padding-bottom: 0; }
 
-.design-system-card .call-to-action.advisor-profile .advisor-card-intro-detail, .design-system-card .callout.advisor-profile .advisor-card-intro-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-detail { padding: 0 16px 0 16px; font-size: 18px; }
+.design-system-card .call-to-action.advisor-profile .advisor-card-intro-title, .design-system-card .callout.advisor-profile .advisor-card-intro-title, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-title { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding: 0 16px 0 0; font-size: 16px; }
+
+.design-system-card .call-to-action.advisor-profile .advisor-card-intro-detail, .design-system-card .callout.advisor-profile .advisor-card-intro-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-detail { padding: 0 16px 0 16px; font-size: 16px; }
+
+.design-system-card .call-to-action.advisor-profile .advisor-card-text, .design-system-card .call-to-action.advisor-profile .advisor-card-image, .design-system-card .callout.advisor-profile .advisor-card-text, .design-system-card .callout.advisor-profile .advisor-card-image, .design-system-card .advisor-profile.advisor-profile .advisor-card-text, .design-system-card .advisor-profile.advisor-profile .advisor-card-image { padding: 0; }
 
 @media (min-width: 1000px) { .design-system-card .call-to-action.advisor-profile .advisor-card-text, .design-system-card .callout.advisor-profile .advisor-card-text, .design-system-card .advisor-profile.advisor-profile .advisor-card-text { -webkit-box-flex: 0; flex: 0 0 66.66667%; max-width: 66.66667%; }
   .design-system-card .call-to-action.advisor-profile .advisor-card-image, .design-system-card .callout.advisor-profile .advisor-card-image, .design-system-card .advisor-profile.advisor-profile .advisor-card-image { -webkit-box-flex: 0; flex: 0 0 33.33333%; max-width: 33.33333%; } }

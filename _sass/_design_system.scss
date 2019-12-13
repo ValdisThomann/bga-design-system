@@ -964,21 +964,39 @@
             .advisor-card-title-centered {
                 margin-bottom: 32px;
             }
+            .advisor-container {
+                padding: 32px;
+            }
+            h4 {
+                font-size: 24px;
+            }
             .advisor-card-image-centered img {
                 margin: 0 auto;
                 display: block;
             }
             .advisor-card-content-detail {
                 margin-top: 32px;
+                padding: 0;
+            
+                p:last-of-type {
+                    margin-bottom: 16px;
+                    padding-bottom: 0;
+                }
             }
             .advisor-card-intro-title {
                 @include font-format($font-family, $font-semibold, normal);
                 padding: 0 16px 0 0;
-                font-size: 18px;
+                font-size: 16px;
             }
+
             .advisor-card-intro-detail {
                 padding: 0 16px 0 16px;
-                font-size: 18px;
+                font-size: 16px;
+            }
+
+            .advisor-card-text,
+            .advisor-card-image {
+                padding: 0;
             }
             
             @media (min-width: 1000px) {
@@ -1005,7 +1023,7 @@
                         width: auto;
                         max-width: 100%;
                         display: block;
-                        margin: 0 auto ;
+                        margin: 0 auto;
                     }
 
                     h4 {
@@ -1014,36 +1032,41 @@
                         text-align: center;
                     }
                 }
-                .advisor-card-text, .advisor-card-image, .advisor-card-content-detail {
+
+                .advisor-card-text,
+                .advisor-card-image,
+                .advisor-card-content-detail {
                     padding: 0;
                 }
+
                 .advisor-card-content {
-                    
+
                     p {
                         font-size: 16px;
                         line-height: 32px;
                         padding-bottom: 16px;
-                        
+
                         &:last-of-type {
                             padding-bottom: 0;
                         }
                     }
                 }
 
-            }
-            
-            @media (max-width: 900px) {
-                .advisor-intro {
-                    padding-bottom: 12px;
                 }
-                .advisor-card-intro-title,
-                .advisor-card-intro-detail {
-                    padding: 0;
-                    font-size: 16px;
-                    line-height: 32px;
+
+                @media (max-width: 900px) {
+                    .advisor-intro {
+                        padding-bottom: 12px;
+                    }
+
+                    .advisor-card-intro-title,
+                    .advisor-card-intro-detail {
+                        padding: 0;
+                        font-size: 16px;
+                        line-height: 32px;
+                    }
                 }
-            }
-        }
+                }
     }
     
     .table {
