@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Standard pathway list</title>
+    <title>Breadcrumbs</title>
     <meta name="description" content="">
  
     <meta name="robots" content="noarchive, nofollow, noindex, nosnippet, notranslate, noydir">
@@ -118,7 +118,7 @@
                     </svg><a href=/ class="breadcrumb-link last" aria-label=></a>
                     <p class="right-arrow">›</p>
                 </div>
-                <p class="breadcrumb-location">Standard pathway list</p>
+                <p class="breadcrumb-location">Breadcrumbs</p>
             </div>
         </div>
     </div>
@@ -132,14 +132,14 @@
                 <div class="page-header" id="page-header">
                     <div class="col-12 col-sm-12 col-md-8">
                         <h1 class="page-header-title">
-                            Standard pathway list
+                            Breadcrumbs
                         </h1>
                        
                     </div>
                     <div class="col-12 col-sm-12 col-md-8">
                         <div class="page-header-intro">
                             <p>
-                                Promote links to standard content within the context of a page.
+                                
                             </p>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
             <div class="row">
                 <div class="twoCol39-left col-12 col-sm-2">
                     <div>
-                        <div >
+                        <div>
                             <div class="anchor-menu" data-reactroot="">
                                 <div class="sticky-container">
                                     <div>
@@ -167,8 +167,6 @@
                                         <ul>
                                             <li><a href="" aria-label="Visual design">Visual design</a></li>
                                             <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
-                                            <li><a href="" aria-label="Layouts">Layouts</a></li>
-
                                         </ul>
                                     </div>
                                 </div>
@@ -178,16 +176,16 @@
                 </div>
                 <div class="twoCol39-right col-sm-10">
                     <div>
-                        <div id="react_0HLQJFNDKRBEP">
+                        <div>
 
 <!-- Visual design -->
-<div class="anchor-section"name="visual-design"><a hr ef="" id="visual-design"></a>
+<div class="anchor-section" name="visual-design"><a href="" id="visual-design" aria-label="visual design"></a>
 <div>
 <div>
-<div >
+<div>
 <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
 <div class="row">
-    <div class="c-padding-top c-padding-bottom col-sm-12 col-md-12">
+    <div class="c-padding-top anchor-section-full-width c-padding-bottom col-sm-10 offset-sm-2 col-md-10 offset-md-2">
         <div class="body-copy">
             <div>
                 <div class="body-copy-headline col-12">
@@ -196,24 +194,40 @@
                 <hr />
             </div>
             <div class="body-copy-content">
+                
 
                 <div class="design-system-card component">
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper">
-                            <div class="standard-pathway">
-                                <div class="example standard-container">
-                                    <h3>Standard pathway</h3>
-                                    <p class="description">The standard pathway is an in-page link to another page on the site.</p>
-                                    <p class="icon-link"></p>
-                                </div>
+                            <div class="breadcrumbs">
+                                <div class="example breadcrumbs-container">
+                                        
+                                    <ul id="breadcrumb-list">
+                                        <li><a>Home</a><span>&rsaquo;</span></li>
+                                        <li><a>Level one link</a><span>&rsaquo;</span></li>
+                                        <li><a>Level two link</a><span>&rsaquo;</span></li>
+                                        <li class="previous-page-link"><a>Level three link</a><span>&rsaquo;</span></li>
+                                        <li>Current page</li>
+                                    </ul>
                                 
+                                       
+                                </div>
                             </div>
 
                         </div>
 
-                        <div>
+                        <div class="component notes">
+                            <div class="">
+                                <h4>Notes</h4>
+                                <p>At mobile size only one breadcrumb link, to the page directly before the current page, is displayed. The <a href=/foundations/icons.html>breadcrumbs previous page icon</a> is used with this link.</p>
+                                
+                            </div>
+                            
 
+                        </div>
+                        
+                        
                         <div class="element-design component closed">
                             <div class="content-wrapper">
                                 <p>CSS styles</p>
@@ -225,90 +239,19 @@
                                         </svg></div><span class="sr-only">Button toggle current accordion</span>
                                 </div>
                             </button>
+
                         </div>
                             
 <div class="element-code">
-
-
-<code>
-<pre>
-h3 {
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    color: #333333;
-    letter-spacing: 0;
-    line-height: 28px;
-}
-h3:hover {
-    color: #254F90;
-    text-decoration: underline;
-}
-</pre>
-</code>
-
-<h5>Description</h5>
-
-<code>
-<pre>
-p.description {
-    font-family: OpenSans;
-    font-size: 16px;
-    color: #333333;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-</code>
-                                
-<h5>Icon link</h5>
-
-<code>
-<pre>
-.icon {    
-    color: #254F90;
-    height: 16px;
-    width: 16px;
-}
-.icon:hover {
-    color: #254F90;
-    height: 32px;
-    width: 32px;
-}
-</pre>
-</code>
-   
-<h5>Container</h5>
-                                
-<code>
-<pre>
-.container {
-    background: #ffffff;
-    padding: 24px;
-    border: none;
-    border-top: 4px solid #254F90;
-    box-shadow: 0 0.125rem 0.75rem 0
-    rgba(0,0,0,.2);
-}
-</pre>
-</code>
-
-<h4>Mobile</h4>                    
+<h4>Desktop</h4>
 <h5>Heading</h5>
+
 <code>
 <pre>
-h3 {    
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    color: #333333;
-    letter-spacing: 0;
-    line-height: 30px;
-}
+
 </pre>
 </code>
 
-
-<h4>Other options</h4>
-<a href="foundations-typography.html" aria-label="The heading can also be a H4 - See typography guidelines">The heading can also be a H4 - See typography guidelines</a>
 </div>
 
                     </div>
@@ -320,7 +263,7 @@ h3 {
             <div class="adobe-link vertical-list c-padding-top c-padding-bottom col-sm-12 col-md-12">
 
                 <div>
-                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/8f9ada53-b5f1-4327-a2cb-1c50231251ca/Component-Standard-pathway-list">
+                    <a class="action-card-anchor" target="blank" href="">
                             <div class="action-card-button">
                                 <div class="action-card-content">
                                     <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
@@ -354,97 +297,49 @@ h3 {
                         
                         
 <!-- USAGE -->                      
-<div class="anchor-section"name="guidelines-for-use"><a href="" id="guidelines-for-use" aria-label="guidelines for use"></a>
+<div class="anchor-section" name="guidelines-for-use"><a href="" id="guidelines-for-use" aria-label="guidelines for use"></a>
 <div >
 <div>
-<div >
-    <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
-        <div class="row">
-            <div class="c-padding-top c-padding-bottom col-sm-12 col-md-12">
-                <div class="body-copy">
-                    <div>
-                        <div class="body-copy-headline col-12">
-                            <h2>Guidelines for use</h2>
-                        </div>
-                        <hr />
-                    </div>
-                    <div class="body-copy-content">
-                        <h3>Purpose</h3>
-                        <p>Generally used as a default option within index pages or to build page hierarchy as a secondary weight against hero and light pathways.</p>
-
-                        <h3>When to use this component</h3>
-                        <p>Coming soon.</p>
-
-
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-</div>
-</div>
-
-                            
-<!-- LAYOUTS -->                               
-<div class="anchor-section" name="layouts"><a href="" id="layouts"  aria-label="Layouts"></a>
-<div >
 <div>
-<div >
-    <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
-        <div class="row">
-            <div class="c-padding-top c-padding-bottom col-sm-12 col-md-12">
-                <div class="body-copy">
-                    <div>
-                        <div class="body-copy-headline col-12">
-                            <h2>Layouts</h2>
-                        </div>
-                        <hr />
+<div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+    <div class="row">
+        <div class="c-padding-top c-padding-bottom col-sm-12 col-md-12">
+            <div class="body-copy">
+                <div>
+                    <div class="body-copy-headline col-12">
+                        <h2>Guidelines for use</h2>
                     </div>
-                    <div class="body-copy-content">
+                    <hr />
+                </div>
+                <div class="body-copy-content">
 
+                    <h3>Purpose</h3>
+                    
 
-                      <h3>Page width</h3>
-                        <p>Standard pathway components should only be used in full width pages.</p> 
+                    <p>Coming soon.</p>
+                    
+                   
+                    <h3>When to use this component</h3>
+                    
 
-                        <h3>Equal width layout</h3>
-                        <div class="layouts">
-                            <p><strong>Desktop:</strong> Three equal width components in a row.</p>
+                    <p>Coming soon.</p>
 
-                           <img class="responsive-img desktop" src=/assets/layout-desktop-equal-third-width.svg alt="">
-
-                            <p><strong>Tablet:</strong> Two equal width components in a row.</p>
-
-                           <img class="responsive-img tablet" src=/assets/layout-tablet-equal-half-width.svg alt="">
-
-                            <p><strong>Mobile:</strong> One equal component in a row.</p>
-
-                            <img class="responsive-img mobile" src=/assets/layout-mobile-full-width.svg alt="">
-                        </div>
-
-
-
-
-                    </div>
 
 
                 </div>
+
+
             </div>
         </div>
     </div>
 </div>
+</div>
 
 </div>
 </div>
 </div>
 
-
-
+ 
 
                         </div>
                     </div>
@@ -452,7 +347,7 @@ h3 {
                 </div>
             </div>
         </div>
-    </div>
+
 
     
     

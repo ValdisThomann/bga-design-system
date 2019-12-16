@@ -4,7 +4,6 @@
     padding: 48px 0;
 
 }
-
 .page-header-intro p {
     @include font-format($font-family, $font-regular, normal);
     font-size: 16px;
@@ -43,6 +42,11 @@ hr {
 
     @media (max-width: 1200px) {
         max-width: 1150px;
+    }
+}
+.padding-none {
+    @media (min-width: 900px) {
+        padding: 0 16px;
     }
 }
 .c-wrapper .body-copy ul {
@@ -176,6 +180,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
 
 // Side navigation - Sticky menu
 .anchor-menu {
+    position: relative;
     .sticky-container {
         ul {
             padding:0;
@@ -190,5 +195,36 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
             }
         }
 
+    }
+}
+@media (max-width: 900px) {
+    .twoCol39-left {
+        -ms-flex: 0 0 25%;
+        -webkit-box-flex: 0;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .twoCol39-right {
+        -ms-flex: 0 0 75%;
+        -webkit-box-flex: 0;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .anchor-menu {
+        width: 100% !important;
+    }
+    .anchor-menu .sticky-container div {
+        //background: pink;
+        width: 100%;
+        position: relative !important;
+    }
+    .twoCol39-left, .twoCol39-right {
+        -ms-flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }

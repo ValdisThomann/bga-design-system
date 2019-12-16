@@ -967,6 +967,9 @@
             .advisor-container {
                 padding: 32px;
             }
+            .advisor-intro {
+                margin-bottom: 12px;
+            }
             h4 {
                 font-size: 24px;
             }
@@ -1013,6 +1016,16 @@
                 }
             }
             @media (max-width: 999px) {
+                .advisor-card-intro-title {
+                    -webkit-box-flex: 0;
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                }
+                .advisor-card-intro-detail {
+                    -webkit-box-flex: 0;
+                    flex: 0 0 75%;
+                    max-width: 75%;
+                }
                 .advisor-container {
                     padding: 24px 16px;
                 }
@@ -1030,6 +1043,8 @@
                         margin-top: 16px;
                         margin-bottom: 16px;
                         text-align: center;
+                        font-size: 18px;
+                        line-height: 28px;
                     }
                 }
 
@@ -1054,7 +1069,14 @@
 
                 }
 
-                @media (max-width: 900px) {
+                
+                @media (max-width: 600px) {
+                    .advisor-card-intro-detail,
+                    .advisor-card-intro-title {
+                        -webkit-box-flex: 0;
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
                     .advisor-intro {
                         padding-bottom: 12px;
                     }
@@ -1266,6 +1288,7 @@
         a {
             border: none;
             box-shadow: none;
+            @include font-format($font-family, $font-semibold, normal);
 
             &.pdf:hover {
                 text-decoration: underline;
@@ -1300,7 +1323,73 @@
     }
     
     .grant-status-indicator {
+        .grant-status-container {
+            background: $white;
+            padding: 16px;
+        }
+    }
+    
+    .breadcrumbs {
+        background: $white;
+        padding: 0 32px;
+        margin: 0 -40px;    
         
+        #breadcrumb-list {
+            margin: 0;
+            padding: 12px 0;
+            
+            li {
+                display: inline-block;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                line-height: normal;
+                color: $black-light;
+                @include font-format($font-family, $font-semibold, normal);
+                line-height: 0;
+            
+                &:before {
+                    content: "";
+                    display: none;
+                }
+            
+                a {
+                    color: $blue-primary-mid;
+                    @include font-format($font-family, $font-semibold, normal);
+                    font-size: 14px;
+                    line-height: normal;
+                    text-decoration: underline;
+                    border: none;
+                }
+                span {
+                    padding: 0 8px;
+                    color: #9c9c9c;
+                }
+            }
+            
+            @media (max-width: 700px) {
+                li {
+                    display: none;
+                    
+                    &.previous-page-link {
+                        display: inline-block;
+                        
+                        a {
+                            font-size: 16px;
+                            padding-left: 24px;
+                            background: url(../assets/BGAIcon-breadcrumb-mobile-arrow-left.svg) no-repeat;
+                            background-size: 16px 16px;
+                            background-position: center left;
+                        }
+                    }
+                }
+                span {
+                    display: none;
+                }
+                
+            }
+        }
     }
     
     .buttons-links {
@@ -1480,7 +1569,6 @@
         
         .pagination {
             .pagination-container {
-                //padding-right: 64px;  
                 padding-top: 8px;
             }
             a {
@@ -1825,13 +1913,16 @@
 
 .layouts {
     img.desktop {
-       max-width: 100%; 
+        width: 100%;
+        max-width: 750px;
     }
     img.tablet {
-        max-width: 68%;
+        width: 68%;
+        max-width: 500px;
     }
     img.mobile {
-        max-width: 33%;
+        width: 33%;
+        max-width: 250px;
     }
 }
 .grid-example {
