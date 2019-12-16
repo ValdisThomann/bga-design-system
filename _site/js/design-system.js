@@ -77,19 +77,29 @@ $(document).ready(function () {
             stickyPosition = $('.anchor-menu').offset(),
             stickyWidth = $('.twoCol39-left').width();
         
-        if (win.scrollTop() >= stickyPosition.top) {
-            $('.anchor-menu').css('position', 'fixed').css('top', '0');
-        } else if (win.scrollTop() < 480) {
-             $('.anchor-menu').css('position', 'relative').css('top', 'auto'); 
-        }
+        // Set side-menu initial horizontal position 
+        if(win.width() < 480) {
+            $('.anchor-menu').css('position', 'relative').css('top', 'auto');
+        } else if (win.width() >= 480) {
+            if (win.scrollTop() >= stickyPosition.top) {
+                $('.anchor-menu').css('position', 'fixed').css('top', '0').css('width', stickyWidth);
+            } else {
+                $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);
+            }
+        } 
         
+        // Reset side-menu position on scroll
         $(window).scroll(function () {
-            if (win.width() >= 480) {
 
+            stickyWidth = $('.twoCol39-left').width();
+
+            if (win.width() < 480) {
+                $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);
+            } else if (win.width() >= 480) {
                 if (win.scrollTop() >= stickyPosition.top) {
-                    $('.anchor-menu').css('position', 'fixed').css('top', '0');
-                } else if (win.scrollTop() < 480) {
-                    $('.anchor-menu').css('position', 'relative').css('top', 'auto'); 
+                    $('.anchor-menu').css('position', 'fixed').css('top', '0').css('width', stickyWidth);
+                } else {
+                    $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);
                 }
             }
         });
@@ -151,8 +161,6 @@ $(document).ready(function () {
     $(window).on('resize', function(){
         menuStickiness();
     });
-    
-        
     
     
     /*----------- Tables ----------- */
