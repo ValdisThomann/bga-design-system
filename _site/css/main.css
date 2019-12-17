@@ -4892,6 +4892,8 @@ div.chat-later a { color: #fff; text-decoration: none; }
 
 @media (min-width: 900px) { .padding-none { padding: 0 16px; } }
 
+.vertical-list { margin-bottom: 32px; }
+
 .c-wrapper .body-copy ul { padding: 0 0 0 32px; margin: 0; }
 
 .c-wrapper .body-copy ul li { padding: 0 0 16px 16px; margin: 0; }
@@ -4999,11 +5001,11 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.foundation { box-shadow: none; }
 
-.design-system-card.foundation .element-design { border: 1px solid #D8D8D8; padding: 32px 24px 32px 32px; overflow: auto; }
+.design-system-card.foundation .element-design { border: 1px solid #D8D8D8; padding: 24px 24px 16px 24px; overflow: auto; position: relative; min-height: 96px; }
 
-.design-system-card.foundation .element-design .example { width: -webkit-calc(100% - 48px); width: -moz-calc(100% - 48px); width: calc(100% - 48px); float: left; }
+.design-system-card.foundation .element-design .example { width: -webkit-calc(100% - 48px); width: -moz-calc(100% - 48px); width: calc(100% - 48px); float: left; padding-right: 24px; }
 
-.design-system-card.foundation .element-design .float-button { width: 48px; padding-left: 8px; }
+.design-system-card.foundation .element-design .float-button { width: 48px; padding-left: 8px; position: absolute; top: -webkit-calc(50% - 24px); top: -moz-calc(50% - 24px); top: calc(50% - 24px); }
 
 .design-system-card.foundation .element-design .float-button .float-button-content { width: 48px; height: 48px; float: right; }
 
@@ -5045,7 +5047,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .desktop-sample h1, .design-system-card .desktop-sample h2, .design-system-card .desktop-sample h3, .design-system-card .desktop-sample h4, .design-system-card .desktop-sample h5, .design-system-card .desktop-sample p { margin: 0; padding: 0; color: #333333; }
 
-.design-system-card .desktop-sample h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 44px; line-height: 56px; }
+.design-system-card .desktop-sample h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 44px; line-height: 56px; padding-bottom: 16px; }
 
 .design-system-card .desktop-sample h2 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 32px; line-height: 40px; }
 
@@ -5061,15 +5063,17 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .desktop-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; line-height: 28px; }
 
+.design-system-card .desktop-sample li:last-of-type { padding-bottom: 16px !important; }
+
 .design-system-card .desktop-sample p.blockquote { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 21px; letter-spacing: 0.2px; text-align: center; line-height: 40px; }
 
 .design-system-card .desktop-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
 
 .design-system-card .desktop-sample .source { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; color: #666666; padding-top: 8px; font-size: 16px; line-height: 24px; }
 
-.design-system-card .desktop-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; line-height: 24px; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+.design-system-card .desktop-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; line-height: 24px; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; padding: 0; }
 
-.design-system-card .desktop-sample .hr-bottom { background-color: #EDCA72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
+.design-system-card .desktop-sample .hr-bottom { background-color: #EDCA72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; padding: 0; }
 
 .design-system-card .desktop-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; line-height: 30px; }
 
@@ -5097,15 +5101,17 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .mobile-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 24px; }
 
+.design-system-card .mobile-sample li:last-of-type { padding-bottom: 16px !important; }
+
 .design-system-card .mobile-sample p.blockquote { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; text-align: center; line-height: 24px; }
 
 .design-system-card .mobile-sample .pull-quote-direct svg { display: block; margin: 0 auto 24px; }
 
 .design-system-card .mobile-sample .source { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; color: #666666; padding-top: 8px; font-size: 16px; line-height: 24px; }
 
-.design-system-card .mobile-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; }
+.design-system-card .mobile-sample .source hr { border-color: #666666; border-top-width: .125rem; display: inline-block; height: .125rem; margin: 0 .125rem 0 0; opacity: .6; vertical-align: middle; width: 1.5625rem; padding: 0; }
 
-.design-system-card .mobile-sample .hr-bottom { background-color: #EDCA72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; }
+.design-system-card .mobile-sample .hr-bottom { background-color: #EDCA72; border-top: 0; height: .125rem; margin: 0 auto; width: 2.625rem; margin-top: 24px; padding: 0; }
 
 .design-system-card .mobile-sample p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
 
@@ -5715,7 +5721,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .grey-border { border: 1px solid #D8D8D8; }
 
-.adobe-link { padding: 0; margin-bottom: 24px; max-width: 750px; }
+.adobe-link { padding: 0; max-width: 750px; }
 
 .adobe-link p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
 
