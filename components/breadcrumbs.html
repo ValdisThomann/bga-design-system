@@ -77,6 +77,8 @@ longdesc:
                                 <h4>Notes</h4>
                                 <p>At mobile size only one breadcrumb link, to the page directly before the current page, is displayed. The <a href={{ "../foundations/icons.html" | relative_url }}>breadcrumbs previous page icon</a> is used with this link.</p>
                                 
+                                <p>The divider between links is a styled <strong>rsaquo</strong> HTML entity.</p>
+                                
                             </div>
                             
 
@@ -98,15 +100,74 @@ longdesc:
                         </div>
                             
 <div class="element-code">
-<h4>Desktop</h4>
-<h5>Heading</h5>
-
+<h5>Links</h5>
 <code>
 <pre>
-
+a {
+    color: #4569A0;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: normal;
+    text-decoration: underline;
+}
+</pre>
+</code>
+    
+<h5>Current page</h5>
+<code>
+<pre>
+.current-page {
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: normal;
+    text-decoration: none;
+}
 </pre>
 </code>
 
+<h5>Divider</h5>
+<code>
+<pre>
+.divider {
+    color: #9C9C9C;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: normal;
+    text-decoration: none;
+}
+</pre>
+</code>
+    
+<h4>Mobile</h4>
+<h5>Link</h5>
+<code>
+<pre>
+a {
+    color: #4569A0;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: normal;
+    text-decoration: underline;
+}
+</pre>
+</code>
+
+<h5>Link icon</h5>
+<code>
+<pre>
+.icon {
+    color: #4569A0;
+    height: 16px;
+    width: 16px;
+}
+</pre>
+</code>
+    
 </div>
 
                     </div>

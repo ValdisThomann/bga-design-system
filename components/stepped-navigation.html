@@ -1,20 +1,20 @@
 ---
 layout: content
-title: Images
+title: Stepped navigation for tools
 breadcrumb1: Components
 url1: topic-components.html
 breadcrumb2:
 url2:
-longdesc: Display an image with a caption underneath.
+longdesc: Navigation for step-by-step processes such as those found in many online tools.
 
 ---
-<div class="main-section" >
-    <div>
+<div class="main-section">
+    <div >
         <div class="c-wrapper c-wrapper-bg-transparent padding-none container-fluid" >
             <div class="row">
                 <div class="twoCol39-left col-12 col-sm-2">
-                    <div >
-                        <div>
+                    <div>
+                        <div >
                             <div class="anchor-menu" data-reactroot="">
                                 <div class="sticky-container">
                                     <div>
@@ -22,8 +22,6 @@ longdesc: Display an image with a caption underneath.
                                         <ul>
                                             <li><a href="" aria-label="Visual design">Visual design</a></li>
                                             <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
-                                            <li><a href="" aria-label="Layouts">Layouts</a></li>
-
                                         </ul>
                                     </div>
                                 </div>
@@ -32,17 +30,17 @@ longdesc: Display an image with a caption underneath.
                     </div>
                 </div>
                 <div class="twoCol39-right col-sm-10">
-                    <div >
-                        <div>
+                    <div>
+                        <div >
 
 <!-- Visual design -->
 <div class="anchor-section" name="visual-design"><a href="" id="visual-design" aria-label="visual design"></a>
 <div>
-<div >
 <div>
+<div >
 <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
 <div class="row">
-    <div class="c-padding-top col-sm-12 col-md-12 col-lg-10">
+    <div class=" anchor-section-full-width c-padding-top col-sm-10 offset-sm-2 col-md-10 offset-md-2">
         <div class="body-copy">
             <div>
                 <div class="body-copy-headline col-12">
@@ -52,17 +50,22 @@ longdesc: Display an image with a caption underneath.
             </div>
             <div class="body-copy-content">
 
-                <div class="design-system-card component">
+                <div class="design-system-card component extra-wide">
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper white-back">
-                            <div class="image">
-                                <div class="example image-container">
+                            <div class="stepped-navigation">
+                                <div class="example stepped-navigation-container">
                                     
-                                    <div class="bga-image-wrapper">
-                                        <img src={{ "assets/image_woman_welding.jpg" | relative_url }} alt="" class="responsive-img-no-margin">
-                                        <div class="caption-wrapper">
-                                        <p class="caption">This caption is optional. Sometimes you will need it and sometimes you won't.</p>
+                                    <div class="row">
+                                        <div class="col-12 steps">
+                                            <ul>
+                                                <li class="current-link"><a href=""><span class="step-bar-bullet">1</span>Step one</a></li>
+                                                <li><a href=""><span class="step-bar-bullet">2</span>Step two</a></li>
+                                                <li><a href=""><span class="step-bar-bullet">3</span>Step three</a></li>
+                                                <li><a href=""><span class="step-bar-bullet">4</span>Step four</a></li>
+                                                <li><a href=""><span class="step-bar-bullet">5</span>Step five</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                     
@@ -87,30 +90,13 @@ longdesc: Display an image with a caption underneath.
                             
 <div class="element-code">
 
-<h5>Image</h5>
+
 <code>
 <pre>
-img {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-}
+
 </pre>
 </code>
-<h5>Caption</h5>
-<code>
-<pre>
-p {
-    background-color: #EBEBEB;
-    color: #333333;
-    font-size: 14px;
-    line-height: 25px;
-    padding: 16px;
-    width: 100%;
-}
-</pre>
-</code>
-    
+
 </div>
 
                     </div>
@@ -158,19 +144,20 @@ p {
 <!-- USAGE -->                      
 <div class="anchor-section" name="guidelines-for-use"><a href="" id="guidelines-for-use" aria-label="guidelines for use"></a>
 <div >
-<div >
 <div>
-<div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
-    <div class="row">
-        <div class=" col-sm-12 col-md-12 col-lg-10">
-            <div class="body-copy">
-                <div>
-                   
-                        <h2>Guidelines for use</h2>
-             
-                    <hr />
-                </div>
-                <div class="body-copy-content">
+<div >
+    <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
+        <div class="row">
+            <div class=" col-sm-12 col-md-12 col-lg-10">
+                <div class="body-copy">
+                    <div>
+                       
+                            <h2>Guidelines for use.</h2>
+                     
+                        <hr />
+                    </div>
+                    <div class="body-copy-content">
+
 
                     <h3>Purpose</h3>
                     
@@ -183,53 +170,6 @@ p {
 
                     <p>Coming soon.</p>
 
-
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-
-                            
-<!-- LAYOUTS -->                               
-<div class="anchor-section" name="layouts"><a href="" id="layouts" aria-label="layouts"></a>
-<div >
-<div >
-<div>
-    <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
-        <div class="row">
-            <div class=" col-sm-12 col-md-12 col-lg-10">
-                <div class="body-copy">
-                    <div>
-                       
-                            <h2>Layouts</h2>
-                  
-                        <hr />
-                    </div>
-                    
-                    <div class="body-copy-content">
-
-
-                      <h3>Page width</h3>
-                        <p>Images are used in two-third width pages.</p> 
-
-                        <h3>Full width layout</h3>
-                        <div class="layouts">
-
-                            <p><strong>Desktop, Tablet &amp; Mobile:</strong> One image in a row.</p>
-
-                            <img class="responsive-img desktop" src={{"assets/layout-desktop-full-width.svg" | relative_url}} alt="">
-
-                        </div>
-
                     </div>
 
 
@@ -244,12 +184,9 @@ p {
 </div>
 
 
-
-
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-</div>

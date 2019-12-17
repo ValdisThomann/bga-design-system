@@ -279,6 +279,13 @@ $(document).ready(function () {
     });
     
 
+     /*----------- COMPONENT EXAMPLE: Anchor menu ----------- */
+    $('.anchor-menu-example a').on('click', function(){
+        console.log('clicked');
+        $('.anchor-menu-example a').removeClass('active-sticky');
+        $(this).addClass('active-sticky');
+    });
+    
     
 }); // END doc ready
 

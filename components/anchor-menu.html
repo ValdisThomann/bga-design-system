@@ -1,19 +1,19 @@
 ---
 layout: content
-title: Images
+title: Anchor menu
 breadcrumb1: Components
 url1: topic-components.html
 breadcrumb2:
 url2:
-longdesc: Display an image with a caption underneath.
+longdesc: Allow users to scan the contents of a page and navigate to key sections
 
 ---
-<div class="main-section" >
+<div class="main-section">
     <div>
-        <div class="c-wrapper c-wrapper-bg-transparent padding-none container-fluid" >
+        <div class="c-wrapper c-wrapper-bg-transparent padding-none container-fluid">
             <div class="row">
                 <div class="twoCol39-left col-12 col-sm-2">
-                    <div >
+                    <div>
                         <div>
                             <div class="anchor-menu" data-reactroot="">
                                 <div class="sticky-container">
@@ -32,15 +32,15 @@ longdesc: Display an image with a caption underneath.
                     </div>
                 </div>
                 <div class="twoCol39-right col-sm-10">
-                    <div >
+                    <div>
                         <div>
 
 <!-- Visual design -->
 <div class="anchor-section" name="visual-design"><a href="" id="visual-design" aria-label="visual design"></a>
 <div>
-<div >
 <div>
-<div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
+<div>
+<div class="c-wrapper c-wrapper-bg-transparent container-fluid">
 <div class="row">
     <div class="c-padding-top col-sm-12 col-md-12 col-lg-10">
         <div class="body-copy">
@@ -51,24 +51,35 @@ longdesc: Display an image with a caption underneath.
                 <hr />
             </div>
             <div class="body-copy-content">
+                
 
                 <div class="design-system-card component">
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper white-back">
-                            <div class="image">
-                                <div class="example image-container">
+                            <div class="anchor-menu-example">
+                                <div class="example anchor-menu-container">
                                     
-                                    <div class="bga-image-wrapper">
-                                        <img src={{ "assets/image_woman_welding.jpg" | relative_url }} alt="" class="responsive-img-no-margin">
-                                        <div class="caption-wrapper">
-                                        <p class="caption">This caption is optional. Sometimes you will need it and sometimes you won't.</p>
-                                        </div>
+                                    <div>
+                                        <h5 class="">On this page</h5>
+                                        <ul>
+                                            <li><a href="" class="active-sticky">Link to section one</a></li>
+                                            <li><a href="" >Link to section two</a></li>
+                                            <li><a href="" >Section 3</a></li>
+
+                                        </ul>
                                     </div>
+                              
                                     
                                 </div>
                             </div>
 
+                        </div>
+                        <div class="notes">
+                            <h4>Notes</h4>
+                            <p>The anchor menu is uses persistent behaviour - it stays in view as the user scrolls through the page content. At mobile size the anchor menu is not persistent.</p>
+                            <p>This menu always has a heading titled "On this page".</p>
+                        
                         </div>
 
                         <div class="element-design component closed">
@@ -86,31 +97,50 @@ longdesc: Display an image with a caption underneath.
                         </div>
                             
 <div class="element-code">
-
-<h5>Image</h5>
+<h5>Heading</h5>
 <code>
 <pre>
-img {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
+h5 {
+    font-family: OpenSans-Semibold;
+    color: #333333;
+    font-size: 18px;
+    line-height: 24px;
 }
 </pre>
 </code>
-<h5>Caption</h5>
+
+<h5>Links</h5>
 <code>
 <pre>
-p {
-    background-color: #EBEBEB;
-    color: #333333;
+a {
+    font-family: OpenSans;
+    color: #254f90;
     font-size: 14px;
-    line-height: 25px;
-    padding: 16px;
-    width: 100%;
+    line-height: 20px;
+    text-decoration: none;
+}
+a:hover {
+    font-family: OpenSans-Semibold;
 }
 </pre>
 </code>
     
+<h5>Current section link</h5>
+<code>
+<pre>
+a {
+    font-family: OpenSans-Semibold;
+    color: #254f90;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    padding-left: 16px;
+    border: none;
+    border-left: #96B7DF solid 4px;  
+}
+</pre>
+</code>
+
 </div>
 
                     </div>
@@ -158,16 +188,16 @@ p {
 <!-- USAGE -->                      
 <div class="anchor-section" name="guidelines-for-use"><a href="" id="guidelines-for-use" aria-label="guidelines for use"></a>
 <div >
-<div >
 <div>
-<div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
+<div>
+<div class="c-wrapper c-wrapper-bg-transparent container-fluid">
     <div class="row">
         <div class=" col-sm-12 col-md-12 col-lg-10">
             <div class="body-copy">
                 <div>
-                   
+                    
                         <h2>Guidelines for use</h2>
-             
+                  
                     <hr />
                 </div>
                 <div class="body-copy-content">
@@ -175,13 +205,13 @@ p {
                     <h3>Purpose</h3>
                     
 
-                    <p>Coming soon.</p>
+                    <p>The anchor menu allows users to quickly scan the contents of a page. Each link in the menu scrolls the user to a section on the page.</p>
                     
                    
                     <h3>When to use this component</h3>
                     
 
-                    <p>Coming soon.</p>
+                    <p>The anchor menu is used as a side menu on a number of information page types.</p>
 
 
 
@@ -200,35 +230,39 @@ p {
 
                             
 <!-- LAYOUTS -->                               
-<div class="anchor-section" name="layouts"><a href="" id="layouts" aria-label="layouts"></a>
-<div >
+<div class="anchor-section" name="layouts"><a href="" id="layouts"></a>
 <div >
 <div>
-    <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
+<div>
+    <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
         <div class="row">
             <div class=" col-sm-12 col-md-12 col-lg-10">
                 <div class="body-copy">
                     <div>
-                       
-                            <h2>Layouts</h2>
-                  
+                        
+                        <h2>Layouts</h2>
+                   
                         <hr />
                     </div>
-                    
                     <div class="body-copy-content">
 
 
-                      <h3>Page width</h3>
-                        <p>Images are used in two-third width pages.</p> 
+                    <h3>Page width</h3>
+                    <p>The anchor menu is used on 2/3rd width pages.</p> 
 
-                        <h3>Full width layout</h3>
-                        <div class="layouts">
+                <h3>Single column layout</h3>
+                <div class="layouts">
+                    
+                    <p><strong>Desktop &amp; tablet:</strong> One column on the left side of the body content.</p>
 
-                            <p><strong>Desktop, Tablet &amp; Mobile:</strong> One image in a row.</p>
+                     <img class="responsive-img desktop" src={{"assets/layout-desktop-two-large-right-menu.svg"  | relative_url}} alt="">
 
-                            <img class="responsive-img desktop" src={{"assets/layout-desktop-full-width.svg" | relative_url}} alt="">
+                    <p><strong>Mobile:</strong> One column that spans the full width of the screen.</p>
 
-                        </div>
+                    <img class="responsive-img mobile" src={{"assets/layout-mobile-full-width.svg" | relative_url}} alt="">
+                </div>
+
+
 
                     </div>
 
@@ -252,4 +286,4 @@ p {
                 </div>
             </div>
         </div>
-</div>
+

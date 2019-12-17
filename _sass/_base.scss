@@ -8,10 +8,11 @@
     @include font-format($font-family, $font-regular, normal);
     font-size: 16px;
 }
-.body-copy {
-    h1 {
-       @include font-format($font-family, $font-semibold, normal); 
+h1, h2, h3, h4, h5 {
+    @include font-format($font-family, $font-semibold, normal); 
     }
+.body-copy {
+    
     h2 {
         padding: 24px 0 32px 0;
         margin: 0;
@@ -223,9 +224,13 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
                 padding-left: 16px;
             }
         }
+        .sticky-list-head {
+            @include font-format($font-family, $font-semibold, normal);     
+        }
 
     }
 }
+
 @media (max-width: 900px) {
     .twoCol39-left {
         -ms-flex: 0 0 25%;
@@ -246,7 +251,6 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
         width: 100% !important;
     }
     .anchor-menu .sticky-container div {
-        //background: pink;
         width: 100%;
         position: relative !important;
     }
