@@ -42,7 +42,7 @@ $(document).ready(function () {
        
     
     
-    /*----------- Design system cards ----------- */
+    /*----------- Design system card open/close functionality ----------- */
     $('.float-button').on('click', function(){
         if($(this).parents('element-design').hasClass('unavailable')) {
             return;
@@ -71,10 +71,10 @@ $(document).ready(function () {
     
     
     // Function to make the side menu sticky
+    var stickyPosition = $('.anchor-menu').offset(); //This var is outside the function because it needs to be determined BEFORE window resizing,.
     function menuStickiness() {
         
         var win = $(window),
-            stickyPosition = $('.anchor-menu').offset(),
             stickyWidth = $('.twoCol39-left').width();
         
         // Set side-menu initial horizontal position 
@@ -98,7 +98,7 @@ $(document).ready(function () {
             } else if (win.width() >= 480) {
                 if (win.scrollTop() >= stickyPosition.top) {
                     $('.anchor-menu').css('position', 'fixed').css('top', '0').css('width', stickyWidth);
-                } else {
+                } else if (win.scrollTop() < stickyPosition.top) {
                     $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);
                 }
             }
@@ -159,11 +159,13 @@ $(document).ready(function () {
     
     // Menu stickiness on .resize()
     $(window).on('resize', function(){
-        menuStickiness();
+        if ($( ".anchor-menu .sticky-container" ).length) {
+            menuStickiness();
+        }
     });
     
     
-    /*----------- Tables ----------- */
+    /*----------- COMPONENT EXAMPLE: Tables ----------- */
     $('tr td:first-of-type').on('click', function(){
         
         //toggle class to show / hide child <td>
@@ -176,7 +178,7 @@ $(document).ready(function () {
     });
     
     
-    /*----------- Accordion example ----------- */
+    /*----------- COMEPONENT EXAMPLE: Accordions ----------- */
     
     $('.accordion-group-toggle-content').on('click', function(){
         // Open all / close all button functionality.
@@ -219,7 +221,7 @@ $(document).ready(function () {
     });
     
     
-    /*----------- Pagination (component example) ----------- */
+    /*----------- COMPONENT EXAMPLE: Pagination ----------- */
     // Change current state on when click on page number
     $('.pagination-container a.page').on('click', function(){
         $('.pagination-container a').each(function(){

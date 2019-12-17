@@ -8,29 +8,44 @@
     @include font-format($font-family, $font-regular, normal);
     font-size: 16px;
 }
+.body-copy {
+    h1 {
+       @include font-format($font-family, $font-semibold, normal); 
+    }
+    h2 {
+        padding: 24px 0 32px 0;
+        margin: 0;
+        @include font-format($font-family, $font-semibold, normal);
+    }
+    h3 {
+        padding: 16px 0 32px 0;
+        margin: 0;
+    }
+    h4 {
+        padding: 16px 0;
+        margin: 0;
+    }
+    h5 {
+        padding: 0 0 16px 0;
+        margin: 0;
+    }
 
-h1,
-h2 {
-    @include font-format($font-family, $font-semibold, normal);
+    hr {
+        border: 0;
+        border-top: .125rem solid $yellow-primary-mid;
+        margin: 0;
+        text-align: left;
+        width: 3.25rem;
+        padding: 0 0 32px 0;
+    }
+    p {
+       font-size: 1rem;
+        padding: 0 0 32px 0;
+        margin: 0;
+    }
 }
-
-h3 {
-    padding: 16px 0;
-    margin-bottom: 0px !important;
-}
-
-hr {
-    border: 0;
-    border-top: .125rem solid $yellow-primary-mid;
-    margin: 0 0 1.5rem;
-    text-align: left;
-    width: 3.25rem;
-}
-
-.body-copy p,
-.main-section p {
-    font-size: 1rem;
-    max-width: 750px;
+.body-copy-headline h2 {
+    padding-top: 0;
 }
 
 .body-copy .body-copy-content p.small {
@@ -49,6 +64,7 @@ hr {
         padding: 0 16px;
     }
 }
+
 .c-wrapper .body-copy ul {
     padding: 0 0 0 32px;
     margin: 0;
@@ -59,6 +75,15 @@ hr {
         
         &:last-of-type {
             padding: 0 0 32px 16px;
+        }
+        
+        ul li {
+            padding: 0 0 16px 16px;
+            margin: 0;
+            
+            &:last-of-type {
+                padding: 0 0 0 16px;
+            }
         }
     }
 }
@@ -81,6 +106,7 @@ hr {
     }
 }
 
+// Hero pathways
 a.breadcrumb-link .hero-pathway-list-illustration-bg {
     display: none !important;
 }
@@ -175,7 +201,6 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
         }
     }
 }
-
 
 
 // Side navigation - Sticky menu

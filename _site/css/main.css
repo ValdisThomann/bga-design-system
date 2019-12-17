@@ -4868,13 +4868,21 @@ div.chat-later a { color: #fff; text-decoration: none; }
 
 .page-header-intro p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
-h1, h2 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+.body-copy h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-h3 { padding: 16px 0; margin-bottom: 0px !important; }
+.body-copy h2 { padding: 24px 0 32px 0; margin: 0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0 0 1.5rem; text-align: left; width: 3.25rem; }
+.body-copy h3 { padding: 16px 0 32px 0; margin: 0; }
 
-.body-copy p, .main-section p { font-size: 1rem; max-width: 750px; }
+.body-copy h4 { padding: 16px 0; margin: 0; }
+
+.body-copy h5 { padding: 0 0 16px 0; margin: 0; }
+
+.body-copy hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0; text-align: left; width: 3.25rem; padding: 0 0 32px 0; }
+
+.body-copy p { font-size: 1rem; padding: 0 0 32px 0; margin: 0; }
+
+.body-copy-headline h2 { padding-top: 0; }
 
 .body-copy .body-copy-content p.small { font-size: .8rem; }
 
@@ -4889,6 +4897,10 @@ hr { border: 0; border-top: 0.125rem solid #EDCA72; margin: 0 0 1.5rem; text-ali
 .c-wrapper .body-copy ul li { padding: 0 0 16px 16px; margin: 0; }
 
 .c-wrapper .body-copy ul li:last-of-type { padding: 0 0 32px 16px; }
+
+.c-wrapper .body-copy ul li ul li { padding: 0 0 16px 16px; margin: 0; }
+
+.c-wrapper .body-copy ul li ul li:last-of-type { padding: 0 0 0 16px; }
 
 .search-bar-wrapper .search-bar-inner-wrapper .search-bar-search .input-group-container input { display: inline-block; position: absolute; right: 50px; }
 
