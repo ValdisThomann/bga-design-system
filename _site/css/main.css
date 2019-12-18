@@ -5360,9 +5360,13 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .accordion .accordion-item-content.visible { display: block; background-color: #EBEBEB !important; padding: 0 112px 64px 32px; border-bottom: solid 4px #FFD964; max-height: none; }
 
-.design-system-card .image .caption-wrapper, .design-system-card .media-player .caption-wrapper { background: #EBEBEB; padding: 16px; }
+.design-system-card .image .caption-wrapper { background: #EBEBEB; padding: 16px; }
 
-.design-system-card .image .caption, .design-system-card .media-player .caption { font-size: 14px; line-height: 24px; padding: 0; }
+.design-system-card .image .caption { font-size: 14px; line-height: 24px; padding: 0; }
+
+.design-system-card .media-player { padding: 0; }
+
+.design-system-card .utilities .utility-group { padding: 0; }
 
 .design-system-card .download-list h4 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
