@@ -152,6 +152,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
     background-color: $blue-primary !important;
 }
 .navbar-brand {
+    font-size: 16px;
     color: white !important;
     &:hover, &:focus {
         text-decoration: underline;
@@ -165,32 +166,13 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
 }
 .navbar-light .navbar-toggler-icon {
     background-image: url("../assets/Icon-menu.svg");
+    height: 24px;
+    width: 24px;
 }
 .navbar-expand-lg {
     padding-top: 0;
     padding-bottom: 0;
 }
-
-// #navigation-bar {
-//     .navigation-main-menu {
-    
-//     a {
-//         color: $white;
-//         text-decoration: none;
-//         padding-top: 18px;
-//         padding-bottom: 18px;
-//         @include font-format($font-family, $font-semibold, normal);
-        
-//         &:hover, &:focus {
-//             text-decoration: underline;
-//             background: $blue-active;
-//         }
-//     }
-//     &:hover, &:focus {
-//         background: $blue-active;
-//         }
-//     }
-// }
 
 .footer-wrapper {
     margin-top: 48px;
@@ -229,18 +211,22 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
     .search-bar-wrapper {
         padding: 0;
     }
+    .navbar-menu {
+        border-bottom: 2px solid #1e4175 !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
     .navbar-collapse {
         background-color:$blue-active;
-    }
-    .navbar-menu {
-        border-bottom: 2px solid #1e4175!important;
     }
 }
 
 @media (max-width: 900px) {
-    // .navigation-bar-wrapper {
-    //     display: none;
-    // }
     .navbar-menu {
         border-bottom: 2px solid #1e4175!important;
     }
