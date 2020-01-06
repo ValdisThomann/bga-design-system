@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Cross site navigation</title>
+    <title>Progress indicator</title>
     <meta name="description" content="">
  
     <meta name="robots" content="noarchive, nofollow, noindex, nosnippet, notranslate, noydir">
@@ -118,7 +118,7 @@
                     </svg><a href=/ class="breadcrumb-link last" aria-label=></a>
                     <p class="right-arrow">›</p>
                 </div>
-                <p class="breadcrumb-location">Cross site navigation</p>
+                <p class="breadcrumb-location">Progress indicator</p>
             </div>
         </div>
     </div>
@@ -132,14 +132,14 @@
                 <div class="page-header" id="page-header">
                     <div class="col-12 col-sm-12 col-md-8">
                         <h1 class="page-header-title">
-                            Cross site navigation
+                            Progress indicator
                         </h1>
                        
                     </div>
                     <div class="col-12 col-sm-12 col-md-8">
                         <div class="page-header-intro">
                             <p>
-                                A header for business.gov.au sister sites.
+                                Show users how far they have progressed through a sequential process.
                             </p>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
                                         <ul>
                                             <li><a href="" aria-label="Visual design">Visual design</a></li>
                                             <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
- 
+
                                         </ul>
                                     </div>
                                 </div>
@@ -186,7 +186,7 @@
 <div >
 <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
 <div class="row">
-    <div class="anchor-section-full-width c-padding-top col-sm-10 offset-sm-2 col-md-10 offset-md-2">
+    <div class=" anchor-section-full-width c-padding-top col-sm-10 offset-sm-2 col-md-10 offset-md-2">
         <div class="body-copy">
             <div>
                 <div class="body-copy-headline col-12">
@@ -195,61 +195,35 @@
                 <hr />
             </div>
             <div class="body-copy-content">
-
+                
+                <h3>Un-named steps</h3>
                 <div class="design-system-card component extra-wide">
-                    
-                <div class="responsive-toggle-container">
-                    <p class="toggle-name">Design view: <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                        <span class="switch-text-mobile"></span>
-                        <span class="switch-text-desktop"></span>
-                    </label></p>
-                    
-                    <div class="mobile-only"><h5>Mobile design</h5>
-                     <!--<div class="tooltip-info">--><p>Desktop designs can be viewed on screens wider than 650px.</p><!--</div>-->
-                    </div>
-                    
-                </div>
-                    
-                     
-                    
-                <div class="design-system-card-content">
-
+                    <div class="design-system-card-content">
+                        
                         <div class="example-wrapper white-back">
-                            <div class="cross-site-navigation">
-                                <div class="example cross-site-navigation-container">
+                             
+                            <div class="progress-indicator">
+                                <div class="example progress-indicator-container">
 
-                                    <div class="header-links-wrapper">
-                                        <div class="row">
-                                        
-                                        <div class="header-bga-link col-4">
-                                            <a href="" class="float-left"><span>business</span>.gov.au</a>
-                                        </div>
-
-                                        <div class="header-other-links col-8">
-                                            <a href="" class="float-right">Sign in</a>
-                                        </div>
-                                        </div>
-
-
+                                    <div class="progress-percentage">25% complete</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-
-                                    <div class="header-brand-wrapper">
-                                    <div class="row">
                                     
-                                        <div class="header-brand">
-                                           <img src=/assets/sister-site-logo.svg /> 
-                                        </div>
-                                        </div>
-                                        
-                                    </div>
 
                                 </div>
                             </div>
 
                         </div>
 
+                        <div class="component notes">
+                            <div class="">
+                                <h4>Notes</h4>
+                                <p>This progress indicator is the default indicator and can be used to show progress through a complete process.</p>
+                                <p>Progress indicators are not used for navigation.</p>
+                            </div>
+                        </div>
+                        
                         <div class="element-design component closed">
                             <div class="content-wrapper">
                                 <p>CSS styles</p>
@@ -265,78 +239,43 @@
                         </div>
                             
 <div class="element-code">
-<h5>Links</h5>
+
+<h5>Progress percentage (text)</h5>
 <code>
 <pre>
-a {
-    color: $white;
-    font-size: 16px;
+p {   
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: normal;
     line-height: normal;
-    text-decoration: none;
-}
-</pre>
-</code>
-
-<h5>Links container</h5>
-<code>
-<pre>
-a {
-    background: #18335C;
-    padding-top: 10px;
-    padding-bottom: 10px;
- 
-}
-</pre>
-</code>
-
-<h5>Site logo container</h5>
-<code>
-<pre>
-a {
-    background: #254F90;
-    padding-top: 32px;
-    padding-bottom: 32px;
- 
+    margin-bottom: 16px;
 }
 </pre>
 </code>
     
-<h4>Mobile</h4>
-<h5>Links</h5>
+<h5>Progress bar - background</h5>
 <code>
 <pre>
-a {
-    color: $white;
-    font-size: 14px;
-    line-height: normal;
-    text-decoration: none;
+div.progress-bar {
+    height: 4px;
+   border-radius: 4px;
+   color: #D8D8D8;
 }
 </pre>
 </code>
-
-<h5>Links container</h5>
+    
+<h5>Progress bar - completed</h5>
 <code>
 <pre>
-.links-container {
-    background: #18335C;
-    padding-top: 8px;
-    padding-bottom: 8px;
- 
+div.progress-completed {
+   height: 4px;
+   border-radius: 4px;
+   color: #4569A0;
 }
 </pre>
 </code>
-
-<h5>Site logo container</h5>
-<code>
-<pre>
-.logo-container {
-    background: #254F90;
-    padding-top: 16px;
-    padding-bottom: 16px;
- 
-}
-</pre>
-</code>
+    
     
 </div>
 
@@ -344,6 +283,96 @@ a {
 
                 </div>
 
+
+                
+                <h3>Named steps</h3>
+                <div class="design-system-card component extra-wide">
+                    <div class="design-system-card-content">
+                        
+                        <div class="example-wrapper white-back">
+                             
+                            <div class="progress-indicator">
+                                <div class="example  progress-indicator-container">
+
+                                    <div class="progress-percentage"><strong>Step name:</strong> 25% complete</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="component notes">
+                            <div class="">
+                                <h4>Notes</h4>
+                                <p>This progress indicator can be used to show progress of sub-steps within a larger process. Naming each step makes it clear to the user that the progress is for that particular step, rather than the whole process.</p>
+                                <p>Progress indicators are not used for navigation.</p>
+                            </div>
+                        </div>
+                            
+                        <div class="element-design component closed">
+                            <div class="content-wrapper">
+                                <p>CSS styles</p>
+                            </div>
+                            <button role="none" tabindex="-1" class="float-button">
+                                <div tabindex="-1" class="float-button-content">
+                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                </div>
+                            </button>
+
+                        </div>
+                            
+<div class="element-code">
+
+<h5>Progress percentage (text)</h5>
+<code>
+<pre>
+p {   
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+</pre>
+</code>
+    
+<h5>Progress bar - background</h5>
+<code>
+<pre>
+div.progress-bar {
+    height: 4px;
+   border-radius: 4px;
+   color: #D8D8D8;
+}
+</pre>
+</code>
+    
+<h5>Progress bar - completed</h5>
+<code>
+<pre>
+div.progress-completed {
+   height: 4px;
+   border-radius: 4px;
+   color: #4569A0;
+}
+</pre>
+</code>
+    
+    
+</div>
+
+                    </div>
+
+                </div>
+                
+                
             </div>
                 
             <div class="adobe-link vertical-list  col-sm-12 col-md-12 col-lg-10">
@@ -424,13 +453,16 @@ a {
 </div>
 </div>
 
+                            
+<!-- LAYOUTS -->                               
+
+
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-
 
     
     

@@ -165,6 +165,25 @@ $(document).ready(function () {
     });
     
     
+    /*----------- Responsive view toggle ----------- */
+    /*if ($(window).width() < 650) {
+        console.log('Mobile size');
+        $('.example-wrapper').addClass('mobile-example');
+    } else if ($(window).width() >= 650) {
+        $('.example-wrapper').removeClass('mobile-example');
+    }*/
+    
+    $('.responsive-toggle-container input').on('click', function(){
+        var design_card = $(this).parents('.design-system-card');
+        $(design_card[0]).find(".example-wrapper").toggleClass("mobile-example");
+    });
+    
+    
+    
+    
+    
+        
+    
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
     $('tr td:first-of-type').on('click', function(){
         
@@ -178,7 +197,7 @@ $(document).ready(function () {
     });
     
     
-    /*----------- COMEPONENT EXAMPLE: Accordions ----------- */
+    /*----------- COMPONENT EXAMPLE: Accordions ----------- */
     
     $('.accordion-group-toggle-content').on('click', function(){
         // Open all / close all button functionality.

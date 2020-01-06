@@ -1538,6 +1538,26 @@
         }
         
     }
+    .mobile-example .cross-site-navigation {
+        .header-links-wrapper {
+                 padding: 8px 16px;
+                 margin: 0 -40px;
+                a {
+                    font-size: 14px;
+                    line-height: normal;
+                }
+            }
+            .header-brand-wrapper {
+                padding: 16px 16px;
+                margin: 0 -40px;
+                
+                img {
+                    width: 138px;
+                    height: auto;
+                }
+            }
+    }
+    
     
     .stepped-navigation {
         background: $grey-lighter;
@@ -1921,7 +1941,28 @@
                 }
             }
         }
-    }          
+    }  
+    
+    .progress-indicator {
+        .progress-percentage {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 14px;
+            line-height: normal;
+            color: $grey-darker;
+            margin-bottom: 16px;
+        }
+        .progress {
+            height: 4px;
+            border-radius: 4px;
+            background: $grey-light;
+            
+            .progress-bar {
+                height: 4px;
+                background: $blue-primary-mid;
+                border-radius: 4px;  
+            }
+        }
+    }
  
     &.no-header {
         border-top: 4px solid $blue-primary;
@@ -2425,4 +2466,163 @@
     }
 }
 
+/* Toggle responsive examples */
+.responsive-toggle-container {
+    margin: 0;
+    padding: 24px;
+    border-bottom: 1px solid $grey-light;
+    position: relative;
+    
+    @media (max-width: 650px) {
+        padding: 16px 24px;
+    }
+    
+    p.toggle-name {
+        font-size: 14px;
+        text-align: right;
+        padding-bottom: 0;
+        position: relative;
+        padding-right: 190px;
+        padding-top: 4px;
+        padding: 4px 190px 0 0;
+        
+        @media (max-width: 650px) {
+            display: none !important;
+        }
+    }
+    .mobile-only  {
+        p {
+            font-size: 14px;
+            padding: 0 24px 0 0;
+            position: relative;
+            display: inline;
+        }
+        
+        /*span:after {
+            content: url(../assets/Icon-info.svg);
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            top: 2px;
+            right: 0;
+            cursor: pointer;
+        }*/
+        
+        /*.tooltip-info {
+            position: absolute;
+            top: -70px;
+            left: 24px;
+            background: $blue-primary;
+            z-index: 3000;
+            border-radius: 4px;
+            padding: 16px;
+            font-size: 14px;
+            width: calc(100% - 48px);
+            //box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, .1);
+            
+            p {
+                color: $white;
+            }
+        }*/
+        
+        @media (min-width: 651px) {
+            display: none !important;   
+        }
+    }
+    
+    .switch {
+        position: absolute;
+        display: inline-block;
+        width: auto;
+        min-width: 180px;
+        height: 32px;
+        margin: 0;
+        top: 0;
+        right: 0;
 
+        input {
+            /* Hide default HTML checkbox */
+            opacity: 0;
+            width: 0;
+            height: 0;
+            
+            &:checked + .slider {
+                &:before {
+                    content: "Mobile";
+                    -webkit-transform: translateX(80px);
+                    -ms-transform: translateX(80px);
+                    transform: translateX(80px);
+                }
+            }
+        }
+        
+        /* The slider background */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: none;
+            border: 1px solid $grey-dark;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 34px;
+
+            &:before {
+                position: absolute;
+                height: 24px;
+                width: 90px;
+                padding: 0 16px;
+                border-radius: 20px;
+                content: "Desktop";
+                color: $white;
+                left: 4px;
+                bottom: 3px;
+                background-color: $blue-primary;
+                @include font-format($font-family, $font-semibold, normal);
+                font-size: 14px;
+                text-align: center;
+                -webkit-transition: .4s;
+                transition: .4s;
+                z-index: 2000;
+            }
+        }
+
+        /* Text within slider background */
+        .switch-text-mobile {
+            color: $grey-darker;
+            position: absolute;
+            right: 4px;
+            bottom: 3px;
+            width: 90px;
+            text-align: center;
+
+            &:before {
+                content: "Mobile";
+            }
+        }
+
+        .switch-text-desktop {
+            color: $grey-darker;
+            position: absolute;
+            left: 4px;
+            bottom: 3px;
+            width: 90px;
+            text-align: center;
+
+            &:before {
+                content: "Desktop";
+            }
+        }
+
+    }
+}
+
+.mobile-example .example {
+    max-width: 280px;
+    padding: 0;
+    margin: 0;
+    
+}
