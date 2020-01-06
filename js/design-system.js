@@ -240,6 +240,25 @@ $(document).ready(function () {
     });
     
     
+    
+    /*----------- COMPONENT EXAMPLE: Media Player ----------- */
+    $('.media-player-transcript-toggle button').on('click', function(){
+        //$('.media-player-transcript').toggleClass('open');
+        
+        
+        if ($('.media-player-transcript').hasClass('open')) {
+            $('.media-player-transcript').removeClass('open');
+            $('.media-player-transcript-toggle span').text('Open Transcript');
+        } else {
+            $('.media-player-transcript').addClass('open');
+            $('.media-player-transcript-toggle span').text('Close Transcript');
+            $('.player-transcript-toggle button svg').addClass('open');
+        }
+    });
+    
+    
+    
+    
     /*----------- COMPONENT EXAMPLE: Pagination ----------- */
     // Change current state on when click on page number
     $('.pagination-container a.page').on('click', function(){

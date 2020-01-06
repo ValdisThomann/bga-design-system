@@ -1306,8 +1306,28 @@
         }
     }
     
-    .media-player {
-        padding: 0;
+    .media-player-example {
+        
+        .media-player-player {
+            background: url(../assets/media-player-placeholder.jpg) no-repeat;
+            background-size: cover;
+        }
+        //.player-transcript-toggle svg.open {
+            
+        //    transform: scaleY(-1);
+        //}
+        .media-player-transcript {
+            height: 0;
+            
+            &.open {
+                height: 19.5rem !important;
+                
+                .media-transcript {
+                    visibility: visible; 
+                    transition: visibility 0.5s ease 1s;
+                }
+            }
+        }
     }
     
     .utilities {
@@ -1557,7 +1577,6 @@
                 }
             }
     }
-    
     
     .stepped-navigation {
         background: $grey-lighter;

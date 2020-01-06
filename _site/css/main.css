@@ -5364,7 +5364,13 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .image .caption { font-size: 14px; line-height: 24px; padding: 0; }
 
-.design-system-card .media-player { padding: 0; }
+.design-system-card .media-player-example .media-player-player { background: url(../assets/media-player-placeholder.jpg) no-repeat; background-size: cover; }
+
+.design-system-card .media-player-example .media-player-transcript { height: 0; }
+
+.design-system-card .media-player-example .media-player-transcript.open { height: 19.5rem !important; }
+
+.design-system-card .media-player-example .media-player-transcript.open .media-transcript { visibility: visible; transition: visibility 0.5s ease 1s; }
 
 .design-system-card .utilities .utility-group { padding: 0; }
 
