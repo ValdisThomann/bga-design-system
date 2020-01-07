@@ -249,10 +249,11 @@ $(document).ready(function () {
         if ($('.media-player-transcript').hasClass('open')) {
             $('.media-player-transcript').removeClass('open');
             $('.media-player-transcript-toggle span').text('Open Transcript');
+            $('.media-player .media-player-transcript-toggle .iconAnimateWrapper svg').removeClass('open');
         } else {
             $('.media-player-transcript').addClass('open');
             $('.media-player-transcript-toggle span').text('Close Transcript');
-            $('.player-transcript-toggle button svg').addClass('open');
+            $('.media-player .media-player-transcript-toggle .iconAnimateWrapper svg').addClass('open');
         }
     });
     
@@ -322,6 +323,45 @@ $(document).ready(function () {
         console.log('clicked');
         $('.anchor-menu-example a').removeClass('active-sticky');
         $(this).addClass('active-sticky');
+    });
+    
+    
+    
+    
+    /*----------- SAB Navigation 2 functionality  ----------- */
+    
+    // Activate submenu functionality
+    // https://stackoverflow.com/questions/44467377/bootstrap-4-multilevel-dropdown-inside-navigation
+    $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+            $('.dropdown-submenu .show').removeClass('show');
+    });
+
+    return false;
+    });
+    
+    $('#guide_navlink').hover(
+        function(){
+            $(this).addClass('open');
+        },
+        function(){
+            $(this).removeClass('open');
+        }                           
+    );
+    
+    
+    // Reset disabled links so they take the user to the required url (disabled so dropdown opens on hover rather than click)
+    // NOTE: hover on dropdown is performed with CSS NOT javascript
+    $('.dropdown-submenu').on('click', function(){
+        $(this).children('a').css('text-decoration', 'underline');
+        var href = $(this).children('a').attr('href');
+        window.location = href;
     });
     
     
