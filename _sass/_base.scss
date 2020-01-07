@@ -130,26 +130,48 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
         flex: initial !important;
     }
 }
-
-#navigation-bar {
-    .navigation-main-menu {
-    
+.navbar {
+    .navigation-item-button {
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
     a {
-        color: $white;
+        color: white;
+        font-weight: 600;
         text-decoration: none;
-        padding-top: 18px;
-        padding-bottom: 18px;
-        @include font-format($font-family, $font-semibold, normal);
-        
         &:hover, &:focus {
             text-decoration: underline;
             background: $blue-active;
+            color: white;
+            border-radius: 0;
         }
     }
+}
+
+.bg-light {
+    background-color: $blue-primary !important;
+}
+.navbar-brand {
+    font-size: 16px;
+    color: white !important;
     &:hover, &:focus {
-        background: $blue-active;
-        }
+        text-decoration: underline;
+        color: white;
+        background: transparent;
     }
+}
+.navbar-light .navbar-toggler {
+    color: white;
+    border: none;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../assets/Icon-menu.svg");
+    height: 24px;
+    width: 24px;
+}
+.navbar-expand-lg {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .footer-wrapper {
@@ -180,18 +202,43 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg {
     .navigation-bar .navigation-main-menu a {
         font-size: 18px;
     }
+    .navbar-expand-lg {
+        padding: 0;
+    }
+    .navbar-brand {
+        padding-left: 16px;
+    }
+    .search-bar-wrapper {
+        padding: 0;
+    }
+    .navbar-menu {
+        border-bottom: 2px solid #1e4175 !important;
+    }
 }
 
-@media only screen and (max-width: 900px) {
-    .navigation-bar-wrapper {
-        display: none;
+@media (max-width: 991px) {
+    .navbar-brand {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .navbar-collapse {
+        background-color:$blue-active;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-menu {
+        border-bottom: 2px solid #1e4175!important;
     }
 
     .search-bar-wrapper {
-        background: $blue-primary url("../assets/Icon-menu.svg") no-repeat;
+        // background: $blue-primary url("../assets/Icon-menu.svg") no-repeat;
         background-size: 20px 16px;
         background-position: center right 15px;
 
+    }
+    .navbar {
+        padding: 0;
     }
 
     .search-bar-wrapper .search-bar-inner-wrapper .search-bar-search .input-group-container {
