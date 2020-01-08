@@ -163,7 +163,7 @@
                                             <li><a href="" aria-label="Visual design">Visual design</a></li>
                                             <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
                                             <li><a href="" aria-label="Layouts">Layouts</a></li>
-
+                                            <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -193,16 +193,32 @@
             <div class="body-copy-content">
 
                 <div class="design-system-card component">
+                    
+                                             
+                <div class="responsive-toggle-container">
+                    <p class="toggle-name">Design view: <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="switch-text-mobile"></span>
+                        <span class="switch-text-desktop"></span>
+                    </label></p>
+                    
+                    <div class="mobile-only"><h5>Mobile design</h5>
+                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                    </div>
+                    
+                </div>
+                    
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper white-back">
                             <div class="light-pathway">
                                 <div class="example light-container">
-
+                                    <div class="light-wrapper">
                                     <h3>Light pathway</h3>
                                     <p class="description">The light pathway is an in-page link to another page on the site.</p>
                                     <p class="icon-link"></p>
-                                    
+                                    </div>
                                 </div>
                             </div>
 
@@ -223,15 +239,14 @@
                         </div>
                             
 <div class="element-code">
-
-
+<h4>Desktop &amp; mobile</h4>
+<h5>Title</h5>
 <code>
 <pre>
 h3 {
+    color: #333333;
     font-family: OpenSans-Semibold;
     font-size: 21px;
-    color: #333333;
-    letter-spacing: 0;
     line-height: 28px;
 }
 h3:hover {
@@ -247,10 +262,9 @@ h3:hover {
 <code>
 <pre>
 p {
+    color: #333333;
     font-family: OpenSans;
     font-size: 16px;
-    color: #333333;
-    letter-spacing: 0px;
     line-height: 28px;
 }
 
@@ -275,30 +289,13 @@ p {
 <code>
 <pre>
 .container {
-    background: #ffffff;
+    background: #FFFFFF;
     padding: 16px 24px 24px 0;
     border-top: 4px solid #B3C2D8;
 }
 .container:hover {
     background: #EFF4FB;
 }
-
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<h5>Heading</h5>
-
-<code>
-<pre>
-h3 {    
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    color: #333333;
-    letter-spacing: 0;
-    line-height: 30px;
-}
-
 </pre>
 </code>
 
@@ -309,27 +306,7 @@ h3 {
                 </div>
 
             </div>
-                
-            <div class="adobe-link vertical-list  col-sm-12 col-md-12 col-lg-10">
-
-                <div>
-                    <a class="action-card-anchor" target="blank" href="">
-                            <div class="action-card-button">
-                                <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
-                                    <div class="action-card-info">
-                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
-                                                <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
-                                            </svg></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-            </div>
-
-
-
+            
         </div>
 
 
@@ -434,6 +411,79 @@ h3 {
 </div>
 </div>
 </div>
+                    
+                
+                        
+<!-- EXAMPLES & ASSETS -->                               
+<div class="anchor-section" name="examples-and-assets"><a href="" id="examples-and-assets"  aria-label="Layouts"></a>
+<div >
+<div>
+<div >
+    <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+        <div class="row">
+            <div class=" col-sm-12 col-md-12 col-lg-10">
+                <div class="body-copy">
+                    <div>
+                        
+                            <h2>Examples and assets</h2>
+                   
+                        <hr />
+                    </div>
+                    <div class="body-copy-content">
+ 
+                         
+            <!--<div class="adobe-link vertical-list col-sm-12 col-md-12 col-lg-10">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>ADOBE XD</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>-->
+                        
+            <div class="example-link vertical-list col-sm-12 col-md-12 col-lg-10">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="https://business.gov.au/">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View the light pathway component on business.gov.au</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+                        
+
 
 
 
@@ -443,8 +493,8 @@ h3 {
 
                 </div>
             </div>
-        </div>
-</div>
+    </div>
+
 
     
     

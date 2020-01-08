@@ -166,21 +166,24 @@ $(document).ready(function () {
     
     
     /*----------- Responsive view toggle ----------- */
-    /*if ($(window).width() < 650) {
-        console.log('Mobile size');
-        $('.example-wrapper').addClass('mobile-example');
-    } else if ($(window).width() >= 650) {
-        $('.example-wrapper').removeClass('mobile-example');
-    }*/
-    
     $('.responsive-toggle-container input').on('click', function(){
         var design_card = $(this).parents('.design-system-card');
         $(design_card[0]).find(".example-wrapper").toggleClass("mobile-example");
     });
     
+    if ($(window).width() < 650) {
+        $('.example-wrapper').addClass('mobile-media-query');
+    } else if ($(window).width() >= 650) {
+            $('.example-wrapper').removeClass('mobile-media-query');
+    }
     
-    
-    
+    $(window).on('resize', function () {
+        if ($(window).width() < 650) {
+            $('.example-wrapper').addClass('mobile-media-query');
+        } else if ($(window).width() >= 650) {
+            $('.example-wrapper').removeClass('mobile-media-query');
+        }
+    });
     
         
     
