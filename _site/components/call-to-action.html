@@ -163,7 +163,7 @@
                                             <li><a href="" aria-label="Visual design">Visual design</a></li>
                                             <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
                                             <li><a href="" aria-label="Layouts">Layouts</a></li>
-
+                                            <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -194,6 +194,21 @@
 
              <h3>Standard call to action</h3>
                 <div class="design-system-card component">
+                    
+                <div class="responsive-toggle-container">
+                    <p class="toggle-name">Design view: <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="switch-text-mobile"></span>
+                        <span class="switch-text-desktop"></span>
+                    </label></p>
+                    
+                    <div class="mobile-only"><h5>Mobile design</h5>
+                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                    </div>
+                    
+                </div>
+                    
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper white-back">
@@ -234,17 +249,17 @@
                         </div>
                             
 <div class="element-code">
-
+<h4>Desktop</h4>
 <h5>Heading</h5>
 <code>
 <pre>
 h2 {
+    color: #333333;
     font-family: OpenSans-Semibold;
     font-size: 32px;
-    color: #333333;
-    letter-spacing: 0;
     line-height: 40px;
 }
+
 </pre>
 </code>
     
@@ -252,12 +267,12 @@ h2 {
 <code>
 <pre>
 p {
+    color: #333333;
     font-family: OpenSans;
     font-size: 16px;
-    color: #333333;
-    letter-spacing: 0.2px;
-    line-height: 28px;
+    line-height: 32px;
 }
+
 </pre>
 </code>
     
@@ -265,17 +280,17 @@ p {
 <code>
 <pre>
 li  {
+    color: #333333;
     font-family: OpenSans;
     font-size: 16px;
-    color: #333333;
-    letter-spacing: 0;
-    line-height: 28px;
+    line-height: 32px;
 }
 bullet {
-    color: #c18100;
+    color: #C18100;
     height: 8px;
     width: 8px;
 }
+
 </pre>
 </code>
     
@@ -283,9 +298,8 @@ bullet {
 <code>
 <pre>
 .primary-button {
-    background: #254F90;
     color: #FFFFFF;
-    background: #4569A0 0% 0% no-repeat padding-box;
+    background-color: #254F90;
     box-shadow: 0px 2px 4px #0000001A;
     border: 2px solid #254F90;
     border-radius: 6px;
@@ -293,22 +307,16 @@ bullet {
     padding: 8px 32px;
     text-align: center;
     letter-spacing: 0;
-    transition-property: transform, -webkit-transform;
-    transition-duration: 0.4s, 0.4s;
-    transition-timing-function: ease, ease;
-    transition-delay: 0s, 0s; 
 }
 .primary-button:hover {
-    transform: translateY(-.1875rem);
-    box-shadow: 0px 4px 8px #0000004D;
     background: #254F90 0% 0% no-repeat padding-box;
     box-shadow: 0px 4px 8px #0000004D;
 }
 .primary-button:active {
-    transform: translateY(-.1875rem);
-    box-shadow: 0px 4px 8px #0000004D;
     background: #18335C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #0000004D;
 }
+
 </pre>
 </code>         
     
@@ -320,6 +328,18 @@ bullet {
     border-top: 4px solid #D8D8D8;
     padding: 32px 32px 48px 32px;
 }
+
+</pre>
+</code>
+    
+<h4>Mobile</h4>
+<code>
+<pre>
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
 </pre>
 </code>
 
@@ -336,6 +356,21 @@ bullet {
                 <!-- Download call to action -->
                 <h3>Download call to action</h3>
                 <div class="design-system-card component">
+                    
+                <div class="responsive-toggle-container">
+                    <p class="toggle-name">Design view: <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="switch-text-mobile"></span>
+                        <span class="switch-text-desktop"></span>
+                    </label></p>
+                    
+                    <div class="mobile-only"><h5>Mobile design</h5>
+                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                    </div>
+                    
+                </div>
+                    
                     <div class="design-system-card-content">
                         
                        
@@ -392,17 +427,17 @@ bullet {
                             
                             
 <div class="element-code">
-
+<h4>Desktop</h4>
 <h5>Heading</h5>
 <code>
 <pre>
 h2 {
+    color: #333333;
     font-family: OpenSans-Semibold;
     font-size: 32px;
-    color: #333333;
-    letter-spacing: 0;
     line-height: 40px;
 }
+
 </pre>
 </code>
     
@@ -410,12 +445,28 @@ h2 {
 <code>
 <pre>
 p {
+    color: #333333;
     font-family: OpenSans;
     font-size: 16px;
-    color: #333333;
-    letter-spacing: 0.2px;
-    line-height: 28px;
+    line-height: 32px;
 }
+
+</pre>
+</code>
+    
+<h5>List</h5>
+<code>
+<pre>
+li  {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 32px;
+}
+bullet {
+    color: #C18100;
+}
+
 </pre>
 </code>
     
@@ -423,10 +474,11 @@ p {
 <code>
 <pre>
 .link-container {
-    background: #ffffff;
-    padding: 24px;
+    background: #FFFFFF;
     border-top: 4px solid #B3C2D8;
+    padding: 24px;
 }
+
 </pre>
 </code>
     
@@ -434,15 +486,15 @@ p {
 <code>
 <pre>
 p.description {
+    color: #333333;
     font-family: OpenSans-Semibold;
     font-size: 16px;
-    color: #333333;
-    letter-spacing: 0.2px;
     line-height: 25px;
 }
 p.description:hover {
     color: #254F90;
 }
+
 </pre>
 </code>
     
@@ -450,12 +502,12 @@ p.description:hover {
 <code>
 <pre>
 p.file-type {
+    color: #666666;
     font-family: OpenSans;
     font-size: 12px;
-    color: #666666;
-    letter-spacing: 0;
     line-height: 24px;
 }
+
 </pre>
 </code>
 <h5>File type icon</h5>
@@ -471,6 +523,7 @@ p.file-type {
     height: 32px;
     width: 32px;
 }
+
 </pre>
 </code>
     
@@ -482,6 +535,18 @@ p.file-type {
     border-top: 4px solid #D8D8D8;
     padding: 32px 32px 48px 32px;
 }
+
+</pre>
+</code>
+    
+<h4>Mobile</h4>
+<code>
+<pre>
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
 </pre>
 </code>
 
@@ -495,28 +560,6 @@ p.file-type {
 
             </div>
                 
-            
-                
-                
-                
-            <div class="adobe-link vertical-list  col-sm-12 col-md-12 col-lg-10">
-
-                <div>
-                    <a class="action-card-anchor" target="blank" href="">
-                            <div class="action-card-button">
-                                <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
-                                    <div class="action-card-info">
-                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
-                                                <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
-                                            </svg></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-            </div>
-
 
 
         </div>
@@ -533,6 +576,7 @@ p.file-type {
 </div>
 </div>
 </div>
+
                         
                         
 <!-- USAGE -->                      
@@ -624,6 +668,97 @@ p.file-type {
 </div>
 </div>
 </div>
+                    
+                
+                                            
+<!-- EXAMPLES & ASSETS -->                               
+<div class="anchor-section" name="examples-and-assets"><a href="" id="examples-and-assets"  aria-label="Layouts"></a>
+<div >
+<div>
+<div >
+    <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+        <div class="row">
+            <div class=" col-sm-12 col-md-12 col-lg-10">
+                <div class="body-copy">
+                    <div>
+                        
+                            <h2>Examples and assets</h2>
+                   
+                        <hr />
+                    </div>
+                    <div class="body-copy-content">
+ 
+                         
+            <!--<div class="adobe-link vertical-list col-sm-12 col-md-12 col-lg-10">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>ADOBE XD</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>-->
+                        
+            <div class="example-link vertical-list col-sm-12 col-md-12 col-lg-10">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="https://www.business.gov.au/Registrations/Register-your-business-name">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View the standard call to action component on business.gov.au</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+
+                        
+            <div class="example-link vertical-list col-sm-12 col-md-12 col-lg-10">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="https://www.business.gov.au/Planning/Business-plans/How-to-write-your-marketing-plan">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View the download call to action component on business.gov.au</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+                        
+
 
 
 
@@ -634,7 +769,7 @@ p.file-type {
                 </div>
             </div>
         </div>
-</div>
+
 
     
     

@@ -4920,6 +4920,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card.component .example-wrapper { background: #F5F5F5; box-shadow: none; padding: 40px; display: block; position: relative; max-width: 1000px; }
 
+@media (max-width: 650px) { .design-system-card.component .example-wrapper { padding: 24px; } }
+
 .design-system-card.component .example-wrapper.white-back { background: #ffffff; border-bottom: 1px solid #D8D8D8; }
 
 .design-system-card.component .example-wrapper.modal-grey { background-color: #ADADAD; }
@@ -5176,7 +5178,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .image-pathway .label { font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; padding: 0; margin: 8px 0 16px 0; }
 
-.design-system-card .image-pathway h3 { padding: 0 0 16px 0; }
+.design-system-card .image-pathway h3 { padding: 0 0 16px 0; line-height: 28px; }
 
 .design-system-card .image-pathway .description { font-size: 14px; line-height: 24px; padding-bottom: 48px; }
 
@@ -5192,15 +5194,21 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .image-pathway:hover .image-list-container { transform: translateY(-0.1875rem); }
 
+.design-system-card .mobile-example .image-pathway .description, .design-system-card .mobile-media-query .image-pathway .description { font-size: 16px; line-height: 28px; }
+
 .design-system-card .page-headers .label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; color: #ffffff; }
 
 .design-system-card .page-headers h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; margin-bottom: 16px; color: #ffffff; }
+
+.design-system-card .page-headers p { padding-bottom: 16px; margin-bottom: 0; }
+
+.design-system-card .page-headers p:last-of-type { margin-bottom: 0; padding-bottom: 0; }
 
 .design-system-card .page-headers .updated { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; letter-spacing: 0.2px; line-height: 18px; }
 
 .design-system-card .page-headers .description { color: #ffffff; }
 
-.design-system-card .page-headers .page-headers-container { background: #4569A0; padding: 64px 46px; margin: 0 -40px; }
+.design-system-card .page-headers .page-headers-container { background: #4569A0; padding: 64px 48px; margin: 0 -40px; }
 
 .design-system-card .page-headers.business-info .label, .design-system-card .page-headers.business-info h1, .design-system-card .page-headers.business-info .description, .design-system-card .page-headers.grants .label, .design-system-card .page-headers.grants h1, .design-system-card .page-headers.grants .description { color: #333333; }
 
@@ -5209,11 +5217,23 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 @media (min-width: 1600px) { .design-system-card .page-headers.topic .header-content { width: 70%; }
   .design-system-card .page-headers.topic .page-headers-container { background: #4569A0 url(../assets/illustration-reading-man.svg) no-repeat right 32px center; background-size: 200px; } }
 
-.design-system-card .call-to-action, .design-system-card .callout, .design-system-card .advisor-profile { border-top: 4px solid #D8D8D8; background: #EBEBEB; }
+.design-system-card .mobile-example .page-headers .page-headers-container, .design-system-card .mobile-media-query .page-headers .page-headers-container { padding: 64px 32px 48px; margin: 0 auto; }
+
+.design-system-card .mobile-example .page-headers h1, .design-system-card .mobile-media-query .page-headers h1 { font-size: 2rem; line-height: 1.14; }
+
+.design-system-card .mobile-example .page-headers .label, .design-system-card .mobile-media-query .page-headers .label { line-height: 16px; }
+
+.design-system-card .call-to-action h2, .design-system-card .callout h2, .design-system-card .advisor-profile h2 { padding: 0 0 8px 0; }
+
+.design-system-card .call-to-action h3, .design-system-card .callout h3, .design-system-card .advisor-profile h3 { line-height: 28px; }
+
+.design-system-card .call-to-action p, .design-system-card .callout p, .design-system-card .advisor-profile p { line-height: 32px; }
 
 .design-system-card .call-to-action .description, .design-system-card .callout .description, .design-system-card .advisor-profile .description { padding-bottom: 16px; }
 
-.design-system-card .call-to-action .cta-container, .design-system-card .callout .cta-container, .design-system-card .advisor-profile .cta-container { height: auto; border-top: none; background: none; padding: 32px 32px 48px 32px; margin: 0; }
+.design-system-card .call-to-action li, .design-system-card .callout li, .design-system-card .advisor-profile li { line-height: 32px; }
+
+.design-system-card .call-to-action .cta-container, .design-system-card .callout .cta-container, .design-system-card .advisor-profile .cta-container { height: auto; border-top: none; background: none; padding: 32px; border-top: 4px solid #D8D8D8; background: #EBEBEB; }
 
 .design-system-card .call-to-action .cta-container .call-out-content-detail ul:last-child li:last-of-type, .design-system-card .callout .cta-container .call-out-content-detail ul:last-child li:last-of-type, .design-system-card .advisor-profile .cta-container .call-out-content-detail ul:last-child li:last-of-type { padding-bottom: 0; }
 
@@ -5221,7 +5241,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .call-to-action .cta-button-wrapper:hover, .design-system-card .callout .cta-button-wrapper:hover, .design-system-card .advisor-profile .cta-button-wrapper:hover { transform: translateY(-0.1875rem); }
 
-.design-system-card .call-to-action .cta-button, .design-system-card .callout .cta-button, .design-system-card .advisor-profile .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: 0px 2px 4px #0000001A; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; color: #ffffff; }
+.design-system-card .call-to-action .cta-button, .design-system-card .callout .cta-button, .design-system-card .advisor-profile .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: 0px 2px 4px #0000001A; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
 .design-system-card .call-to-action .cta-button:hover, .design-system-card .callout .cta-button:hover, .design-system-card .advisor-profile .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: 0px 4px 8px #0000004D; border: 2px solid #18335C; border-radius: 6px; opacity: 1; }
 
@@ -5271,6 +5291,10 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 @media (max-width: 600px) { .design-system-card .call-to-action.advisor-profile .advisor-card-intro-detail, .design-system-card .call-to-action.advisor-profile .advisor-card-intro-title, .design-system-card .callout.advisor-profile .advisor-card-intro-detail, .design-system-card .callout.advisor-profile .advisor-card-intro-title, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-title { -webkit-box-flex: 0; flex: 0 0 100%; max-width: 100%; }
   .design-system-card .call-to-action.advisor-profile .advisor-intro, .design-system-card .callout.advisor-profile .advisor-intro, .design-system-card .advisor-profile.advisor-profile .advisor-intro { padding-bottom: 12px; }
   .design-system-card .call-to-action.advisor-profile .advisor-card-intro-title, .design-system-card .call-to-action.advisor-profile .advisor-card-intro-detail, .design-system-card .callout.advisor-profile .advisor-card-intro-title, .design-system-card .callout.advisor-profile .advisor-card-intro-detail, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-title, .design-system-card .advisor-profile.advisor-profile .advisor-card-intro-detail { padding: 0; font-size: 16px; line-height: 32px; } }
+
+.design-system-card .mobile-example .call-to-action h2, .design-system-card .mobile-media-query .call-to-action h2 { font-size: 24px; line-height: 32px; }
+
+.design-system-card .mobile-example .call-to-action .cta-container, .design-system-card .mobile-media-query .call-to-action .cta-container { padding: 24px; }
 
 .design-system-card .table .table-responsive { overflow-y: hidden; }
 

@@ -23,7 +23,7 @@ longdesc: Provide a standard pathway to content with a supporting image.
                                             <li><a href="" aria-label="Visual design">Visual design</a></li>
                                             <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
                                             <li><a href="" aria-label="Layouts">Layouts</a></li>
-
+                                            <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -53,6 +53,21 @@ longdesc: Provide a standard pathway to content with a supporting image.
             <div class="body-copy-content">
 
                 <div class="design-system-card component">
+                    
+                <div class="responsive-toggle-container">
+                    <p class="toggle-name">Design view: <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="switch-text-mobile"></span>
+                        <span class="switch-text-desktop"></span>
+                    </label></p>
+                    
+                    <div class="mobile-only"><h5>Mobile design</h5>
+                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                    </div>
+                    
+                </div>
+                    
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper">
@@ -87,14 +102,14 @@ longdesc: Provide a standard pathway to content with a supporting image.
 
             <div class="element-code">
 
+<h4>Desktop</h4>
 <h5>Heading</h5>
 <code>
 <pre>
 h3 {
+    color: #333333;
     font-family: OpenSans-Semibold;
     font-size: 21px;
-    color: #333333;
-    letter-spacing: 0;
     line-height: 28px;
 }
 h3:hover {
@@ -108,11 +123,10 @@ h3:hover {
 <code>
 <pre>
 p.label {
+    color: #333333;
     font-family: OpenSans;
     font-size: 12px;
-    color: #333333;
-    letter-spacing: 0.2px;
-    line-height: 22px;
+    line-height: 20px;
     text-transform: uppercase;
 }
 </pre>
@@ -123,10 +137,9 @@ p.label {
 <code>
 <pre>
 p.description {
+    color: #000000;
     font-family: OpenSans;
     font-size: 14px;
-    color: #000000;
-    letter-spacing: normal;
     line-height: 24px;
 }
 </pre>
@@ -154,7 +167,7 @@ p.description {
 <code>
 <pre>
 .container {
-    background: #ffffff;
+    background: #FFFFFF;
     padding: 16px;
     border: none;
     border-top: 4px solid #254F90;
@@ -165,7 +178,7 @@ p.description {
     transition-timing-function:ease;
 }
 .container:hover {
-    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,.2);
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0,.2);
     transform: translateY(-4px);
 }
 </pre>
@@ -193,26 +206,7 @@ p.description {
 
             </div>
                 
-            <div class="adobe-link vertical-list  col-sm-12 col-md-12 col-lg-10">
-
-                <div>
-                    <a class="action-card-anchor" target="blank" href="">
-                            <div class="action-card-button">
-                                <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
-                                    <div class="action-card-info">
-                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
-                                                <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
-                                            </svg></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-            </div>
-
-
-
+        
         </div>
 
 
@@ -304,7 +298,7 @@ p.description {
                          
                         <h3>Equal width layout - 2/3rd width pages</h3>
                         <div class="layouts">
-                            <p><strong>Desktop &amp; tablet:</strong> Three equal width components in a row.</p>
+                            <p><strong>Desktop &amp; tablet:</strong> Two equal width components in a row.</p>
 
                            <img class="responsive-img tablet" src={{"assets/layout-tablet-equal-half-width.svg"  | relative_url}} alt="">
 
@@ -332,7 +326,80 @@ p.description {
 </div>
 </div>
 
+                    
 
+                               
+<!-- EXAMPLES & ASSETS -->                               
+<div class="anchor-section" name="examples-and-assets"><a href="" id="examples-and-assets"  aria-label="Layouts"></a>
+<div >
+<div>
+<div >
+    <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+        <div class="row">
+            <div class=" col-sm-12 col-md-12 col-lg-10">
+                <div class="body-copy">
+                    <div>
+                        
+                            <h2>Examples and assets</h2>
+                   
+                        <hr />
+                    </div>
+                    <div class="body-copy-content">
+ 
+                         
+            <!--<div class="adobe-link vertical-list col-sm-12 col-md-12 col-lg-10">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>ADOBE XD</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>-->
+                        
+            <div class="example-link vertical-list col-sm-12 col-md-12 col-lg-10">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="https://www.business.gov.au/Grants-and-Programs/Supply-Chain-Facilitation/Customer-stories">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View the image pathway component on business.gov.au</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+                    
 
 
                         </div>

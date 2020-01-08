@@ -85,6 +85,10 @@
             display: block;
             position: relative;
             max-width: 1000px;
+            
+            @media (max-width: 650px) {
+                padding: 24px;
+            }
 
             &.white-back {
                 background: $white;
@@ -872,6 +876,7 @@
         }
         h3 {
             padding: 0 0 16px 0;
+            line-height: 28px;
         }
 
         .description {
@@ -916,7 +921,14 @@
                 transform: translateY(-.1875rem);
             }
         }
+    }
+    .mobile-example .image-pathway,
+    .mobile-media-query .image-pathway {
+        .description {
+            font-size: 16px;
+            line-height: 28px;
         }
+    }
     
     .page-headers {
         .label {
@@ -932,6 +944,15 @@
             margin-bottom: 16px;
             color: $white;
         }
+        p {
+            padding-bottom: 16px;
+            margin-bottom: 0;
+            
+            &:last-of-type {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
         .updated {
             @include font-format($font-family, $font-regular, italic);
             font-size: 12px;
@@ -943,7 +964,7 @@
         }
         .page-headers-container {
             background: $blue-primary-mid;
-            padding: 64px 46px;
+            padding: 64px 48px;
             margin: 0 -40px;
         }
         &.business-info,
@@ -967,24 +988,48 @@
             }
         }
     }
+    .mobile-example .page-headers,
+    .mobile-media-query .page-headers {
+        .page-headers-container {
+            padding: 64px 32px 48px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            line-height: 1.14;
+        }
+        .label {
+            line-height: 16px;
+        }
+    }
     
     .call-to-action,
     .callout,
     .advisor-profile {
-        border-top: 4px solid $grey-light;
-        background: $grey-lighter;
-
+         
+        h2 {
+            padding: 0 0 8px 0;
+        }
+        h3 {
+            line-height: 28px;
+        }
+        p {
+            line-height: 32px;
+        }
         .description {
             padding-bottom: 16px;
         }
-
+        li {
+            line-height: 32px;
+        }
         .cta-container {
             height: auto;
             border-top: none;
             background: none;
-            padding: 32px 32px 48px 32px;
-            margin: 0;
-            
+            padding: 32px;
+            border-top: 4px solid $grey-light;
+            background: $grey-lighter;
+
             .call-out-content-detail ul:last-child {
                 li:last-of-type {
                     padding-bottom: 0;
@@ -1014,6 +1059,7 @@
             text-align: center;
             letter-spacing: 0;
             color: $white;
+            @include font-format($font-family, $font-semibold, normal);
         
             &:hover {
                 background: $blue-primary 0% 0% no-repeat padding-box;
@@ -1175,6 +1221,16 @@
                     }
                 }
                 }
+    }
+    .mobile-example .call-to-action,
+    .mobile-media-query .call-to-action {
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .cta-container {
+            padding: 24px;
+        }
     }
     
     .table {
