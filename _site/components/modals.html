@@ -194,20 +194,39 @@
                 
 
                 <div class="design-system-card component">
+                    
+                     <div class="responsive-toggle-container">
+                    <p class="toggle-name">Design view: <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="switch-text-mobile"></span>
+                        <span class="switch-text-desktop"></span>
+                    </label></p>
+                    
+                    <div class="mobile-only"><h5>Mobile design</h5>
+                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                    </div>
+                    
+                </div>    
+                    
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper modal-grey">
+                            
                             <div class="modal-example">
+                                <div class="modal-wrapper">
                                 <div class="example modal-example-container">
                                     <div class="modal-example-content">
                                     <h4>Modal title</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dictum ante, eu viverra elit. Integer sit amet turpis nec lacus vestibulum faucibus. </p>
+                                    <div class="modal-close"></div>
                                     </div>
                                     
-                                    <div class="modal-close"></div>
+                                    
                                     
                                 </div>
                             </div>
+                                </div>
 
                         </div>
 
@@ -226,12 +245,55 @@
                         </div>
                             
 <div class="element-code">
-<h4>Desktop</h4>
-<h5>Heading</h5>
-
+<h4>Desktop &amp; mobile</h4>
+    
+<h5>Title</h5>
 <code>
 <pre>
+h4 {
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 18px;
+    line-height: 28px;
+}
 
+</pre>
+</code>
+    
+<h5>Paragraph</h5>
+<code>
+<pre>
+p {
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+</pre>
+</code>
+    
+<h5>Close icon</h5>
+<code>
+<pre>
+.icon-close {
+    color: #254F90;
+    width: 20px;
+    height: 20px;
+}
+
+</pre>
+</code>
+    
+<h5>Container</h5>
+<code>
+<pre>
+div {
+    background-color: #FFFFFF;
+    border-top: 4px solid #254F90;
+    padding: 32px;
+    border-radius: 0;
+}
 </pre>
 </code>
 
@@ -243,26 +305,7 @@
 
             </div>
                 
-            <div class="adobe-link vertical-list  col-sm-12 col-md-12 col-lg-10">
-
-                <div>
-                    <a class="action-card-anchor" target="blank" href="">
-                            <div class="action-card-button">
-                                <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
-                                    <div class="action-card-info">
-                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
-                                                <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
-                                            </svg></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-            </div>
-
-
-
+           
         </div>
 
 

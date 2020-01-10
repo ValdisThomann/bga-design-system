@@ -53,6 +53,21 @@ longdesc: Show users how far they have progressed through a sequential process.
                 
                 <h3>Un-named steps</h3>
                 <div class="design-system-card component extra-wide">
+                
+                <div class="responsive-toggle-container">
+                    <p class="toggle-name">Design view: <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="switch-text-mobile"></span>
+                        <span class="switch-text-desktop"></span>
+                    </label></p>
+                    
+                    <div class="mobile-only"><h5>Mobile design</h5>
+                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                    </div>
+                    
+                </div> 
+                    
                     <div class="design-system-card-content">
                         
                         <div class="example-wrapper white-back">
@@ -89,39 +104,73 @@ longdesc: Show users how far they have progressed through a sequential process.
                             
 <div class="element-code">
 
-<h5>Progress percentage (text)</h5>
+<h4>Desktop</h4>    
+<h5>Progress percentage text</h5>
 <code>
 <pre>
 p {   
+    color: #666666;
     font-family: OpenSans;
     font-size: 14px;
-    color: #666666;
-    letter-spacing: normal;
     line-height: normal;
     margin-bottom: 16px;
 }
 </pre>
 </code>
     
-<h5>Progress bar - background</h5>
+<h5>Progress bar</h5>
 <code>
 <pre>
-div.progress-bar {
+.progress-bar {
     height: 4px;
    border-radius: 4px;
    color: #D8D8D8;
 }
+
 </pre>
 </code>
     
-<h5>Progress bar - completed</h5>
+<h5>Progress bar completed</h5>
 <code>
 <pre>
-div.progress-completed {
-   height: 4px;
-   border-radius: 4px;
-   color: #4569A0;
+.progress-completed {
+    height: 4px;
+    border-radius: 4px;
+    color: #4569A0;
 }
+
+</pre>
+</code>
+    
+<h4>Mobile</h4>    
+<h5>Progress percentage text</h5>
+<code>
+<pre>
+p {   
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+</pre>
+</code>
+    
+<h5>Progress bar</h5>
+<code>
+<pre>
+.progress-bar {
+    height: 3px;
+
+}
+
+</pre>
+</code>
+    
+<h5>Progress bar completed</h5>
+<code>
+<pre>
+.progress-completed {
+    height: 3px;
+}
+
 </pre>
 </code>
     
@@ -136,6 +185,21 @@ div.progress-completed {
                 
                 <h3>Named steps</h3>
                 <div class="design-system-card component extra-wide">
+                    
+                    <div class="responsive-toggle-container">
+                    <p class="toggle-name">Design view: <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="switch-text-mobile"></span>
+                        <span class="switch-text-desktop"></span>
+                    </label></p>
+                    
+                    <div class="mobile-only"><h5>Mobile design</h5>
+                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                    </div>
+                    
+                </div> 
+                    
                     <div class="design-system-card-content">
                         
                         <div class="example-wrapper white-back">
@@ -172,42 +236,78 @@ div.progress-completed {
                             
 <div class="element-code">
 
-<h5>Progress percentage (text)</h5>
+<h4>Desktop</h4>    
+<h5>Progress percentage text</h5>
 <code>
 <pre>
 p {   
+    color: #666666;
     font-family: OpenSans;
     font-size: 14px;
-    color: #666666;
-    letter-spacing: normal;
     line-height: normal;
     margin-bottom: 16px;
+}
+strong {
+    font-family: OpenSans-Semibold;
 }
 </pre>
 </code>
     
-<h5>Progress bar - background</h5>
+<h5>Progress bar</h5>
 <code>
 <pre>
-div.progress-bar {
+.progress-bar {
     height: 4px;
    border-radius: 4px;
    color: #D8D8D8;
 }
+
 </pre>
 </code>
     
-<h5>Progress bar - completed</h5>
+<h5>Progress bar completed</h5>
 <code>
 <pre>
-div.progress-completed {
-   height: 4px;
-   border-radius: 4px;
-   color: #4569A0;
+.progress-completed {
+    height: 4px;
+    border-radius: 4px;
+    color: #4569A0;
+}
+
+</pre>
+</code>
+    
+<h4>Mobile</h4>    
+<h5>Progress percentage text</h5>
+<code>
+<pre>
+p {   
+    font-size: 12px;
+    margin-bottom: 8px;
 }
 </pre>
 </code>
     
+<h5>Progress bar</h5>
+<code>
+<pre>
+.progress-bar {
+    height: 3px;
+
+}
+
+</pre>
+</code>
+    
+<h5>Progress bar completed</h5>
+<code>
+<pre>
+.progress-completed {
+    height: 3px;
+}
+
+</pre>
+</code>
     
 </div>
 

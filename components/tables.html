@@ -55,7 +55,7 @@ longdesc: Display information in an easy to scan grid of rows and columns.
                 
                 <div class="design-system-card component extra-wide">
                     
-                    <div class="responsive-toggle-container">
+                <div class="responsive-toggle-container">
                     <p class="toggle-name">Design view: <label class="switch">
                         <input type="checkbox">
                         <span class="slider"></span>
@@ -146,9 +146,119 @@ longdesc: Display information in an easy to scan grid of rows and columns.
                             
 <div class="element-code">
 
+<h4>Desktop</h4>
 
+<h5>Table</h5>
 <code>
 <pre>
+table {
+    background-color: transparent;
+    border-top: 4px solid #DDE2E6;
+}
+
+</pre>
+</code>
+    
+<h5>Header cells</h5>
+<code>
+<pre>
+th {
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #F5F5F5;
+    border-bottom: 2px solid #DDE2E6;
+    padding: 16px;
+}
+
+</pre>
+</code>
+    
+<h5>Body cells</h5>
+<code>
+<pre>
+td {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDE2E6;
+    padding: 16px;
+}
+
+</pre>
+</code>
+    
+<h4>Mobile</h4>
+<h5>Table</h5>
+<code>
+<pre>
+table {
+    background-color: transparent;
+    border-top: 4px solid #DDE2E6;
+}
+
+</pre>
+</code>
+    
+<h5>Header cells - closed row</h5>
+<code>
+<pre>
+th {
+    color: #33333;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDE2E6;
+    padding: 16px;
+}
+
+</pre>
+</code>
+    
+<h5>Header cells - open row</h5>
+<code>
+<pre>
+th {
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #EBEBEB;
+    border-bottom: none;
+    padding: 16px;
+}
+
+</pre>
+</code>
+    
+<h5>Body cells - open row</h5>
+<code>
+<pre>
+th {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #EBEBEB;
+    border-bottom: none;
+    padding: 16px;
+}
+
+</pre>
+</code>
+    
+<h5>Chevron icon</h5>
+<code>
+<pre>
+.icon {
+    color: #333333;
+    width: 16px;
+    height: 10px;
+}
 
 </pre>
 </code>
