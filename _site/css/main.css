@@ -4968,6 +4968,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .design-system-card-links a:hover { box-shadow: none; }
 
+.design-system-card .design-system-card-links.no-height { height: 0; padding: 0; }
+
 .design-system-card .element-design { padding: 24px; border: solid 1px #D8D8D8; border-bottom: none; background: #ffffff; background-position: right 24px top 44%; transition: all .3s ease 0s; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; padding-left: 16px; display: block; }
 
 .design-system-card .element-design::before { content: ""; }
@@ -5055,6 +5057,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 .design-system-card .mobile-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: .2px; line-height: 20px; text-transform: uppercase; }
 
 .design-system-card .hero-pathway .hero-pathway-list { padding-bottom: 32px; }
+
+.design-system-card .hero-pathway .hero-pathway-list h3 { padding-bottom: 0; }
 
 .design-system-card .hero-pathway .hero-pathway-list:last-of-type { padding-bottom: 0; }
 

@@ -218,6 +218,10 @@
                 box-shadow: none;
             }
         }
+        &.no-height {
+            height: 0;
+            padding: 0;
+        }
     }
     
     .element-design {
@@ -498,6 +502,10 @@
         
         .hero-pathway-list {
             padding-bottom: 32px;
+            
+            h3 {
+                padding-bottom: 0;
+            }
             
             &:last-of-type {
                 padding-bottom: 0;
