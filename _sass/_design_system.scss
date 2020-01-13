@@ -2139,6 +2139,7 @@
                 background: $blue-primary-mid 0% 0% no-repeat padding-box;
                 border: 2px solid $blue-primary;
                 color: $white;
+                @include font-format($font-family, $font-semibold, normal);
 
                 &:hover {
                     background: $blue-primary 0% 0% no-repeat padding-box;
@@ -2154,6 +2155,7 @@
         
         .primary-dark-button {
             .cta-button {
+                @include font-format($font-family, $font-semibold, normal);
                 background: $white 0% 0% no-repeat padding-box;
                 border: 2px solid $blue-primary;
                 color: $blue-primary;
@@ -2173,6 +2175,7 @@
         
         .secondary-button {
             .cta-button {
+                @include font-format($font-family, $font-semibold, normal);
                 background: $white 0% 0% no-repeat padding-box;
                 border: 2px solid $blue-primary-mid;
                 color: $blue-primary-mid;
@@ -2192,6 +2195,7 @@
         
         .secondary-dark-button {
             .cta-button {
+                @include font-format($font-family, $font-semibold, normal);
                 background: $blue-primary-mid 0% 0% no-repeat padding-box;
                 border: 2px solid $white;
                 color: $white;
@@ -2210,6 +2214,7 @@
         
         .tertiary-button {
             .cta-button {
+                @include font-format($font-family, $font-semibold, normal);
                 background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
                 height: 32px;
                 border: none;
@@ -2230,6 +2235,7 @@
         
         .tertiary-dark-button {
             .cta-button {
+                @include font-format($font-family, $font-semibold, normal);
                 background: url(../assets/Icon-arrow-right-white.svg) no-repeat left 8px center;
                 height: 32px;
                 border: none;
@@ -2250,7 +2256,7 @@
         
         .link {
             .link-text{
-                color: $blue-primary;
+                @include font-format($font-family, $font-semibold, normal);color: $blue-primary;
                 
                 &:active {
                     color: $black;
@@ -2260,6 +2266,7 @@
         
         .link-dark {
             .link-text{
+                @include font-format($font-family, $font-semibold, normal);
                 color: $white; 
                 box-shadow: inset 0 -2.8px 0 $white;
                 
@@ -2279,6 +2286,7 @@
                 padding-top: 8px;
             }
             a {
+                @include font-format($font-family, $font-semibold, normal);
                 color: $blue-primary;
                 box-shadow: none;
                 padding: 0 6px;
