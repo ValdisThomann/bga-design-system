@@ -162,6 +162,7 @@
                                         <ul>
                                             <li><a href="" aria-label="Visual design">Visual design</a></li>
                                             <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
+                                            <li><a href="" aria-label="Layouts">Layouts</a></li>
                                             <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
                                         </ul>
                                     </div>
@@ -246,10 +247,125 @@
                             
 <div class="element-code">
 
-
+<h4>Desktop</h4>    
+<h5>Link text (completed and current steps)</h5>
 <code>
 <pre>
+a {
+    color: #254F90;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
 
+</pre>
+</code>
+    
+<h5>Link text (uncompleted steps)</h5>
+<code>
+<pre>
+a {
+    color: #666666;
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+</pre>
+</code>
+    
+<h5>Link icon (completed step)</h5>
+<code>
+<pre>
+.icon {
+    color: #FFFFFF;
+    width: 14px;
+    height: 12px;
+}
+.icon-container {
+    background-color: #254F90;
+    width: 32px;
+    height: 32px;
+    border: #254F90 solid 2.5px;
+    border-radius: 50%;
+}
+
+</pre>
+</code>
+    
+<h5>Link number (current step)</h5>
+<code>
+<pre>
+.number {
+    color: #254F90;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    line-height: 30px;
+}
+.number-container {
+    background-color: #FFFFFF;
+    width: 32px;
+    height: 32px;
+    border: #254F90 solid 2.5px;
+    border-radius: 50%;
+}
+
+</pre>
+</code>
+    
+<h5>Link number (uncompleted step)</h5>
+<code>
+<pre>
+.number {
+    color: #666666;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    line-height: 30px;
+}
+.number-container {
+    background-color: #FFFFFF;
+    width: 32px;
+    height: 32px;
+    border: #C7C7C7 solid 2.5px;
+    border-radius: 50%;
+}
+
+</pre>
+</code>
+    
+<h5>Background line (completed steps)</h5>
+<code>
+<pre>
+.line {
+    color: #254F90;
+    height: 2.5px;
+}
+
+</pre>
+</code>
+    
+<h5>Background line (uncompleted steps)</h5>
+<code>
+<pre>
+.line {
+    color: #C7C7C7;
+    height: 2.5px;
+}
+
+</pre>
+</code>
+    
+    
+<h5>Stepped navigation container (optional)</h5>
+<code>
+<pre>
+.container {
+    background-color: #EBEBEB;
+    padding-top: 32px;
+    padding-top: 32px;
+}
 </pre>
 </code>
 
@@ -318,6 +434,54 @@
 </div>
 </div>
 </div>
+                    
+                    
+                            
+<!-- LAYOUTS -->                               
+<div class="anchor-section"  name="layouts"><a href="" id="layouts" aria-label="layouts"></a>
+<div >
+<div>
+<div>
+    <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
+        <div class="row">
+            <div class=" col-sm-12 col-md-12 col-lg-10">
+                <div class="body-copy">
+                    <div>
+
+                            <h2>Layouts</h2>
+                    
+                        <hr />
+                    </div>
+                    <div class="body-copy-content">
+
+
+                      <h3>Page width</h3>
+                        <p>Stepped navigation is designed for use in sister site tools.</p> 
+
+                        <h3>Full width layout</h3>
+                        <div class="layouts">
+
+                            <p><strong>Desktop, Tablet &amp; Mobile:</strong> One component in a row.</p>
+
+                            <img class="responsive-img desktop" src=/assets/layout-desktop-full-width.svg alt="">
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+                    
+                      
                     
             
 <!-- EXAMPLES & ASSETS -->                               

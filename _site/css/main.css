@@ -5058,6 +5058,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .hero-pathway .hero-pathway-list:last-of-type { padding-bottom: 0; }
 
+.design-system-card .hero-pathway .hero-pathway-list .hero-pathway-list-title { line-height: 28px; }
+
 .design-system-card .hero-pathway .half-width { display: flex; flex-wrap: wrap; }
 
 .design-system-card .hero-pathway .half-width .hero-pathway-list-card { flex: 0 50%; }
@@ -5071,7 +5073,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 @media (max-width: 1100px) { .design-system-card .hero-pathway .hero-pathway-list-illustration-bg { display: none !important; } }
 
-@media (max-width: 800px) { .design-system-card .hero-pathway .hero-pathway-list-content-right { display: none !important; } }
+@media (max-width: 800px) { .design-system-card .hero-pathway .hero-pathway-list-content-right { display: none !important; }
+  .design-system-card .hero-pathway .hero-pathway-list .hero-pathway-list-title { line-height: 30px; } }
 
 .design-system-card .mobile-example .hero-pathway .hero-pathway-list, .design-system-card .mobile-example .hero-pathway .hero-pathway-list-hero { padding-bottom: 0; margin-bottom: 0; }
 
@@ -5395,6 +5398,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .image .caption { font-size: 14px; line-height: 24px; padding: 0; }
 
+.design-system-card .media-player-example .media-player-container .media-player { padding: 0; }
+
 .design-system-card .media-player-example .media-player-player { background: url(../assets/media-player-placeholder.jpg) no-repeat; background-size: cover; }
 
 .design-system-card .media-player-example .media-player-transcript-toggle span { font-size: 16px; line-height: 24px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
@@ -5487,11 +5492,6 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .breadcrumbs #breadcrumb-list li span { padding: 0 8px; color: #9C9C9C; }
 
-@media (max-width: 700px) { .design-system-card .breadcrumbs #breadcrumb-list li { display: none; }
-  .design-system-card .breadcrumbs #breadcrumb-list li.previous-page-link { display: inline-block; }
-  .design-system-card .breadcrumbs #breadcrumb-list li.previous-page-link a { font-size: 16px; padding-left: 24px; background: url(../assets/BGAIcon-breadcrumb-mobile-arrow-left.svg) no-repeat; background-size: 16px 16px; background-position: center left; cursor: pointer; }
-  .design-system-card .breadcrumbs #breadcrumb-list span { display: none; } }
-
 .design-system-card .mobile-example .breadcrumbs #breadcrumb-list li, .design-system-card .mobile-media-query .breadcrumbs #breadcrumb-list li { display: none; }
 
 .design-system-card .mobile-example .breadcrumbs #breadcrumb-list li.previous-page-link, .design-system-card .mobile-media-query .breadcrumbs #breadcrumb-list li.previous-page-link { display: inline-block; }
@@ -5522,7 +5522,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .mobile-example .cross-site-navigation .header-brand-wrapper img, .design-system-card .mobile-media-query .cross-site-navigation .header-brand-wrapper img { width: 138px; height: auto; }
 
-.design-system-card .stepped-navigation { margin: 0 -40px; /*@media (max-width: 800px) { padding: 16px; height: 68px; li { padding:0 !important; a { text-indent: 100%; white-space: nowrap; overflow: hidden; span { text-indent: 0; } &:after { width: calc(50% + 16px); } } } }*/ }
+.design-system-card .stepped-navigation { margin: 0 -40px; }
 
 .design-system-card .stepped-navigation .stepped-navigation-container { background: #EBEBEB; padding: 32px 16px; }
 
@@ -5532,7 +5532,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .stepped-navigation li:before { display: none; }
 
-.design-system-card .stepped-navigation li a { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; box-shadow: none; text-decoration: none; font-size: 14px; line-height: 20px; color: #333333; margin: 0; text-align: center; padding: 0; display: inline-block; width: 100%; }
+.design-system-card .stepped-navigation li a { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; box-shadow: none; text-decoration: none; font-size: 14px; line-height: 20px; color: #666666; margin: 0; text-align: center; padding: 0; display: inline-block; width: 100%; }
 
 .design-system-card .stepped-navigation li a span { display: block; height: 32px; width: 32px; border: solid 2.5px #C7C7C7; border-radius: 50%; background: #ffffff; text-align: center; font-size: 16px; box-sizing: content-box; line-height: 30px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #666666; position: absolute; top: 0; left: -webkit-calc(50% - 18px); left: -moz-calc(50% - 18px); left: calc(50% - 18px); z-index: 10; }
 

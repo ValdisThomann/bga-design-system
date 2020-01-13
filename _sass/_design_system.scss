@@ -496,12 +496,15 @@
 
     .hero-pathway {
         
-        .hero-pathway-list{
+        .hero-pathway-list {
             padding-bottom: 32px;
             
             &:last-of-type {
                 padding-bottom: 0;
-            }    
+            }
+            .hero-pathway-list-title {
+                line-height: 28px;
+            }
         }
         .half-width {
             display: flex;
@@ -543,6 +546,9 @@
         @media (max-width: 800px) {
             .hero-pathway-list-content-right {
                 display: none !important;
+            }
+             .hero-pathway-list .hero-pathway-list-title {
+                line-height: 30px;
             }
         }   
     }
@@ -1585,6 +1591,9 @@
     
     .media-player-example {
         
+        .media-player-container .media-player {
+            padding: 0;
+        }
         .media-player-player {
             background: url(../assets/media-player-placeholder.jpg) no-repeat;
             background-size: cover;
@@ -1853,29 +1862,6 @@
                     color: #9C9C9C;
                 }
             }
-            
-            @media (max-width: 700px) {
-                li {
-                    display: none;
-                    
-                    &.previous-page-link {
-                        display: inline-block;
-                        
-                        a {
-                            font-size: 16px;
-                            padding-left: 24px;
-                            background: url(../assets/BGAIcon-breadcrumb-mobile-arrow-left.svg) no-repeat;
-                            background-size: 16px 16px;
-                            background-position: center left;
-                            cursor: pointer;
-                        }
-                    }
-                }
-                span {
-                    display: none;
-                }
-                
-            }
         }
     }
     .mobile-example .breadcrumbs,
@@ -2005,7 +1991,7 @@
                 text-decoration: none;
                 font-size: 14px;
                 line-height: 20px;
-                color: $black-light;
+                color: $grey-darker;
                 margin: 0;
                 text-align: center;
                 padding: 0;
@@ -2084,30 +2070,6 @@
                 }
             }
         }
-        
-        /*@media (max-width: 800px) {
-            padding: 16px;
-            height: 68px;
-            
-            li {
-                padding:0 !important;
-                
-                a {
-                    text-indent: 100%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    
-                    span {
-                        text-indent: 0;
-                    }
-                    &:after {
-                        width: calc(50% + 16px);
-                    }
-                }
-            
-            }
-        }*/
-
     }
     .mobile-example .stepped-navigation,
     .mobile-media-query .stepped-navigation {

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="750.5" height="140" viewBox="0 0 750.5 140">
-  <g id="Group_3568" data-name="Group 3568" transform="translate(-94.75 -1206)">
-    <g id="Group_3555" data-name="Group 3555" transform="translate(-1 325)">
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="140" viewBox="0 0 750 140">
+  <g id="Group_3598" data-name="Group 3598" transform="translate(-95 -2652)">
+    <g id="Group_3560" data-name="Group 3560" transform="translate(-1 1771)">
       <rect id="Rectangle_154" data-name="Rectangle 154" width="36.75" height="139" transform="translate(578 881)" fill="#4569a0" opacity="0.18"/>
       <rect id="Rectangle_149" data-name="Rectangle 149" width="36.75" height="139" transform="translate(476 881)" fill="#4569a0" opacity="0.18"/>
       <rect id="Rectangle_152" data-name="Rectangle 152" width="36.75" height="139" transform="translate(679.25 881)" fill="#4569a0" opacity="0.18"/>
@@ -14,8 +14,9 @@
       <rect id="Rectangle_150" data-name="Rectangle 150" width="36.75" height="139" transform="translate(527 881)" fill="#4569a0" opacity="0.18"/>
       <rect id="Rectangle_151" data-name="Rectangle 151" width="36" height="139" transform="translate(730.25 881)" fill="#4569a0" opacity="0.18"/>
     </g>
-    <rect id="Rectangle_277" data-name="Rectangle 277" width="750.5" height="103.552" transform="translate(94.75 1224.122)" fill="#4569a0" opacity="0.5"/>
-    <g id="Rectangle_276" data-name="Rectangle 276" transform="translate(95 1206)" fill="none" stroke="#707070" stroke-width="1">
+    <rect id="Rectangle_304" data-name="Rectangle 304" width="187.5" height="99.644" transform="translate(577.75 2672.086)" fill="#4569a0" opacity="0.5"/>
+    <rect id="Rectangle_306" data-name="Rectangle 306" width="187.5" height="99.644" transform="translate(375.25 2672.086)" fill="#4569a0" opacity="0.5"/>
+    <g id="Rectangle_302" data-name="Rectangle 302" transform="translate(95 2652)" fill="none" stroke="#707070" stroke-width="1">
       <rect width="750" height="140" stroke="none"/>
       <rect x="0.5" y="0.5" width="749" height="139" fill="none"/>
     </g>

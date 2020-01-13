@@ -1,9 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="140" viewBox="0 0 500 140">
-  <g id="Group_3491" data-name="Group 3491" transform="translate(0 0.144)">
-    <rect id="Rectangle_309" data-name="Rectangle 309" width="395" height="104.233" transform="translate(52.5 18.101)" fill="#4569a0" opacity="0.25"/>
-    <g id="Rectangle_307" data-name="Rectangle 307" transform="translate(0 -0.144)" fill="none" stroke="#707070" stroke-width="1">
-      <rect width="500" height="140" stroke="none"/>
-      <rect x="0.5" y="0.5" width="499" height="139" fill="none"/>
+  <g id="Group_3593" data-name="Group 3593" transform="translate(-95 -2888)">
+    <g id="Group_3574" data-name="Group 3574" transform="translate(0 482)">
+      <g id="Group_3561" data-name="Group 3561" transform="translate(-26 1526)">
+        <rect id="Rectangle_154" data-name="Rectangle 154" width="24.484" height="139" transform="translate(443.079 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_149" data-name="Rectangle 149" width="24.484" height="139" transform="translate(375.122 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_152" data-name="Rectangle 152" width="24.484" height="139" transform="translate(510.537 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_153" data-name="Rectangle 153" width="24.484" height="139" transform="translate(477.058 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_131" data-name="Rectangle 131" width="23.985" height="139" transform="translate(173.75 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_147" data-name="Rectangle 147" width="23.985" height="139" transform="translate(308.165 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_145" data-name="Rectangle 145" width="23.985" height="139" transform="translate(240.708 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_144" data-name="Rectangle 144" width="24.484" height="139" transform="translate(207.229 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_148" data-name="Rectangle 148" width="24.484" height="139" transform="translate(341.644 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_146" data-name="Rectangle 146" width="24.484" height="139" transform="translate(274.186 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_150" data-name="Rectangle 150" width="24.484" height="139" transform="translate(409.101 881)" fill="#4569a0" opacity="0.18"/>
+        <rect id="Rectangle_151" data-name="Rectangle 151" width="23.985" height="139" transform="translate(544.515 881)" fill="#4569a0" opacity="0.18"/>
+      </g>
+      <rect id="Rectangle_309" data-name="Rectangle 309" width="395" height="104.233" transform="translate(147.5 2424.246)" fill="#4569a0" opacity="0.5"/>
+      <g id="Rectangle_307" data-name="Rectangle 307" transform="translate(95 2406)" fill="none" stroke="#707070" stroke-width="1">
+        <rect width="500" height="140" stroke="none"/>
+        <rect x="0.5" y="0.5" width="499" height="139" fill="none"/>
+      </g>
     </g>
   </g>
 </svg>
