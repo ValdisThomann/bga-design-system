@@ -646,10 +646,6 @@
             background: none;
             padding: 16px 24px 24px 0;
         }
-        .light-wrapper {
-            
-        }
-
         h3 {
             padding: 0 0 16px 0;
             line-height: 28px;
@@ -672,7 +668,9 @@
                 text-decoration: underline;
                 transform: none;
             }
-
+            .light-container {
+                background: $blue-primary-lightest;
+            }
             .light-wrapper {
                 transform: translateX(1rem);
             }
@@ -1096,6 +1094,7 @@
             }
             a {
                 box-shadow: none;
+                @include font-format($font-family, $font-semibold, normal);
             }
             .contact-line-margin:last-of-type {
                 margin-bottom: 0;
@@ -1577,7 +1576,7 @@
             &.visible {
                 display: block;
                 background-color: $grey-lighter !important;
-                padding: 0 112px 64px 32px;
+                padding: 0 112px 0px 32px;
                 border-bottom: solid 4px $yellow-secondary-lightest;
                 max-height: none;
             }
@@ -1592,7 +1591,7 @@
         }
         .caption {
             font-size: 14px;
-            line-height:24px;
+            line-height: 24px;
             padding: 0;
         }
     }

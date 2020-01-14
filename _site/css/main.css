@@ -5114,6 +5114,8 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .light-pathway:hover h3 { color: #254F90; text-decoration: underline; transform: none; }
 
+.design-system-card .light-pathway:hover .light-container { background: #EFF4FB; }
+
 .design-system-card .light-pathway:hover .light-wrapper { transform: translateX(1rem); }
 
 .design-system-card .inline-pathway .description { padding-bottom: 16px; }
@@ -5256,7 +5258,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .call-to-action .contact-card-content .contact-line-content-description, .design-system-card .callout .contact-card-content .contact-line-content-description, .design-system-card .advisor-profile .contact-card-content .contact-line-content-description { padding-bottom: 16px; }
 
-.design-system-card .call-to-action .contact-card-content a, .design-system-card .callout .contact-card-content a, .design-system-card .advisor-profile .contact-card-content a { box-shadow: none; }
+.design-system-card .call-to-action .contact-card-content a, .design-system-card .callout .contact-card-content a, .design-system-card .advisor-profile .contact-card-content a { box-shadow: none; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
 .design-system-card .call-to-action .contact-card-content .contact-line-margin:last-of-type, .design-system-card .callout .contact-card-content .contact-line-margin:last-of-type, .design-system-card .advisor-profile .contact-card-content .contact-line-margin:last-of-type { margin-bottom: 0; }
 
@@ -5396,7 +5398,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .accordion .accordion-item-content { display: none; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; max-height: 0; }
 
-.design-system-card .accordion .accordion-item-content.visible { display: block; background-color: #EBEBEB !important; padding: 0 112px 64px 32px; border-bottom: solid 4px #FFD964; max-height: none; }
+.design-system-card .accordion .accordion-item-content.visible { display: block; background-color: #EBEBEB !important; padding: 0 112px 0px 32px; border-bottom: solid 4px #FFD964; max-height: none; }
 
 .design-system-card .image .caption-wrapper { background: #EBEBEB; padding: 16px; }
 
