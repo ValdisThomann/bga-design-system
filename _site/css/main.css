@@ -5270,7 +5270,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .call-to-action.advisor-profile .advisor-intro, .design-system-card .callout.advisor-profile .advisor-intro, .design-system-card .advisor-profile.advisor-profile .advisor-intro { margin-bottom: 12px; }
 
-.design-system-card .call-to-action.advisor-profile h4, .design-system-card .callout.advisor-profile h4, .design-system-card .advisor-profile.advisor-profile h4 { font-size: 24px; }
+.design-system-card .call-to-action.advisor-profile h4, .design-system-card .callout.advisor-profile h4, .design-system-card .advisor-profile.advisor-profile h4 { font-size: 24px; padding-top: 0; }
 
 .design-system-card .call-to-action.advisor-profile .advisor-card-image-centered img, .design-system-card .callout.advisor-profile .advisor-card-image-centered img, .design-system-card .advisor-profile.advisor-profile .advisor-card-image-centered img { margin: 0 auto; display: block; }
 
@@ -5522,7 +5522,7 @@ a.breadcrumb-link .hero-pathway-list-illustration-bg { display: none !important;
 
 .design-system-card .mobile-example .cross-site-navigation .header-links-wrapper, .design-system-card .mobile-media-query .cross-site-navigation .header-links-wrapper { padding: 8px 16px; margin: 0; }
 
-.design-system-card .mobile-example .cross-site-navigation .header-links-wrapper a, .design-system-card .mobile-media-query .cross-site-navigation .header-links-wrapper a { font-size: 14px; line-height: normal; }
+.design-system-card .mobile-example .cross-site-navigation .header-links-wrapper a, .design-system-card .mobile-media-query .cross-site-navigation .header-links-wrapper a { font-size: 13px; line-height: normal; }
 
 .design-system-card .mobile-example .cross-site-navigation .header-brand-wrapper, .design-system-card .mobile-media-query .cross-site-navigation .header-brand-wrapper { padding: 16px 16px; margin: 0; }
 
