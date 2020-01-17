@@ -178,18 +178,19 @@ p {
                 </div>
                 <div class="body-copy-content">
 
-                    <h3>Purpose</h3>
-                    
-
-                    <p>Coming soon.</p>
-                    
-                   
-                    <h3>When to use this component</h3>
-                    
-
-                    <p>Coming soon.</p>
-
-
+                    <h3>Purpose:</h3>
+                    <p>The image component displays a single image in a content page. This component includes a short optional caption below the image. </p>
+                    <h3>When to use this component:</h3>
+                    <ul>
+                        <li>Image components are mostly used on news articles and customer story pages.</li>
+                        <li>Avoid unnecessary images, especially on high priority pages &ndash; use words rather than images for accessibility reasons.</li>
+                    </ul>
+                    <h3>Content rules:</h3>
+                    <ul>
+                        <li>Don&rsquo;t use captions for stock photos e.g. in news articles.</li>
+                        <li>Informative images should always have alt text in a content page. </li>
+                        <li>Decorative images, for example stock photos in news or resource articles, must have null (empty) alt text &ndash; don&rsquo;t insert a space [alt=&rdquo;&rdquo;].</li>
+                    </ul>
 
                 </div>
 
@@ -224,15 +225,16 @@ p {
                     <div class="body-copy-content">
 
 
-                      <h3>Page width</h3>
-                        <p>Images are used in two-third width pages.</p> 
+                      <h3>Page layouts</h3>
+                        <p>Images are used in <a href={{"../foundations/page-layouts.html" | relative_url}}>two-third width pages</a>.</p> 
 
-                        <h3>Full width layout</h3>
+                        <h3>Component layout options</h3>
+                        <h4>Full width layout</h4>
                         <div class="layouts">
 
                             <p><strong>Desktop, Tablet &amp; Mobile:</strong> One component in a row.</p>
 
-                            <img class="responsive-img desktop" src={{"assets/layout-desktop-single-right.svg" | relative_url}} alt="">
+                            <img class="responsive-img desktop" src={{"assets/layout-desktop-full-width.svg" | relative_url}} alt="">
 
                         </div>
 

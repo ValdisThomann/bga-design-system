@@ -133,6 +133,10 @@
             overflow: auto;
             position: relative;
             min-height: 96px;
+            
+            @media (max-width: 600px) {
+                padding: 24px 8px;
+            }
 
             .example {
                 width: -webkit-calc(100% - 48px);
@@ -190,12 +194,19 @@
             margin: 0;
             @include font-format($font-family, $font-semibold, normal);
         }
+        @media (max-width: 450px) {
+            padding: 16px;
+        }
     }
 
     .design-system-card-content {
         padding: 24px;
         background: $white;
         border-top: none;
+        
+        @media (max-width: 450px) {
+            padding: 16px;
+        }
     }
            
     .design-system-card-links {
@@ -221,6 +232,9 @@
         &.no-height {
             height: 0;
             padding: 0;
+        }
+        @media (max-width: 450px) {
+            padding: 16px;
         }
     }
     
@@ -2972,6 +2986,18 @@
 }
 
 .layouts {
+    border-top: solid $grey 4px;
+    padding: 32px;
+    background: $grey-lighter;
+    margin-bottom: 32px;
+    
+    p {
+        padding: 16px 0;
+        
+        &:first-of-type {
+            padding-top: 0; 
+        }
+    }
     img.desktop {
         width: 100%;
         max-width: 750px;
@@ -2989,6 +3015,10 @@
     border-bottom: 1px solid $grey;
     margin-bottom: 32px;
     
+    &.no-border {
+        border-bottom: none;
+    }
+    
     .responsive-img.desktop-hd {
         max-width: 910px
     }
@@ -3003,6 +3033,12 @@
     }
     .responsive-img.mobile {
         max-width: 180px
+    }
+    .responsive-img.page-layouts-1 {
+        max-width: 475px
+    }
+    .responsive-img.page-layouts-2 {
+        max-width: 250px
     }
 }
 .horizontal-examples-intro {
