@@ -1009,9 +1009,14 @@
                     width: 70%;
                 }
                 .page-headers-container {
-                    background: $blue-primary-mid url(../assets/illustration-reading-man.svg) no-repeat right 32px center;
+                    background: $blue-primary-mid; url(../assets/illustration-reading-man.svg) no-repeat right 32px center;
                     background-size: 200px;
                 }
+            }
+        }
+        @media (max-width: 1599px) {
+            &.topic .header-content . page-headers-container {
+                background: $blue-primary-mid; 
             }
         }
     }
@@ -1078,7 +1083,7 @@
         }
         .cta-button {
             background: $blue-primary-mid 0% 0% no-repeat padding-box;
-            box-shadow: 0px 2px 4px #0000001A;
+            box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
             border: 2px solid $blue-primary;
             border-radius: 6px;
             opacity: 1;
@@ -1090,7 +1095,7 @@
         
             &:hover {
                 background: $blue-primary 0% 0% no-repeat padding-box;
-                box-shadow: 0px 4px 8px #0000004D;
+                box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
                 border: 2px solid $blue-active;
                 border-radius: 6px;
                 opacity: 1;
@@ -2144,7 +2149,7 @@
             margin: 0;
         }
         .cta-button {
-            box-shadow: 0px 2px 4px #0000001A;
+            box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
             border-radius: 6px;
             opacity: 1;
             padding: 8px 32px;
@@ -2152,7 +2157,7 @@
             letter-spacing: 0;
             
             &:hover, &:active {
-                box-shadow: 0px 4px 8px #0000004D;
+                box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
                 border-radius: 6px;
                 opacity: 1;
             }
@@ -2166,12 +2171,12 @@
 
                 &:hover {
                     background: $blue-primary 0% 0% no-repeat padding-box;
-                    box-shadow: 0px 4px 8px #0000004D;
+                    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
                 }
 
                 &:active {
                     background: $blue-active 0% 0% no-repeat padding-box;
-                    box-shadow: 0px 3px 6px #0000004D;
+                    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
                 }
             }
         }
