@@ -5374,6 +5374,14 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .advisor-profile.advisor-profile.advisor-profile .advisor-intro, .design-system-card .mobile-media-query .advisor-profile.advisor-profile.advisor-profile .advisor-intro { padding-bottom: 12px; }
 
+.design-system-card .callout-link .callout-link-content { padding: 32px 24px; }
+
+.design-system-card .callout-link .callout-link-content .callout-link-content-detail { padding: 0 0 0 16px; }
+
+.design-system-card .callout-link .callout-link-content .callout-link-content-detail a { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
+.design-system-card .callout-link .callout-link-content .callout-link-content-detail a:after { content: ""; height: 0; width: 0; }
+
 .design-system-card .table .table-responsive { overflow-y: hidden; }
 
 .design-system-card .table .table-responsive th { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }

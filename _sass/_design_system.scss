@@ -1353,6 +1353,28 @@
         }
     }
     
+    .callout-link {
+        .callout-link-content {
+
+            padding: 32px 24px;
+
+            .callout-link-content-detail {
+
+                padding: 0 0 0 16px;
+
+                a {
+                    @include font-format($font-family, $font-semibold, normal);
+
+                    &:after {
+                        content: "";
+                        height: 0;
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+    
     .table {
         .table-responsive {
             overflow-y: hidden;
