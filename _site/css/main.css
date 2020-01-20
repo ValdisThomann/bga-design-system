@@ -5256,7 +5256,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 @media (min-width: 1600px) { .design-system-card .page-headers.topic .header-content { width: 70%; }
   .design-system-card .page-headers.topic .page-headers-container { background: #4569A0 url(../assets/illustration-reading-man.svg) no-repeat right 32px center; background-size: 200px; } }
 
+@media (max-width: 1599px) { .design-system-card .page-headers.topic .header-content .page-headers-container { background: #4569A0; } }
+
 .design-system-card .mobile-example .page-headers .page-headers-container, .design-system-card .mobile-media-query .page-headers .page-headers-container { padding: 64px 32px 48px; margin: 0 auto; }
+
+.design-system-card .mobile-example .page-headers.topic .page-headers-container, .design-system-card .mobile-media-query .page-headers.topic .page-headers-container { background: #4569A0; }
 
 .design-system-card .mobile-example .page-headers h1, .design-system-card .mobile-media-query .page-headers h1 { font-size: 2rem; line-height: 1.14; }
 
@@ -5280,9 +5284,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .call-to-action .cta-button-wrapper:hover, .design-system-card .callout .cta-button-wrapper:hover, .design-system-card .advisor-profile .cta-button-wrapper:hover { transform: translateY(-0.1875rem); }
 
-.design-system-card .call-to-action .cta-button, .design-system-card .callout .cta-button, .design-system-card .advisor-profile .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: 0px 2px 4px #0000001A; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+.design-system-card .call-to-action .cta-button, .design-system-card .callout .cta-button, .design-system-card .advisor-profile .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .call-to-action .cta-button:hover, .design-system-card .callout .cta-button:hover, .design-system-card .advisor-profile .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: 0px 4px 8px #0000004D; border: 2px solid #18335C; border-radius: 6px; opacity: 1; }
+.design-system-card .call-to-action .cta-button:hover, .design-system-card .callout .cta-button:hover, .design-system-card .advisor-profile .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; border-radius: 6px; opacity: 1; }
 
 .design-system-card .call-to-action .cta-button:active, .design-system-card .callout .cta-button:active, .design-system-card .advisor-profile .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004D; border-radius: 6px; opacity: 1; }
 
@@ -5604,15 +5608,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .button-container { height: auto; border-top: none; background: none; margin: 0; }
 
-.design-system-card .buttons-links .cta-button { box-shadow: 0px 2px 4px #0000001A; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; }
+.design-system-card .buttons-links .cta-button { box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; }
 
-.design-system-card .buttons-links .cta-button:hover, .design-system-card .buttons-links .cta-button:active { box-shadow: 0px 4px 8px #0000004D; border-radius: 6px; opacity: 1; }
+.design-system-card .buttons-links .cta-button:hover, .design-system-card .buttons-links .cta-button:active { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; }
 
 .design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .buttons-links .primary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: 0px 4px 8px #0000004D; }
+.design-system-card .buttons-links .primary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; }
 
-.design-system-card .buttons-links .primary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004D; }
+.design-system-card .buttons-links .primary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; }
 
 .design-system-card .buttons-links .primary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #254F90; }
 
