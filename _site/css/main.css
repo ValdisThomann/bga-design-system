@@ -5356,8 +5356,6 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .advisor-profile.advisor-profile.advisor-profile .advisor-card-text, .design-system-card .mobile-example .advisor-profile.advisor-profile.advisor-profile .advisor-card-image, .design-system-card .mobile-example .advisor-profile.advisor-profile.advisor-profile .advisor-card-content-detail, .design-system-card .mobile-media-query .advisor-profile.advisor-profile.advisor-profile .advisor-card-text, .design-system-card .mobile-media-query .advisor-profile.advisor-profile.advisor-profile .advisor-card-image, .design-system-card .mobile-media-query .advisor-profile.advisor-profile.advisor-profile .advisor-card-content-detail { padding: 0; }
 
-.design-system-card .mobile-example .advisor-profile.advisor-profile.advisor-profile .advisor-card-image, .design-system-card .mobile-media-query .advisor-profile.advisor-profile.advisor-profile .advisor-card-image { flex: 0 0 100%; }
-
 .design-system-card .mobile-example .advisor-profile.advisor-profile.advisor-profile .advisor-card-content p, .design-system-card .mobile-media-query .advisor-profile.advisor-profile.advisor-profile .advisor-card-content p { font-size: 16px; line-height: 32px; padding-bottom: 16px; }
 
 .design-system-card .mobile-example .advisor-profile.advisor-profile.advisor-profile .advisor-card-content p:last-of-type, .design-system-card .mobile-media-query .advisor-profile.advisor-profile.advisor-profile .advisor-card-content p:last-of-type { padding-bottom: 0; }
