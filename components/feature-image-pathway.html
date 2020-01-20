@@ -52,6 +52,7 @@ longdesc: Promote links to high-value content with a feature image.
             </div>
             <div class="body-copy-content">
 
+                <h3>Default feature image pathway</h3>
                 <div class="design-system-card component extra-wide">
 
                 <div class="responsive-toggle-container">
@@ -71,7 +72,7 @@ longdesc: Promote links to high-value content with a feature image.
                     
                     <div class="design-system-card-content">
 
-                        <div class="example-wrapper">
+                        <div class="example-wrapper white-back">
                             <div class="feature-image-pathway">
                                 <div class="example feature-image-container">
 
@@ -190,7 +191,7 @@ p.description {
 }
 .container:hover {
     background: #254f90;
-    box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.2);
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
 }
 
 </pre>
@@ -217,6 +218,174 @@ h3 {
 
                 </div>
 
+                <h3>Feature image pathway variation</h3>
+                <div class="design-system-card component extra-wide">
+
+                <div class="responsive-toggle-container">
+                    <p class="toggle-name">Design view: <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="switch-text-mobile"></span>
+                        <span class="switch-text-desktop"></span>
+                    </label></p>
+                    
+                    <div class="mobile-only"><h5>Mobile design</h5>
+                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                    </div>
+                    
+                </div>
+                    
+                    
+                    <div class="design-system-card-content">
+
+                        <div class="example-wrapper white-back">
+                            <div class="feature-image-pathway variation">
+                                <div class="example feature-image-container">
+
+                                    <div class="feature-text">
+                                        <p class="label">Label</p>
+                                        <h3>Feature image pathway</h3>
+                                        <p class="description">The feature image pathway highlights a link to important content with an image.</p>
+                                        <p class="icon-link"></p>
+                                        
+                                        
+                                    </div>
+                                    <div class="feature-image"><img class="responsive-img" src={{ "assets/feature-image.jpg" | relative_url }} alt="" title=""></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+                        <div class="component notes">
+                            <div class="">
+                                <h4>Notes</h4>
+                                <p>This component has three main breakpoints and displays differently at mobile, tablet and desktop size.</p>
+                            </div>
+                            
+
+                        </div>
+                        
+                        
+                        
+                        <div class="element-design component closed">
+                            <div class="content-wrapper">
+                                <p>CSS styles</p>
+                            </div>
+                            <button role="none" tabindex="-1" class="float-button">
+                                <div tabindex="-1" class="float-button-content">
+                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                </div>
+                            </button>
+
+                        </div>
+                            
+
+            <div class="element-code">
+<h4>Desktop</h4>
+<h5>Heading</h5>
+<code>
+<pre>
+h3 {
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 21px;
+    line-height: 28px;
+}
+h3:hover {
+    color: #254F90;
+    text-decoration: underline;
+}
+</pre>
+</code>
+
+<h5>Label</h5>
+<code>
+<pre>
+p.label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+</pre>
+</code>
+                
+<h5>Description</h5>
+
+<code>
+<pre>
+p.description {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 28px;
+}
+</pre>
+</code>
+                                
+<h5>Icon link</h5>
+
+<code>
+<pre>
+.icon {    
+    color: #254F90;
+    height: 16px;
+    width: 16px;
+}
+.icon:hover {
+    color: #254F90;
+    height: 32px;
+    width: 32px;
+}
+
+</pre>
+</code>
+   
+<h5>Container</h5>
+                                
+<code>
+<pre>
+.container {
+    background: #EBEBEB;
+    padding: 32px;
+    border: none;
+}
+.container:hover {
+    background: #D8D8D8;
+    box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.2);
+}
+
+</pre>
+</code>
+
+<h4>Mobile</h4>                    
+<h5>Heading</h5>
+<code>
+<pre>
+h3 {    
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 21px;
+    line-height: 30px;
+}
+</pre>
+</code>
+
+
+            </div>
+
+
+                    </div>
+
+                </div>
+
+
+                
             </div>
 
 
