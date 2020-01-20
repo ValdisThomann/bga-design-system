@@ -5203,9 +5203,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .feature-image-pathway .feature-image-container, .design-system-card .mobile-media-query .feature-image-pathway .feature-image-container { display: -webkit-flex; /* Safari 6.1+ */ display: flex; flex-direction: column-reverse; padding: 0; }
 
-.design-system-card .mobile-example .feature-image-pathway .feature-text, .design-system-card .mobile-media-query .feature-image-pathway .feature-text { -webkit-box-flex: 1; flex: 1 100%; padding: 24px; width: 100%; }
+.design-system-card .mobile-example .feature-image-pathway .feature-text, .design-system-card .mobile-media-query .feature-image-pathway .feature-text { padding: 24px; width: 100%; }
 
-.design-system-card .mobile-example .feature-image-pathway .feature-image, .design-system-card .mobile-media-query .feature-image-pathway .feature-image { -webkit-box-flex: 1; flex: 1 100%; padding: 24px 24px 0 24px; width: 100%; }
+.design-system-card .mobile-example .feature-image-pathway .feature-image, .design-system-card .mobile-media-query .feature-image-pathway .feature-image { height: 212px; padding: 24px 24px 0 24px; width: 100%; }
 
 .design-system-card .mobile-example .feature-image-pathway .icon-link, .design-system-card .mobile-media-query .feature-image-pathway .icon-link { position: relative; }
 
