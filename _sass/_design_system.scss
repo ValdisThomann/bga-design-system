@@ -49,6 +49,8 @@
                 top: -webkit-calc(50% - 24px);
                 top:    -moz-calc(50% - 24px);
                 top:         calc(50% - 24px);
+                width: 48px;
+                right: 24px;
             }
 
             &.closed {
@@ -106,8 +108,11 @@
             margin: 0 auto;
         }
         .content-wrapper {
-            width: 80%;
-            float: left;
+            padding-right: 56px;
+            p {
+                text-align: right;
+                margin-top: 6px;
+            }
         }
         .float-button {
             width: 20%;
@@ -143,7 +148,7 @@
                 width: -moz-calc(100% - 48px);
                 width: calc(100% - 48px); 
                 float: left;
-                padding-right: 24px;
+                padding-right: 16px;
             }
             .float-button {
                 width: 48px;
@@ -152,11 +157,14 @@
                 top: -webkit-calc(50% - 24px);
                 top:    -moz-calc(50% - 24px);
                 top:         calc(50% - 24px);
+                right: 24px;
+                @media (max-width: 600px) {
+                    right: 8px;
+                }
                  
                 .float-button-content {
                     width: 48px;
                     height: 48px;
-                    float: right;
                 }
                 .BgaIcon.open {
                     transform: scaleY(-1);

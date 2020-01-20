@@ -4926,7 +4926,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .element-design { border: none; padding: 24px 32px 24px 24px; background: #EBEBEB; transition: background-color 0.2s ease; overflow: auto; position: relative; min-height: 96px; }
 
-.design-system-card.component .element-design .float-button { position: absolute; top: -webkit-calc(50% - 24px); top: -moz-calc(50% - 24px); top: calc(50% - 24px); }
+.design-system-card.component .element-design .float-button { position: absolute; top: -webkit-calc(50% - 24px); top: -moz-calc(50% - 24px); top: calc(50% - 24px); width: 48px; right: 24px; }
 
 .design-system-card.component .element-design.closed { border-bottom: none; background: #ffffff; }
 
@@ -4952,7 +4952,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .example { margin: 0 auto; }
 
-.design-system-card.component .content-wrapper { width: 80%; float: left; }
+.design-system-card.component .content-wrapper { padding-right: 56px; }
+
+.design-system-card.component .content-wrapper p { text-align: right; margin-top: 6px; }
 
 .design-system-card.component .float-button { width: 20%; }
 
@@ -4966,11 +4968,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 600px) { .design-system-card.foundation .element-design { padding: 24px 8px; } }
 
-.design-system-card.foundation .element-design .example { width: -webkit-calc(100% - 48px); width: -moz-calc(100% - 48px); width: calc(100% - 48px); float: left; padding-right: 24px; }
+.design-system-card.foundation .element-design .example { width: -webkit-calc(100% - 48px); width: -moz-calc(100% - 48px); width: calc(100% - 48px); float: left; padding-right: 16px; }
 
-.design-system-card.foundation .element-design .float-button { width: 48px; padding-left: 8px; position: absolute; top: -webkit-calc(50% - 24px); top: -moz-calc(50% - 24px); top: calc(50% - 24px); }
+.design-system-card.foundation .element-design .float-button { width: 48px; padding-left: 8px; position: absolute; top: -webkit-calc(50% - 24px); top: -moz-calc(50% - 24px); top: calc(50% - 24px); right: 24px; }
 
-.design-system-card.foundation .element-design .float-button .float-button-content { width: 48px; height: 48px; float: right; }
+@media (max-width: 600px) { .design-system-card.foundation .element-design .float-button { right: 8px; } }
+
+.design-system-card.foundation .element-design .float-button .float-button-content { width: 48px; height: 48px; }
 
 .design-system-card.foundation .element-design .float-button .BgaIcon.open { transform: scaleY(-1); }
 
