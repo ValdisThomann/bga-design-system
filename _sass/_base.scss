@@ -98,70 +98,6 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-.navbar {
-    .navigation-item-button {
-        padding-bottom: 16px;
-        padding-top: 16px;
-    }
-    a {
-        color: white;
-        font-weight: 600;
-        text-decoration: none;
-        &:hover, &:focus {
-            text-decoration: underline;
-            background: $blue-active;
-            color: white;
-            border-radius: 0;
-        }
-    }
-}
-
-.bg-light {
-    background-color: $blue-primary !important;
-}
-.navbar-brand {
-    font-size: 16px;
-    color: white !important;
-    &:hover, &:focus {
-        text-decoration: underline;
-        color: white;
-        background: transparent;
-    }
-}
-.navbar-light .navbar-toggler {
-    color: white;
-    border: none;
-}
-.navbar-light .navbar-toggler-icon {
-    background-image: url("../assets/Icon-menu.svg");
-    height: 24px;
-    width: 24px;
-}
-.navbar-expand-lg {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.footer {
-    .footer-top-links-top {
-        padding: 2rem 16px;
-
-        p {
-            margin-bottom: 0;
-            color: $white;
-            font-size: 1.3rem;
-        }
-    }
-    .footer-top {
-        padding: 0;
-
-    }
-    .c-wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
-
 // Hero tiles
 #foundations-illo {
     .cls-1 {
@@ -217,6 +153,72 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+// Header nav
+.navbar {
+    .navigation-item-button {
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
+    a {
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover, &:focus {
+            text-decoration: underline;
+            background: $blue-active;
+            color: white;
+            border-radius: 0;
+        }
+    }
+}
+
+.bg-light {
+    background-color: $blue-primary !important;
+}
+.navbar-brand {
+    font-size: 16px;
+    color: white !important;
+    &:hover, &:focus {
+        text-decoration: underline;
+        color: white;
+        background: transparent;
+    }
+}
+.navbar-light .navbar-toggler {
+    color: white;
+    border: none;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../assets/Icon-menu.svg");
+    height: 24px;
+    width: 24px;
+}
+.navbar-expand-sm {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.footer {
+    .footer-top-links-top {
+        padding: 2rem 16px;
+
+        p {
+            margin-bottom: 0;
+            color: $white;
+            font-size: 1.3rem;
+        }
+    }
+    .footer-top {
+        padding: 0;
+
+    }
+    .c-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
 @media (min-width: 1200px) {
     .navbar-nav.mr-auto {
         margin-left: -16px;
@@ -227,7 +229,7 @@ h1, h2, h3, h4, h5 {
     .navigation-bar .navigation-main-menu a {
         font-size: 18px;
     }
-    .navbar-expand-lg {
+    .navbar-expand-sm {
         padding: 0;
     }
     .navbar-brand {
@@ -240,9 +242,7 @@ h1, h2, h3, h4, h5 {
         padding-top: 12px;
         padding-bottom: 12px;
     }
-    .navbar-collapse {
-        background-color:$blue-active;
-    }
+    
     .hero-pathway-list .row .hero-pathway-list-card  .hero-pathway-list-content {
         display: block;
         
@@ -253,32 +253,66 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 900px) {
-    .navbar-menu {
-        border-bottom: 2px solid #1e4175!important;
-    }
-
-    .search-bar-wrapper {
-        background-size: 20px 16px;
-        background-position: center right 15px;
-
-    }
+   
     .navbar {
         padding: 0;
     }
-
-    .search-bar-wrapper .search-bar-inner-wrapper .search-bar-search .input-group-container {
-        input {
-            display: none;
-        }
-
-        button {
-            position: absolute;
-            right: 0px;
-            top: 10px;
-        }
+    .search-bar-wrapper .search-bar-inner-wrapper .search-bar-desktop-logo {
+        display: block;
     }
 }
-
+@media (min-width: 575px) {
+   .navbar-expand-sm .navbar-toggler {
+        display: none !important;
+    }
+    .navbar-expand-sm .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navbar-collapse {
+        display: flex!important;
+    }
+    .mobile-hide {
+        display: flex !important;
+    }
+    .navbar-brand {
+        display: none !important;
+    }
+    .search-bar-wrapper .search-bar-inner-wrapper {
+        min-height: 6rem;
+        padding: 1.5rem 0;
+    }
+}
+@media (max-width: 574px) {
+    .navbar-collapse {
+        background-color: $blue-active;
+        margin: 0px -16px;
+        padding: 0px 16px;
+        
+        .navbar-menu {
+            margin: 0px -16px;
+            padding: 0px 16px;
+            background-color: $blue-active;
+        }
+        .navigation-item-button {
+            padding: 12px;
+        }
+    }
+    .mobile-hide {
+        display: none !important;
+    }
+    .navbar-brand {
+        display: block !important;
+    }
+     .navbar-menu {
+        border-bottom: 2px solid #1e4175!important;
+    }
+}
+@media (max-width: 350px) {
+    .navbar-brand {
+        font-size: 13px;
+    }
+}
 
 // Side navigation - Sticky menu
 .anchor-menu {
@@ -324,7 +358,7 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 574px) {
     .anchor-menu {
         width: 100% !important;
     }
@@ -340,4 +374,54 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+//Breadcrumbs
+@media (min-width: 575px) {
+   .breadcrumbs-wrapper {
+       .breadcrumb-home-wrapper {
+           display: block;
 
+           .breadcrumb-link {
+               display: inline;
+               font-size: 14px;
+           }
+
+           .right-arrow {
+               display: inline;
+           }
+
+           .hidden {
+               display: none;
+           }
+       }
+
+       .breadcrumb-location {
+           display: block;
+           font-size: 14px;
+       }
+   }
+}
+
+@media (max-width: 574px) {
+    .breadcrumbs-wrapper {
+        .breadcrumb-home-wrapper:last-of-type {
+            display: block;
+
+            .breadcrumb-link {
+                display: inline;
+                font-size: 16px
+            }
+
+            .right-arrow {
+                display: none;
+            }
+
+            .hidden {
+                display: inline;
+                margin-right: 8px;
+            }
+        }
+        .breadcrumb-location {
+                display: none;
+            }
+    }
+}

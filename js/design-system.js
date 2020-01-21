@@ -24,7 +24,7 @@ $(document).ready(function () {
     $('a.breadcrumb-link').each(function(){
         if( $(this).is(':empty') ) {
             var wrapper = $(this).parent('.breadcrumb-home-wrapper');
-            $(wrapper).css('display', 'none');
+            $(wrapper).remove();
         }
     });
     
@@ -78,9 +78,9 @@ $(document).ready(function () {
             stickyWidth = $('.twoCol39-left').width();
         
         // Set side-menu initial horizontal position 
-        if(win.width() < 480) {
+        if(win.width() < 575) {
             $('.anchor-menu').css('position', 'relative').css('top', 'auto');
-        } else if (win.width() >= 480) {
+        } else if (win.width() >= 575) {
             if (win.scrollTop() >= stickyPosition.top) {
                 $('.anchor-menu').css('position', 'fixed').css('top', '0').css('width', stickyWidth);
             } else {
@@ -93,9 +93,9 @@ $(document).ready(function () {
 
             stickyWidth = $('.twoCol39-left').width();
 
-            if (win.width() < 480) {
+            if (win.width() < 575) {
                 $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);
-            } else if (win.width() >= 480) {
+            } else if (win.width() >= 575) {
                 if (win.scrollTop() >= stickyPosition.top) {
                     $('.anchor-menu').css('position', 'fixed').css('top', '0').css('width', stickyWidth);
                 } else if (win.scrollTop() < stickyPosition.top) {

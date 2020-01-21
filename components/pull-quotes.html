@@ -1,20 +1,20 @@
 ---
 layout: content
-title: Light pathway list
+title: Pull quotes
 breadcrumb1: Components
 url1: topic-components.html
 breadcrumb2:
 url2:
-longdesc: Link to tertiary content within the context of the page.
+longdesc: Display a styalised quote or important content.
 
 ---
-<div class="main-section" >
-    <div >
+<div class="main-section">
+    <div>
         <div class="c-wrapper c-wrapper-bg-transparent padding-none container-fluid" >
             <div class="row">
                 <div class="twoCol39-left col-12 col-sm-2">
-                    <div >
-                        <div >
+                    <div>
+                        <div>
                             <div class="anchor-menu" >
                                 <div class="sticky-container">
                                     <div>
@@ -32,14 +32,14 @@ longdesc: Link to tertiary content within the context of the page.
                     </div>
                 </div>
                 <div class="twoCol39-right col-sm-10">
-                    <div >
-                        <div >
+                    <div>
+                        <div>
 
 <!-- Visual design -->
 <div class="anchor-section"  name="visual-design"><a href="" id="visual-design" aria-label="visual design"></a>
 <div>
-<div >
-<div >
+<div>
+<div>
 <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
 <div class="row">
     <div class="c-padding-top col-sm-12 col-md-12 col-lg-10">
@@ -51,11 +51,10 @@ longdesc: Link to tertiary content within the context of the page.
                 <hr />
             </div>
             <div class="body-copy-content">
-
+                
                 <div class="design-system-card component">
                     
-                                             
-                <div class="responsive-toggle-container">
+                    <div class="responsive-toggle-container">
                     <p class="toggle-name">Design view: <label class="switch">
                         <input type="checkbox">
                         <span class="slider"></span>
@@ -67,24 +66,35 @@ longdesc: Link to tertiary content within the context of the page.
                         <p>Desktop designs can be viewed on screens wider than 650px.</p>
                     </div>
                     
-                </div>
+                </div> 
                     
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper white-back">
-                            <div class="light-pathway">
-                                <div class="example light-container">
-                                    <div class="light-wrapper">
-                                    <h3>Light pathway</h3>
-                                    <p class="description">The light pathway is an in-page link to another page on the site.</p>
-                                    <p class="icon-link"></p>
+                            
+                            <div class="pull-quote">
+                                <div class="example pull-quote-container">
+                                   
+                                    <div class="pull-quote-direct">
+                                        <div class="pull-quote-direct-qoutation"><svg width="40" height="24">
+                                                <path d="M8.392 24C2.797 24 0 21.215 0 15.646 0 10.076 3.96 4.862 11.88 0l5.564 2.03-5.846 7.478.188.461c3.332.677 4.998 2.923 4.998 6.739 0 4.861-2.798 7.292-8.392 7.292zm22.556 0c-5.594 0-8.392-2.785-8.392-8.354 0-5.57 3.96-10.784 11.88-15.646L40 2.03l-5.846 7.478.189.461c3.331.677 4.997 2.923 4.997 6.739 0 4.861-2.797 7.292-8.392 7.292z" fill="#F3DEA7" fill-rule="evenodd"></path>
+                                            </svg></div>
+                                        <div class="pull-quote-text text-center"><p class="blockquote">Block quotes are centered in the middle of the page like this.</p></div>
+                                        <div class="source pull-quote-quote-subText text-center">
+                                            <div>
+                                                <hr> <em>Chloe Richardson, Product Owner, business.gov.au</em> </div>
+                                        </div>
+                                        <hr class="pull-quote-hr hr-bottom">
                                     </div>
+                                    
+                                    
                                 </div>
                             </div>
 
                         </div>
+                        
 
-                         <div class="element-design component closed">
+                        <div class="element-design component closed">
                             <div class="content-wrapper">
                                 <p>CSS styles</p>
                             </div>
@@ -99,75 +109,58 @@ longdesc: Link to tertiary content within the context of the page.
                         </div>
                             
 <div class="element-code">
+
 <h4>Desktop &amp; mobile</h4>
-<h5>Title</h5>
+<h5>Grant status icon and text</h5>
 <code>
 <pre>
-h3 {
+p.status {
     color: #333333;
     font-family: OpenSans-Semibold;
-    font-size: 21px;
-    line-height: 28px;
-}
-h3:hover {
-    color: #254F90;
-    text-decoration: underline;
+    font-size: 18px;
+    line-height: 32px;
 }
 
 </pre>
 </code>
     
-<h5>Link description</h5>
-
 <code>
 <pre>
-p {
+.icon-closed {
+    color: #E75755;
+    height: 24px;
+    width: 24px;
+}
+
+</pre>
+</code>
+    
+<h5>Grant information</h5>    
+<code>
+<pre>
+p.details {
     color: #333333;
     font-family: OpenSans;
     font-size: 16px;
     line-height: 28px;
 }
-
+p.details strong {
+    font-family: OpenSans-Semibold;
+}
 </pre>
 </code>
     
-<h5>Link icon</h5>
-
-<code>
-<pre>
-.icon {    
-    color: #254F90;
-    height: 16px;
-    width: 16px;
-}
-
-</pre>
-</code>
-    
-<h5>Component container</h5>
-
-<code>
-<pre>
-.container {
-    background: #FFFFFF;
-    padding: 16px 24px 24px 0;
-    border-top: 4px solid #B3C2D8;
-}
-.container:hover {
-    background: #EFF4FB;
-}
-</pre>
-</code>
 
 </div>
 
                     </div>
 
                 </div>
+         
 
             </div>
-            
-        </div>
+
+       
 
 
     </div>
@@ -186,28 +179,31 @@ p {
 <!-- USAGE -->                      
 <div class="anchor-section"  name="guidelines-for-use"><a href="" id="guidelines-for-use" aria-label="guidelines for use"></a>
 <div >
-<div >
-<div >
+<div>
+<div>
 <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
     <div class="row">
         <div class=" col-sm-12 col-md-12 col-lg-10">
             <div class="body-copy">
                 <div>
-                   
+                    
                         <h2>Guidelines for use</h2>
-                  
+             
                     <hr />
                 </div>
                 <div class="body-copy-content">
 
-                    <h3>Purpose: </h3>
-                    <p>Generally used as a lightweight option within index pages to link to a list of pages on the site. May be used to show linked page hierarchy alongside hero and standard pathways. </p>
-                    <h3>When to use this component: </h3>
-                    <ul>
-                        <li>Light pathways are used primarily on the home, category and topic pages. </li>
-                        <li>They may be used to show pathways are lower in hierarchy than standard and hero pathways.  </li>
-                    </ul>
-
+                  <h3>Purpose:</h3>
+                  <p>Used to display a stylised quote or important content.</p>
+                  <h3>When to use this component:</h3>
+                  <ul>
+                      <li>On pages that include content that is attributed to a specific person. Most often used as part of Customer Story pages.</li>
+                      <li>On business information content pages to highlight an example or key point.</li>
+                  </ul>
+                  <h3>Content rules</h3>
+                  <ul>
+                      <li>Include full name, position and name of company if relevant for direct quotes.</li>
+                  </ul>
 
                 </div>
 
@@ -226,8 +222,8 @@ p {
 <!-- LAYOUTS -->                               
 <div class="anchor-section"  name="layouts"><a href="" id="layouts" aria-label="layouts"></a>
 <div >
-<div >
-<div >
+<div>
+<div>
     <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >
         <div class="row">
             <div class=" col-sm-12 col-md-12 col-lg-10">
@@ -235,34 +231,26 @@ p {
                     <div>
                        
                             <h2>Layouts</h2>
-                       
+                 
                         <hr />
                     </div>
                     <div class="body-copy-content">
 
 
-              <h3>Page layouts</h3>
-                        <p>Light pathway components should only be used in <a href={{"foundations/page-layouts.html" | relative_url}}>full width pages</a>.</p> 
+                      <h3>Page layouts</h3>
+                        <p>Pull quotes are used in <a href={{"foundations/page-layouts.html" | relative_url}}>two-third width pages</a>.</p> 
 
-                <h3>Component layout options</h3>
-                        <p>Note: Components have a 32px horizontal gutter between them but zero padding between rows.</p>
-                <h4>Equal width layout</h4>
-                <div class="layouts">
-                    
-                    <p><strong>Desktop:</strong> Three equal width components in a row.</p>
+                        <h3>Component layout options</h3>
+                        <h4>Full width layout</h4>
+                        <div class="layouts">
 
-                     <img class="responsive-img desktop" src={{"assets/layout-desktop-equal-third-width.svg"  | relative_url}} alt="">
+                            <p><strong>Desktop, Tablet &amp; Mobile:</strong> One component in a row.</p>
 
-                    <p><strong>Tablet:</strong> Two equal width components in a row.</p>
+                            <img class="responsive-img desktop" src={{"assets/layout-desktop-full-width.svg" | relative_url}} alt="">
 
-                    <img class="responsive-img tablet" src={{"assets/layout-tablet-equal-half-width.svg"  | relative_url}} alt="">
-                    <p><strong>Mobile:</strong> One component in a row.</p>
+                        </div>
 
-                    <img class="responsive-img mobile" src={{"assets/layout-mobile-full-width.svg" | relative_url}} alt="">
-                </div>
-
-            </div>
-
+                    </div>
 
 
                 </div>
@@ -275,8 +263,7 @@ p {
 </div>
 </div>
                     
-                
-                        
+            
 <!-- EXAMPLES & ASSETS -->                               
 <div class="anchor-section" name="examples-and-assets"><a href="" id="examples-and-assets"  aria-label="Layouts"></a>
 <div >
@@ -294,31 +281,14 @@ p {
                     </div>
                     <div class="body-copy-content">
  
-                         
-            <div class="adobe-link vertical-list col-sm-12 col-md-12 col-lg-10">
-
-                <div>
-                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/9050213b-d339-4225-9d04-45f5bbb1baf3/Light-pathway-list">
-                            <div class="action-card-button">
-                                <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View the light pathway design and assets in Adobe XD.</p>
-                                    <div class="action-card-info">
-                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
-                                        <div class="site-name"><span>ADOBE XD</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-            </div>
                         
             <div class="example-link vertical-list col-sm-12 col-md-12 col-lg-10">
 
                 <div>
-                    <a class="action-card-anchor" target="blank" href="https://business.gov.au/">
+                    <a class="action-card-anchor" target="blank" href="https://business.gov.au/grants-and-programs/accelerating-commercialisation/customer-stories/spee3d">
                             <div class="action-card-button">
                                 <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View the light pathway component on business.gov.au</p>
+                                    <p class="vertical-list-fileName">View the pull quote component on business.gov.au</p>
                                     <div class="action-card-info">
                                         <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
                                         <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
@@ -328,9 +298,7 @@ p {
                         </a>
                 </div>
             </div>
-
-
-
+                
 
                     </div>
 
@@ -345,10 +313,6 @@ p {
 </div>
 </div>
 
-                        
-
-
-
 
 
                         </div>
@@ -356,5 +320,4 @@ p {
 
                 </div>
             </div>
-    </div>
-
+        </div>

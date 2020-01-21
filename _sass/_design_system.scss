@@ -1839,6 +1839,58 @@
         }
     }
     
+    .pull-quote {
+        p.blockquote {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 21px;
+            letter-spacing: 0.2px;
+            text-align: center;
+            line-height: 40px;
+            padding-bottom: 0;
+        }
+        .pull-quote-direct svg {
+            display: block;
+            margin: 0 auto 24px;
+        }
+        .source {
+            @include font-format($font-family, $font-regular, italic);
+            color: $grey-darker;
+            padding-top: 8px;
+            font-size: 16px;
+            line-height: 24px;
+
+            hr {
+                border-color: $grey-darker;
+                border-top-width: .125rem;
+                display: inline-block;
+                height: .125rem;
+                line-height: 24px;
+                margin: 0 .125rem 0 0;
+                opacity: .6;
+                vertical-align: middle;
+                width: 1.5625rem;
+                padding: 0;
+            }
+        }
+        .hr-bottom {
+            background-color: $yellow-primary-mid;
+            border-top: 0;
+            height: .125rem;
+            margin: 0 auto;
+            width: 2.625rem;
+            margin-top: 24px;
+            padding: 0;
+        }
+    }
+    .mobile-example .pull-quote,
+    .mobile-media-query .pull-quote {
+        p.blockquote {
+            font-size: 18px;
+            line-height: 24px;  
+            padding-bottom: 0;
+        }
+    }
+    
     .anchor-menu-example {
         .anchor-menu-container {
             background: $white;
@@ -2300,6 +2352,9 @@
                 }
 
                 &:active {
+                    color: $blue-active;
+                     background: url(../assets/Icon-arrow-circle-right-drk-blue.svg) no-repeat left 0px center;
+                    
                 }
             }
         }
@@ -3298,7 +3353,7 @@
     }
 }
 
-/* Toggle responsive examples */
+/* Toggle responsive examples on component pages */
 .responsive-toggle-container {
     margin: 0;
     padding: 24px;
