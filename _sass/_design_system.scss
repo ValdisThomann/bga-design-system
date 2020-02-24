@@ -520,6 +520,30 @@
             
         }
 
+    .form-elements {
+        .form-text-box {
+            label {
+                width: 100%;
+                display: block;
+            }
+            input {
+                height: 52px;
+                width: 100%;
+                padding: 10px;
+                border: solid 1px $darkblue-mid;
+                
+                &:focus {
+                    outline: none;
+                    border: solid 3px $blue-primary;
+                }
+            }
+            input[type=text] {
+                @include font-format($font-family, $font-regular, normal);
+                font-size: 16px;
+            }
+        }
+    }
+    
     .hero-pathway {
         
         .hero-pathway-list {
@@ -3483,5 +3507,33 @@
     max-width: 320px !important;
     padding: 0;
     margin: 0;
+    
+}
+
+/* Toggle element state on form page */
+.design-system-card .state-selector {
+    .state-selector-intro {
+        display: inline-block;
+        font-size: 14px;
+    }
+    label {
+        font-size: 14px;
+        padding-right: 12px;
+    }
+    input[type='radio'] {
+        //display: none; /*removes original button*/
+        
+        &:before {
+            height: 24px;
+            width: 24px;
+            content: " ";
+            display: inline-block;
+            position: relative;
+            background: url(../assets/radio-not-selected.svg) no-repeat;
+        }
+        &.checked:before {
+            background: url(../assets/radio-selected.svg) no-repeat;
+        }
+    }
     
 }
