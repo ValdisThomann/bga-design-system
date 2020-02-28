@@ -521,26 +521,93 @@
         }
 
     .form-elements {
-        .form-text-box {
+        .form-text-box-container {
             label {
                 width: 100%;
                 display: block;
+                font-size: 16px;
+                padding: 0 0 16px 0;
+                margin: 0;
+            }
+            .error-message {
+                display: none;
             }
             input {
                 height: 52px;
                 width: 100%;
                 padding: 10px;
-                border: solid 1px $darkblue-mid;
-                
+
                 &:focus {
+                    outline: none;
+                    border: solid 3px $blue-primary !important;
+                    background: none !important;
+                }
+
+                &[type=text] {
+                    @include font-format($font-family, $font-regular, normal);
+                    font-size: 16px;
+                }
+                
+                &.text-box-with-units {
+                   width: 80%;
+                }
+            }
+            textarea {
+                width: 100%;
+                padding: 10px;
+
+                &:focus {
+                    outline: none;
+                    border: solid 3px $blue-primary !important;
+                    background: none !important;
+                }
+
+                &[type=text] {
+                    @include font-format($font-family, $font-regular, normal);
+                    font-size: 16px;
+                }
+            }
+
+            &[data-state="default-state"] {
+                input, textarea {
+                     border: solid 1px $darkblue-mid;
+                }
+                .error-message {
+                    display: none;
+                }
+            }
+            &[data-state="focus-state"] {
+                input, textarea {
                     outline: none;
                     border: solid 3px $blue-primary;
                 }
+                .error-message {
+                    display: none;
+                }
             }
-            input[type=text] {
-                @include font-format($font-family, $font-regular, normal);
-                font-size: 16px;
+            &[data-state="error-state"] {
+                input, textarea {
+                    outline: none;
+                    border: solid 3px $red-negative-dark;
+                }
+                .error-message {
+                    display: block;
+                    color: $red-negative-dark; 
+                    margin: 0;
+                    padding: 16px 0 0 0;
+                }
             }
+            &[data-state="disabled-state"] {
+                input, textarea {
+                    outline: none;
+                    border: solid 1px $grey-headers;
+                    background: $grey-lightest;
+                }
+                .error-message {
+                    display: none;
+                }
+            }
+            
         }
     }
     
@@ -3512,28 +3579,44 @@
 
 /* Toggle element state on form page */
 .design-system-card .state-selector {
+    text-align: right;
+    padding: 16px 24px;
+    border-bottom: 1px solid $grey-light;
+    
     .state-selector-intro {
         display: inline-block;
         font-size: 14px;
+        padding: 0 8px 0 0;
     }
     label {
         font-size: 14px;
         padding-right: 12px;
     }
     input[type='radio'] {
-        //display: none; /*removes original button*/
+        opacity: 0;
+        width: 0;
+        height: 24px;
+    }
+    span {
+        position: relative;
+        padding-left: 22px;
+        cursor: pointer;
         
         &:before {
-            height: 24px;
-            width: 24px;
+            height: 16px;
+            width: 16px;
             content: " ";
             display: inline-block;
-            position: relative;
             background: url(../assets/radio-not-selected.svg) no-repeat;
+            background-size: 16px 16px;
+            position: absolute;
+            top: 2px;
+            left: 0;
         }
-        &.checked:before {
-            background: url(../assets/radio-selected.svg) no-repeat;
-        }
+    }
+    input[checked='checked'] + span:before {
+        background: url(../assets/radio-selected.svg) no-repeat;
+            background-size: 16px 16px;
     }
     
 }
