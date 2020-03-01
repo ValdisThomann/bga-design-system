@@ -191,24 +191,19 @@ $(document).ready(function () {
         var element_state = $(this).attr('data-state'); 
         
         if ($(this).find('input').attr('checked') == "checked") {
-         
         } else  {
-            $('.state-selector label input').each(function(){
+            $(this).parent().find('label input').each(function(){
                 $(this).removeAttr('checked');
             });
             $(this).find('input'). attr("checked", "checked");
         }
-        
-        var grandparent = $(this).parent().parent();
-        grandparent.find('.design-system-card-content .example').attr('data-state', element_state);     
+        $(this).closest('.design-system-card').find('.design-system-card-content .example').attr('data-state', element_state);
     });
+    
     $('.example .example-form-element').focus(function(){
-        console.log("I am consoled");
-        $('.state-selector label input').removeAttr('checked');
-        $('.focus-label input').attr('checked','checked');
-        
-        $(this).parent().attr('data-state', 'focus-state');
-       
+        $(this).closest(".design-system-card").find('.state-selector label input').removeAttr('checked');
+        $(this).closest(".design-system-card").find('.focus-label input').attr('checked','checked');
+        $(this).closest(".example").attr('data-state', 'focus-state');
     });
     
         

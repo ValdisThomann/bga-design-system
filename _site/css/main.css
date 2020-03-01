@@ -5124,27 +5124,37 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-text-box-container input[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
-.design-system-card .form-elements .form-text-box-container input.text-box-with-units { width: 80%; }
-
-.design-system-card .form-elements .form-text-box-container textarea { width: 100%; padding: 10px; }
+.design-system-card .form-elements .form-text-box-container textarea { width: 100%; padding: 10px; min-height: 150px; }
 
 .design-system-card .form-elements .form-text-box-container textarea:focus { outline: none; border: solid 3px #254F90 !important; background: none !important; }
 
 .design-system-card .form-elements .form-text-box-container textarea[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
-.design-system-card .form-elements .form-text-box-container[data-state="default-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] textarea { border: solid 1px #495C74; }
+.design-system-card .form-elements .form-text-box-container .text-box-with-units span { height: 52px; width: auto; padding: 10px 15px; color: #666666; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; border: solid 1px #495C74; display: inline-block; background: #F5F5F5; vertical-align: middle; }
+
+.design-system-card .form-elements .form-text-box-container .text-box-with-units input { width: 80%; max-width: 150px; display: inline-block; text-align: right; border-left: none !important; border-right: none !important; vertical-align: middle; }
+
+.design-system-card .form-elements .form-text-box-container select { height: 52px; width: 100%; max-width: 400px; padding: 10px 15px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
+
+.design-system-card .form-elements .form-text-box-container select:focus { outline: none; border: solid 3px #254F90 !important; }
+
+.design-system-card .form-elements .form-text-box-container select[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
+
+.design-system-card .form-elements .form-text-box-container[data-state="default-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] select { border: solid 1px #495C74; }
 
 .design-system-card .form-elements .form-text-box-container[data-state="default-state"] .error-message { display: none; }
 
-.design-system-card .form-elements .form-text-box-container[data-state="focus-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] textarea { outline: none; border: solid 3px #254F90; }
+.design-system-card .form-elements .form-text-box-container[data-state="focus-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] select { outline: none; border: solid 3px #254F90; }
 
 .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] .error-message { display: none; }
 
-.design-system-card .form-elements .form-text-box-container[data-state="error-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] textarea { outline: none; border: solid 3px #D2201E; }
+.design-system-card .form-elements .form-text-box-container[data-state="error-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] select { outline: none; border: solid 3px #D2201E; }
 
 .design-system-card .form-elements .form-text-box-container[data-state="error-state"] .error-message { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; }
 
-.design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] textarea { outline: none; border: solid 1px #E2E2E2; background: #F5F5F5; }
+.design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] select { outline: none; border: solid 1px #E2E2E2; background: #F5F5F5; color: #8E8E8E; }
+
+.design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] select { background: #F5F5F5 url(../assets/Icon-chevron-down-grey.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; }
 
 .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] .error-message { display: none; }
 
