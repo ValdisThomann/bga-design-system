@@ -187,9 +187,11 @@ $(document).ready(function () {
     
     
     /*----------- View state toggle ----------- */
+    
     $('.state-selector label').on('click', function(){
         var element_state = $(this).attr('data-state'); 
         
+        // View state toggle checked
         if ($(this).find('input').attr('checked') == "checked") {
         } else  {
             $(this).parent().find('label input').each(function(){
@@ -197,25 +199,35 @@ $(document).ready(function () {
             });
             $(this).find('input'). attr("checked", "checked");
         }
+        
+        // Add state to the example  
         $(this).closest('.design-system-card').find('.design-system-card-content .example').attr('data-state', element_state);
+    
     });
     
+    // Change to focus state when user element is actually in focus
     $('.example .example-form-element').focus(function(){
         $(this).closest(".design-system-card").find('.state-selector label input').removeAttr('checked');
         $(this).closest(".design-system-card").find('.focus-label input').attr('checked','checked');
         $(this).closest(".example").attr('data-state', 'focus-state');
     });
+    $('.radio-item input').focus(function(){
+        $(this).next('label').attr("checked", "checked");
+    });
+    
+    
+
     
         
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
     $('tr td:first-of-type').on('click', function(){
         
-        //toggle class to show / hide child <td>
+        // toggle class to show / hide child <td>
         var parent = $( this ).parent().get( 0 );
         $(parent).children('td').toggleClass('showGroup');
         
-        //toggle class on parent
+        // toggle class on parent
         $(parent).toggleClass('groupParent');
         
     });

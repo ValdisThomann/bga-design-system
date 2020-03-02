@@ -5140,19 +5140,29 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-text-box-container select[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
-.design-system-card .form-elements .form-text-box-container[data-state="default-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] select { border: solid 1px #495C74; }
+.design-system-card .form-elements .form-text-box-container .radio-item { border: solid 1px #495C74; height: 52px; width: 350px; padding: 10px 15px; display: inline-block; line-height: 0; display: block; margin-bottom: 16px; }
+
+.design-system-card .form-elements .form-text-box-container .radio-item input[type=radio] { opacity: 0; width: 0; height: 22px; }
+
+.design-system-card .form-elements .form-text-box-container .radio-item label { position: relative; padding-left: 32px; cursor: pointer; display: inline; }
+
+.design-system-card .form-elements .form-text-box-container .radio-item label:before { height: 24px; width: 24px; content: " "; background: url(../assets/radio-not-selected.svg) no-repeat; background-size: 24px 24px; position: absolute; top: 0; left: 0; }
+
+.design-system-card .form-elements .form-text-box-container .radio-item input[checked='checked'] + label:before { background: url(../assets/radio-selected.svg) no-repeat; background-size: 24px 24px; }
+
+.design-system-card .form-elements .form-text-box-container[data-state="default-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] select, .design-system-card .form-elements .form-text-box-container[data-state="default-state"] .radio-item { border: solid 1px #495C74; }
 
 .design-system-card .form-elements .form-text-box-container[data-state="default-state"] .error-message { display: none; }
 
-.design-system-card .form-elements .form-text-box-container[data-state="focus-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] select { outline: none; border: solid 3px #254F90; }
+.design-system-card .form-elements .form-text-box-container[data-state="focus-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] select, .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] .radio-item { outline: none; border: solid 3px #254F90; }
 
 .design-system-card .form-elements .form-text-box-container[data-state="focus-state"] .error-message { display: none; }
 
-.design-system-card .form-elements .form-text-box-container[data-state="error-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] select { outline: none; border: solid 3px #D2201E; }
+.design-system-card .form-elements .form-text-box-container[data-state="error-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] select, .design-system-card .form-elements .form-text-box-container[data-state="error-state"] .radio-item { outline: none; border: solid 3px #D2201E; }
 
 .design-system-card .form-elements .form-text-box-container[data-state="error-state"] .error-message { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; }
 
-.design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] select { outline: none; border: solid 1px #E2E2E2; background: #F5F5F5; color: #8E8E8E; }
+.design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] textarea, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] select, .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] .radio-item { outline: none; border: solid 1px #E2E2E2; background: #F5F5F5; color: #8E8E8E; }
 
 .design-system-card .form-elements .form-text-box-container[data-state="disabled-state"] select { background: #F5F5F5 url(../assets/Icon-chevron-down-grey.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; }
 
