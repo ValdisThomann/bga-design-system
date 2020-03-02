@@ -521,7 +521,7 @@
         }
 
     .form-elements {
-        .form-text-box-container {
+        .form-example-container {
             label {
                 width: 100%;
                 display: block;
@@ -606,17 +606,20 @@
                     @include font-format($font-family, $font-regular, normal);
                     font-size: 16px;
                 }
-            }
-            
+            }      
             .radio-item {
                 border: solid 1px $darkblue-mid;
                 height: 52px;
                 width: 350px;
                 padding: 10px 15px;
-                display: inline-block;
                 line-height: 0;
                 display: block;
                 margin-bottom: 16px;
+                
+                
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
                 
                 input[type=radio] {
                     opacity: 0;
@@ -643,16 +646,136 @@
                 input[checked='checked'] + label:before {
                     background: url(../assets/radio-selected.svg) no-repeat;
                     background-size: 24px 24px;
-                }         
+                } 
             }
-            
+            .checkbox-item {
+                line-height: 28px;
+                display: block;
+                margin-bottom: 16px;
+                
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+                
+                input[type=checkbox] {
+                    opacity: 0;
+                    width: 0;
+                    height: 28px;
+                }
+                label {
+                    position: relative;
+                    padding-left: 42px;
+                    cursor: pointer;
+                    display: inline;
+
+                    &:before {
+                        height: 28px;
+                        width: 28px;
+                        content: " ";
+                        border: solid 1px $darkblue-mid;
+                        position: absolute;
+                        top: -2px;
+                        left: 0;
+                    }
+                }
+                input[checked='checked'] + label:before {
+                    border: solid 3px $blue-primary;
+                } 
+            }
+            .button-wrapper {
+                width: auto;
+                display: inline-block;
+                transition-property: transform, -webkit-transform;
+                transition-duration: 0.4s, 0.4s;
+                transition-timing-function: ease, ease;
+                transition-delay: 0s, 0s;
+                margin-top: 8px;
+
+                &:hover {
+                    transform: translateY(-.1875rem);
+                }
+                .cta-button {
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+                    border-radius: 6px;
+                    opacity: 1;
+                    padding: 8px 32px;
+                    text-align: center;
+                    letter-spacing: 0;
+
+                    &:hover,
+                    &:active {
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                        border-radius: 6px;
+                        opacity: 1;
+                    }
+
+                    background: $blue-primary-mid 0% 0% no-repeat padding-box;
+                    border: 2px solid $blue-primary;
+                    color: $white;
+                    @include font-format($font-family, $font-semibold, normal);
+
+                    &:hover {
+                        background: $blue-primary 0% 0% no-repeat padding-box;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                    }
+
+                    &:active {
+                        background: $blue-active 0% 0% no-repeat padding-box;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                    }
+                }
+                .secondary-button {
+                    @include font-format($font-family, $font-semibold, normal);
+                    background: $white 0% 0% no-repeat padding-box;
+                    border: 2px solid $blue-primary-mid;
+                    color: $blue-primary-mid;
+
+                    &:hover {
+                        background: $blue-primary 0% 0% no-repeat padding-box;
+                        border: 2px solid $blue-active;
+                        color: $white;
+                    }
+
+                    &:active {
+                        background: $blue-active 0% 0% no-repeat padding-box;
+                        color: $white;
+                    }
+                }
+                .tertiary-link {
+                    @include font-format($font-family, $font-semibold, normal);
+                    color: $blue-primary;
+                    text-decoration: underline;
+                    box-shadow: none;
+                    margin-right: 40px;
+                }
+                .add-field {
+                    @include font-format($font-family, $font-semibold, normal);
+                    color: $blue-primary;
+                    text-decoration: none;
+                    box-shadow: none;
+                    margin-right: 40px;
+                    padding-left: 40px;
+                    position: relative;
+                    
+                    &:before {
+                        background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat;
+                        content: " ";
+                        height: 32px;
+                        width:32px;
+                        display: block;
+                        position: absolute;
+                    }
+                }
+           
+            }
 
             &[data-state="default-state"] {
                 input, 
                 textarea, 
                 .text-box-with-units span,
                 select,
-                .radio-item {
+                .radio-item,
+                .checkbox-item input + label:before {
                      border: solid 1px $darkblue-mid;
                 }
                 .error-message {
@@ -664,7 +787,8 @@
                 textarea,
                 .text-box-with-units span,
                 select,
-                .radio-item {
+                .radio-item,
+                .checkbox-item input + label:before {
                     outline: none;
                     border: solid 3px $blue-primary;
                 }
@@ -677,7 +801,8 @@
                 textarea,
                 .text-box-with-units span,
                 select, 
-                .radio-item {
+                .radio-item,
+                .checkbox-item input + label:before {
                     outline: none;
                     border: solid 3px $red-negative-dark;
                 }
@@ -693,7 +818,8 @@
                 textarea,
                 .text-box-with-units span,
                 select,
-                .radio-item {
+                .radio-item,
+                .checkbox-item input + label:before {
                     outline: none;
                     border: solid 1px $grey-headers;
                     background: $grey-lightest;
