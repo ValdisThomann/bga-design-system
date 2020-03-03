@@ -552,6 +552,7 @@
                 width: 100%;
                 padding: 10px;
                 min-height: 150px;
+                display: block;
 
                 &:focus {
                     outline: none;
@@ -615,7 +616,6 @@
                 line-height: 0;
                 display: block;
                 margin-bottom: 16px;
-                
                 
                 &:last-of-type {
                     margin-bottom: 0;
@@ -701,6 +701,10 @@
                     padding: 8px 32px;
                     text-align: center;
                     letter-spacing: 0;
+                    background: $blue-primary-mid 0% 0% no-repeat padding-box;
+                    border: 2px solid $blue-primary;
+                    color: $white;
+                    @include font-format($font-family, $font-semibold, normal);
 
                     &:hover,
                     &:active {
@@ -708,20 +712,12 @@
                         border-radius: 6px;
                         opacity: 1;
                     }
-
-                    background: $blue-primary-mid 0% 0% no-repeat padding-box;
-                    border: 2px solid $blue-primary;
-                    color: $white;
-                    @include font-format($font-family, $font-semibold, normal);
-
                     &:hover {
                         background: $blue-primary 0% 0% no-repeat padding-box;
-                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
                     }
 
                     &:active {
                         background: $blue-active 0% 0% no-repeat padding-box;
-                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
                     }
                 }
                 .secondary-button {
@@ -749,13 +745,18 @@
                     margin-right: 40px;
                 }
                 .add-field {
-                    @include font-format($font-family, $font-semibold, normal);
-                    color: $blue-primary;
+                    @include font-format($font-family, $font-regular, normal);
+                    color: $black-light;
                     text-decoration: none;
                     box-shadow: none;
                     margin-right: 40px;
                     padding-left: 40px;
                     position: relative;
+                    
+                    &:hover {
+                        @include font-format($font-family, $font-semibold, normal);
+                        color: $blue-primary;
+                    }
                     
                     &:before {
                         background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat;
@@ -766,7 +767,73 @@
                         position: absolute;
                     }
                 }
-           
+            }
+            &.text-box-button-combo {
+                position: relative;
+                -webkit-transform: none;
+                        transform: none;
+                
+                input {
+                    max-width: 380px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .combo-button-wrapper {
+                    display: inline-block;
+                    vertical-align: middle;
+                     
+                    .combo-button {
+                        border-radius: 6px;
+                        border-top-left-radius: 0px;
+                        border-bottom-left-radius: 0px;
+                        box-shadow: none;
+                        height: 52px;
+                        display: block;
+                        border: solid 1px $darkblue-mid;
+                        margin: 0 0 0 -6px;
+                        text-align: center;
+                        color: $white;
+                        @include font-format($font-family, $font-semibold, normal);
+
+                        &:hover {
+                            background: $blue-primary no-repeat;
+                        }
+                        &:active {
+                            background: $blue-active no-repeat;
+                        }
+                    }
+                    .primary-combo {
+                        padding: 10px 24px 10px 48px;
+                        background: $blue-primary-mid url(../assets/Icon-plus-white.svg) no-repeat;
+                        background-position: left 24px center;
+                        
+                        &:hover {
+                            background: $blue-primary url(../assets/Icon-plus-white.svg) no-repeat;
+                            background-position: left 24px center;
+                        }
+                        &:active {
+                            background: $blue-active url(../assets/Icon-plus-white.svg) no-repeat;
+                            background-position: left 24px center;
+                        }
+                    }
+                    .secondary-combo {
+                        padding: 10px 24px 10px 48px;
+                        background: $white url(../assets/Icon-search-blue.svg) no-repeat;
+                        background-position: left 24px center;
+                        color: $blue-primary-mid;
+                        
+                        &:hover {
+                            background: $blue-primary url(../assets/Icon-search-white.svg) no-repeat;
+                            background-position: left 24px center;
+                            color: $white;
+                        }
+                        &:active {
+                            background: $blue-active url(../assets/Icon-search-white.svg) no-repeat;
+                            background-position: left 24px center;
+                            color: $white;
+                        }
+                    }
+                }
             }
 
             &[data-state="default-state"] {
@@ -775,7 +842,8 @@
                 .text-box-with-units span,
                 select,
                 .radio-item,
-                .checkbox-item input + label:before {
+                .checkbox-item input + label:before,
+                .combo-button {
                      border: solid 1px $darkblue-mid;
                 }
                 .error-message {
@@ -788,7 +856,8 @@
                 .text-box-with-units span,
                 select,
                 .radio-item,
-                .checkbox-item input + label:before {
+                .checkbox-item input + label:before,
+                .combo-button {
                     outline: none;
                     border: solid 3px $blue-primary;
                 }
@@ -802,7 +871,8 @@
                 .text-box-with-units span,
                 select, 
                 .radio-item,
-                .checkbox-item input + label:before {
+                .checkbox-item input + label:before,
+                .combo-button  {
                     outline: none;
                     border: solid 3px $red-negative-dark;
                 }
@@ -819,7 +889,8 @@
                 .text-box-with-units span,
                 select,
                 .radio-item,
-                .checkbox-item input + label:before {
+                .checkbox-item input + label:before,
+                .combo-button  {
                     outline: none;
                     border: solid 1px $grey-headers;
                     background: $grey-lightest;
