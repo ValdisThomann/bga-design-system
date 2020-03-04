@@ -202,21 +202,47 @@ $(document).ready(function () {
         
         // Add state to the example  
         var example_element = $(this).closest('.design-system-card').find('.design-system-card-content .form-example-container');
+        
         if (example_element.hasClass('example')) {
             console.log('example');
             $(this).closest('.design-system-card').find('.design-system-card-content .example').attr('data-state', element_state);
+        } 
+        
+        else if (example_element.hasClass('radio-example')) {
+            if (element_state == "focus-state") {
+                $(this).closest('.design-system-card').find('.design-system-card-content .radio-example').find(".radio-item").attr('data-state', "default-state");
+                $(this).closest('.design-system-card').find('.design-system-card-content .radio-example').find(".radio-item:first").attr('data-state', element_state);
+                $(this).find(".error-message").removeClass('hidden');
+            } else if (element_state == "default-state" || element_state == "disabled-state") {
+                $(this).closest('.design-system-card').find('.design-system-card-content .radio-example').find(".radio-item").attr('data-state', element_state);
+                $(this).find(".error-message").removeClass('hidden');
+            } else if (element_state == "error-state") {
+                $(this).closest('.design-system-card').find('.design-system-card-content .radio-example').find(".radio-item").attr('data-state', element_state);
+                $(this).find(".error-message").addClass('hidden');
+            }
         }
     
     });
     
-    // Change to focus state when user element is actually in focus
+    // Change to focus state when element is actually in focus
     $('.example .example-form-element').focus(function(){
         $(this).closest(".design-system-card").find('.state-selector label input').removeAttr('checked');
         $(this).closest(".design-system-card").find('.focus-label input').attr('checked','checked');
         $(this).closest(".example").attr('data-state', 'focus-state');
     });
-    $('.radio-item input').focus(function(){
-        $(this).next('label').attr("checked", "checked");
+    
+    $('.radio-example .example-form-element').focus(function(){
+        $(this).closest(".design-system-card").find('.state-selector label input').removeAttr('checked');
+        $(this).closest(".design-system-card").find('.focus-label input').attr('checked','checked');
+        $(this).parent('.radio-item').attr('data-state', 'focus-state');
+        
+        console.log( $(this).closest('.radio-example'));
+        $(this).closest('.radio-example').find('.radio-item').each(function(){
+            if ($(this).attr('data-state') == "error-state" || $(this).attr('data-state') == "disabled-state") {
+                $(this).attr('data-state', 'default-state');
+            }
+        });
+       
     });
     
     

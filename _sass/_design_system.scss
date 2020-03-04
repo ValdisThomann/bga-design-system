@@ -846,7 +846,6 @@
                 textarea, 
                 .text-box-with-units span,
                 select,
-                .radio-item,
                 .checkbox-item input + label:before,
                 .combo-button {
                      border: solid 1px $darkblue-mid;
@@ -860,7 +859,6 @@
                 textarea,
                 .text-box-with-units span,
                 select,
-                .radio-item,
                 .checkbox-item input + label:before,
                 .combo-button {
                     outline: none;
@@ -875,7 +873,6 @@
                 textarea,
                 .text-box-with-units span,
                 select, 
-                .radio-item,
                 .checkbox-item input + label:before,
                 .combo-button  {
                     outline: none;
@@ -893,7 +890,6 @@
                 textarea,
                 .text-box-with-units span,
                 select,
-                .radio-item,
                 .checkbox-item input + label:before,
                 .combo-button  {
                     outline: none;
@@ -908,6 +904,30 @@
                 }
                 .error-message {
                     display: none;
+                }
+            }
+            .radio-item {
+                &[data-state="default-state"] {
+                    border: solid 1px $darkblue-mid;
+                }
+                &[data-state="focus-state"] {
+                    outline: none;
+                    border: solid 3px $blue-primary;
+                    
+                    input + label:before {
+                        background: url(../assets/radio-selected.svg) no-repeat;
+                        background-size: 24px 24px;
+                    } 
+                }
+                &[data-state="error-state"] {
+                    outline: none;
+                    border: solid 3px $red-negative-dark;
+                }
+                &[data-state="disabled-state"] {
+                    outline: none;
+                    border: solid 1px $grey-headers;
+                    background: $grey-lightest;
+                    color: $grey-dark;
                 }
             }
             
