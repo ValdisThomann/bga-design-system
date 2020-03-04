@@ -744,28 +744,33 @@
                     box-shadow: none;
                     margin-right: 40px;
                 }
-                .add-field {
-                    @include font-format($font-family, $font-regular, normal);
-                    color: $black-light;
-                    text-decoration: none;
-                    box-shadow: none;
-                    margin-right: 40px;
-                    padding-left: 40px;
-                    position: relative;
-                    
-                    &:hover {
-                        @include font-format($font-family, $font-semibold, normal);
-                        color: $blue-primary;
-                    }
-                    
+            }
+            .add-field {
+                @include font-format($font-family, $font-regular, normal);
+                color: $black-light;
+                text-decoration: none;
+                box-shadow: none;
+                margin-right: 40px;
+                padding: 4px 0 4px 40px;
+                position: relative;
+
+                &:hover {
+                    @include font-format($font-family, $font-semibold, normal);
+                    color: $blue-primary;
                     &:before {
-                        background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat;
-                        content: " ";
-                        height: 32px;
-                        width:32px;
-                        display: block;
-                        position: absolute;
+                        background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
                     }
+                }
+
+                &:before {
+                    background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat;
+                    content: " ";
+                    height: 32px;
+                    width:32px;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    
                 }
             }
             &.text-box-button-combo {

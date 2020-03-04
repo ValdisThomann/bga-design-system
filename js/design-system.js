@@ -201,7 +201,11 @@ $(document).ready(function () {
         }
         
         // Add state to the example  
-        $(this).closest('.design-system-card').find('.design-system-card-content .example').attr('data-state', element_state);
+        var example_element = $(this).closest('.design-system-card').find('.design-system-card-content .form-example-container');
+        if (example_element.hasClass('example')) {
+            console.log('example');
+            $(this).closest('.design-system-card').find('.design-system-card-content .example').attr('data-state', element_state);
+        }
     
     });
     

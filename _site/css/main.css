@@ -5184,11 +5184,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .button-wrapper .tertiary-link { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; text-decoration: underline; box-shadow: none; margin-right: 40px; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .add-field { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; color: #333333; text-decoration: none; box-shadow: none; margin-right: 40px; padding-left: 40px; position: relative; }
+.design-system-card .form-elements .form-example-container .add-field { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; color: #333333; text-decoration: none; box-shadow: none; margin-right: 40px; padding: 4px 0 4px 40px; position: relative; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .add-field:hover { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
+.design-system-card .form-elements .form-example-container .add-field:hover { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .add-field:before { background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat; content: " "; height: 32px; width: 32px; display: block; position: absolute; }
+.design-system-card .form-elements .form-example-container .add-field:hover:before { background: url(../assets/Icon-add-circle-blue.svg) no-repeat; }
+
+.design-system-card .form-elements .form-example-container .add-field:before { background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat; content: " "; height: 32px; width: 32px; display: block; position: absolute; top: 0; }
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo { position: relative; -webkit-transform: none; transform: none; }
 
