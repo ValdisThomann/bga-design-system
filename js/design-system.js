@@ -190,6 +190,7 @@ $(document).ready(function () {
     
     $('.state-selector label').on('click', function(){
         var element_state = $(this).attr('data-state'); 
+        var common_ancestor = $(this).closest('.design-system-card');
         
         // View state toggle checked
         if ($(this).find('input').attr('checked') == "checked") {
@@ -200,49 +201,90 @@ $(document).ready(function () {
             $(this).find('input'). attr("checked", "checked");
         }
         
-        // Add state to the example  
-        var example_element = $(this).closest('.design-system-card').find('.design-system-card-content .form-example-container');
+        // Add state to the actual example  
+        var example_element = common_ancestor.find('.design-system-card-content .form-example-container');
         
         if (example_element.hasClass('example')) {
-            console.log('example');
-            $(this).closest('.design-system-card').find('.design-system-card-content .example').attr('data-state', element_state);
+            example_element.attr('data-state', element_state);
         } 
-        
         else if (example_element.hasClass('radio-example')) {
             if (element_state == "focus-state") {
-                $(this).closest('.design-system-card').find('.design-system-card-content .radio-example').find(".radio-item").attr('data-state', "default-state");
-                $(this).closest('.design-system-card').find('.design-system-card-content .radio-example').find(".radio-item:first").attr('data-state', element_state);
-                $(this).find(".error-message").removeClass('hidden');
-            } else if (element_state == "default-state" || element_state == "disabled-state") {
-                $(this).closest('.design-system-card').find('.design-system-card-content .radio-example').find(".radio-item").attr('data-state', element_state);
-                $(this).find(".error-message").removeClass('hidden');
-            } else if (element_state == "error-state") {
-                $(this).closest('.design-system-card').find('.design-system-card-content .radio-example').find(".radio-item").attr('data-state', element_state);
-                $(this).find(".error-message").addClass('hidden');
+                example_element.find(".radio-item").attr('data-state', "default-state");
+                example_element.find(".radio-item:first").attr('data-state', element_state);
+                common_ancestor.find(".error-message").removeClass('show');
+            } 
+            else if (element_state == "default-state" || element_state == "disabled-state") {
+                example_element.find(".radio-item").attr('data-state', element_state);
+                common_ancestor.find(".error-message").removeClass('show');
+            } 
+            else if (element_state == "error-state") {
+                example_element.find(".radio-item").attr('data-state', element_state);
+                common_ancestor.find(".error-message").addClass('show');
             }
+        }
+        else if (example_element.hasClass('multiple-select-example')) {
+            example_element.attr('data-state', element_state);
+        }
+        else if (example_element.hasClass('button-example')) {
+            example_element.attr('data-state', element_state);
+            example_element.find(".button-wrapper").attr('data-state', element_state);
         }
     
     });
     
     // Change to focus state when element is actually in focus
     $('.example .example-form-element').focus(function(){
-        $(this).closest(".design-system-card").find('.state-selector label input').removeAttr('checked');
-        $(this).closest(".design-system-card").find('.focus-label input').attr('checked','checked');
+        var common_ancestor = $(this).closest('.design-system-card');
+        
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.focus-label input').attr('checked','checked');
         $(this).closest(".example").attr('data-state', 'focus-state');
     });
     
     $('.radio-example .example-form-element').focus(function(){
-        $(this).closest(".design-system-card").find('.state-selector label input').removeAttr('checked');
-        $(this).closest(".design-system-card").find('.focus-label input').attr('checked','checked');
+        var common_ancestor = $(this).closest('.design-system-card');
+        
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.focus-label input').attr('checked','checked');
+        common_ancestor.find('.error-message').removeClass('show');
+        
         $(this).parent('.radio-item').attr('data-state', 'focus-state');
         
-        console.log( $(this).closest('.radio-example'));
         $(this).closest('.radio-example').find('.radio-item').each(function(){
             if ($(this).attr('data-state') == "error-state" || $(this).attr('data-state') == "disabled-state") {
                 $(this).attr('data-state', 'default-state');
             }
         });
        
+    });
+    
+    $('.multiple-select-example .example-form-element').focus(function(){
+        var common_ancestor = $(this).closest('.design-system-card');
+        
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.focus-label input').attr('checked','checked');
+        
+    });
+    
+    
+    // Button states
+    $('.button-example .button-wrapper').hover(
+        
+        function(){
+            var common_ancestor = $(this).closest('.design-system-card');
+            common_ancestor.find('.state-selector label input').removeAttr('checked');
+            common_ancestor.find('.hover-label input').attr('checked','checked');
+            
+        }, 
+        function(){
+            var common_ancestor = $(this).closest('.design-system-card');
+            common_ancestor.find('.state-selector label input').removeAttr('checked');
+            common_ancestor.find('.default-label input').attr('checked','checked');
+    });
+    $('.button-example .button-wrapper').mousedown(function(){
+        var common_ancestor = $(this).closest('.design-system-card');
+            common_ancestor.find('.state-selector label input').removeAttr('checked');
+            common_ancestor.find('.active-label input').attr('checked','checked');
     });
     
     

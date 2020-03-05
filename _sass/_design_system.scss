@@ -531,6 +531,13 @@
             }
             .error-message {
                 display: none;
+                
+                &.show {
+                    display: block;
+                    color: $red-negative-dark; 
+                    margin: 0;
+                    padding: 16px 0 0 0;
+                }
             }
             input {
                 height: 52px;
@@ -701,7 +708,7 @@
                     padding: 8px 32px;
                     text-align: center;
                     letter-spacing: 0;
-                    background: $blue-primary-mid 0% 0% no-repeat padding-box;
+                    background: $blue-primary-mid 0% 0% no-repeat;
                     border: 2px solid $blue-primary;
                     color: $white;
                     @include font-format($font-family, $font-semibold, normal);
@@ -713,13 +720,14 @@
                         opacity: 1;
                     }
                     &:hover {
-                        background: $blue-primary 0% 0% no-repeat padding-box;
+                        background: $blue-primary 0% 0% no-repeat;
                     }
 
                     &:active {
-                        background: $blue-active 0% 0% no-repeat padding-box;
+                        background: $blue-active 0% 0% no-repeat;
                     }
                 }
+                
                 .secondary-button {
                     @include font-format($font-family, $font-semibold, normal);
                     background: $white 0% 0% no-repeat padding-box;
@@ -737,12 +745,45 @@
                         color: $white;
                     }
                 }
+                
                 .tertiary-link {
                     @include font-format($font-family, $font-semibold, normal);
                     color: $blue-primary;
                     text-decoration: underline;
                     box-shadow: none;
                     margin-right: 40px;
+                }
+                
+                &[data-state="hover-state"] {
+                    transform: translateY(-.1875rem);
+                    .cta-button {
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                        border-radius: 6px;
+                        opacity: 1;
+                        color: $white;
+                        background: $blue-primary 0% 0% no-repeat;
+                    }
+                }
+                &[data-state="active-state"] {
+                    transform: translateY(-.1875rem);
+                    .cta-button {
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                        color: $white;
+                        border-radius: 6px;
+                        opacity: 1;
+                        background: $blue-active 0% 0% no-repeat;
+                    }
+                }
+                &[data-state="disabled-state"] {
+                    transform: translateY(0rem);
+                    .cta-button {
+                        box-shadow: none;
+                        border-radius: 6px;
+                        border: 2px solid $grey;
+                        opacity: 1;
+                        background: $white;
+                        color: $grey-dark;
+                    }
                 }
             }
             .add-field {
@@ -864,9 +905,15 @@
                     outline: none;
                     border: solid 3px $blue-primary;
                 }
+                .checkbox-item input + label:before {
+                    background: url(../assets/Icon-tick-primary-blue.svg) no-repeat;
+                    background-size: 16px 12px;
+                    background-position: center center;
+                }
                 .error-message {
                     display: none;
                 }
+                
             }
             &[data-state="error-state"] {
                 input, 

@@ -5118,6 +5118,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .error-message { display: none; }
 
+.design-system-card .form-elements .form-example-container .error-message.show { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; }
+
 .design-system-card .form-elements .form-example-container input { height: 52px; width: 100%; padding: 10px; }
 
 .design-system-card .form-elements .form-example-container input:focus { outline: none; border: solid 3px #254F90 !important; background: none !important; }
@@ -5168,13 +5170,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .button-wrapper:hover { transform: translateY(-0.1875rem); }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .cta-button { box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+.design-system-card .form-elements .form-example-container .button-wrapper .cta-button { box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; background: #4569A0 0% 0% no-repeat; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover, .design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; }
+.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover { background: #254F90 0% 0% no-repeat; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; }
+.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { background: #18335C 0% 0% no-repeat; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper .secondary-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; }
 
@@ -5183,6 +5185,18 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container .button-wrapper .secondary-button:active { background: #18335C 0% 0% no-repeat padding-box; color: #ffffff; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper .tertiary-link { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; text-decoration: underline; box-shadow: none; margin-right: 40px; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] { transform: translateY(-0.1875rem); }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; color: #ffffff; background: #254F90 0% 0% no-repeat; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] { transform: translateY(-0.1875rem); }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; color: #ffffff; border-radius: 6px; opacity: 1; background: #18335C 0% 0% no-repeat; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="disabled-state"] { transform: translateY(0rem); }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="disabled-state"] .cta-button { box-shadow: none; border-radius: 6px; border: 2px solid #C7C7C7; opacity: 1; background: #ffffff; color: #8E8E8E; }
 
 .design-system-card .form-elements .form-example-container .add-field { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; color: #333333; text-decoration: none; box-shadow: none; margin-right: 40px; padding: 4px 0 4px 40px; position: relative; }
 
@@ -5221,6 +5235,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container[data-state="default-state"] .error-message { display: none; }
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] input, .design-system-card .form-elements .form-example-container[data-state="focus-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="focus-state"] select, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .combo-button { outline: none; border: solid 3px #254F90; }
+
+.design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input + label:before { background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] .error-message { display: none; }
 
