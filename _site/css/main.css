@@ -5136,13 +5136,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .text-box-with-units input { width: 80%; max-width: 150px; display: inline-block; text-align: right; border-left: none !important; border-right: none !important; vertical-align: middle; }
 
+@media (max-width: 650px) { .design-system-card .form-elements .form-example-container .text-box-with-units input { width: 40%; } }
+
 .design-system-card .form-elements .form-example-container select { height: 52px; width: 100%; max-width: 400px; padding: 10px 15px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
 
 .design-system-card .form-elements .form-example-container select:focus { outline: none; border: solid 3px #254F90 !important; }
 
 .design-system-card .form-elements .form-example-container select[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
-.design-system-card .form-elements .form-example-container .radio-item { border: solid 1px #495C74; height: 52px; width: 350px; padding: 10px 15px; line-height: 0; display: block; margin-bottom: 16px; }
+.design-system-card .form-elements .form-example-container .radio-item { border: solid 1px #495C74; height: 52px; width: 100%; max-width: 350px; padding: 10px 15px; line-height: 0; display: block; margin-bottom: 16px; }
 
 .design-system-card .form-elements .form-example-container .radio-item:last-of-type { margin-bottom: 0; }
 
@@ -5164,8 +5166,6 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .checkbox-item label:before { height: 28px; width: 28px; content: " "; border: solid 1px #495C74; position: absolute; top: -2px; left: 0; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item input[checked='checked'] + label:before { border: solid 3px #254F90; }
-
 .design-system-card .form-elements .form-example-container .button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; margin-top: 8px; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper:hover { transform: translateY(-0.1875rem); }
@@ -5174,9 +5174,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover, .design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover { background: #254F90 0% 0% no-repeat; }
+.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover { background: #254F90 0% 0% no-repeat; border: 2px solid #18335C; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { background: #18335C 0% 0% no-repeat; }
+.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { background: #18335C 0% 0% no-repeat; border: 2px solid #18335C; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper .secondary-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; }
 
@@ -5186,65 +5186,107 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .button-wrapper .tertiary-link { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; text-decoration: underline; box-shadow: none; margin-right: 40px; }
 
+.design-system-card .form-elements .form-example-container .button-wrapper .add-field { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; color: #333333; text-decoration: none; box-shadow: none; margin-right: 40px; padding: 4px 0 4px 40px; position: relative; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper .add-field:hover, .design-system-card .form-elements .form-example-container .button-wrapper .add-field:active { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper .add-field:hover:before, .design-system-card .form-elements .form-example-container .button-wrapper .add-field:active:before { background: url(../assets/Icon-add-circle-blue.svg) no-repeat; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper .add-field:before { background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat; content: " "; height: 32px; width: 32px; display: block; position: absolute; top: 0; }
+
 .design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] { transform: translateY(-0.1875rem); }
 
-.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; color: #ffffff; background: #254F90 0% 0% no-repeat; }
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; color: #ffffff; background: #254F90 0% 0% no-repeat; border: 2px solid #18335C; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"].tertiary-button-wrapper { transform: translateY(0px); }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"].add-field-wrapper { transform: translateY(0px); }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"].add-field-wrapper .add-field { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"].add-field-wrapper .add-field:before { background: url(../assets/Icon-add-circle-blue.svg) no-repeat; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] { transform: translateY(-0.1875rem); }
 
-.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; color: #ffffff; border-radius: 6px; opacity: 1; background: #18335C 0% 0% no-repeat; }
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; color: #ffffff; border-radius: 6px; opacity: 1; background: #18335C 0% 0% no-repeat; border: 2px solid #18335C; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"].tertiary-button-wrapper { transform: translateY(0px); }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"].add-field-wrapper { transform: translateY(0px); }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"].add-field-wrapper .add-field { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
+
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"].add-field-wrapper .add-field:before { background: url(../assets/Icon-add-circle-blue.svg) no-repeat; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper[data-state="disabled-state"] { transform: translateY(0rem); }
 
 .design-system-card .form-elements .form-example-container .button-wrapper[data-state="disabled-state"] .cta-button { box-shadow: none; border-radius: 6px; border: 2px solid #C7C7C7; opacity: 1; background: #ffffff; color: #8E8E8E; }
 
-.design-system-card .form-elements .form-example-container .add-field { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; color: #333333; text-decoration: none; box-shadow: none; margin-right: 40px; padding: 4px 0 4px 40px; position: relative; }
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="disabled-state"].tertiary-button-wrapper .tertiary-link { color: #8E8E8E; }
 
-.design-system-card .form-elements .form-example-container .add-field:hover { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="disabled-state"].add-field-wrapper .add-field { color: #8E8E8E; }
 
-.design-system-card .form-elements .form-example-container .add-field:hover:before { background: url(../assets/Icon-add-circle-blue.svg) no-repeat; }
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="disabled-state"].add-field-wrapper .add-field:before { background: url(../assets/Icon-add-circle-grey.svg) no-repeat; }
 
-.design-system-card .form-elements .form-example-container .add-field:before { background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat; content: " "; height: 32px; width: 32px; display: block; position: absolute; top: 0; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example { position: relative; -webkit-transform: none; transform: none; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo { position: relative; -webkit-transform: none; transform: none; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example input { max-width: 380px; display: inline-block; vertical-align: middle; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo input { max-width: 380px; display: inline-block; vertical-align: middle; }
+@media (max-width: 650px) { .design-system-card .form-elements .form-example-container.text-box-button-combo-example input { max-width: 150px; } }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper { display: inline-block; vertical-align: middle; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper { display: inline-block; vertical-align: middle; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .combo-button { border-radius: 6px; border-top-left-radius: 0px; border-bottom-left-radius: 0px; box-shadow: none; height: 52px; display: block; border: solid 1px #495C74; margin: 0 0 0 -6px; text-align: center; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .combo-button { border-radius: 6px; border-top-left-radius: 0px; border-bottom-left-radius: 0px; box-shadow: none; height: 52px; display: block; border: solid 1px #495C74; margin: 0 0 0 -6px; text-align: center; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .combo-button:hover { background: #254F90 no-repeat; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .combo-button:hover { background: #254F90 no-repeat; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .combo-button:active { background: #18335C no-repeat; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .combo-button:active { background: #18335C no-repeat; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .primary-combo { padding: 10px 24px 10px 48px; background: #4569A0 url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .primary-combo { padding: 10px 24px 10px 48px; background: #4569A0 url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .primary-combo:hover { background: #254F90 url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .primary-combo:hover { background: #254F90 url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .primary-combo:active { background: #18335C url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .primary-combo:active { background: #18335C url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .secondary-combo { padding: 10px 24px 10px 48px; background: #ffffff url(../assets/Icon-search-blue.svg) no-repeat; background-position: left 24px center; color: #4569A0; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo { padding: 10px 24px 10px 48px; background: #ffffff url(../assets/Icon-search-blue.svg) no-repeat; background-position: left 24px center; color: #4569A0; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .secondary-combo:hover { background: #254F90 url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo:hover { background: #254F90 url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo .combo-button-wrapper .secondary-combo:active { background: #18335C url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo:active { background: #18335C url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; }
 
 .design-system-card .form-elements .form-example-container[data-state="default-state"] input, .design-system-card .form-elements .form-example-container[data-state="default-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="default-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="default-state"] select, .design-system-card .form-elements .form-example-container[data-state="default-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="default-state"] .combo-button { border: solid 1px #495C74; }
 
 .design-system-card .form-elements .form-example-container[data-state="default-state"] .error-message { display: none; }
 
-.design-system-card .form-elements .form-example-container[data-state="focus-state"] input, .design-system-card .form-elements .form-example-container[data-state="focus-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="focus-state"] select, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .combo-button { outline: none; border: solid 3px #254F90; }
+.design-system-card .form-elements .form-example-container[data-state="focus-state"] input, .design-system-card .form-elements .form-example-container[data-state="focus-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="focus-state"] select, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input[data-state="focus-state"] + label:before, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .combo-button { outline: none; border: solid 3px #254F90; }
 
-.design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input + label:before { background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
+.design-system-card .form-elements .form-example-container[data-state="focus-state"].text-box-button-combo-example .combo-button-wrapper #primary-combo { background: #254F90 url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
+
+.design-system-card .form-elements .form-example-container[data-state="focus-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { background: #254F90 url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
+
+.design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item[data-state="focus-state"] input + label:before { background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] .error-message { display: none; }
 
+.design-system-card .form-elements .form-example-container[data-state="active-state"] input, .design-system-card .form-elements .form-example-container[data-state="active-state"] .combo-button { outline: none; border: solid 3px #254F90; }
+
+.design-system-card .form-elements .form-example-container[data-state="active-state"].text-box-button-combo-example .combo-button-wrapper #primary-combo { background: #18335C url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
+
+.design-system-card .form-elements .form-example-container[data-state="active-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { background: #18335C url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
+
 .design-system-card .form-elements .form-example-container[data-state="error-state"] input, .design-system-card .form-elements .form-example-container[data-state="error-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="error-state"] select, .design-system-card .form-elements .form-example-container[data-state="error-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="error-state"] .combo-button { outline: none; border: solid 3px #D2201E; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"].text-box-button-combo-example .combo-button-wrapper #primary-combo, .design-system-card .form-elements .form-example-container[data-state="error-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { border: solid 3px #D2201E; background-color: #E75755; color: #ffffff; border-left: 0px; margin-left: -5px; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { background-image: url(../assets/Icon-search-white.svg); }
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; }
 
-.design-system-card .form-elements .form-example-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] select, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .combo-button { outline: none; border: solid 1px #E2E2E2; background: #F5F5F5; color: #8E8E8E; }
+.design-system-card .form-elements .form-example-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] select, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .combo-button { outline: none; border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
+
+.design-system-card .form-elements .form-example-container[data-state="disabled-state"].text-box-button-combo-example .combo-button-wrapper #primary-combo { background: #F5F5F5 url(../assets/Icon-plus-grey.svg) no-repeat; background-position: left 24px center; }
+
+.design-system-card .form-elements .form-example-container[data-state="disabled-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { background: #F5F5F5 url(../assets/Icon-search-grey.svg) no-repeat; background-position: left 24px center; }
 
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] select { background: #F5F5F5 url(../assets/Icon-chevron-down-grey.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; }
 
@@ -5259,6 +5301,14 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container .radio-item[data-state="error-state"] { outline: none; border: solid 3px #D2201E; }
 
 .design-system-card .form-elements .form-example-container .radio-item[data-state="disabled-state"] { outline: none; border: solid 1px #E2E2E2; background: #F5F5F5; color: #8E8E8E; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="default-state"] input + label:before { border: solid 1px #495C74; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="focus-state"] input + label:before { border: solid 3px #254F90; background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="error-state"] input + label:before { border: solid 3px #D2201E; background: #ffffff; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="disabled-state"] { border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
 
 .design-system-card .hero-pathway .hero-pathway-list { padding-bottom: 32px; }
 
@@ -6232,7 +6282,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 #horizontal-example #inline-pathway { padding: 0 0 32px 0; margin: 0; }
 
-#horizontal-example #inline-pathway .vertical-list, #horizontal-example #inline-pathway .c-wrapper { padding: 0; }
+#horizontal-example #inline-pathway .vertical-list, #horizontal-example #inline-pathway .c-wrapper { padding: 0; margin-bottom: 0; }
 
 #horizontal-example #inline-pathway:last-of-type { padding: 0 0 32px 0; }
 
@@ -6315,5 +6365,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .state-selector span:before { height: 16px; width: 16px; content: " "; display: inline-block; background: url(../assets/radio-not-selected.svg) no-repeat; background-size: 16px 16px; position: absolute; top: 2px; left: 0; }
 
 .design-system-card .state-selector input[checked='checked'] + span:before { background: url(../assets/radio-selected.svg) no-repeat; background-size: 16px 16px; }
+
+@media (max-width: 650px) { .design-system-card .state-selector { display: none; } }
+
+@media (max-width: 850px) { .design-system-card .state-selector .state-selector-intro, .design-system-card .state-selector label { font-size: 12px; padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */

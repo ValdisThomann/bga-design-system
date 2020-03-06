@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_4171" data-name="Group 4171" transform="translate(-336 -3577)">
+    <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(336 3577)" fill="#fff" stroke="#c7c7c7" stroke-width="3">
+      <circle cx="16" cy="16" r="16" stroke="none"/>
+      <circle cx="16" cy="16" r="14.5" fill="none"/>
+    </g>
+    <g id="Icon_plus" data-name="Icon / plus" transform="translate(345 3586)">
+      <path id="Plus" d="M6.5,14V8.5H1v-3H6.5V0h3V5.5H15v3H9.5V14Z" transform="translate(-1)" fill="#c7c7c7"/>
+    </g>
+  </g>
+</svg>

@@ -118,7 +118,36 @@ longdesc: Guidelines on form element styles.
 
 <code>
 <pre>
-
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+input {
+    height: 52px;
+    padding: 10px;
+    border: solid 1px #495C74;
+}
+input:focus {
+    outline: none;
+    border: solid 3px #254F90;
+}
+input.error {
+    border: solid 3px #D2201E;
+}
+input.disabled {
+    border: solid 1px #E2E2E2;
+    background-color: #F5F5F5;
+}
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
 </pre>
 </code>
 
@@ -193,7 +222,35 @@ longdesc: Guidelines on form element styles.
 
 <code>
 <pre>
-
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+textarea {
+    padding: 10px;
+    border: solid 1px #495C74;
+}
+textarea:focus {
+    outline: none;
+    border: solid 3px #254F90;
+}
+textarea.error {
+    border: solid 3px #D2201E;
+}
+textarea.disabled {
+    border: solid 1px #E2E2E2;
+    background-color: #F5F5F5;
+}
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
 </pre>
 </code>
 
@@ -269,7 +326,45 @@ longdesc: Guidelines on form element styles.
 
 <code>
 <pre>
-
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+input {
+    height: 52px;
+    padding: 10px;
+    border: solid 1px #495C74;
+}
+input:focus {
+    outline: none;
+    border: solid 3px #254F90;
+}
+input.error {
+    border: solid 3px #D2201E;
+}
+input.disabled {
+    border: solid 1px #E2E2E2;
+    background-color: #F5F5F5;
+}
+span.units {
+    color: #666666;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    border: solid 1px #495C74;
+    background-color: #F5F5F5;
+}
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
 </pre>
 </code>
 
@@ -389,7 +484,41 @@ longdesc: Guidelines on form element styles.
 
 <code>
 <pre>
-
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+select {
+    height: 52px;
+    padding: 10px;
+    border: solid 1px #495C74;
+}
+select:focus {
+    outline: none;
+    border: solid 3px #254F90;
+}
+select.error {
+    border: solid 3px #D2201E;
+}
+select.disabled {
+    border: solid 1px #E2E2E2;
+    background-color: #F5F5F5;
+}
+select.icon {
+    color: #4569A0;
+    height: 10px;
+    width: 16px;
+}
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
 </pre>
 </code>
 
@@ -477,7 +606,13 @@ longdesc: Guidelines on form element styles.
 
 <code>
 <pre>
-
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
 </pre>
 </code>
 
@@ -569,7 +704,13 @@ longdesc: Guidelines on form element styles.
 
 <code>
 <pre>
-
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
 </pre>
 </code>
 
@@ -871,7 +1012,7 @@ longdesc: Guidelines on form element styles.
                                 <!-- Component content -->
 
                                                                    
-                                <div class="">
+                                <div class="button-wrapper add-field-wrapper">
                                         <div><a href="" class="add-field" aria-label="Tertiary link"><span>Add another subsidiary</span></a></div>
                                 </div>
 
@@ -906,9 +1047,6 @@ longdesc: Guidelines on form element styles.
                     </div>
 
                 </div>
-
-  
-                
 
 
 
@@ -962,7 +1100,11 @@ longdesc: Guidelines on form element styles.
                                     <input type="radio" >
                                     <span>Active</span>
                                 </label>
-
+                       
+                               <label class="error-label" data-state="error-state">
+                                    <input type="radio" >
+                                    <span>Error</span>
+                                </label>
 
                                 <label class="disabled-label" data-state="disabled-state">
                                     <input type="radio" >
@@ -975,18 +1117,18 @@ longdesc: Guidelines on form element styles.
         
                         <div class="example-wrapper white-back">
                         
-                            <div class="example form-example-container text-box-button-combo" data-state="default-state">
+                            <div class="example form-example-container text-box-button-combo-example" data-state="default-state">
 
                                 <!-- Component content -->
 
                                 
                                 <label for="form-text-box-primary" class="form-text-box-primary-label">Text box label</label>
 
-                                <input id="form-text-box-primary" name="form-text-box-primary" type="text" value="" maxlength="255" placeholder="" class="example-form-element">
+                                <input id="form-combo-box-primary" name="form-text-box-primary" type="text" value="" class="example-form-element">
 
             
                                 <div class="combo-button-wrapper primary-button-wrapper">
-                                    <div><a href="" class="combo-button primary-combo" aria-label="Primary button"><span>Add</span></a></div>
+                                    <div><a href="" id="primary-combo" class="combo-button primary-combo" aria-label="Primary button"><span>Add</span></a></div>
                                 </div>
                                 
                                  <p class="error-message">Descriptive error message</p>
@@ -1013,7 +1155,13 @@ longdesc: Guidelines on form element styles.
 
 <code>
 <pre>
-
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
 </pre>
 </code>
 
@@ -1043,6 +1191,11 @@ longdesc: Guidelines on form element styles.
                                     <input type="radio" >
                                     <span>Active</span>
                                 </label>
+                       
+                                <label class="error-label" data-state="error-state">
+                                    <input type="radio" >
+                                    <span>Error</span>
+                                </label>
 
 
                                 <label class="disabled-label" data-state="disabled-state">
@@ -1056,7 +1209,7 @@ longdesc: Guidelines on form element styles.
         
                         <div class="example-wrapper white-back">
                         
-                            <div class="example form-example-container text-box-button-combo" data-state="default-state">
+                            <div class="example form-example-container text-box-button-combo-example" data-state="default-state">
 
                                 <!-- Component content -->
 
@@ -1065,7 +1218,7 @@ longdesc: Guidelines on form element styles.
                                 <input id="form-text-box-secondary" name="form-text-box-primary" type="text" value="" maxlength="255" placeholder="" class="example-form-element">    
                                 
                                 <div class="combo-button-wrapper secondary-button-wrapper">
-                                        <div><a href="" class="combo-button secondary-combo" aria-label="Secondary button"><span>Find</span></a></div>
+                                        <div><a href="" id="secondary-combo" class="combo-button secondary-combo" aria-label="Secondary button"><span>Find</span></a></div>
                                     </div>
                                 
                                  <p class="error-message">Descriptive error message</p>
@@ -1093,7 +1246,13 @@ longdesc: Guidelines on form element styles.
 
 <code>
 <pre>
-
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
 </pre>
 </code>
 

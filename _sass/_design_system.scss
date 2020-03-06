@@ -592,6 +592,11 @@
                     border-left: none !important;
                     border-right: none !important;
                     vertical-align: middle;
+                    
+                    @media(max-width:650px) {
+                        width: 40%;
+                        //max-width: 70px;
+                    }
                 }
             }
             select {
@@ -618,7 +623,8 @@
             .radio-item {
                 border: solid 1px $darkblue-mid;
                 height: 52px;
-                width: 350px;
+                width: 100%;
+                max-width: 350px;
                 padding: 10px 15px;
                 line-height: 0;
                 display: block;
@@ -685,9 +691,6 @@
                         left: 0;
                     }
                 }
-                input[checked='checked'] + label:before {
-                    border: solid 3px $blue-primary;
-                } 
             }
             .button-wrapper {
                 width: auto;
@@ -721,10 +724,12 @@
                     }
                     &:hover {
                         background: $blue-primary 0% 0% no-repeat;
+                        border: 2px solid $blue-active;
                     }
 
                     &:active {
                         background: $blue-active 0% 0% no-repeat;
+                        border: 2px solid $blue-active;
                     }
                 }
                 
@@ -752,6 +757,36 @@
                     text-decoration: underline;
                     box-shadow: none;
                     margin-right: 40px;
+
+                }
+                
+                .add-field {
+                    @include font-format($font-family, $font-regular, normal);
+                    color: $black-light;
+                    text-decoration: none;
+                    box-shadow: none;
+                    margin-right: 40px;
+                    padding: 4px 0 4px 40px;
+                    position: relative;
+
+                    &:hover, &:active {
+                        @include font-format($font-family, $font-semibold, normal);
+                        color: $blue-primary;
+                        &:before {
+                            background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
+                        }
+                    }
+
+                    &:before {
+                        background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat;
+                        content: " ";
+                        height: 32px;
+                        width:32px;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+
+                    }
                 }
                 
                 &[data-state="hover-state"] {
@@ -762,6 +797,21 @@
                         opacity: 1;
                         color: $white;
                         background: $blue-primary 0% 0% no-repeat;
+                         border: 2px solid $blue-active;
+                    }
+                    &.tertiary-button-wrapper {
+                        transform: translateY(0px);
+                    }
+                    &.add-field-wrapper {
+                        transform: translateY(0px);
+                        .add-field {
+                            @include font-format($font-family, $font-semibold, normal);
+                            color: $blue-primary;
+
+                            &:before {
+                                background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
+                            }
+                        }
                     }
                 }
                 &[data-state="active-state"] {
@@ -772,6 +822,21 @@
                         border-radius: 6px;
                         opacity: 1;
                         background: $blue-active 0% 0% no-repeat;
+                        border: 2px solid $blue-active;
+                    }
+                    &.tertiary-button-wrapper {
+                        transform: translateY(0px);
+                    }
+                    &.add-field-wrapper {
+                        transform: translateY(0px);
+                        .add-field {
+                            @include font-format($font-family, $font-semibold, normal);
+                            color: $blue-primary;
+
+                            &:before {
+                                background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
+                            }
+                        }
                     }
                 }
                 &[data-state="disabled-state"] {
@@ -784,37 +849,24 @@
                         background: $white;
                         color: $grey-dark;
                     }
-                }
-            }
-            .add-field {
-                @include font-format($font-family, $font-regular, normal);
-                color: $black-light;
-                text-decoration: none;
-                box-shadow: none;
-                margin-right: 40px;
-                padding: 4px 0 4px 40px;
-                position: relative;
-
-                &:hover {
-                    @include font-format($font-family, $font-semibold, normal);
-                    color: $blue-primary;
-                    &:before {
-                        background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
+                    &.tertiary-button-wrapper {
+                        .tertiary-link {
+                            color: $grey-dark;
+                        }
+                    }
+                    &.add-field-wrapper {
+                        .add-field {
+                            color: $grey-dark;
+                            
+                            &:before {
+                                background: url(../assets/Icon-add-circle-grey.svg) no-repeat;
+                            }
+                        }
                     }
                 }
-
-                &:before {
-                    background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat;
-                    content: " ";
-                    height: 32px;
-                    width:32px;
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    
-                }
             }
-            &.text-box-button-combo {
+            
+            &.text-box-button-combo-example {
                 position: relative;
                 -webkit-transform: none;
                         transform: none;
@@ -823,6 +875,10 @@
                     max-width: 380px;
                     display: inline-block;
                     vertical-align: middle;
+                    
+                    @media(max-width:650px) {
+                        max-width: 150px;
+                    }
                 }
                 .combo-button-wrapper {
                     display: inline-block;
@@ -900,12 +956,28 @@
                 textarea,
                 .text-box-with-units span,
                 select,
-                .checkbox-item input + label:before,
+                .checkbox-item input[data-state="focus-state"] + label:before,
                 .combo-button {
                     outline: none;
                     border: solid 3px $blue-primary;
                 }
-                .checkbox-item input + label:before {
+                &.text-box-button-combo-example .combo-button-wrapper #primary-combo {
+                    background: $blue-primary url(../assets/Icon-plus-white.svg) no-repeat;
+                    background-position: left 24px center;
+                    color: $white;
+                    border: solid 3px $blue-primary;
+                    border-left: 0px;
+                    margin-left: -5px;
+                }
+                &.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
+                    background: $blue-primary url(../assets/Icon-search-white.svg) no-repeat;
+                    background-position: left 24px center;
+                    color: $white;
+                    border: solid 3px $blue-primary;
+                    border-left: 0px;
+                    margin-left: -5px;
+                }
+                .checkbox-item[data-state="focus-state"] input + label:before {
                     background: url(../assets/Icon-tick-primary-blue.svg) no-repeat;
                     background-size: 16px 12px;
                     background-position: center center;
@@ -914,6 +986,28 @@
                     display: none;
                 }
                 
+            }
+            &[data-state="active-state"] {
+                input, .combo-button {
+                    outline: none;
+                    border: solid 3px $blue-primary;
+                }
+                &.text-box-button-combo-example .combo-button-wrapper #primary-combo {
+                    background:  $blue-active url(../assets/Icon-plus-white.svg) no-repeat;
+                    background-position: left 24px center;
+                    color: $white;
+                     border: solid 3px $blue-primary;
+                    border-left: 0px;
+                    margin-left: -5px;
+                }
+                &.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
+                    background: $blue-active url(../assets/Icon-search-white.svg) no-repeat;
+                    background-position: left 24px center;
+                    color: $white;
+                     border: solid 3px $blue-primary;
+                    border-left: 0px;
+                    margin-left: -5px;
+                }
             }
             &[data-state="error-state"] {
                 input, 
@@ -924,6 +1018,16 @@
                 .combo-button  {
                     outline: none;
                     border: solid 3px $red-negative-dark;
+                }
+                &.text-box-button-combo-example .combo-button-wrapper #primary-combo, &.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
+                    border: solid 3px $red-negative-dark;
+                    background-color: $red-negative-mid;
+                    color: $white;
+                    border-left: 0px;
+                    margin-left: -5px;
+                }
+                &.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
+                    background-image: url(../assets/Icon-search-white.svg);
                 }
                 .error-message {
                     display: block;
@@ -940,9 +1044,17 @@
                 .checkbox-item input + label:before,
                 .combo-button  {
                     outline: none;
-                    border: solid 1px $grey-headers;
-                    background: $grey-lightest;
-                    color: $grey-dark;
+                    border: solid 1px $grey-headers !important;
+                    background-color: $grey-lightest !important;
+                    color: $grey-dark !important;
+                }
+                &.text-box-button-combo-example .combo-button-wrapper #primary-combo {
+                    background:  $grey-lightest url(../assets/Icon-plus-grey.svg) no-repeat;
+                    background-position: left 24px center; 
+                }
+               &.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
+                    background: $grey-lightest url(../assets/Icon-search-grey.svg) no-repeat;
+                    background-position: left 24px center;
                 }
                 select {
                     background: $grey-lightest url(../assets/Icon-chevron-down-grey.svg) no-repeat;
@@ -953,6 +1065,7 @@
                     display: none;
                 }
             }
+            
             .radio-item {
                 &[data-state="default-state"] {
                     border: solid 1px $darkblue-mid;
@@ -975,6 +1088,34 @@
                     border: solid 1px $grey-headers;
                     background: $grey-lightest;
                     color: $grey-dark;
+                }
+            }
+            
+            .checkbox-item {
+                &[data-state="default-state"] {
+                    input + label:before {
+                        border: solid 1px $darkblue-mid;
+                    }
+                }
+                &[data-state="focus-state"] {
+                    
+                    input + label:before {
+                        border: solid 3px $blue-primary;
+                        background: url(../assets/Icon-tick-primary-blue.svg) no-repeat;
+                        background-size: 16px 12px;
+                        background-position: center center;
+                    } 
+                }
+                &[data-state="error-state"] {
+                    input + label:before {
+                        border: solid 3px $red-negative-dark;
+                        background: $white;
+                    }
+                }
+                &[data-state="disabled-state"] {
+                    border: solid 1px $grey-headers !important;
+                    background-color: $grey-lightest !important;
+                    color: $grey-dark !important;
                 }
             }
             
@@ -3726,6 +3867,7 @@
         .vertical-list,
         .c-wrapper {
             padding: 0;
+            margin-bottom: 0;
         }
         &:last-of-type {
             padding: 0 0 32px 0;
@@ -3987,6 +4129,17 @@
     input[checked='checked'] + span:before {
         background: url(../assets/radio-selected.svg) no-repeat;
             background-size: 16px 16px;
+    }
+    
+    @media (max-width: 650px) {
+        display: none;
+    }
+    @media (max-width: 850px) {
+        .state-selector-intro, 
+        label {
+            font-size: 12px;
+            padding: 0;
+        }
     }
     
 }
