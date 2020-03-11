@@ -797,7 +797,7 @@
                         opacity: 1;
                         color: $white;
                         background: $blue-primary 0% 0% no-repeat;
-                         border: 2px solid $blue-active;
+                        border: 2px solid $blue-active;
                     }
                     &.tertiary-button-wrapper {
                         transform: translateY(0px);
@@ -826,15 +826,19 @@
                     }
                     &.tertiary-button-wrapper {
                         transform: translateY(0px);
+                        
+                        .tertiary-link {
+                            color: $blue-active;
+                        }
                     }
                     &.add-field-wrapper {
                         transform: translateY(0px);
                         .add-field {
                             @include font-format($font-family, $font-semibold, normal);
-                            color: $blue-primary;
+                            color: $blue-active;
 
                             &:before {
-                                background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
+                                background: url(../assets/Icon-add-circle-blue-active.svg) no-repeat;
                             }
                         }
                     }
@@ -1021,7 +1025,7 @@
                 }
                 &.text-box-button-combo-example .combo-button-wrapper #primary-combo, &.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
                     border: solid 3px $red-negative-dark;
-                    background-color: $red-negative-mid;
+                    background-color: $blue-primary-mid;
                     color: $white;
                     border-left: 0px;
                     margin-left: -5px;
@@ -1047,6 +1051,9 @@
                     border: solid 1px $grey-headers !important;
                     background-color: $grey-lightest !important;
                     color: $grey-dark !important;
+                }
+                .checkbox-item label {
+                    color: #8E8E8E;
                 }
                 &.text-box-button-combo-example .combo-button-wrapper #primary-combo {
                     background:  $grey-lightest url(../assets/Icon-plus-grey.svg) no-repeat;
