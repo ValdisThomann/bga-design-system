@@ -786,7 +786,7 @@ p.error-message {
     font-family: OpenSans-Semibold;
 }
 .radio-button-label.error {
-    color: #254F90;
+    color: #333333;
     font-family: OpenSans;
 }
 .radio-button-label.disabled {
@@ -901,7 +901,6 @@ p.error-message {
 .checkbox {
     height: 28px;
     width: 28px;
-    padding: 10px;
     border: solid 1px #495C74;
 }
 .checkbox:focus {
@@ -927,7 +926,7 @@ p.error-message {
     font-family: OpenSans-Semibold;
 }
 .checkbox-label.error {
-    color: #254F90;
+    color: #333333;
     font-family: OpenSans;
 }
 .checkbox-label.disabled {
@@ -1050,7 +1049,7 @@ p.error-message {
     border-radius: 6px;
     padding: 8px 32px;
     text-align: center;
-    background: #4569A0 0% 0% no-repeat padding-box;
+    background: #4569A0;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
     transition-property: transform, -webkit-transform;
     transition-duration: 0.4s, 0.4s;
@@ -1058,12 +1057,14 @@ p.error-message {
     transition-delay: 0s, 0s; 
 }
 .primary-button:hover {
-    background: #254F90 0% 0% no-repeat padding-box;
+    border: 2px solid #18335C;
+    background: #254F90;
     box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
     transform: translateY(-.1875rem);
 }
 .primary-button:active {
-    background: #18335C 0% 0% no-repeat padding-box;
+    border: 2px solid #18335C;
+    background: #18335C;
     box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
     transform: translateY(-.1875rem);
 }
@@ -1162,7 +1163,7 @@ a.disabled {
 <code>
 <pre>
 .secondary-button {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     border: 2px solid #4569A0;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
     border-radius: 6px;
@@ -1175,13 +1176,13 @@ a.disabled {
     transition-delay: 0s, 0s;  
 }
 .secondary-button:hover {
-   background: #254F90 0% 0% no-repeat padding-box;
+   background: #254F90;
    border: 2px solid #18335C;
    transform: translateY(-.1875rem);
    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 }
 .secondary-button:active {
-   background: #18335C 0% 0% no-repeat padding-box;
+   background: #18335C;
    border: 2px solid #18335C;
 }
 .secondary-button.disabled {
@@ -1203,6 +1204,9 @@ a {
     line-height: 28px;
 }
 a:hover {
+    color: #FFFFFF;
+}
+a:active {
     color: #FFFFFF;
 }
 a.disabled {
@@ -1291,7 +1295,7 @@ a.disabled {
     border-radius: 6px;
     padding: 8px 32px;
     text-align: center;
-    background: #4569A0 0% 0% no-repeat padding-box;
+    background: #4569A0;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
     transition-property: transform, -webkit-transform;
     transition-duration: 0.4s, 0.4s;
@@ -1299,12 +1303,14 @@ a.disabled {
     transition-delay: 0s, 0s; 
 }
 .primary-button:hover {
-    background: #254F90 0% 0% no-repeat padding-box;
+    border: 2px solid #18335C;
+    background: #254F90;
     box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
     transform: translateY(-.1875rem);
 }
 .primary-button:active {
-    background: #18335C 0% 0% no-repeat padding-box;
+    border: 2px solid #18335C;
+    background: #18335C;
     box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
     transform: translateY(-.1875rem);
 }
@@ -1824,7 +1830,7 @@ input.disabled {
 }
 .secondary-button:active {
    background: #18335C;
-   border: 2px solid#254F90;
+   border: 2px solid #254F90;
 }
 .secondary-button.disabled {
     border: 2px solid #C7C7C7;

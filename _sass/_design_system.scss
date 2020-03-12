@@ -622,7 +622,7 @@
             }      
             .radio-item {
                 border: solid 1px $darkblue-mid;
-                height: 52px;
+                min-height: 52px;
                 width: 100%;
                 max-width: 350px;
                 padding: 10px 15px;
@@ -641,9 +641,11 @@
                 }
                 label {
                     position: relative;
-                    padding-left: 32px;
+                    padding: 0 0 0 32px;
                     cursor: pointer;
-                    display: inline;
+                    display: inline-block;
+                    line-height: 20px;
+                    
 
                     &:before {
                         height: 24px;
@@ -652,14 +654,14 @@
                         background: url(../assets/radio-not-selected.svg) no-repeat;
                         background-size: 24px 24px;
                         position: absolute;
-                        top: 0;
+                        top: calc(50% - 12px);
                         left: 0;
                     }
                 }
                 input[checked='checked'] + label:before {
                     background: url(../assets/radio-selected.svg) no-repeat;
                     background-size: 24px 24px;
-                } 
+                }
             }
             .checkbox-item {
                 line-height: 28px;
@@ -679,7 +681,7 @@
                     position: relative;
                     padding-left: 42px;
                     cursor: pointer;
-                    display: inline;
+                    display: inline-block;
 
                     &:before {
                         height: 28px;
@@ -687,7 +689,7 @@
                         content: " ";
                         border: solid 1px $darkblue-mid;
                         position: absolute;
-                        top: -2px;
+                        top: 0;
                         left: 0;
                     }
                 }
@@ -768,6 +770,7 @@
                     margin-right: 40px;
                     padding: 4px 0 4px 40px;
                     position: relative;
+                    display: inline-block;
 
                     &:hover, &:active {
                         @include font-format($font-family, $font-semibold, normal);
@@ -784,7 +787,8 @@
                         width:32px;
                         display: block;
                         position: absolute;
-                        top: 0;
+                        top: calc(50% - 16px);
+                        left: 0;
 
                     }
                 }
@@ -876,11 +880,17 @@
                         transform: none;
                 
                 input {
-                    max-width: 380px;
+                    max-width: 350px;
                     display: inline-block;
                     vertical-align: middle;
                     
-                    @media(max-width:650px) {
+                    @media(max-width:850px) {
+                        max-width: 250px;
+                    }
+                    @media(max-width:700px) {
+                        max-width: 150px;
+                    }
+                    @media(max-width:400px) {
                         max-width: 150px;
                     }
                 }
@@ -897,6 +907,7 @@
                         display: block;
                         border: solid 1px $darkblue-mid;
                         margin: 0 0 0 -6px;
+                        padding: 10px 24px 10px 48px;
                         text-align: center;
                         color: $white;
                         @include font-format($font-family, $font-semibold, normal);
@@ -907,9 +918,11 @@
                         &:active {
                             background: $blue-active no-repeat;
                         }
+                        @media(max-width:400px) {
+                            padding: 10px 12px 10px 32px;
+                        }
                     }
                     .primary-combo {
-                        padding: 10px 24px 10px 48px;
                         background: $blue-primary-mid url(../assets/Icon-plus-white.svg) no-repeat;
                         background-position: left 24px center;
                         
@@ -921,9 +934,16 @@
                             background: $blue-active url(../assets/Icon-plus-white.svg) no-repeat;
                             background-position: left 24px center;
                         }
+                        
+                        @media(max-width:400px) {
+                            background-position: left 12px center;
+                            &:hover, 
+                            &:active {
+                                background-position: left 12px center;
+                            }
+                        }
                     }
                     .secondary-combo {
-                        padding: 10px 24px 10px 48px;
                         background: $white url(../assets/Icon-search-blue.svg) no-repeat;
                         background-position: left 24px center;
                         color: $blue-primary-mid;
@@ -937,6 +957,13 @@
                             background: $blue-active url(../assets/Icon-search-white.svg) no-repeat;
                             background-position: left 24px center;
                             color: $white;
+                        }
+                        @media(max-width:400px) {
+                            background-position: left 12px center;
+                            &:hover, 
+                            &:active {
+                                background-position: left 12px center;
+                            }
                         }
                     }
                 }
@@ -981,10 +1008,15 @@
                     border-left: 0px;
                     margin-left: -5px;
                 }
-                .checkbox-item[data-state="focus-state"] input + label:before {
-                    background: url(../assets/Icon-tick-primary-blue.svg) no-repeat;
-                    background-size: 16px 12px;
-                    background-position: center center;
+                .checkbox-item[data-state="focus-state"] input + label {
+                    color: $blue-primary;
+                    @include font-format($font-family, $font-semibold, normal);
+                    
+                    &:before {
+                        background: url(../assets/Icon-tick-primary-blue.svg) no-repeat;
+                        background-size: 16px 12px;
+                        background-position: center center;
+                    }
                 }
                 .error-message {
                     display: none;
@@ -1081,9 +1113,14 @@
                     outline: none;
                     border: solid 3px $blue-primary;
                     
-                    input + label:before {
-                        background: url(../assets/radio-selected.svg) no-repeat;
-                        background-size: 24px 24px;
+                    input + label {
+                        color: $blue-primary;
+                        @include font-format($font-family, $font-semibold, normal);
+                        
+                        &:before {
+                            background: url(../assets/radio-selected.svg) no-repeat;
+                            background-size: 24px 24px;
+                        }
                     } 
                 }
                 &[data-state="error-state"] {
