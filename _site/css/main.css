@@ -5294,6 +5294,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] input, .design-system-card .form-elements .form-example-container[data-state="focus-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="focus-state"] select, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input[data-state="focus-state"] + label:before, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .combo-button { outline: none; border: solid 3px #254F90; }
 
+.design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units input { border-right: 0 !important; border-left: 0 !important; }
+
 .design-system-card .form-elements .form-example-container[data-state="focus-state"].text-box-button-combo-example .combo-button-wrapper #primary-combo { background: #254F90 url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { background: #254F90 url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
@@ -5312,6 +5314,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] input, .design-system-card .form-elements .form-example-container[data-state="error-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="error-state"] select, .design-system-card .form-elements .form-example-container[data-state="error-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="error-state"] .combo-button { outline: none; border: solid 3px #D2201E !important; }
 
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units input { border-left: 0px !important; border-right: 0px !important; }
+
 .design-system-card .form-elements .form-example-container[data-state="error-state"].text-box-button-combo-example .combo-button-wrapper #primary-combo, .design-system-card .form-elements .form-example-container[data-state="error-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { border: solid 3px #D2201E; background-color: #4569A0; color: #ffffff; border-left: 0px; margin-left: -5px; }
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { background-image: url(../assets/Icon-search-white.svg); }
@@ -5319,6 +5323,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; }
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message.error-hidden { display: none; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message.textarea-error-message { padding-top: 8px; }
 
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] select, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .combo-button { outline: none; border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
 

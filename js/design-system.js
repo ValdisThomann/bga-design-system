@@ -332,7 +332,7 @@ $(document).ready(function () {
     
     $('#form-text-area').on('input', function(){
         var common_ancestor = $(this).closest('.design-system-card');
-        var textarea_text = $('#form-text-area').val(),
+        var textarea_text = $(this).val(),
             textarea_count = textarea_text.length;
         $('.textarea-char-count span.count').text(textarea_count);
         
@@ -354,7 +354,33 @@ $(document).ready(function () {
         }
     });
     
-
+    //Textbox with units - add commas
+    $.fn.digits = function(){ 
+        return this.each(function(){ 
+            $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") ); 
+        });
+    };
+    
+    $('#form-text-box-units').on('input', function(){
+        var input_text = $(this).val(),
+            input_stripped = input_text.replace(/,/g, ''),
+            common_ancestor = $(this).closest('.design-system-card');
+        
+        if ($.isNumeric(input_stripped)) {
+            var input_delimited = input_stripped.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+            $(this).val(input_delimited);
+            $(common_ancestor).find('.design-system-card-content .form-example-container').attr('data-state', 'focus-state');
+            $('.state-selector label input').removeAttr('checked');
+            $('.state-selector .focus-label input').attr('checked', 'checked');
+        } else {
+            $(common_ancestor).find('.design-system-card-content .form-example-container').attr('data-state', 'error-state');
+            $(common_ancestor).find('.error-message').text('Please enter a number');
+            $(common_ancestor).find('.design-system-card-content .form-example-container').attr('data-state', 'error-state');
+            $('.state-selector label input').removeAttr('checked');
+            $('.state-selector .error-label input').attr('checked', 'checked');
+        }
+    });
+    
         
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
