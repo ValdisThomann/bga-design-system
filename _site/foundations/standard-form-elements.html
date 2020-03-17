@@ -31,6 +31,8 @@
     
     <script src=/bga-design-system/js/jquery.highlight-within-textarea.js></script>
     
+    <script src=/bga-design-system/js/bootstrap-datepicker.js></script>
+    
     <script src=/bga-design-system/js/design-system.js></script>
    
     
@@ -166,6 +168,7 @@
                                             <li><a href="" aria-label="Select option fields">Select option fields</a></li>
                                             <li><a href="" aria-label="Form buttons">Form buttons</a></li>
                                             <li><a href="" aria-label="Text box button combinations">Text box / button combinations</a></li>
+                                            <li><a href="" aria-label="Date picker">Date picker</a></li>
                                             <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
 
                                         </ul>
@@ -176,9 +179,7 @@
                     </div>
                 </div>
                 <div class="twoCol39-right col-sm-10">
-                    <div>
-                        <div>
-
+                 
 <!-- Text fields -->
 <div class="anchor-section" name="text-fields"><a href="" id="text-fields" aria-label="text-fields"></a>
 <div>
@@ -533,9 +534,7 @@ p.error-message {
 </div>
 
 </div>
-</div>
-</div>
-                        
+                   
                         
 <!-- Select option fields -->                      
 <div class="anchor-section" name="select-option-fields"><a href="" id="select-option-fields" aria-label="select-option-fields"></a>
@@ -1910,7 +1909,150 @@ p.error-message {
 </div>
 
 
+<!-- Date picker -->
+<div class="anchor-section" name="date-picker"><a href="" id="date-picker" aria-label="text-fields"></a>
+<div>
+<div>
+<div>
+<div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+<div class="row">
+    <div class="c-padding-top col-sm-12 col-md-12 col-lg-10">
+        <div class="body-copy">
+            <div>
+                <div class="body-copy-headline col-12">
+                    <h2>Date picker</h2>
+                </div>
+                <hr />
+            </div>
+            <div class="body-copy-content">
+                
+                
+                <div class="design-system-card component">
+                   <div class="state-selector">
+                                <p class="state-selector-intro">View state: </p>
+                                <label class="default-label" data-state="default-state">
+                                    <input type="radio" checked="checked">
+                                    <span>Default</span>
+                                </label>
+                                
+                                <label class="focus-label" data-state="focus-state">
+                                    <input type="radio" >
+                                    <span>Focus</span>
+                                </label>
 
+                                <label class="error-label" data-state="error-state">
+                                    <input type="radio" >
+                                    <span>Error</span>
+                                </label>
+
+                                <label class="disabled-label" data-state="disabled-state">
+                                    <input type="radio" >
+                                    <span>Disabled</span>
+                                </label>
+                            </div>
+                    <div class="design-system-card-content">
+            
+                        <div class="form-elements">
+        
+                        <div class="example-wrapper white-back">
+                        
+                            <div class="example form-example-container" data-state="default-state">
+
+                                <!-- Component content -->
+
+                                <label for="date-picker" class="form-text-box-label">Date field label</label>
+
+                                <input id="date-picker" name="date-picker" type="text" placeholder="" class="example-form-element">
+                                
+                                <div class="input-append date example-form-element" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+				                    <input class="span2" size="16" type="text" value="12-02-2012" readonly="">
+                                    <span class="add-on"><i class="icon-calendar"></i></span>
+                                  </div>
+                                
+                                <p class="error-message">Descriptive error message</p>
+
+                            </div>
+
+
+                        </div>
+                        </div>
+
+                        <div class="element-design component closed">
+                            <div class="content-wrapper">
+                                <p>CSS styles</p>
+                            </div>
+                            <button role="none" tabindex="-1" class="float-button">
+                                <div tabindex="-1" class="float-button-content">
+                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                </div>
+                            </button>
+
+                        </div>
+                            
+<div class="element-code">
+
+<code>
+<pre>
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+input {
+    height: 52px;
+    padding: 10px;
+    border: solid 1px #495C74;
+}
+input:focus {
+    outline: none;
+    border: solid 3px #254F90;
+}
+input.error {
+    border: solid 3px #D2201E;
+}
+input.disabled {
+    border: solid 1px #E2E2E2;
+    background-color: #F5F5F5;
+}
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+</pre>
+</code>
+
+</div>
+
+                    </div>
+
+                </div>
+
+       
+                
+            </div>
+           
+
+        </div>
+
+
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+                   
+  
                     
                     
 <!-- EXAMPLES & ASSETS -->                               

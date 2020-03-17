@@ -381,7 +381,8 @@ $(document).ready(function () {
         }
     });
     
-        
+    // Date picker
+    
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
     $('tr td:first-of-type').on('click', function(){
