@@ -382,7 +382,9 @@ $(document).ready(function () {
     });
     
     // Date picker
-    
+    $('#datepicker').datepicker({
+        dateFormat: 'dd-mm-yy'
+    });
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
     $('tr td:first-of-type').on('click', function(){

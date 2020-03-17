@@ -1815,15 +1815,13 @@ p.error-message {
                             <div class="example form-example-container" data-state="default-state">
 
                                 <!-- Component content -->
+                                <div id="datepicker">
+                                <label for="date" class="form-text-box-label">Date field label</label>
 
-                                <label for="date-picker" class="form-text-box-label">Date field label</label>
-
-                                <input id="date-picker" name="date-picker" type="text" placeholder="" class="example-form-element">
-                                
-                                <div class="input-append date example-form-element" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-				                    <input class="span2" size="16" type="text" value="12-02-2012" readonly="">
-                                    <span class="add-on"><i class="icon-calendar"></i></span>
-                                  </div>
+                                <div class="input-group date">
+                                  <input id="datepicker" width="276" /><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>
+                                </div>
                                 
                                 <p class="error-message">Descriptive error message</p>
 
