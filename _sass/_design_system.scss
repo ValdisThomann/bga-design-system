@@ -1071,6 +1071,10 @@
                     outline: none;
                     border: solid 3px $blue-primary;
                 }
+                .text-box-with-units input {
+                    border-right: 0 !important;
+                    border-left: 0 !important;
+                }
                 &.text-box-button-combo-example .combo-button-wrapper #primary-combo {
                     background: $blue-primary url(../assets/Icon-plus-white.svg) no-repeat;
                     background-position: left 24px center;
@@ -1134,6 +1138,10 @@
                     outline: none;
                     border: solid 3px $red-negative-dark !important;
                 }
+                .text-box-with-units input {
+                    border-left: 0px !important;
+                    border-right: 0px !important;
+                }
                 &.text-box-button-combo-example .combo-button-wrapper #primary-combo, &.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
                     border: solid 3px $red-negative-dark;
                     background-color: $blue-primary-mid;
@@ -1152,6 +1160,9 @@
                     
                     &.error-hidden {
                         display: none;
+                    }
+                    &.textarea-error-message {
+                        padding-top: 8px;
                     }
                 }
             }
