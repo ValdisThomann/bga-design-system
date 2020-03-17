@@ -237,6 +237,8 @@ $(document).ready(function () {
         else if (example_element.hasClass('button-example')) {
             example_element.attr('data-state', element_state);
             example_element.find(".button-wrapper").attr('data-state', element_state);
+        } else if (example_element.hasClass('textarea-example')) {
+                   
         }
     });
     
@@ -322,7 +324,37 @@ $(document).ready(function () {
             common_ancestor.find(".button-wrapper").attr('data-state', "active-state");
     });
     
+    // Textarea character count
+    var max_length = 100;
+    $('#form-text-area').highlightWithinTextarea({
+        highlight: [max_length, 200000]
+    });
     
+    $('#form-text-area').on('input', function(){
+        var common_ancestor = $(this).closest('.design-system-card');
+        var textarea_text = $('#form-text-area').val(),
+            textarea_count = textarea_text.length;
+        $('.textarea-char-count span.count').text(textarea_count);
+        
+        if (textarea_count <= max_length) {
+            $('.hwt-content mark').addClass('hide-mark');
+            $('.textarea-char-count').text(textarea_count + ' of ' + max_length + ' characters used').removeClass('excess-count');
+            $(common_ancestor).find('.error-message').removeClass('error-hidden');
+            $(common_ancestor).find('.design-system-card-content .form-example-container').attr('data-state', 'focus-state');
+            $('.state-selector label input').removeAttr('checked');
+            $('.state-selector .focus-label input').attr('checked', 'checked');
+        } 
+        else if (textarea_count > max_length) {
+            var excess_count = textarea_count - max_length;
+            $('.textarea-char-count').text('Character limited exceeded by ' + excess_count).addClass('excess-count'); 
+            $(common_ancestor).find('.error-message').addClass('error-hidden');
+            $(common_ancestor).find('.design-system-card-content .form-example-container').attr('data-state', 'error-state');
+            $('.state-selector label input').removeAttr('checked');
+            $('.state-selector .error-label input').attr('checked', 'checked');
+        }
+    });
+    
+
         
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */

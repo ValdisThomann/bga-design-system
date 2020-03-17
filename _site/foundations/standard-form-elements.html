@@ -29,6 +29,8 @@
     
     <script src=/bga-design-system/js/bootstrap-dropdownhover.min.js></script>
     
+    <script src=/bga-design-system/js/jquery.highlight-within-textarea.js></script>
+    
     <script src=/bga-design-system/js/design-system.js></script>
    
     
@@ -328,13 +330,14 @@ p.error-message {
         
                         <div class="example-wrapper white-back">
                         
-                            <div class="example form-example-container" data-state="default-state">
+                            <div class="example textarea-example form-example-container" data-state="default-state">
 
                                 <!-- Component content -->
 
                                 <label for="form-text-box" class="form-text-box-label">Text area label</label>
 
-                                <textarea id="form-text-area" name="form-text-area" type="text" value="" maxlength="255" placeholder="" class="example-form-element"></textarea>
+                                <textarea id="form-text-area" name="form-text-area" type="text" value="" maxlength="" placeholder="" class="example-form-element"></textarea>
+                                <p class="textarea-char-count"><span class="count">0 of 100 characters used</span></p>
                                 
                                 <p class="error-message">Descriptive error message</p>
 

@@ -555,10 +555,10 @@
                     font-size: 16px;
                 }
             }
-            textarea {
-                width: 100%;
+            #form-text-area {
+                width: 100% !important;
                 padding: 10px;
-                min-height: 150px;
+                min-height: 250px;
                 display: block;
 
                 &:focus {
@@ -570,8 +570,88 @@
                 &[type=text] {
                     @include font-format($font-family, $font-regular, normal);
                     font-size: 16px;
+                    letter-spacing: 0;
                 }
             }
+            .textarea-char-count {
+                text-align: right;
+                font-size: 14px;
+                color: $grey-darker;
+                padding: 8px 0 0 0;
+                margin: 0;
+                
+                &.excess-count {
+                    display: block;
+                    color: $red-negative-dark; 
+                    margin: 0;
+                    padding: 16px 0 0 0;
+                    font-size: 16px;
+                    text-align: left;
+                }
+            }
+            mark {
+                background-color: $red-negative-light;
+            }
+            
+            // CSS Styles from https://github.com/lonekorean/highlight-within-textarea
+            //Thank you lone Korean!!!
+            .hwt-container {
+                display: inline-block;
+                position: relative;
+                overflow: hidden !important;
+                -webkit-text-size-adjust: none !important;
+                width: 100%;
+            }
+            .hwt-backdrop {
+                position: absolute !important;
+                top: 0px !important;
+                right: 0px !important;
+                bottom: 0 !important;
+                left: 0 !important;
+                width: 100%;
+                padding: 10px !important;
+                overflow-x: hidden !important;
+                overflow-y: auto !important;
+            }
+            .hwt-highlights {
+                width: auto !important;
+                height: auto !important;
+                border-color: transparent !important;
+                white-space: pre-wrap !important;
+                word-wrap: break-word !important;
+                color: transparent !important;
+                overflow: hidden !important;
+            }
+            .hwt-input {
+                display: block !important;
+                position: relative !important;
+                margin: 0;
+                padding: 0;
+                border-radius: 0;
+                font: inherit;
+                overflow-x: hidden !important;
+                overflow-y: auto !important;
+            }
+            .hwt-content {
+                border: 1px solid;
+                background: none transparent !important;
+                padding-left: 0px;
+                @include font-format($font-family, $font-regular, normal);
+                font-size: 16px;
+                letter-spacing: 0;
+            }
+            .hwt-content mark {
+                padding: 0px !important;
+                color: $red-negative-light;
+                margin-left: 10px;
+                
+                &.hide-mark {
+                    display: none !important;
+                }
+            }
+
+    
+            
             .text-box-with-units {
                 span {
                     height: 52px;
@@ -595,7 +675,6 @@
                     
                     @media(max-width:650px) {
                         width: 40%;
-                        //max-width: 70px;
                     }
                 }
             }
@@ -971,7 +1050,7 @@
 
             &[data-state="default-state"] {
                 input, 
-                textarea, 
+                #form-text-area, 
                 .text-box-with-units span,
                 select,
                 .checkbox-item input + label:before,
@@ -984,7 +1063,7 @@
             }
             &[data-state="focus-state"] {
                 input, 
-                textarea,
+                #form-text-area,
                 .text-box-with-units span,
                 select,
                 .checkbox-item input[data-state="focus-state"] + label:before,
@@ -1047,13 +1126,13 @@
             }
             &[data-state="error-state"] {
                 input, 
-                textarea,
+                #form-text-area,
                 .text-box-with-units span,
                 select, 
                 .checkbox-item input + label:before,
                 .combo-button  {
                     outline: none;
-                    border: solid 3px $red-negative-dark;
+                    border: solid 3px $red-negative-dark !important;
                 }
                 &.text-box-button-combo-example .combo-button-wrapper #primary-combo, &.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
                     border: solid 3px $red-negative-dark;
@@ -1070,11 +1149,15 @@
                     color: $red-negative-dark; 
                     margin: 0;
                     padding: 16px 0 0 0;
+                    
+                    &.error-hidden {
+                        display: none;
+                    }
                 }
             }
             &[data-state="disabled-state"] {
                 input, 
-                textarea,
+                #form-text-area,
                 .text-box-with-units span,
                 select,
                 .checkbox-item input + label:before,
@@ -1101,6 +1184,9 @@
                     background-position: right 20px center;
                 }
                 .error-message {
+                    display: none;   
+                }
+                .excess-count {
                     display: none;
                 }
             }

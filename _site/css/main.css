@@ -5126,11 +5126,31 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container input[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
-.design-system-card .form-elements .form-example-container textarea { width: 100%; padding: 10px; min-height: 150px; display: block; }
+.design-system-card .form-elements .form-example-container #form-text-area { width: 100% !important; padding: 10px; min-height: 250px; display: block; }
 
-.design-system-card .form-elements .form-example-container textarea:focus { outline: none; border: solid 3px #254F90 !important; background: none !important; }
+.design-system-card .form-elements .form-example-container #form-text-area:focus { outline: none; border: solid 3px #254F90 !important; background: none !important; }
 
-.design-system-card .form-elements .form-example-container textarea[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
+.design-system-card .form-elements .form-example-container #form-text-area[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; }
+
+.design-system-card .form-elements .form-example-container .textarea-char-count { text-align: right; font-size: 14px; color: #666666; padding: 8px 0 0 0; margin: 0; }
+
+.design-system-card .form-elements .form-example-container .textarea-char-count.excess-count { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; font-size: 16px; text-align: left; }
+
+.design-system-card .form-elements .form-example-container mark { background-color: #F5B5B5; }
+
+.design-system-card .form-elements .form-example-container .hwt-container { display: inline-block; position: relative; overflow: hidden !important; -webkit-text-size-adjust: none !important; width: 100%; }
+
+.design-system-card .form-elements .form-example-container .hwt-backdrop { position: absolute !important; top: 0px !important; right: 0px !important; bottom: 0 !important; left: 0 !important; width: 100%; padding: 10px !important; overflow-x: hidden !important; overflow-y: auto !important; }
+
+.design-system-card .form-elements .form-example-container .hwt-highlights { width: auto !important; height: auto !important; border-color: transparent !important; white-space: pre-wrap !important; word-wrap: break-word !important; color: transparent !important; overflow: hidden !important; }
+
+.design-system-card .form-elements .form-example-container .hwt-input { display: block !important; position: relative !important; margin: 0; padding: 0; border-radius: 0; font: inherit; overflow-x: hidden !important; overflow-y: auto !important; }
+
+.design-system-card .form-elements .form-example-container .hwt-content { border: 1px solid; background: none transparent !important; padding-left: 0px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; }
+
+.design-system-card .form-elements .form-example-container .hwt-content mark { padding: 0px !important; color: #F5B5B5; margin-left: 10px; }
+
+.design-system-card .form-elements .form-example-container .hwt-content mark.hide-mark { display: none !important; }
 
 .design-system-card .form-elements .form-example-container .text-box-with-units span { height: 52px; width: auto; padding: 10px 15px; color: #666666; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; border: solid 1px #495C74; display: inline-block; background: #F5F5F5; vertical-align: middle; }
 
@@ -5268,11 +5288,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 @media (max-width: 400px) { .design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo { background-position: left 12px center; }
   .design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo:hover, .design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo:active { background-position: left 12px center; } }
 
-.design-system-card .form-elements .form-example-container[data-state="default-state"] input, .design-system-card .form-elements .form-example-container[data-state="default-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="default-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="default-state"] select, .design-system-card .form-elements .form-example-container[data-state="default-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="default-state"] .combo-button { border: solid 1px #495C74; }
+.design-system-card .form-elements .form-example-container[data-state="default-state"] input, .design-system-card .form-elements .form-example-container[data-state="default-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="default-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="default-state"] select, .design-system-card .form-elements .form-example-container[data-state="default-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="default-state"] .combo-button { border: solid 1px #495C74; }
 
 .design-system-card .form-elements .form-example-container[data-state="default-state"] .error-message { display: none; }
 
-.design-system-card .form-elements .form-example-container[data-state="focus-state"] input, .design-system-card .form-elements .form-example-container[data-state="focus-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="focus-state"] select, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input[data-state="focus-state"] + label:before, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .combo-button { outline: none; border: solid 3px #254F90; }
+.design-system-card .form-elements .form-example-container[data-state="focus-state"] input, .design-system-card .form-elements .form-example-container[data-state="focus-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="focus-state"] select, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input[data-state="focus-state"] + label:before, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .combo-button { outline: none; border: solid 3px #254F90; }
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"].text-box-button-combo-example .combo-button-wrapper #primary-combo { background: #254F90 url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
@@ -5290,7 +5310,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="active-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { background: #18335C url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
-.design-system-card .form-elements .form-example-container[data-state="error-state"] input, .design-system-card .form-elements .form-example-container[data-state="error-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="error-state"] select, .design-system-card .form-elements .form-example-container[data-state="error-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="error-state"] .combo-button { outline: none; border: solid 3px #D2201E; }
+.design-system-card .form-elements .form-example-container[data-state="error-state"] input, .design-system-card .form-elements .form-example-container[data-state="error-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="error-state"] select, .design-system-card .form-elements .form-example-container[data-state="error-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="error-state"] .combo-button { outline: none; border: solid 3px #D2201E !important; }
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"].text-box-button-combo-example .combo-button-wrapper #primary-combo, .design-system-card .form-elements .form-example-container[data-state="error-state"].text-box-button-combo-example .combo-button-wrapper #secondary-combo { border: solid 3px #D2201E; background-color: #4569A0; color: #ffffff; border-left: 0px; margin-left: -5px; }
 
@@ -5298,7 +5318,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; }
 
-.design-system-card .form-elements .form-example-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] textarea, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] select, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .combo-button { outline: none; border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message.error-hidden { display: none; }
+
+.design-system-card .form-elements .form-example-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] select, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .combo-button { outline: none; border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
 
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .checkbox-item label { color: #8E8E8E; }
 
@@ -5309,6 +5331,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] select { background: #F5F5F5 url(../assets/Icon-chevron-down-grey.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; }
 
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .error-message { display: none; }
+
+.design-system-card .form-elements .form-example-container[data-state="disabled-state"] .excess-count { display: none; }
 
 .design-system-card .form-elements .form-example-container .radio-item[data-state="default-state"] { border: solid 1px #495C74; }
 
