@@ -590,7 +590,7 @@
                 }
             }
             mark {
-                background-color: $red-negative-light;
+                background: $red-negative-light;
             }
             
             // CSS Styles from https://github.com/lonekorean/highlight-within-textarea
@@ -635,7 +635,7 @@
             .hwt-content {
                 border: 1px solid;
                 background: none transparent !important;
-                padding-left: 0px;
+                padding: 2px 0 0 1px;
                 @include font-format($font-family, $font-regular, normal);
                 font-size: 16px;
                 letter-spacing: 0;
@@ -643,14 +643,12 @@
             .hwt-content mark {
                 padding: 0px !important;
                 color: $red-negative-light;
-                margin-left: 10px;
                 
                 &.hide-mark {
                     display: none !important;
                 }
             }
 
-    
             
             .text-box-with-units {
                 span {
@@ -698,7 +696,7 @@
                     @include font-format($font-family, $font-regular, normal);
                     font-size: 16px;
                 }
-            }      
+            }     
             .radio-item {
                 border: solid 1px $darkblue-mid;
                 min-height: 52px;
@@ -761,6 +759,7 @@
                     padding-left: 42px;
                     cursor: pointer;
                     display: inline-block;
+                    padding-bottom: 0;
 
                     &:before {
                         height: 28px;
@@ -1454,7 +1453,6 @@
             border-top: none;
             background: none;
             padding: 24px;
-            //margin: 0;
             border-top: 4px solid $blue-primary-light;
             background: $blue-primary-lightest;
             transition-property: transform, -webkit-transform;

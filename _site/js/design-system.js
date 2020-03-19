@@ -382,8 +382,11 @@ $(document).ready(function () {
     });
     
     // Date picker
+    /*$('input.datepicker').datepicker({
+        format: "dd.mm.yyyy"
+    });*/
     $('#datepicker').datepicker({
-        dateFormat: 'dd-mm-yy'
+         //uiLibrary: 'bootstrap4'
     });
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */

@@ -386,7 +386,7 @@ $(document).ready(function () {
         format: "dd.mm.yyyy"
     });*/
     $('#datepicker').datepicker({
-         uiLibrary: 'bootstrap4'
+         //uiLibrary: 'bootstrap4'
     });
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
