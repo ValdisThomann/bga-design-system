@@ -381,6 +381,13 @@ $(document).ready(function () {
         }
     });
     
+    // Inline help - complex
+    $( "#contextual-example-1" ).click(function() {
+        $(this).toggleClass('open');
+        $( "#contextual-answer-1" ).slideToggle( 300, function() {
+        });
+    });
+    
     // Date picker
     /*$('input.datepicker').datepicker({
         format: "dd.mm.yyyy"

@@ -12,7 +12,7 @@
     &.extra-wide {
         max-width: 1000px;
     }
-    
+
     code pre {
         color: $blue-primary;
         font-size: 0.85rem;
@@ -211,6 +211,10 @@
         padding: 24px;
         background: $white;
         border-top: none;
+        
+         .note:last-of-type {
+            padding-bottom: 0;
+        }
         
         @media (max-width: 450px) {
             padding: 16px;
@@ -537,6 +541,46 @@
                     color: $red-negative-dark; 
                     margin: 0;
                     padding: 16px 0 0 0;
+                }
+            }
+            .help-wrapper {
+                p, li {
+                    font-size: 14px;
+                    line-height: 24px;
+                    padding-bottom: 16px;
+                    color: $grey-darker;
+                }
+                &.complex {
+                    .contextual-help {
+                        cursor: pointer;
+                        color: $blue-primary-mid;
+                        text-decoration: underline;
+                        padding: 0 0 0 0;
+                        margin-bottom: 16px;
+                        
+                        
+                        &:before {
+                            content: url(../assets/BGAIcon-chevron-right-sml.svg);
+                            margin: 0 8px 0 4px;
+                            display: inline-block;
+                        }
+                        &.open {
+                            &:before {
+                                transform: rotate(90deg);
+                                margin: 0 10px 0 4px;
+                            }
+                        }
+                    }
+                    .complex-answer {
+                        display: none;
+                        border-left: solid 2px $blue-primary;
+                        margin: 0 0 16px 8px;
+                        padding-left: 8px;
+                        
+                        p:last-of-type {
+                            padding-bottom: 0;
+                        }
+                    }
                 }
             }
             input {
@@ -3260,7 +3304,7 @@
             
             .notification-wrapper {
                 display: flex;
-                padding: 16px;
+                padding: 24px;
                 background: $blue-primary-lightest;
                 border-top: 4px solid $blue-primary-light;
             }
@@ -3278,7 +3322,7 @@
             
             .notification-wrapper {
                 display: flex;
-                padding: 16px;
+                padding: 24px;
                 background: $green-positive-lightest;
                 border-top: 4px solid $green-positive-light;
             }
@@ -3295,12 +3339,12 @@
         &.notification-warning {
             .notification-wrapper {
                 display: flex;
-                padding: 16px;
+                padding: 24px;
                 background: $red-negative-lightest;
                 border-top: 4px solid $red-negative-light;
             }
             
-            p {
+            p, li {
                 color: $red-negative-dark;
             }
             .notification-icon {
