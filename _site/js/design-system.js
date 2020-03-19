@@ -389,11 +389,8 @@ $(document).ready(function () {
     });
     
     // Date picker
-    /*$('input.datepicker').datepicker({
-        format: "dd.mm.yyyy"
-    });*/
     $('#datepicker').datepicker({
-         //uiLibrary: 'bootstrap4'
+        format: "dd/mm/yyyy"
     });
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */

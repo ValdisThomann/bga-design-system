@@ -692,7 +692,6 @@
                     display: none !important;
                 }
             }
-
             
             .text-box-with-units {
                 span {
@@ -991,6 +990,29 @@
                             &:before {
                                 background: url(../assets/Icon-add-circle-grey.svg) no-repeat;
                             }
+                        }
+                    }
+                }
+            }
+            
+            .datepicker {
+                padding: 16px;
+                border: 3px solid $blue-primary;
+                width: auto;
+                display: block;
+                
+                .table-condensed {
+                    font-size: 15px;
+                    padding:16px;
+                    
+                    td {
+                        padding: 8px 12px;
+                        text-align: center;
+                        
+                        &:hover {
+                            background: $blue-primary;
+                            color: $white;
+                            @include font-format($font-family, $font-semibold, normal);
                         }
                     }
                 }
