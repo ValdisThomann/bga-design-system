@@ -2866,7 +2866,6 @@
     }
     
     .stepped-navigation {
-        margin: 0 -40px;
         
         .stepped-navigation-container {
             background: $grey-lighter; 
@@ -2886,8 +2885,7 @@
             display: block;
             position: relative;
             -webkit-box-flex: 0;
-            flex: 0 0 20%;
-            max-width: 20%;
+            flex: 1;
 
             &:before {
                 display: none;
@@ -2906,7 +2904,7 @@
                 display: inline-block;
                 width: 100%;
 
-                span {
+                .step-bar-bullet {
                     display: block;
                     height: 32px;
                     width: 32px;
@@ -2931,7 +2929,7 @@
                     position: absolute;
                     top: 18px;
                     left: calc(50% + 16px);
-                    width: calc(50% + 50px);
+                    width: 100%;
                     height: 2.5px;
                     background: $grey;
                     z-index: 0;
@@ -2943,7 +2941,7 @@
                     @include font-format($font-family, $font-semibold, normal);
                     color: $blue-primary;
                     
-                    span {
+                    .step-bar-bullet {
                         border: solid 2.5px $blue-primary;
                         border-radius: 50%;
                         color: $blue-primary;
@@ -2955,7 +2953,7 @@
                     @include font-format($font-family, $font-semibold, normal);
                     color: $blue-primary;
 
-                    span {
+                    .step-bar-bullet {
                         border: solid 2.5px $blue-primary;
                         border-radius: 50%;
                         color: $white;
@@ -2982,25 +2980,20 @@
     .mobile-example .stepped-navigation,
     .mobile-media-query .stepped-navigation {
         
-        margin: 0 -24px;
-        
         .stepped-navigation-container {
             padding: 16px 0 24px 0;
         }
             
         li {
+            margin: 0;
             padding:0 !important;
 
             a {
-                text-indent: 100%;
                 white-space: nowrap;
                 overflow: hidden;
 
-                span {
-                    text-indent: 0;
-                }
-                &:after {
-                    width: calc(50% + 16px);
+                .step-bar-label {
+                    display: none;
                 }
             }
 
