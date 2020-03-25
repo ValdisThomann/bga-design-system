@@ -75,7 +75,7 @@ $(document).ready(function () {
     function menuStickiness() {
         
         var win = $(window),
-            stickyWidth = $('.twoCol39-left').width();
+            stickyWidth = $('.anchor-menu').width();
         
         // Set side-menu initial horizontal position 
         if(win.width() < 575) {
