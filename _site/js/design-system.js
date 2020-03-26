@@ -72,10 +72,12 @@ $(document).ready(function () {
     
     // Function to make the side menu sticky
     var stickyPosition = $('.anchor-menu').offset(); //This var is outside the function because it needs to be determined BEFORE window resizing,.
+    
     function menuStickiness() {
         
         var win = $(window),
-            stickyWidth = $('.twoCol39-left').width();
+            stickyWidth = $('.anchor-col').width();
+            console.log(stickyWidth);
         
         // Set side-menu initial horizontal position 
         if(win.width() < 575) {
@@ -91,7 +93,7 @@ $(document).ready(function () {
         // Reset side-menu position on scroll
         $(window).scroll(function () {
 
-            stickyWidth = $('.twoCol39-left').width();
+            stickyWidth = $('.anchor-col').width();
 
             if (win.width() < 575) {
                 $('.anchor-menu').css('position', 'relative').css('top', 'auto').css('width', stickyWidth);

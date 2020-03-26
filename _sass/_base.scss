@@ -97,6 +97,9 @@ h1, h2, h3, h4, h5 {
         }
     }
 }
+.anchor-section:last-of-type {
+    margin-bottom: 32px;
+}
 
 // Hero tiles
 #foundations-illo {
@@ -337,27 +340,6 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-
-// 2 column pages 
-.twoCol39-right {
-    margin-bottom: 48px;
-}
-
-@media (max-width: 900px) {
-    .twoCol39-left {
-        -ms-flex: 0 0 25%;
-        -webkit-box-flex: 0;
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-    .twoCol39-right {
-        -ms-flex: 0 0 75%;
-        -webkit-box-flex: 0;
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-}
-
 @media (max-width: 574px) {
     .anchor-menu {
         width: 100% !important;
@@ -366,12 +348,12 @@ h1, h2, h3, h4, h5 {
         width: 100%;
         position: relative !important;
     }
-    .twoCol39-left, .twoCol39-right {
+    /*.twoCol39-left, .twoCol39-right {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0;
         flex: 0 0 100%;
         max-width: 100%;
-    }
+    }*/
 }
 
 //Breadcrumbs
