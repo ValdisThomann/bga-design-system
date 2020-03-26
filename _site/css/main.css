@@ -7033,6 +7033,8 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 #horizontal-example h2.heading-example { padding: 24px 0 32px 0; margin: 0; }
 
+#horizontal-example .body-copy-headline h2.heading-example { padding-top: 0; }
+
 #horizontal-example h3.heading-example { padding: 16px 0 32px 0; margin: 0; }
 
 #horizontal-example h4.heading-example { padding: 16px 0 16px 0; margin: 0; }

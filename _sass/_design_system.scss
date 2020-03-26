@@ -3940,7 +3940,7 @@
         border-bottom: 1px solid $grey;
         padding-bottom: 48px;
         margin-bottom: 16px;
-
+        
         img {
             max-width: 619px;
             width: 100%;
@@ -3997,6 +3997,9 @@
     h2.heading-example {
         padding: 24px 0 32px 0;
         margin: 0;
+    }
+    .body-copy-headline h2.heading-example {
+         padding-top: 0;
     }
     h3.heading-example {
         padding: 16px 0 32px 0;
